@@ -11,7 +11,7 @@
     background-color: #090909;
     padding: 15px;
     .hero-inner{
-        background-color: #fff;
+        background-color: #a7f5e9;
         position: relative;
         padding-bottom: 25px;
         .container{
@@ -240,22 +240,22 @@
     color: #000;
     font-family: "DINMedium";
     background-color: transparent;
-    font-size: 18px;
-    padding: 15px 25px;
+    font-size: 16px;
+    padding: 10px 20px;
     position: relative;
     .btn-line{
-        width: 45px;
+        width: 35px;
         height: 2px;
         background-color: #000;
         position: absolute;
-        top: 28px;
-        left: -30px;
+        top: 20px;
+        left: -20px;
         @include transition(.3s);
     }
     .fa{
         position: absolute;
-        top: 14px;
-        font-size: 28px;
+        top: 8px;
+        font-size: 24px;
         color: #000;
         left: 8px;
         @include transition(.3s);
@@ -266,11 +266,11 @@
         .btn-line{
             @include transition(.3s);
             background-color: #009046;
-            left: -20px;
+            left: -15px;
         }
         .fa{
             @include transition(.3s);
-            left:18px;
+            left:14px;
             color: #009046;
         }
     }

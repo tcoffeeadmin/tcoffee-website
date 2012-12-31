@@ -1,587 +1,581 @@
 /*Portfolio*/ 
 .portfolios-home{
-  background-color: #171717;
-  position: relative;
-  overflow: hidden;
-  background-image: url(../images/portfolio.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top;
-  h1{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    text-transform: uppercase;
-    font-size: 150px;
-    height: 250px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    color: #1d1d1e;
-    font-family: "DINBlack";
-    /*@include black;*/
-  }
-  @media all and (min-width: $screen-sm){
+    background-color: #171717;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../images/portfolio.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    h1{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        text-transform: uppercase;
+        font-size: 150px;
+        height: 250px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #1d1d1e;
+        font-family: "DINBlack";
+        /*@include black;*/
+    }
+    @media all and (min-width: $screen-sm){
 
-  }
-  @media all and (min-width: $screen-md){
+    }
+    @media all and (min-width: $screen-md){
 
-  }
-  @media all and (min-width: $screen-lg){
-    height: 100%;
-  }
+    }
+    @media all and (min-width: $screen-lg){
+        height: 100%;
+    }
 }
 
 .portfolios-home--inner{
-  padding-top: 7%;
-  padding-bottom: 6%;
-  @media all and (min-width: $screen-sm) {
-    // Tablet
-  }  
-  @media all and (min-width: $screen-md) {
-    // Tablet
-  }
-  @media all and (min-width: $screen-lg) {
-    // Desktop
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    width: 100%;
-    height: 500px;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  @media all and (min-width: $screen-xlg) {
-    // Tablet
-    height: 650px;
-  }
+    padding-top: 7%;
+    padding-bottom: 6%;
+    @media all and (min-width: $screen-sm) {
+        // Tablet
+    }  
+    @media all and (min-width: $screen-md) {
+        // Tablet
+    }
+    @media all and (min-width: $screen-lg) {
+        // Desktop
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 100%;
+        height: 500px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    @media all and (min-width: $screen-xlg) {
+        // Tablet
+        height: 650px;
+    }
 }
 
 
 .glide, .glide--slideshow .glide__wrapper, .glide__track {
-  height: 100%;
+    height: 100%;
 }
 
 .glide {
-  width: 100%;
-  position: relative;
+    width: 100%;
+    position: relative;
 }
 
 .glide__wrapper {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .glide__track {
-  width: 100%;
-  list-style: none;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-  touch-action: pan-Y;
-  left: 0%;
-  right: -1%;
-  &.dragging {
-    cursor: grabbing;
-    user-select: none;
-  }
+    width: 100%;
+    list-style: none;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    touch-action: pan-Y;
+    left: 0%;
+    right: -1%;
+    &.dragging {
+        cursor: grabbing;
+        user-select: none;
+    }
 }
 
 .glide__slide {
-  width: 100%;
-  -webkit-tap-highlight-color: transparent;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .glide__arrows {
-  position: absolute;
+    position: absolute;
 }
 
 .glide__bullets {
-  position: absolute;
-  list-style: none;
+    position: absolute;
+    list-style: none;
 }
 
 .glide--carousel .glide__slide, .glide--slider .glide__slide {
-  float: left;
-  clear: none;
+    float: left;
+    clear: none;
 }
 
 .glide--slideshow .glide__slide {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  -webkit-transform-style: preserve-3d;
-  -webkit-transform: translate3d(0, 0, 0);
-  &.active {
-    z-index: 1;
-  }
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translate3d(0, 0, 0);
+    &.active {
+        z-index: 1;
+    }
 }
 
 .glide--horizontal .glide__arrows {
-  bottom: 8px;
-  width: 51%;
-  left: 0;
-  right: 0;
-  color: red;
-  margin: auto;
-  @media all and (min-width: $screen-sm){
-    /*bottom: 3%;*/
-  }
-  @media all and (min-width: $screen-md){
+    bottom: 8px;
+    width: 51%;
+    left: 0;
+    right: 0;
+    color: red;
+    margin: auto;
+    @media all and (min-width: $screen-sm){
+        /*bottom: 3%;*/
+    }
+    @media all and (min-width: $screen-md){
 
-  }
-  @media all and (min-width: $screen-lg){
+    }
+    @media all and (min-width: $screen-lg){
 
-  }
+    }
 }
 
 .glide--vertical .glide__arrows {
-  left: 50%;
-  height: 88%;
-  margin-top: 6%;
+    left: 50%;
+    height: 88%;
+    margin-top: 6%;
 }
 
 .glide__arrow {
-  cursor: pointer;
-  position: absolute;
-  z-index: 2;
-  color: #fff;
-  background-color: transparent;
-  border-radius: 4px;
-  transition: border 0.3s ease-in-out;
-  &:hover {
-    border-color: #fff;
-  }
-  .fa{
-    font-size: 16px;
-    color: #009046;
-  }
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 4px;
+    transition: border 0.3s ease-in-out;
+    &:hover {
+        border-color: #fff;
+    }
+    .fa{
+        font-size: 16px;
+        color: #009046;
+    }
 }
 
 .glide--horizontal .glide__arrow {
-  transform: translateY(-50%);
-  color: red;
-  &.prev {
-    left: -5px;
-  }
-  &.next {
-    right: -5px;
-  }
+    transform: translateY(-50%);
+    color: red;
+    &.prev {
+        left: -5px;
+    }
+    &.next {
+        right: -5px;
+    }
 }
 
 .glide--vertical .glide__arrow {
-  transform: translateX(-50%);
-  &.prev {
-    top: 0;
-  }
-  &.next {
-    bottom: 0;
-  }
+    transform: translateX(-50%);
+    &.prev {
+        top: 0;
+    }
+    &.next {
+        bottom: 0;
+    }
 }
 
 .glide--horizontal .glide__bullets {
-  bottom: 8px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 51%;
-  height: 1px;
-  text-align: center;
-  border-bottom: 1px solid #fff;
-  border-bottom-style: dashed;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 51%;
+    height: 1px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    border-bottom-style: dashed;
 }
 
 .glide--vertical .glide__bullets {
-  top: 50%;
-  right: 8%;
-  width: 12px;
-  height: auto;
-  transform: translateY(-50%);
-  .glide__bullet{
-    width: 1%;
-  }
+    top: 50%;
+    right: 8%;
+    width: 12px;
+    height: auto;
+    transform: translateY(-50%);
+    .glide__bullet{
+        width: 1%;
+    }
 }
 
 .glide__bullets > * {
-  display: inline-block;
-  background-color: transparent;
-  border: none;
-  width: 15%;
-  height: 20px;
-  padding: 0;
-  cursor: pointer;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    width: 15%;
+    height: 20px;
+    padding: 0;
+    cursor: pointer;
 }
 
 .glide--horizontal .glide__bullets > * {
-  margin: 0 10px;
-  position: relative;
-  top: -15px;
-  &:focus{
-    outline: none;
-  }
+    margin: 0 10px;
+    position: relative;
+    top: -15px;
+    &:focus{
+        outline: none;
+    }
 }
 
 .glide__bullets {
-  .active {
-    background-color: #009046;
-    border-right: 12px solid #363636;
-  }
-  &:hover {
-    background-color: transparent;
-  }
-  &:focus{
-    outline: none;
-    outline-offset: 0;
-  }
+    .active {
+        background-color: #009046;
+        border-right: 12px solid #363636;
+    }
+    &:hover {
+        background-color: transparent;
+    }
+    &:focus{
+        outline: none;
+        outline-offset: 0;
+    }
 }
 
 /*Button numbers*/
 .glide__bullets{
-  .active{
-    color: #fff;
-    &:nth-child(1){
-      &::before{
-        content: "1";
-      }
+    .active{
+        color: #fff;
+        &:nth-child(1){
+            &::before{
+                content: "1";
+            }
+        }
+        &:nth-child(2){
+            &::before{
+                content: "2";
+            }
+        }
+        &:nth-child(3){
+            &::before{
+                content: "3";
+            }
+        }
+        &:nth-child(4){
+            &::before{
+                content: "4";
+            }
+        }
+        &:nth-child(5){
+            &::before{
+                content: "5";
+            }
+        }
+        &:nth-child(6){
+            &::before{
+                content: "6";
+            }
+        }
+        &:nth-child(7){
+            &::before{
+                content: "7";
+            }
+        }
+        &:nth-child(8){
+            &::before{
+                content: "8";
+            }
+        }
+        &:nth-child(9){
+            &::before{
+                content: "9";
+            }
+        }
+        &:nth-child(10){
+            &::before{
+                content: "10";
+            }
+        }
     }
-    &:nth-child(2){
-      &::before{
-        content: "2";
-      }
-    }
-    &:nth-child(3){
-      &::before{
-        content: "3";
-      }
-    }
-    &:nth-child(4){
-      &::before{
-        content: "4";
-      }
-    }
-    &:nth-child(5){
-      &::before{
-        content: "5";
-      }
-    }
-    &:nth-child(6){
-      &::before{
-        content: "6";
-      }
-    }
-    &:nth-child(7){
-      &::before{
-        content: "7";
-      }
-    }
-    &:nth-child(8){
-      &::before{
-        content: "8";
-      }
-    }
-    &:nth-child(9){
-      &::before{
-        content: "9";
-      }
-    }
-    &:nth-child(10){
-      &::before{
-        content: "10";
-      }
-    }
-  }
 }
 
 .box {
-  cursor: ew-resize;
-  position: relative;
-  padding: 40px 0px;
-  margin-left: 8px;
-  margin-right: 8px;
-  height: 275px;
-  img{
-    width: 100%;
-    height: 100%;
-  }
-  .layer{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-  }
-  h2{
-    text-transform: uppercase;
-    color: #fff;
-    font-family: "DINBlack";
-    /*@include black;*/
-    font-size: 24px;
-    position: absolute;
-    top: 40%;
-    left: -10px;
-  }
-  @media all and (min-width: 620px){
-    margin-left: 15px;
-    margin-right: 15px;
-    padding: 40px 15px;
-    height: 305px;
-    h2{      
-      font-size: 28px;
-      left: -9px;
+    cursor: ew-resize;
+    position: relative;
+    padding: 40px 0px;
+    margin-left: 8px;
+    margin-right: 8px;
+    height: 275px;
+    img{
+        width: 100%;
+        height: 100%;
     }
-  }
-  @media all and (min-width: $screen-sm) {
-    // Tablet
-    padding: 40px 20px;
-    height: 375px;
-    h2{      
-      font-size: 39px;
-      left: 0px;
+    .layer{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
     }
-  }  
-  @media all and (min-width: $screen-md) {
-    // Tablet
-    padding: 40px 30px;
-    height: 420px;
-    h2{      
-      font-size: 39px;
+    h2{
+        text-transform: uppercase;
+        color: #fff;
+        font-family: "DINBlack";
+        /*@include black;*/
+        font-size: 24px;
+        position: absolute;
+        top: 40%;
+        left: -10px;
     }
-  }
-  @media all and (min-width: $screen-lg) {
-    // Desktop
-    padding: 40px 60px;
-    height: 475px;
-  }
-  @media all and (min-width: $screen-xlg) {
-    // Desktop
-    height: 625px;
-  }
+    @media all and (min-width: 620px){
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 40px 15px;
+        height: 305px;
+        h2{      
+            font-size: 28px;
+            left: -9px;
+        }
+    }
+    @media all and (min-width: $screen-sm) {
+        // Tablet
+        padding: 40px 20px;
+        height: 375px;
+        h2{      
+            font-size: 39px;
+            left: 0px;
+        }
+    }  
+    @media all and (min-width: $screen-md) {
+        // Tablet
+        padding: 40px 30px;
+        height: 420px;
+        h2{      
+            font-size: 39px;
+        }
+    }
+    @media all and (min-width: $screen-lg) {
+        // Desktop
+        padding: 40px 60px;
+        height: 475px;
+    }
+    @media all and (min-width: $screen-xlg) {
+        // Desktop
+        height: 625px;
+    }
 }
 
 
 /*Portfolio button*/
 .btn-portfolio{
-  border: 2px solid #fff;
-  @include border-radius(0px);
-  text-transform: capitalize;
-  color: #fff;
-  font-family: "DINLight";
-  /*@include light;*/
-  font-size: 13px;
-  padding: 10px 15px;
-  display: table;
-  margin: auto;
-  margin-top: 20px;
-  @include transition(.2s);
-  &:hover{
-    border-color: #009046;
-    background-color: #009046;
+    border-color: #fff;
     color: #fff;
-    @include transition(.2s);
-  }
-  @media all and (min-width: $screen-sm) {
-    // Tablet
-  }  
-  @media all and (min-width: $screen-md) {
-    // Tablet
-  }
-  @media all and (min-width: $screen-lg) {
-    // Desktop
-    margin-top: 12px;
-  }
+    text-transform: capitalize;
+    display: table;
+    margin: auto;
+    margin-top: 20px;
+    .btn-line{
+        background-color: #fff;
+    }
+    .fa{
+        color: #fff;
+    }
+    @media all and (min-width: $screen-sm) {
+        // Tablet
+    }  
+    @media all and (min-width: $screen-md) {
+        // Tablet
+    }
+    @media all and (min-width: $screen-lg) {
+        // Desktop
+        margin-top: 12px;
+    }
 }
 
 .glide__bullet{
-  display: none;
-  @media all and (min-width: $screen-sm) {
-    // Tablet
-    display: inline-block;
-  }  
-  @media all and (min-width: $screen-md) {
-    // Tablet
-  }
-  @media all and (min-width: $screen-lg) {
-    // Desktop
-  }
+    display: none;
+    @media all and (min-width: $screen-sm) {
+        // Tablet
+        display: inline-block;
+    }  
+    @media all and (min-width: $screen-md) {
+        // Tablet
+    }
+    @media all and (min-width: $screen-lg) {
+        // Desktop
+    }
 }
 /*Portfolio home end*/
 
 /*Contact form home*/
 .contant-home{
-  background-color: #fff;
-  position: relative;
-  .contant-home--inner{
+    background-color: #fff;
     position: relative;
-    padding-top: 35px;
-    padding-bottom: 35px;
-
-    h1{
-      font-family: "DINLight";
-      /*@include light;*/
-      color: #232325;
-      font-size: 24px;
-      text-transform: uppercase;
-      margin-top: 0px;
-      margin-bottom: 12px;
-      span{
-        font-family: "DINBlack";
-        /*@include black;*/
-      }
-    }
-    .contant-form--home{
-      position: relative;
-      .contant-form--home_image{
-        height: 365px;
-        background-image: url(../images/Contact_image.svg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: #009046;
-      }
-      .contant-form--home_form{
-        height: auto;
-        background-color: #252527;
+    .contant-home--inner{
         position: relative;
-        .form-inner{
-          height: auto;
-          position: relative;
-          padding-top: 55px;
-          padding-bottom: 55px;
-          .form-control{
-            background-color: transparent !important;
-            border-color: transparent !important;
-            border-bottom: 1px solid #5d5d5e !important;
-            @include border-radius(0px);
-            padding-left: 0px !important;
-            padding-right: 0px !important;
+        padding-top: 35px;
+        padding-bottom: 35px;
+
+        h1{
             font-family: "DINLight";
             /*@include light;*/
-            color: #c7bcbc;
-            &:focus{
-              @include box-shadow(none);
-              border-bottom-color: #e0e0e6 !important;
-            }
-          }
-          textarea{
-            height: 130px;
-            width: 100% !important;
-          }
-          .btn-confirm{
-            border-color: transparent !important;
-            border-bottom: 1px solid #5d5d5e !important;
-            background-color: transparent !important;
-            @include border-radius(0px);
-            font-family: "DINBold";
-            font-size: 16px;
-            color: #c7bcbc;
+            color: #232325;
+            font-size: 24px;
             text-transform: uppercase;
-            float: right;
-            @include transition(.2s);
-            &:hover{
-              color: #007f5d;
-              border-bottom-color: #007f5d !important;
-              @include transition(.2s);
+            margin-top: 0px;
+            margin-bottom: 12px;
+            span{
+                font-family: "DINBlack";
+                /*@include black;*/
             }
-            &:focus{
-              outline: none !important;
-            }
-          }
         }
-      }
+        .contant-form--home{
+            position: relative;
+            .contant-form--home_image{
+                height: 365px;
+                background-image: url(../images/Contact_image.svg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: #009046;
+            }
+            .contant-form--home_form{
+                height: auto;
+                background-color: #252527;
+                position: relative;
+                .form-inner{
+                    height: auto;
+                    position: relative;
+                    padding-top: 55px;
+                    padding-bottom: 55px;
+                    .form-control{
+                        background-color: transparent !important;
+                        border-color: transparent !important;
+                        border-bottom: 1px solid #5d5d5e !important;
+                        @include border-radius(0px);
+                        padding-left: 0px !important;
+                        padding-right: 0px !important;
+                        font-family: "DINLight";
+                        /*@include light;*/
+                        color: #c7bcbc;
+                        &:focus{
+                            @include box-shadow(none);
+                            border-bottom-color: #e0e0e6 !important;
+                        }
+                    }
+                    textarea{
+                        height: 130px;
+                        width: 100% !important;
+                    }
+                    .btn-confirm{
+                        border-color: transparent !important;
+                        border-bottom: 1px solid #5d5d5e !important;
+                        background-color: transparent !important;
+                        @include border-radius(0px);
+                        font-family: "DINBold";
+                        font-size: 16px;
+                        color: #c7bcbc;
+                        text-transform: uppercase;
+                        float: right;
+                        @include transition(.2s);
+                        &:hover{
+                            color: #007f5d;
+                            border-bottom-color: #007f5d !important;
+                            @include transition(.2s);
+                        }
+                        &:focus{
+                            outline: none !important;
+                        }
+                    }
+                }
+            }
+        }
     }
-  }
 
-  @media all and (min-width: $screen-sm) {
-    // Tablet
-    .contant-home--inner{
-      padding-top: 80px;
-      padding-bottom: 70px;
-      h1{
-        font-size: 30px;
-        margin-bottom: 40px;
-      }
-      .contant-form--home{
-        position: relative;
-        .contant-form--home_image{
-          height: 375px;
+    @media all and (min-width: $screen-sm) {
+        // Tablet
+        .contant-home--inner{
+            padding-top: 80px;
+            padding-bottom: 70px;
+            h1{
+                font-size: 30px;
+                margin-bottom: 40px;
+            }
+            .contant-form--home{
+                position: relative;
+                .contant-form--home_image{
+                    height: 375px;
+                }
+                .contant-form--home_form{
+                    height: 375px;
+                    background-color: #252527;
+                    position: relative;
+                    .form-inner{
+                        height: 290px;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        width: 100%;
+                        left: 0;
+                        right: 0;
+                        padding-top: 0px;
+                        padding-bottom: 0px;
+                    }
+                }
+            }
         }
-        .contant-form--home_form{
-          height: 375px;
-          background-color: #252527;
-          position: relative;
-          .form-inner{
-            height: 290px;
+    }
+    @media all and (min-width: $screen-md) {
+        // Tablet
+        .contant-home--inner{ 
+            h1{
+                font-size: 40px;
+            }
+            .contant-form--home{
+                .contant-form--home_image{
+                    height: 420px;
+                }
+                .contant-form--home_form{
+                    height: 420px;
+                }
+            }
+        }
+    }
+
+    @media all and (min-width: $screen-lg) {
+        // Desktop
+        height: 100%;
+        .contant-home--inner{
+            padding-top: 0;
+            padding-bottom: 0;
             position: absolute;
+            height: 548px;
             top: 0;
             bottom: 0;
             margin: auto;
-            width: 100%;
             left: 0;
             right: 0;
-            padding-top: 0px;
-            padding-bottom: 0px;
-          }
         }
-      }
     }
-  }
-  @media all and (min-width: $screen-md) {
-    // Tablet
-    .contant-home--inner{ 
-      h1{
-        font-size: 40px;
-      }
-      .contant-form--home{
-        .contant-form--home_image{
-          height: 420px;
+    @media all and (min-width: $screen-xlg) {
+        .contant-home--inner{
+            height: 620px;
+            .contant-form--home{
+                .contant-form--home_image{
+                    height: 490px;
+                }
+                .contant-form--home_form{
+                    height: 490px;
+                }
+            }
         }
-        .contant-form--home_form{
-          height: 420px;
-        }
-      }
     }
-  }
-
-  @media all and (min-width: $screen-lg) {
-    // Desktop
-    height: 100%;
-    .contant-home--inner{
-      padding-top: 0;
-      padding-bottom: 0;
-      position: absolute;
-      height: 548px;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-      left: 0;
-      right: 0;
-    }
-  }
-  @media all and (min-width: $screen-xlg) {
-    .contant-home--inner{
-      height: 620px;
-      .contant-form--home{
-        .contant-form--home_image{
-          height: 490px;
-        }
-        .contant-form--home_form{
-          height: 490px;
-        }
-      }
-    }
-  }
 }
 
 /*Footer button*/
 .down-btn-footer{
-  bottom: 15px !important;
-  .v-line{
-    margin-top: -22px;
-    .fa{
-      bottom: 14px;
-      color: rgba(0, 0, 0, 0.67);
+    bottom: 15px !important;
+    .v-line{
+        margin-top: -22px;
+        .fa{
+            bottom: 14px;
+            color: rgba(0, 0, 0, 0.67);
+        }
     }
-  }
 }

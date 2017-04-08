@@ -511,7 +511,7 @@ $break-large: 400px;
 
 /*Footer button*/
 .down-btn-footer{
-  bottom: 15px;
+  bottom: 15px !important;
   .v-line{
     margin-top: -22px;
     .fa{
@@ -554,7 +554,7 @@ $break-large: 400px;
     /* The typwriter cursor */
     white-space: nowrap;
     /* Keeps the content on a single line */
-    margin: 0 auto; /**/
+    margin: 0 auto;
     /* Gives that scrolling effect as the typing happens */
     /*letter-spacing: .15em;*/
     /* Adjust as needed */
@@ -579,7 +579,7 @@ $break-large: 400px;
   from, to {
     border-color: transparent;
   }
-   
+
   50% {
     border-color: green;
   }

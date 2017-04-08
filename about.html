@@ -14,8 +14,8 @@ and open the template in the editor.
     <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
   </head>
   <body>
-    <!--Hero section-->
-    <div class="container-fluid about">     
+    <!--About section-->
+    <div id="top" class="container-fluid about">     
       <div class="container">
         <!--Header-->
         <header class="col-sm-12 col-xs-12 rem-pad">
@@ -43,7 +43,7 @@ and open the template in the editor.
                   </div>
                   <div class="menu-overlay--items">
                     <ul>
-                      <li class="active"><a href="#">The team</a></li>
+                      <li class="active"><a href="#about.html">The team</a></li>
                       <li><a href="#0">Our services</a></li>
                       <li><a href="#0">Our projects</a></li>
                       <li><a href="#0">Start a project</a></li>
@@ -81,7 +81,7 @@ and open the template in the editor.
         <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 rem-pad">
           <div class="col-sm-12 col-xs-12 about-inner rem-pad">
             <!--Content-->
-            <div class="col-md-6 col-sm-5 col-xs-12 about-inner--content">
+            <div class="col-md-6 col-sm-6 col-xs-12 about-inner--content">
 
               <div class="about-inner--content_inner">
                 <p>Tcoffee was established in 2012 by a group of professionals to cater 
@@ -96,7 +96,7 @@ and open the template in the editor.
               </div>
             </div>
             <!--Image-->
-            <div class="col-md-6 col-sm-7 col-xs-12 about-inner--img">
+            <div class="col-md-6 col-sm-6 hidden-xs about-inner--img">
 
             </div>
           </div>
@@ -105,8 +105,8 @@ and open the template in the editor.
       </div>
       <div class="container down-click">
         <!--Down button-->
-        <a href="#portfolio">
-          <div class="down-btn">
+        <a href="#team">
+          <div class="down-btn down-btn--inner">
             <div class="down-btn--circle"></div>
             <div class="v-line">
               <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -117,10 +117,10 @@ and open the template in the editor.
       </div>
 
     </div>
-    <!--Hero section end-->
+    <!--About section end-->
 
     <!--Our team-->
-    <div class="container-fluid our-team rem-pad">
+    <div id="team" class="container-fluid our-team rem-pad">
       <div class="col-md-12 col-sm-12 col-xs-12 our-team--inner rem-pad">
 
         <div id="demo">  
@@ -388,7 +388,7 @@ and open the template in the editor.
           </a>
         </div>
         <!--Address-->
-        <div class="col-md-3 footer-address rem-pad">
+        <div class="col-md-4 footer-address rem-pad">
           <div class="col-sm-12 col-xs-12 footer-address--head rem-pad">
             <h3>address</h3>
           </div>
@@ -411,7 +411,7 @@ and open the template in the editor.
           </div>
         </div>
         <!--Follow-->        
-        <div class="col-md-3 footer-follow rem-pad">
+        <div class="col-md-2 footer-follow rem-pad">
           <div class="col-sm-12 col-xs-12 footer-follow--head rem-pad">
             <h3>Follow us</h3>
           </div>
@@ -424,10 +424,20 @@ and open the template in the editor.
             </ul>
           </div>
         </div>
+        <!--Back to top-->
+        <a href="#top">
+          <div class="down-btn back-to--top">
+            <div class="down-btn--circle"></div>
+            <div class="v-line">
+              <i class="fa fa-angle-up" aria-hidden="true"></i>
+            </div>
+          </div>
+        </a>
+        <!--Back to top end-->
       </div>
     </div>
     <!--Footer end-->
-    
+
     <!--Footer copy right-->
     <div class="container-fluid copy-right copy-right--inner rem-pad">
       <p>Copy rights 2017 @ tcoffee</p>

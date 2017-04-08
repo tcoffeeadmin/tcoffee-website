@@ -24,18 +24,25 @@ and open the template in the editor.
 /*About content*/
 .about-inner{
   padding-top: 35px;
+  padding-bottom: 100px;
   .about-inner--content{
     position: relative;
     background-color: #171717;
     background-image: url(../images/about-us.png);
     background-size: contain;
     background-repeat: no-repeat;
-    p{
-      text-align: justify;
-      font-family: "Din";
-      @include light;
-      color: #fff;
-      text-transform: uppercase;
+    .about-inner--content_inner{
+      width: 90%;
+      margin: auto;
+      padding-top: 75px;
+      padding-bottom: 75px;
+      p{
+        text-align: justify;
+        font-family: "Din";
+        @include light;
+        color: #fff;
+        text-transform: uppercase;
+      }
     }
   }
   .about-inner--img{
@@ -45,22 +52,34 @@ and open the template in the editor.
     background-position: center;
   }
   @media all and (min-width: $screen-sm){
-
-  }
-  @media all and (min-width: $screen-md){
-
-  }
-  @media all and (min-width: $screen-lg){
     .about-inner--content{
       height: 420px;
       .about-inner--content_inner{
-        width: 75%;
+        width: 90%;
         margin: auto;
-        padding-top: 65px;
+        padding-top: 45px;
+        padding-bottom: 0px;
       }
     }
     .about-inner--img{
       height: 420px;
+    }
+  }
+  @media all and (min-width: $screen-md){
+    .about-inner--content{
+      .about-inner--content_inner{
+        width: 85%;
+        padding-top: 50px;
+      }
+    }
+  }
+  @media all and (min-width: $screen-lg){
+    padding-bottom: 0px;
+    .about-inner--content{
+      .about-inner--content_inner{
+        width: 75%;
+        padding-top: 65px;
+      }
     }
   }
 }
@@ -256,7 +275,7 @@ and open the template in the editor.
   position: absolute;
   width: 68px;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 28px;
   left: 0;
   right: 0;
   a{

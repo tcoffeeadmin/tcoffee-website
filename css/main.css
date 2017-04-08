@@ -4679,7 +4679,7 @@ button.close {
   background-color: #090909;
   padding: 15px; }
   .hero .hero-inner {
-    background-color: red;
+    background-color: #fff;
     position: relative;
     padding-bottom: 100px; }
     .hero .hero-inner .container {

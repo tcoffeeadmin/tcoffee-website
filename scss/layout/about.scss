@@ -11,6 +11,10 @@ and open the template in the editor.
 .about{
   background-color: #fff;
   padding: 15px;
+  .down-click{
+    position: relative !important;
+    bottom: 0;
+  }
   @media all and (min-width: $screen-sm){
 
   }
@@ -19,6 +23,37 @@ and open the template in the editor.
   }
   @media all and (min-width: $screen-lg){
     height: 100%;
+    .container{
+      position: absolute;
+      height: 100%;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    .down-click{
+      position: absolute !important;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 85%;
+      /* bottom: 70px; */
+      height: 74px !important;
+    }
+  }
+  @media all and (min-width: $screen-xlg){
+    .container{
+      .about-box{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 455px;
+      }
+    }
   }
 }
 /*About content*/
@@ -80,6 +115,19 @@ and open the template in the editor.
         width: 75%;
         padding-top: 65px;
       }
+    }
+  }
+  @media all and (min-width: $screen-xlg){
+    padding-bottom: 0px;
+    .about-inner--content{
+      height: 450px;
+      .about-inner--content_inner{
+        width: 75%;
+        padding-top: 95px;
+      }
+    }
+    .about-inner--img{
+      height: 450px;
     }
   }
 }

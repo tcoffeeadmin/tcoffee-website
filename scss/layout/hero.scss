@@ -35,8 +35,21 @@
     height: 100%;
     .hero-inner{
       height: 100%;
+      padding-bottom: 0px;
       .container{
         width: 1160px;
+      }
+    }
+  }
+  @media all and (min-width: $screen-xlg) {
+    // Desktop
+    height: 100%;
+    .hero-inner{
+      height: 100%;
+      .container{
+        width: 1300px;
+        position: relative;
+        height: 100%;
       }
     }
   }
@@ -95,8 +108,10 @@
 }
 
 /*Hero services inner design*/
-.hero-inner--box_services{
-  padding-top: 35px;
+.hero-inner--box{
+  .hero-inner--box_services{
+    padding-top: 35px;
+  }
   @media all and (min-width: $screen-sm){
 
   }
@@ -105,6 +120,15 @@
   }
   @media all and (min-width: $screen-lg){
 
+  }
+  @media all and (min-width: $screen-xlg){
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    height: 535px;
   }
 }
 
@@ -153,6 +177,11 @@
   }
   @media all and (min-width: $screen-lg){
 
+  }
+  @media all and (min-width: $screen-xlg){
+    .services-slider--item{
+      height: 250px;
+    }
   }
 }
 
@@ -261,12 +290,34 @@
   @media all and (min-width: $screen-lg){
 
   }
+  @media all and (min-width: $screen-xlg){
+    height: 500px;
+  }
 }
 
 /*Down button*/
 .down-click{
   position: relative;
+  @media all and (min-width: $screen-sm){
+
+  }
+  @media all and (min-width: $screen-md){
+
+  }
+  @media all and (min-width: $screen-lg){
+
+  }
+  @media all and (min-width: $screen-xlg){
+    position: absolute;
+    height: auto;
+    bottom: 125px;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
 }
+
+/*Down button style*/
 .down-btn{
   width: 40px;
   text-align: center;

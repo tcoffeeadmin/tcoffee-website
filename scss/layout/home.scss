@@ -334,7 +334,6 @@ $break-large: 400px;
   position: absolute !important;
   top: -6px;
   cursor: pointer;
-  z-index: 1;
   .mask{
     cursor: pointer !important;
   }
@@ -492,6 +491,19 @@ $break-large: 400px;
       margin: auto;
       left: 0;
       right: 0;
+    }
+  }
+  @media all and (min-width: $screen-xlg) {
+    .contant-home--inner{
+      height: 620px;
+      .contant-form--home{
+        .contant-form--home_image{
+          height: 490px;
+        }
+        .contant-form--home_form{
+          height: 490px;
+        }
+      }
     }
   }
 }

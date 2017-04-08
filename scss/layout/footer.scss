@@ -1,17 +1,12 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Apr 7, 2017, 5:38:12 PM
-    Author     : maneesh
-*/
+
 /*Footer*/
 .footer{
   background-color: #171717;
   padding-top: 70px;
-  padding-bottom: 50px;
+  padding-bottom: 50px; 
+  .container{
+    position: relative;
+  }
   @media all and (min-width: $screen-sm) {
     // Tablet
   }  
@@ -23,6 +18,23 @@ and open the template in the editor.
   }  
 }
 
+/*Footer logo*/
+.footer-logo{
+
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+    img{
+      margin-top: -15px;
+    }
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+  }  
+}
+/*Footer address*/
 .footer-address{
   .footer-address--head{
     border-bottom: 1px solid #808080;
@@ -59,7 +71,7 @@ and open the template in the editor.
   } 
 }
 
-/*Contact*/
+/*Footer contact*/
 .footer-contact{
   .footer-contact--head{
     border-bottom: 1px solid #808080;
@@ -96,7 +108,7 @@ and open the template in the editor.
   } 
 }
 
-/*Follow*/
+/*Footer follow*/
 .footer-follow{
   .footer-follow--head{
     border-bottom: 1px solid #808080;
@@ -155,6 +167,19 @@ and open the template in the editor.
   }
 }
 
+/*Copy right inner pages*/
 .copy-right--inner{
   background-color: #000;
+}
+
+
+/*Back to top button*/
+.back-to--top{
+  bottom: -20px;
+  .v-line{
+    margin-top: -22px;
+    .fa{      
+      top: -12px;
+    }
+  }
 }

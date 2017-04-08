@@ -1,0 +1,160 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 7, 2017, 5:38:12 PM
+    Author     : maneesh
+*/
+/*Footer*/
+.footer{
+  background-color: #171717;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+  }  
+}
+
+.footer-address{
+  .footer-address--head{
+    border-bottom: 1px solid #808080;
+    h3{
+      margin-top: 0;
+      margin-bottom: 5px;
+      font-family: "Din";
+      @include light;
+      text-transform: capitalize;
+      color: #959595;
+      font-size: 18px;
+    }
+  }
+  .footer-address--content{
+    padding-left: 0px !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    p{
+      font-family: "Din";
+      @include light;
+      font-size: 14px;
+      color: #686868;
+      margin: 0;
+    }
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+  } 
+}
+
+/*Contact*/
+.footer-contact{
+  .footer-contact--head{
+    border-bottom: 1px solid #808080;
+    h3{
+      margin-top: 0;
+      margin-bottom: 5px;
+      font-family: "Din";
+      @include light;
+      text-transform: capitalize;
+      color: #959595;
+      font-size: 18px;
+    }
+  }
+  .footer-contact--content{
+    padding-left: 0px !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    a{
+      font-family: "Din";
+      @include light;
+      font-size: 14px;
+      color: #686868;
+      display: block;
+    }
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+  } 
+}
+
+/*Follow*/
+.footer-follow{
+  .footer-follow--head{
+    border-bottom: 1px solid #808080;
+    h3{
+      margin-top: 0;
+      margin-bottom: 5px;
+      font-family: "Din";
+      @include light;
+      text-transform: capitalize;
+      color: #959595;
+      font-size: 18px;
+    }
+  }
+  .footer-follow--content{
+    padding-left: 0px !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    ul{
+      padding-left: 0 !important;
+      margin-bottom: 0;
+      li{
+        list-style: none;
+        a{
+          font-family: "Din";
+          @include light;
+          font-size: 14px;
+          color: #686868;
+          display: block;
+        }
+      }
+    }
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+  } 
+}
+
+/*Footer copy right*/
+.copy-right{
+  background-color: #171717;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  p{
+    text-align: center;
+    margin: 0;
+    font-family: "Din";
+    @include medium;
+    color: #757474;
+    font-size: 15px;
+  }
+}
+
+.copy-right--inner{
+  background-color: #000;
+}

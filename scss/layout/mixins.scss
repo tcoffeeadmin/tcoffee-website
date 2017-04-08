@@ -1,0 +1,97 @@
+
+// =============================================================================
+// String Replace
+// =============================================================================
+
+@function str-replace($string, $search, $replace: "") {
+	$index: str-index($string, $search);
+
+	@if $index {
+		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+	}
+
+	@return $string;
+}
+
+// =============================================================================
+// Font Face
+// =============================================================================
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+	$src: null;
+
+	$extmods: (
+		eot: "?",
+		svg: "#" + str-replace($name, " ", "_")
+	);
+
+	$formats: (
+		otf: "opentype",
+		ttf: "truetype"
+	);
+
+	@each $ext in $exts {
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+	}
+
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
+	}
+}
+
+/*Border Radius*/
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+/*Box Shadow*/
+@mixin box-shadow($box-shadow){
+  -webkit-box-shadow: $box-shadow;
+     -moz-box-shadow: $box-shadow;
+      -ms-box-shadow: $box-shadow;
+          box-shadow: $box-shadow;
+}
+
+/*Transition*/
+@mixin transition($transition){
+  -webkit-transition: $transition;
+     -moz-transition: $transition;
+      -ms-transition: $transition;
+          transition: $transition;
+}
+
+/*Font weight*/
+@mixin light {
+  font-weight: $font-light;
+}
+@mixin regular {
+  font-weight: $font-regular;
+}
+@mixin medium {
+  font-weight: $font-medium;
+}
+@mixin semi-bold {
+  font-weight: $font-semi-bold;
+}
+@mixin bold {
+  font-weight: $font-bold;
+}
+@mixin heavy {
+  font-weight: $font-heavy;
+}
+@mixin black {
+  font-weight: $font-black;
+}
+
+/*Font size*/
+@mixin commen-size {
+  font-size: $font-commen;
+}

@@ -1,0 +1,335 @@
+
+@include font-face(Din, "../fonts/DIN");
+
+/*Hero design*/
+.hero{
+  // Mobile
+  background-color: #090909;
+  padding: 15px;
+  .hero-inner{
+    background-color: #fff;
+    position: relative;
+    padding-bottom: 100px;
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    .hero-inner{
+    }
+  }
+  @media all and (min-width: $screen-md) {
+    // Laptop
+    .hero-inner{
+    }
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+    height: 100%;
+    .hero-inner{
+      height: 100%;
+    }
+  }
+}
+
+/*Hero inner social icons*/
+.hero-inner--social{
+  ul{
+    padding-left: 0px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    position: relative;
+    text-align: center;
+    li{
+      list-style: none;
+      display: inline-block;
+      a{
+        width: 40px;
+        height: 40px;
+        display: block;
+        border: 1px solid #000;
+        font-size: 20px;
+        padding: 5px 0;
+        text-align: center;
+        color: #000;
+        @include border-radius(100%);
+        @include transition(.3s);
+        &:hover{
+          color: #007f5d;
+          border-color: #007f5d;
+          @include transition(.3s);
+        }
+      }
+    }
+  }
+  @media all and (min-width: $screen-sm){
+
+  }  
+  @media all and (min-width: $screen-md){
+    ul{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      height: 202px;
+      li{
+        margin: 9px 0;
+        display: block;
+        a{
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }  
+}
+
+/*Hero services inner design*/
+.hero-inner--box_services{
+  padding-top: 35px;
+  @media all and (min-width: $screen-sm){
+
+  }
+  @media all and (min-width: $screen-md){
+
+  }
+  @media all and (min-width: $screen-lg){
+
+  }
+}
+
+/*Hero services slider*/
+.services-slider{
+  .carousel-control{
+    width: 34px;
+    height: 34px;
+    top: 0;
+    bottom: 0;
+    margin: auto;    
+    opacity: 1 !important;
+    text-align: center;
+    background-image: none !important;
+    background-color: rgba(57, 57, 58, 0.64);
+    padding: 2px 0;
+    color: #007f5d !important;
+    text-shadow: none !important;
+    @include border-radius(100%);
+  }
+  .left.carousel-control{
+    left: 5px;
+  }
+  .right.carousel-control{
+    right: 5px;
+  }  
+  .services-slider--item_one{
+    background-color: #2d2e30;
+  }
+  .services-slider--item_two{
+    background-color: #222223;
+  }
+  .services-slider--item_three{
+    background-color: #161614;
+  }
+  .services-slider--item_four{
+    background-color: #0a0a0a;
+  }
+  @media all and (min-width: $screen-sm){
+    .services-slider--item{
+      height: 200px;
+    }
+  }
+  @media all and (min-width: $screen-md){
+
+  }
+  @media all and (min-width: $screen-lg){
+
+  }
+}
+
+/*Line*/
+.line{
+  width: 100px;
+  height: 3px;
+  background: #fff;
+}
+
+/*Service slider content*/
+.services-slider--item{
+  position: reflative;
+  overflow: hidden;
+  h1{
+    color: #fff;
+    font-family: "Din";
+    @include medium;
+    text-transform: capitalize;
+    font-size: 22px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    line-height: 28px;
+  }
+  .services-slider--item_head{
+    position: relative;
+    @include transition(.3s);
+    padding: 20px;
+  }
+  .services-slider--item_content{
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    @include transition(.3s);
+    p{
+      color: #fff;
+      font-family: "Din";
+      @include light;
+      @include transition(.3s);
+      line-height: 14px;
+      margin-top: 5px;
+    }
+  }
+  @media all and (min-width: $screen-sm){
+    h1{
+      font-size: 30px;
+    line-height: 34px;
+    }
+    .services-slider--item_head{
+      position: absolute;
+      top: 50px;
+      padding: 0 15px;
+    }
+    &:hover{
+      .services-slider--item_head{
+        top: 15px;
+        @include transition(.3s);
+      }
+      .services-slider--item_content{       
+        opacity: 1;
+        top: 95px;
+        @include transition(.3s);
+      }
+    }
+  }
+  @media all and (min-width: $screen-md){
+
+  }
+  @media all and (min-width: $screen-lg){
+
+  }
+}
+/*Hero services image*/
+.services-images{
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .btn-project{
+    background-color: transparent;
+    @include border-radius(0px);
+    border: 2px solid #fff;
+    color: #fff;
+    font-family: "Din";
+    @include light;
+    font-size: 13px;
+    padding: 10px;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+    width: 135px;
+    margin: auto;
+    &:hover{
+      border-color: #007f5d;
+      background-color: #007f5d;
+      color: #fff;
+    }
+  }
+  @media all and (min-width: $screen-sm){
+    height: 400px;
+  }
+  @media all and (min-width: $screen-md){
+
+  }
+  @media all and (min-width: $screen-lg){
+
+  }
+}
+
+/*Down button*/
+.down-click{
+  position: relative;
+}
+.down-btn{
+  width: 40px;
+  text-align: center;
+  position: absolute;
+  right: 15px;
+  /*bottom: 10px;*/
+  .down-btn--circle{
+    width: 40px;
+    height: 40px;
+    @include border-radius(100%);
+    background-color: #acacac;
+  }
+  /*  &:hover{
+      .v-line{
+        margin-top: -10px;
+        @include transition(.3s);
+      }
+    }*/
+  .v-line{
+    width: 2px;
+    background-color: rgba(0, 0, 0, 0.67);
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+    @include transition(.3s);
+    position: absolute;
+    display: inline-table;
+    -webkit-animation: bounce 1000ms ease  infinite;
+    -moz-animation: bounce 1000ms ease infinite;
+    -o-animation: bounce 1000ms ease infinite;
+    animation: bounce 1000ms ease infinite;
+    -webkit-animation-timing-function: cubic-bezier(.14, .75, .2, 1.01);
+    -moz-animation-timing-function: cubic-bezier(.14, .75, .2, 1.01);
+    -ms-animation-timing-function: cubic-bezier(.14, .75, .2, 1.01);
+    animation-timing-function: cubic-bezier(.14, .75, .2, 1.01);
+    .fa{
+      position: absolute;
+      left: -8px;
+      font-size: 28px;
+      bottom: -11px;
+      color: rgba(0, 0, 0, 0.67);
+    }
+    &::before{
+      -webkit-animation: ring 1s alternate 0s infinite;
+      -moz-animation: ring 1s alternate 0s infinite;
+      -o-animation: ring 1s linear 0s infinite;
+      animation: ring 1s linear 0s infinite;
+    }
+  }
+  @media all and (min-width: $screen-sm){
+
+  }
+  @media all and (min-width: $screen-md){
+
+  }
+  @media all and (min-width: $screen-lg){
+
+  }
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% {top: 9px; opacity: 1}
+  25% {top: 12px; opacity: 1}
+  50% {opacity: 1}
+}
+@keyframes bounce {
+  0%, 100% {top: 9px; opacity: 1}
+  25% {top: 12px; opacity: 1}
+  50% {opacity: 1}
+}
+@-webkit-keyframes ring {
+  0%, 100% {-webkit-transform: scale(1,1); opacity:1}
+  75% {-webkit-transform: scale(1.2,1.2); opacity:1}
+}
+@keyframes ring {
+  0%, 100% {transform: scale(1,1); opacity:1}
+  75% {transform: scale(1.2,1.2); opacity:1}
+}

@@ -1,0 +1,538 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  &::after, &::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  &::after, &::before {
+    content: '';
+  }
+}
+
+header {
+  z-index: 3;
+}
+
+.cd-logo, .cd-nav-trigger {
+  position: absolute;
+  display: inline-block;
+}
+
+.cd-logo {
+  top: 28px;
+  left: 5%;
+  img {
+    display: block;
+  }
+}
+
+.cd-nav-trigger {
+  top: 10px;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  z-index: 5;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  .cd-icon {
+    /* icon created in CSS */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    display: inline-block;
+    width: 18px;
+    height: 3px;
+    background-color: #ffffff;
+    z-index: 10;
+    &::before, &:after {
+      /* upper and lower lines of the menu icon */
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      /* Force Hardware Acceleration in WebKit */
+      -webkit-transform: translateZ(0);
+      -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      -o-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      /* apply transition to transform property */
+      -webkit-transition: -webkit-transform .3s;
+      -moz-transition: -moz-transform .3s;
+      transition: transform .3s;
+    }
+    &::before {
+      -webkit-transform: translateY(-6px) rotate(0deg);
+      -moz-transform: translateY(-6px) rotate(0deg);
+      -ms-transform: translateY(-6px) rotate(0deg);
+      -o-transform: translateY(-6px) rotate(0deg);
+      transform: translateY(-6px) rotate(0deg);
+    }
+    &::after {
+      -webkit-transform: translateY(6px) rotate(0deg);
+      -moz-transform: translateY(6px) rotate(0deg);
+      -ms-transform: translateY(6px) rotate(0deg);
+      -o-transform: translateY(6px) rotate(0deg);
+      transform: translateY(6px) rotate(0deg);
+    }
+  }
+  &::before, &::after {
+    /* 2 rounded colored backgrounds for the menu icon */
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform;
+  }
+  &::before {
+    background-color: #000;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+  }
+  &::after {
+    background-color: #007f5d;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    transition-duration: 0s;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  &.close-nav {
+    &::before {
+      /* user clicks on the .cd-nav-trigger element - 1st rounded background disappears */
+      -webkit-transform: scale(0);
+      -moz-transform: scale(0);
+      -ms-transform: scale(0);
+      -o-transform: scale(0);
+      transform: scale(0);
+    }
+    &::after {
+      /* user clicks on the .cd-nav-trigger element - 2nd rounded background appears */
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-delay: 0.4s;
+      -moz-transition-delay: 0.4s;
+      transition-delay: 0.4s;
+    }
+    .cd-icon {
+      /* user clicks on the .cd-nav-trigger element - transform the icon */
+      background-color: rgba(255, 255, 255, 0);
+      &::before, &::after {
+        background-color: white;
+      }
+      &::before {
+        -webkit-transform: translateY(0) rotate(45deg);
+        -moz-transform: translateY(0) rotate(45deg);
+        -ms-transform: translateY(0) rotate(45deg);
+        -o-transform: translateY(0) rotate(45deg);
+        transform: translateY(0) rotate(45deg);
+      }
+      &::after {
+        -webkit-transform: translateY(0) rotate(-45deg);
+        -moz-transform: translateY(0) rotate(-45deg);
+        -ms-transform: translateY(0) rotate(-45deg);
+        -o-transform: translateY(0) rotate(-45deg);
+        transform: translateY(0) rotate(-45deg);
+      }
+    }
+  }
+}
+
+.cd-primary-nav {
+  /* by default it's hidden */
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 60px 8%;
+  z-index: 3;
+  background-color: #171717;
+  overflow: auto;
+  /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
+  -webkit-overflow-scrolling: touch;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.3s;
+  -moz-transition: visibility 0s, opacity 0.3s;
+  transition: visibility 0s, opacity 0.3s;
+  li {
+    margin: 1.6em 0;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  a {
+    font-size: 20px;
+    font-size: 1.25rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    transition: color 0.2s;
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    padding: 80px 9%;
+  }
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+    padding: 80px 15%;
+  }
+}
+
+.no-touch .cd-primary-nav a:hover {
+  color: #ffffff;
+}
+
+.cd-primary-nav.fade-in {
+  /* navigation visible at the end of the circle animation */
+  visibility: visible;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-primary-nav {
+    li {
+      margin: 2em 0;
+    }
+    a {
+      font-size: 28px;
+      font-size: 1.75rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .cd-primary-nav {
+    li {
+      margin: 2.6em 0;
+    }
+    a {
+      font-size: 32px;
+      font-size: 2rem;
+    }
+  }
+}
+
+.cd-overlay-nav, .cd-overlay-content {
+  /* containers of the 2 main rounded backgrounds - these containers are used to position the rounded bgs behind the menu icon */
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  height: 4px;
+  width: 4px;
+  -webkit-transform: translateX(-20px) translateY(20px);
+  -moz-transform: translateX(-20px) translateY(20px);
+  -ms-transform: translateX(-20px) translateY(20px);
+  -o-transform: translateX(-20px) translateY(20px);
+  transform: translateX(-20px) translateY(20px);
+}
+
+.cd-overlay-nav span, .cd-overlay-content span {
+  display: inline-block;
+  position: fixed;
+  border-radius: 50%;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: transform;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+
+.cd-overlay-nav.is-hidden, .cd-overlay-content.is-hidden {
+  /* background fades out at the end of the animation */
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+
+.cd-overlay-nav {
+  /* main rounded colored bg 1 */
+  z-index: 2;
+  span {
+    background-color: #171717;
+  }
+}
+
+.cd-overlay-content {
+  /* main rounded colored bg 2 */
+  z-index: 4;
+  span {
+    background-color: #007f5d;
+  }
+}
+
+.cd-content {
+  /* just some dummy content */
+  padding: 80px 0;
+  width: 90%;
+  max-width: 768px;
+  margin: 0 auto;
+  z-index: 1;
+  .cd-intro {
+    height: 200px;
+    padding-top: 4.6em;
+  }
+  h1 {
+    text-align: center;
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+  p {
+    line-height: 1.5;
+    color: #a76500;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-content {
+    .cd-intro {
+      height: 250px;
+      padding-top: 6em;
+    }
+    h1 {
+      font-size: 28px;
+      font-size: 1.75rem;
+    }
+    p {
+      font-size: 18px;
+      font-size: 1.125rem;
+      line-height: 1.8;
+    }
+  }
+}
+
+/*Menu overlay*/
+.menu-overlay{
+
+  .menu-overlay--tittle{
+    width: 100%;
+    height: 62px;
+    h2{
+      text-transform: uppercase;
+      font-size: 20px;
+      color: #454546;
+      font-family: "Din";
+      @include medium;
+      text-align: left;
+      margin-top: 12px;
+      position: absolute;
+      border-bottom: 1px solid #454546;
+      padding-bottom: 15px;
+    }
+  }
+  .menu-overlay--items{
+    width: 100%;
+    float: left;
+    ul{
+      padding-left: 0px !important;
+      margin-top: 0px;
+      li{
+        list-style: none;
+        margin-bottom: 5px;
+        margin-top: 0px;
+        text-align: left;
+        a{
+          font-family: "Din";
+          @include black;
+          font-size: 24px;
+          color: #444445;
+          text-transform: uppercase;
+          line-height: 40px;
+        }
+      }
+      .active{
+        a{
+          color: #fff;
+        }
+      }
+    }
+  }  
+  .menu-overlay--contact{
+    width: 100%;
+    float: left;
+    text-align: left;
+    .menu-overlay--contact_mail{
+      color: #fff;
+      font-family: "Din";
+      @include medium;
+      font-size: 20px;
+      display: block;
+    }
+    .menu-overlay--contact_phone{
+      color: #454546;
+      font-family: "Din";
+      @include medium;
+      font-size: 20px;
+      display: block;
+    }
+    p{
+      font-family: "Din";
+      color: #454546;
+      font-size: 17px;
+      @include medium;
+      line-height: 25px;
+    }
+  }
+  @media all and (min-width: $screen-sm){
+    .menu-overlay--tittle{
+      h2{
+        padding-bottom: 25px;
+      }
+    }
+    .menu-overlay--items{
+      width: 50%;
+      float: left;
+      ul{
+        margin-top: 40px;
+        li{
+          margin-bottom: 22px;
+          a{
+            font-size: 38px;
+            @include transition(.3s);
+            &:hover{
+              color: #fff;
+              @include transition(.3s);
+            }
+          }
+        }
+      }
+    }
+    .menu-overlay--contact{
+      width: 50%;
+      float: left;
+      margin-top: 35px;
+      text-align: right;
+      .menu-overlay--contact_mail{
+        margin-bottom: 18px;
+        font-size: 25px;
+        @include transition(.3s);
+        &:hover{
+          color: #454546;
+          @include transition(.3s);
+        }
+      }
+      .menu-overlay--contact_phone{
+        font-size: 25px;
+        margin-bottom: 18px;
+        @include transition(.3s);
+        &:hover{
+          color: #fff;
+          @include transition(.3s);
+        }
+      }
+      p{
+        font-size: 19px;
+      }
+    }
+  }
+  @media all and (min-width: $screen-md){
+    .menu-overlay--items{
+      ul{
+        li{
+          a{            
+            font-size: 45px;
+          }
+        }
+      }
+    }
+    .menu-overlay--contact{
+      .menu-overlay--contact_mail{
+        margin-bottom: 18px;
+      }
+      .menu-overlay--contact_phone{
+        margin-bottom: 18px;
+      }
+    }
+  }
+  @media all and (min-width: $screen-lg){
+    .menu-overlay--items{
+      ul{
+        margin-top: 70px;
+      }
+    }
+    .menu-overlay--contact{
+      margin-top: 68px;
+      .menu-overlay--contact_mail{
+        margin-bottom: 25px;
+      }
+      .menu-overlay--contact_phone{
+        margin-bottom: 25px;
+      }
+    }
+  }
+}

@@ -1,0 +1,441 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 7, 2017, 10:15:42 AM
+    Author     : maneesh
+*/
+/*About*/
+.about{
+  background-color: #fff;
+  padding: 15px;
+  @media all and (min-width: $screen-sm){
+
+  }
+  @media all and (min-width: $screen-md){
+
+  }
+  @media all and (min-width: $screen-lg){
+    height: 100%;
+  }
+}
+/*About content*/
+.about-inner{
+  padding-top: 35px;
+  .about-inner--content{
+    position: relative;
+    background-color: #171717;
+    background-image: url(../images/about-us.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    p{
+      text-align: justify;
+      font-family: "Din";
+      @include light;
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
+  .about-inner--img{
+    background-image: url(../images/about.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  @media all and (min-width: $screen-sm){
+
+  }
+  @media all and (min-width: $screen-md){
+
+  }
+  @media all and (min-width: $screen-lg){
+    .about-inner--content{
+      height: 420px;
+      .about-inner--content_inner{
+        width: 75%;
+        margin: auto;
+        padding-top: 65px;
+      }
+    }
+    .about-inner--img{
+      height: 420px;
+    }
+  }
+}
+
+/*Our team*/
+.our-team{
+  background-color: #171717;
+  background-image: url(../images/our-team-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  @media all and (min-width: $screen-sm){
+
+  }
+  @media all and (min-width: $screen-md){
+
+  }
+  @media all and (min-width: $screen-lg){
+    height: 100%;
+    .our-team--inner{
+      height: 445px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+}
+
+/*Owl carousel*/
+.owl-carousel {
+  .owl-wrapper {
+    &:after {
+      content: ".";
+      display: block;
+      clear: both;
+      visibility: hidden;
+      line-height: 0;
+      height: 0;
+    }
+    display: none;
+    position: relative;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    left: -169px !important;
+  }
+  display: none;
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y;
+  .owl-wrapper-outer {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    &.autoHeight {
+      -webkit-transition: height 500ms ease-in-out;
+      -moz-transition: height 500ms ease-in-out;
+      -ms-transition: height 500ms ease-in-out;
+      -o-transition: height 500ms ease-in-out;
+      transition: height 500ms ease-in-out;
+    }
+  }
+  .owl-item {
+    float: left;
+  }
+}
+/* display none until init */
+.owl-controls {
+  .owl-page, .owl-buttons div {
+    cursor: pointer;
+  }
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* mouse grab icon */
+.grabbing {
+  cursor: url(grabbing.png) 8 8, move;
+}
+/* fix */
+.owl-carousel {
+  .owl-wrapper, .owl-item {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+  }
+}
+
+/*Team member*/
+.team-member{
+  /*background-color: #000;*/
+  padding: 35px;
+  .team-member--img{
+    height: 305px;
+    img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .team-member--details{
+    position: relative;
+    background-color: #000;
+    padding: 15px;
+    border-top: 1px solid #023e1f;
+    @include transition(.3s);
+    h4{
+      margin: 0;
+      text-transform: uppercase;
+      color: #232325;
+      font-family: "Din";
+      @include black;
+      @include transition(.2s);
+      span{
+        @include medium;
+      }
+    }
+    ul{
+      padding-left: 0px;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      right: 15px;
+      height: 40px;
+      li{
+        list-style: none;
+        a{
+          color: #232325;
+          @include transition(.2s);
+        }
+      }
+    }
+  }
+  .member-line{
+    width: 1px;
+    height: 440px;
+    background-color: #023e1f;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+    top: 0;
+    @include transition(.2s);
+  }
+  &:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    @include transition(.3s);
+    .team-member--details{
+      border-color: #009046;
+      @include transition(.2s);
+      h4{
+        color: #fff;
+        @include transition(.2s);
+      }
+      ul{
+        li{
+          a{
+            color: #fff;
+            @include transition(.2s);
+            &:hover{
+              color: #009046;
+            }
+          }
+        }
+      }
+    }
+    .member-line{
+      background-color: #009046;
+      @include transition(.2s);
+    }
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+  }
+}
+/*Button next prev*/
+.team-button{
+  border: 1px solid #232325;
+  @include border-radius(12px);
+  position: absolute;
+  width: 68px;
+  margin: auto;
+  margin-top: 40px;
+  left: 0;
+  right: 0;
+  a{
+    color: #038040 !important;
+  }
+}
+
+/*Vision mission*/
+.vision-mission{
+  background-color: #fff;
+  position: relative;
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+    height: 100%;
+  }  
+}
+
+/*Vision mission inner*/
+.vision-mission--inner{
+  h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Din";
+    @include black;
+    font-size: 30px;
+    margin: 0;
+  }
+  .vision-mission--inner_vision{
+    background-color: #171717;
+    background-image: url(../images/vision-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 80px 8%;
+  }
+  .vision-mission--inner_mission{
+    background-color: #222222;
+    background-image: url(../images/mission-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 80px 8%;
+  }
+  .vision-mission--line{
+    width: 1px;
+    height: 398px;
+    background-color: #009046;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 9;
+    top: -28px;
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+    position: absolute;
+    height: 370px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    h2{
+      font-size: 30px;
+    }
+    .vision-mission--inner_vision{
+      height: 370px;
+      padding: 118px 7%;
+    }
+    .vision-mission--inner_mission{
+      height: 370px;
+      padding: 118px 7%;
+    }
+    .vision-mission--line{
+      height: 430px;
+    }
+  }    
+}
+
+/*Clients*/
+.clients{
+  background-color: #171717;
+  background-image: url(../images/clients-bg.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 130px;
+  padding-bottom: 100px;
+  .client-details{
+    float: left;
+    h4{
+      color: #fff;
+      text-transform: uppercase;
+      font-family: "Din";
+      @include black;
+      text-align: center;
+      font-size: 30px;
+      margin-top: 0;
+      margin-bottom: 3px;
+    }
+    h5{
+      color: #fff;
+      text-transform: lowercase;
+      font-family: "Din";
+      @include light;
+      text-align: center;
+      font-size: 15px;
+      margin: 0;
+    }
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+    .client-details{
+      width: 20%;
+    }
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+    .client-details{
+      width: 20%;
+    }
+  }
+}
+
+
+/*Get in touch*/
+.get-in-touch{
+  background-color: #fff;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  h3{
+    font-family: "Din";
+    color: #232325;
+    @include black;
+    font-size: 21px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    margin-top: 18px;
+  }
+  .btn-project{
+    border: 2px solid #009046;
+    @include border-radius(0px);
+    font-size: 18px;
+    font-family: "Din";
+    color: #009046;
+    @include black;
+    padding: 15px;
+    text-transform: uppercase;
+    @include transition(.2s);
+    &:hover{
+      color: #fff;
+      background-color:  #009046;
+      @include transition(.2s);
+    }
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    h3{
+      text-align: right;
+    }
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+  }  
+}

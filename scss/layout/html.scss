@@ -1,0 +1,28 @@
+
+body, html{
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+.rem-pad{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+a:hover, a:focus{
+  text-decoration: none !important;
+}
+
+
+/*Container*/
+.container{
+  @media all and (min-width: $screen-sm){
+    width: 720px;
+
+  }
+  @media all and (min-width: $screen-md){
+    width: 945px;
+  }
+  @media all and (min-width: $screen-lg){
+    width: 1160px;
+  }
+}

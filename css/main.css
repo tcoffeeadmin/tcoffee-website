@@ -4669,6 +4669,7 @@ button.close {
 /*Font size*/
 /*Font Weight*/
 /*Font size*/
+/*Extra large screen*/
 @font-face {
   font-family: "Din";
   src: url("../fonts/DIN.eot?") format("eot"), url("../fonts/DIN.woff2") format("woff2"), url("../fonts/DIN.woff") format("woff"), url("../fonts/DIN.ttf") format("truetype"), url("../fonts/DIN.svg#Din") format("svg"); }
@@ -4678,14 +4679,34 @@ button.close {
   background-color: #090909;
   padding: 15px; }
   .hero .hero-inner {
-    background-color: #fff;
+    background-color: red;
     position: relative;
     padding-bottom: 100px; }
+    .hero .hero-inner .container {
+      width: 100%; }
+  @media all and (min-width: 768px) {
+    .hero .hero-inner .container {
+      width: 720px; } }
+  @media all and (min-width: 992px) {
+    .hero .hero-inner .container {
+      width: 945px; } }
   @media all and (min-width: 1200px) {
     .hero {
       height: 100%; }
       .hero .hero-inner {
-        height: 100%; } }
+        height: 100%;
+        padding-bottom: 0px; }
+        .hero .hero-inner .container {
+          width: 1160px; } }
+  @media all and (min-width: 1400px) {
+    .hero {
+      height: 100%; }
+      .hero .hero-inner {
+        height: 100%; }
+        .hero .hero-inner .container {
+          width: 1300px;
+          position: relative;
+          height: 100%; } }
 
 /*Hero inner social icons*/
 .hero-inner--social ul {
@@ -4737,8 +4758,18 @@ button.close {
         height: 40px; } }
 
 /*Hero services inner design*/
-.hero-inner--box_services {
+.hero-inner--box .hero-inner--box_services {
   padding-top: 35px; }
+
+@media all and (min-width: 1400px) {
+  .hero-inner--box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    height: 535px; } }
 
 /*Hero services slider*/
 .services-slider .carousel-control {
@@ -4780,6 +4811,10 @@ button.close {
 @media all and (min-width: 768px) {
   .services-slider .services-slider--item {
     height: 200px; } }
+
+@media all and (min-width: 1400px) {
+  .services-slider .services-slider--item {
+    height: 250px; } }
 
 /*Line*/
 .line {
@@ -4878,11 +4913,23 @@ button.close {
   @media all and (min-width: 768px) {
     .services-images {
       height: 400px; } }
+  @media all and (min-width: 1400px) {
+    .services-images {
+      height: 500px; } }
 
 /*Down button*/
 .down-click {
   position: relative; }
+  @media all and (min-width: 1400px) {
+    .down-click {
+      position: absolute;
+      height: auto;
+      bottom: 125px;
+      margin: auto;
+      left: 0;
+      right: 0; } }
 
+/*Down button style*/
 .down-btn {
   width: 40px;
   text-align: center;
@@ -5131,7 +5178,7 @@ button.close {
   height: 100%;
   width: 200%;
   /*background:rgba(#fff,0.7);*/
-  z-index: 10;
+  z-index: 2;
   cursor: ew-resize; }
   .slider-wrap .mask.left {
     right: 100%; }
@@ -5406,6 +5453,13 @@ button.close {
         margin: auto;
         left: 0;
         right: 0; } }
+  @media all and (min-width: 1400px) {
+    .contant-home .contant-home--inner {
+      height: 620px; }
+      .contant-home .contant-home--inner .contant-form--home .contant-form--home_image {
+        height: 490px; }
+      .contant-home .contant-home--inner .contant-form--home .contant-form--home_form {
+        height: 490px; } }
 
 /*Footer button*/
 .down-btn-footer {
@@ -5444,6 +5498,7 @@ button.close {
   white-space: nowrap;
   /* Keeps the content on a single line */
   margin: 0 auto;
+  /**/
   /* Gives that scrolling effect as the typing happens */
   /*letter-spacing: .15em;*/
   /* Adjust as needed */
@@ -5478,15 +5533,27 @@ a:hover, a:focus {
 /*Container*/
 @media all and (min-width: 768px) {
   .container {
-    width: 720px; } }
+    /*width: 720px;*/ } }
 
 @media all and (min-width: 992px) {
   .container {
-    width: 945px; } }
+    /*width: 945px;*/ } }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1400px) {
   .container {
-    width: 1160px; } }
+    width: 1300px; } }
+
+/*Down button inner pages*/
+.down-btn--inner {
+  bottom: 10px; }
+
+/*Back to top home*/
+.bak-to--top_home {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
 
 /* -------------------------------- 
 
@@ -5695,6 +5762,9 @@ header {
   @media all and (min-width: 1200px) {
     .cd-primary-nav {
       padding: 80px 15%; } }
+  @media all and (min-width: 1400px) {
+    .cd-primary-nav {
+      padding: 150px 25%; } }
 
 .no-touch .cd-primary-nav a:hover {
   color: #ffffff; }
@@ -6008,33 +6078,50 @@ and open the template in the editor.
 
 /*About content*/
 .about-inner {
-  padding-top: 35px; }
+  padding-top: 35px;
+  padding-bottom: 100px; }
   .about-inner .about-inner--content {
     position: relative;
     background-color: #171717;
     background-image: url(../images/about-us.png);
     background-size: contain;
     background-repeat: no-repeat; }
-    .about-inner .about-inner--content p {
-      text-align: justify;
-      font-family: "Din";
-      font-weight: 300;
-      color: #fff;
-      text-transform: uppercase; }
+    .about-inner .about-inner--content .about-inner--content_inner {
+      width: 90%;
+      margin: auto;
+      padding-top: 75px;
+      padding-bottom: 75px; }
+      .about-inner .about-inner--content .about-inner--content_inner p {
+        text-align: justify;
+        font-family: "Din";
+        font-weight: 300;
+        color: #fff;
+        text-transform: uppercase; }
   .about-inner .about-inner--img {
     background-image: url(../images/about.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }
-  @media all and (min-width: 1200px) {
+  @media all and (min-width: 768px) {
     .about-inner .about-inner--content {
       height: 420px; }
       .about-inner .about-inner--content .about-inner--content_inner {
-        width: 75%;
+        width: 90%;
         margin: auto;
-        padding-top: 65px; }
+        padding-top: 45px;
+        padding-bottom: 0px; }
     .about-inner .about-inner--img {
       height: 420px; } }
+  @media all and (min-width: 992px) {
+    .about-inner .about-inner--content .about-inner--content_inner {
+      width: 85%;
+      padding-top: 50px; } }
+  @media all and (min-width: 1200px) {
+    .about-inner {
+      padding-bottom: 0px; }
+      .about-inner .about-inner--content .about-inner--content_inner {
+        width: 75%;
+        padding-top: 65px; } }
 
 /*Our team*/
 .our-team {
@@ -6212,7 +6299,7 @@ and open the template in the editor.
   position: absolute;
   width: 68px;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 28px;
   left: 0;
   right: 0; }
   .team-button a {
@@ -6355,21 +6442,20 @@ and open the template in the editor.
     .get-in-touch h3 {
       text-align: right; } }
 
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Apr 7, 2017, 5:38:12 PM
-    Author     : maneesh
-*/
 /*Footer*/
 .footer {
   background-color: #171717;
   padding-top: 70px;
   padding-bottom: 50px; }
+  .footer .container {
+    position: relative; }
 
+/*Footer logo*/
+@media all and (min-width: 992px) {
+  .footer-logo img {
+    margin-top: -15px; } }
+
+/*Footer address*/
 .footer-address .footer-address--head {
   border-bottom: 1px solid #808080; }
   .footer-address .footer-address--head h3 {
@@ -6392,7 +6478,7 @@ and open the template in the editor.
     color: #686868;
     margin: 0; }
 
-/*Contact*/
+/*Footer contact*/
 .footer-contact .footer-contact--head {
   border-bottom: 1px solid #808080; }
   .footer-contact .footer-contact--head h3 {
@@ -6415,7 +6501,7 @@ and open the template in the editor.
     color: #686868;
     display: block; }
 
-/*Follow*/
+/*Footer follow*/
 .footer-follow .footer-follow--head {
   border-bottom: 1px solid #808080; }
   .footer-follow .footer-follow--head h3 {
@@ -6456,5 +6542,14 @@ and open the template in the editor.
     color: #757474;
     font-size: 15px; }
 
+/*Copy right inner pages*/
 .copy-right--inner {
   background-color: #000; }
+
+/*Back to top button*/
+.back-to--top {
+  bottom: -20px; }
+  .back-to--top .v-line {
+    margin-top: -22px; }
+    .back-to--top .v-line .fa {
+      top: -12px; }

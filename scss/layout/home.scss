@@ -334,6 +334,7 @@ $break-large: 400px;
   position: absolute !important;
   top: -6px;
   cursor: pointer;
+  z-index: 1;
   .mask{
     cursor: pointer !important;
   }

@@ -1,12 +1,4 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Apr 7, 2017, 10:15:42 AM
-    Author     : maneesh
-*/
+
 /*About*/
 .about{
   background-color: #fff;
@@ -485,8 +477,6 @@ and open the template in the editor.
   padding-top: 130px;
   padding-bottom: 100px;
   .client-details{
-    width: 20%;
-    float: left;
     h4{
       color: #fff;
       text-transform: uppercase;
@@ -509,30 +499,127 @@ and open the template in the editor.
   }
   @media all and (min-width: $screen-sm) {
     // Tablet
-    .client-details{
-      width: 20%;
-    }
   }  
   @media all and (min-width: $screen-md) {
     // Tablet
-    .client-details{
-      /*width: 20%;*/
-    }
   }
   @media all and (min-width: $screen-lg) {
     // Desktop
-    .client-details{
-      /*width: 20%;*/
-    }
   }
   @media all and (min-width: $screen-xlg) {
     // Desktop
-    .client-details{
-      width: 15%;
-    }
   }
 }
 
+/*Clients slider*/
+
+.slick-slide {
+  margin: 0px 20px;
+  img {
+    width: 100%;
+  }
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  &:focus {
+    outline: none;
+  }
+  &.dragging {
+    cursor: pointer;
+    cursor: hand;
+  }
+}
+
+.slick-slider {
+  .slick-track, .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  &:before {
+    display: table;
+    content: '';
+  }
+  &:after {
+    display: table;
+    content: '';
+    clear: both;
+  }
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+  float: right;
+}
+
+.slick-slide {
+  img {
+    display: block;
+  }
+  &.slick-loading img {
+    display: none;
+  }
+  &.dragging img {
+    pointer-events: none;
+  }
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
 
 /*Get in touch*/
 .get-in-touch{

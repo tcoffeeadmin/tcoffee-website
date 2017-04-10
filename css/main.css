@@ -6168,6 +6168,9 @@ and open the template in the editor.
   background-size: contain;
   background-repeat: no-repeat;
   position: relative; }
+  .our-team .our-team--inner {
+    padding-top: 150px;
+    padding-bottom: 100px; }
   @media all and (min-width: 1200px) {
     .our-team {
       height: 100%; }
@@ -6176,7 +6179,12 @@ and open the template in the editor.
         position: absolute;
         top: 0;
         bottom: 0;
-        margin: auto; } }
+        margin: auto;
+        padding-top: 0px;
+        padding-bottom: 0px; } }
+  @media all and (min-width: 1400px) {
+    .our-team .our-team--inner {
+      height: 600px; } }
 
 /*Owl carousel*/
 .owl-carousel {
@@ -6188,7 +6196,7 @@ and open the template in the editor.
     display: none;
     position: relative;
     -webkit-transform: translate3d(0px, 0px, 0px);
-    left: -169px !important; }
+    /*left: -169px !important;*/ }
     .owl-carousel .owl-wrapper:after {
       content: ".";
       display: block;
@@ -6326,6 +6334,11 @@ and open the template in the editor.
       -moz-transition: 0.2s;
       -ms-transition: 0.2s;
       transition: 0.2s; }
+  @media all and (min-width: 1400px) {
+    .team-member .team-member--img {
+      height: 450px; }
+    .team-member .member-line {
+      height: 600px; } }
 
 /*Button next prev*/
 .team-button {
@@ -6352,58 +6365,89 @@ and open the template in the editor.
       height: 100%; } }
 
 /*Vision mission inner*/
-.vision-mission--inner h3 {
-  color: #fff;
-  text-transform: uppercase;
-  font-family: "Din";
-  font-weight: 900;
-  font-size: 30px;
-  margin: 0; }
-
-.vision-mission--inner .vision-mission--inner_vision {
-  background-color: #171717;
-  background-image: url(../images/vision-bg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding: 80px 8%; }
-
-.vision-mission--inner .vision-mission--inner_mission {
-  background-color: #222222;
-  background-image: url(../images/mission-bg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding: 80px 8%; }
-
-.vision-mission--inner .vision-mission--line {
-  width: 1px;
-  height: 398px;
-  background-color: #009046;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  z-index: 9;
-  top: -28px; }
-
-@media all and (min-width: 1200px) {
-  .vision-mission--inner {
-    position: absolute;
-    height: 370px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0; }
-    .vision-mission--inner h2 {
-      font-size: 30px; }
+.vision-mission--inner {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .vision-mission--inner h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Din";
+    font-weight: 900;
+    font-size: 30px;
+    margin: 0; }
+  .vision-mission--inner .vision-mission--inner_vision {
+    background-color: #171717;
+    background-image: url(../images/vision-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 80px 5%; }
+  .vision-mission--inner .vision-mission--inner_mission {
+    background-color: #222222;
+    background-image: url(../images/mission-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 80px 5%; }
+  .vision-mission--inner .vision-mission--line {
+    width: 100%;
+    height: 1px;
+    background-color: #009046;
+    display: flex;
+    /*margin-left: -5px;*/ }
+  @media all and (min-width: 768px) {
+    .vision-mission--inner .vision-mission--inner_vision {
+      height: 391px;
+      padding: 90px 5%; }
+    .vision-mission--inner .vision-mission--inner_mission {
+      height: 391px;
+      padding: 90px 5%; }
+    .vision-mission--inner .vision-mission--line {
+      width: 1px;
+      height: 398px;
+      background-color: #009046;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 9;
+      top: -28px;
+      height: 442px; } }
+  @media all and (min-width: 992px) {
     .vision-mission--inner .vision-mission--inner_vision {
       height: 370px;
-      padding: 118px 7%; }
+      padding: 90px 5%; }
     .vision-mission--inner .vision-mission--inner_mission {
       height: 370px;
-      padding: 118px 7%; }
+      padding: 90px 5%; }
     .vision-mission--inner .vision-mission--line {
       height: 430px; } }
+  @media all and (min-width: 1200px) {
+    .vision-mission--inner {
+      position: absolute;
+      height: 370px;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      padding-top: 0px;
+      padding-bottom: 0px; }
+      .vision-mission--inner h2 {
+        font-size: 30px; }
+      .vision-mission--inner .vision-mission--inner_vision {
+        padding: 118px 7%; }
+      .vision-mission--inner .vision-mission--inner_mission {
+        padding: 118px 7%; } }
+  @media all and (min-width: 1400px) {
+    .vision-mission--inner {
+      height: 400px; }
+      .vision-mission--inner .vision-mission--inner_vision {
+        height: 400px;
+        padding: 145px 7%; }
+      .vision-mission--inner .vision-mission--inner_mission {
+        height: 400px;
+        padding: 145px 7%; }
+      .vision-mission--inner .vision-mission--line {
+        height: 455px; } }
 
 /*Clients*/
 .clients {
@@ -6415,6 +6459,7 @@ and open the template in the editor.
   padding-top: 130px;
   padding-bottom: 100px; }
   .clients .client-details {
+    width: 20%;
     float: left; }
     .clients .client-details h4 {
       color: #fff;
@@ -6433,12 +6478,18 @@ and open the template in the editor.
       text-align: center;
       font-size: 15px;
       margin: 0; }
+  @media all and (min-width: 768px) {
+    .clients .client-details {
+      width: 20%; } }
   @media all and (min-width: 992px) {
     .clients .client-details {
-      width: 20%; } }
+      /*width: 20%;*/ } }
   @media all and (min-width: 1200px) {
     .clients .client-details {
-      width: 20%; } }
+      /*width: 20%;*/ } }
+  @media all and (min-width: 1400px) {
+    .clients .client-details {
+      width: 15%; } }
 
 /*Get in touch*/
 .get-in-touch {
@@ -6452,7 +6503,8 @@ and open the template in the editor.
     font-size: 21px;
     text-transform: uppercase;
     margin-bottom: 18px;
-    margin-top: 18px; }
+    margin-top: 18px;
+    text-align: center; }
   .get-in-touch .btn-project {
     border: 2px solid #009046;
     -webkit-border-radius: 0px;
@@ -6465,6 +6517,8 @@ and open the template in the editor.
     font-weight: 900;
     padding: 15px;
     text-transform: uppercase;
+    margin: auto;
+    display: table;
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
     -ms-transition: 0.2s;
@@ -6478,7 +6532,9 @@ and open the template in the editor.
       transition: 0.2s; }
   @media all and (min-width: 768px) {
     .get-in-touch h3 {
-      text-align: right; } }
+      text-align: right; }
+    .get-in-touch .btn-project {
+      display: inline-block; } }
 
 /*Footer*/
 .footer {
@@ -6489,9 +6545,22 @@ and open the template in the editor.
     position: relative; }
 
 /*Footer logo*/
-@media all and (min-width: 992px) {
-  .footer-logo img {
-    margin-top: -15px; } }
+.footer-logo {
+  text-align: center;
+  margin-bottom: 15px; }
+  .footer-logo a {
+    display: inline-block; }
+  @media all and (min-width: 768px) {
+    .footer-logo {
+      text-align: center;
+      margin-bottom: 15px; }
+      .footer-logo a {
+        display: inline-block; } }
+  @media all and (min-width: 992px) {
+    .footer-logo {
+      text-align: left; }
+      .footer-logo img {
+        margin-top: -15px; } }
 
 /*Footer address*/
 .footer-address .footer-address--head {

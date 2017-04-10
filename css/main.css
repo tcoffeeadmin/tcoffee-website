@@ -4921,7 +4921,11 @@ button.close {
 .portfolio-home {
   background-color: #171717;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  background-image: url(../images/portfolio-home--bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
   .portfolio-home h1 {
     position: absolute;
     top: 0;

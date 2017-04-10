@@ -396,6 +396,21 @@ and open the template in the editor.
     <script src="js/jquery-3.2.0.min.js" type="text/javascript"></script>
     <!--<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+    <!--Smooth scroll-->
+    <script type="text/javascript">
+      $('a[href^="#"]').on('click', function (event) {
+
+        var target = $($(this).attr('href'));
+
+        if (target.length) {
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+        }
+
+      });
+    </script>
     <!--Portfolio slider-->
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     <script type="text/javascript">
@@ -644,20 +659,6 @@ and open the template in the editor.
 
       });
     </script>
-    <!--Smooth scroll-->
-    <script type="text/javascript">
-      $('a[href^="#"]').on('click', function (event) {
 
-        var target = $($(this).attr('href'));
-
-        if (target.length) {
-          event.preventDefault();
-          $('html, body').animate({
-            scrollTop: target.offset().top
-          }, 1000);
-        }
-
-      });
-    </script>
   </body>
 </html>

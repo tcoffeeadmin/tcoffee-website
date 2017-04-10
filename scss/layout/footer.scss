@@ -20,12 +20,22 @@
 
 /*Footer logo*/
 .footer-logo{
-
-  @media all and (min-width: $screen-sm) {
+  text-align: center;
+  margin-bottom: 15px;
+  a{
+    display: inline-block;
+  }
+  @media all and (min-width: $screen-sm) {    
     // Tablet
+    text-align: center;
+    margin-bottom: 15px;
+    a{
+      display: inline-block;
+    }
   }  
   @media all and (min-width: $screen-md) {
     // Tablet
+    text-align: left;
     img{
       margin-top: -15px;
     }

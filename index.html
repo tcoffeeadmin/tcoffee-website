@@ -444,7 +444,6 @@ and open the template in the editor.
           $('.slider .mask').on('click', homeSlider.nav.arrow);
           $('.slider-nav a').on('click', homeSlider.nav.menu);
 
-
           //mobile support
           /*
            $('.slider .outer').swipe({
@@ -489,26 +488,14 @@ and open the template in the editor.
               }
             }
           },
-          //bottom arror nav click
-          arrow: function (e) {
+          //handles a menu nav click
+          menu: function (e) {
             e.preventDefault();
             if (homeSlider.vars.locked === 0) {
               homeSlider.vars.locked = 1;
-              if ($(this).hasClass('left')) {
-                homeSlider.move.direction(0);
-              } else {
-                homeSlider.move.direction(1);
-              }
+              homeSlider.move.toSlide($(e.target.hash));
             }
           },
-                  //handles a menu nav click
-                  menu: function (e) {
-                    e.preventDefault();
-                    if (homeSlider.vars.locked === 0) {
-                      homeSlider.vars.locked = 1;
-                      homeSlider.move.toSlide($(e.target.hash));
-                    }
-                  },
           //updates the menu nav visual class and arrow text
           update: function () {
             //nav menu
@@ -635,7 +622,7 @@ and open the template in the editor.
         },
         center: function () {
           $.each($('.slider section img'), function (i, elm) {
-            $(elm).css({marginTop: -$(elm).height() / 2, position: 'relative'});
+            $(elm).css({marginTop: -$(elm).height() / 2, top: '50%', position: 'relative'});
           })
         }
       }

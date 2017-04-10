@@ -132,8 +132,8 @@
   background-repeat: no-repeat;
   position: relative;
   .our-team--inner{
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 150px;
   }
   @media all and (min-width: $screen-sm){
 
@@ -142,20 +142,20 @@
 
   }
   @media all and (min-width: $screen-lg){
-    height: 100%;
+    /*height: 100%;*/
     .our-team--inner{
-      height: 445px;
+/*      height: 445px;
       position: absolute;
       top: 0;
       bottom: 0;
       margin: auto;
       padding-top: 0px;
-      padding-bottom: 0px;
+      padding-bottom: 0px;*/
     }
   }
   @media all and (min-width: $screen-xlg){
     .our-team--inner{
-      height: 600px;
+      /*height: 600px;*/
     }
   }
 }
@@ -356,7 +356,7 @@
   }
   @media all and (min-width: $screen-lg) {
     // Desktop
-    height: 100%;
+    /*height: 100%;*/
   }  
 }
 
@@ -432,15 +432,15 @@
   }
   @media all and (min-width: $screen-lg) {
     // Desktop
-    position: absolute;
-    height: 370px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    /*position: absolute;*/
+    /*    height: 370px;
+        margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            padding-top: 0px;
+            padding-bottom: 0px;*/
     h2{
       font-size: 30px;
     }
@@ -626,6 +626,7 @@
   background-color: #fff;
   padding-bottom: 50px;
   padding-top: 50px;
+  overflow: hidden;
   h3{
     font-family: "Din";
     color: #232325;

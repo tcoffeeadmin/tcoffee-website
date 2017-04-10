@@ -12,6 +12,11 @@ and open the template in the editor.
     <link href="css/main.css" rel="stylesheet" type="text/css"/>
     <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">
+    <style>
+      .wow:first-child {
+        visibility: hidden;
+      }
+    </style>
   </head>
   <body>
     <!--About section-->
@@ -382,8 +387,8 @@ and open the template in the editor.
           <h5>college of engineering</h5>
         </div>
         <div class="slide client-details">
-          <h4>bhitarkanika</h4>
-          <h5>boating</h5>
+          <h4>samudra</h4>
+          <h5>shipyard</h5>
         </div>
       </section>
     </div>
@@ -393,10 +398,10 @@ and open the template in the editor.
     <div class="container-fluid get-in-touch">
       <div class="row">
         <div class="container">
-          <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="col-md-6 col-sm-6 col-xs-12 wow slideInLeft" data-wow-delay="2s">
             <h3>start a new project</h3>
           </div>
-          <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="col-md-6 col-sm-6 col-xs-12 wow slideInRight" data-wow-delay="2s">
             <a href="#" class="btn btn-project">get in touch</a>
           </div>
         </div>
@@ -554,6 +559,25 @@ and open the template in the editor.
 
 
       });
+    </script>
+    <!--Wow animation-->
+    <script src="js/wow.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      wow = new WOW(
+              {
+                animateClass: 'animated',
+                offset: 100,
+                callback: function (box) {
+                  console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                }
+              }
+      );
+      wow.init();
+      document.getElementById('moar').onclick = function () {
+        var section = document.createElement('section');
+        section.className = 'section--purple wow fadeInDown';
+        this.parentNode.insertBefore(section, this);
+      };
     </script>
   </body>
 </html>

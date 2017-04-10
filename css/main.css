@@ -4736,8 +4736,9 @@ button.close {
       -ms-transition: 0.3s;
       transition: 0.3s; }
       .hero-inner--social ul li a:hover {
-        color: #007f5d;
+        color: #fff;
         border-color: #007f5d;
+        background-color: #007f5d;
         -webkit-transition: 0.3s;
         -moz-transition: 0.3s;
         -ms-transition: 0.3s;
@@ -4788,13 +4789,31 @@ button.close {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   -ms-border-radius: 100%;
-  border-radius: 100%; }
+  border-radius: 100%;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s; }
 
 .services-slider .left.carousel-control {
   left: 5px; }
+  .services-slider .left.carousel-control:hover {
+    color: #fff !important;
+    background-color: #007f5d !important;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    transition: 0.2s; }
 
 .services-slider .right.carousel-control {
   right: 5px; }
+  .services-slider .right.carousel-control:hover {
+    color: #fff !important;
+    background-color: #007f5d !important;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    transition: 0.2s; }
 
 .services-slider .services-slider--item_one {
   background-color: #2d2e30; }

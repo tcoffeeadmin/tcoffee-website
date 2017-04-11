@@ -33,6 +33,7 @@
   }
 }
 
+
 .portfolio-slider{
   position: relative;
   padding-top: 150px;
@@ -320,293 +321,230 @@ $break-large: 400px;
       // Desktop
     }
   }
+}
 
-  /*Portfolio button*/
-  .btn-portfolio{
-    border: 2px solid #fff;
-    @include border-radius(0px);
-    text-transform: capitalize;
+/*Portfolio button*/
+.btn-portfolio{
+  border: 2px solid #fff;
+  @include border-radius(0px);
+  text-transform: capitalize;
+  color: #fff;
+  font-family: "Din";
+  @include light;
+  font-size: 13px;
+  padding: 10px 15px;
+  display: table;
+  margin: auto;
+  margin-top: 50px;
+  &:hover{
+    border-color: #007f5d;
+    background-color: #007f5d;
     color: #fff;
-    font-family: "Din";
-    @include light;
-    font-size: 13px;
-    padding: 10px 15px;
-    display: table;
-    margin: auto;
-    margin-top: 50px;
-    &:hover{
-      border-color: #007f5d;
-      background-color: #007f5d;
-      color: #fff;
+  }
+}
+
+/*Down button portfolio*/
+.down-btn-portfolio{
+  .down-btn--circle{
+    background-color: #4b4b4e;
+  }
+  .v-line{
+    background-color: #8c8c92;
+    .fa{
+      color: #8c8c92;
     }
   }
+}
 
-  /*Down button portfolio*/
-  .down-btn-portfolio{
-    .down-btn--circle{
-      background-color: #4b4b4e;
+/*Slider nav arrows*/
+.slider-nav--arrows{
+  width: 15px;
+  height: 15px !important;
+  position: absolute !important;
+  top: -6px;
+  cursor: pointer;
+  .mask{
+    cursor: pointer !important;
+  }
+}
+.slider-nav--arrows_left{
+  left: 20px;
+}
+.slider-nav--arrows_right{
+  right: 19px;
+}
+/*Portfolio home end*/
+
+/*Contact form home*/
+
+.contant-home{
+  background-color: #fff;
+  position: relative;
+  .contant-home--inner{
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 70px;
+
+    h1{
+      font-family: "Din";
+      @include light;
+      color: #232325;
+      font-size: 24px;
+      text-transform: uppercase;
+      margin-top: 0px;
+      margin-bottom: 40px;
+      span{
+        @include black;
+      }
     }
-    .v-line{
-      background-color: #8c8c92;
-      .fa{
-        color: #8c8c92;
+    .contant-form--home{
+      position: relative;
+      .contant-form--home_image{
+        height: 365px;
+        background-image: url(../images/contact-home.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .contant-form--home_form{
+        height: auto;
+        background-color: #252527;
+        position: relative;
+        .form-inner{
+          height: auto;
+          position: relative;
+          padding-top: 55px;
+          padding-bottom: 55px;
+          .form-control{
+            background-color: transparent !important;
+            border-color: transparent !important;
+            border-bottom: 1px solid #5d5d5e !important;
+            @include border-radius(0px);
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+            font-family: "Din";
+            @include light;
+            color: #c7bcbc;
+            &:focus{
+              @include box-shadow(none);
+              border-bottom-color: #e0e0e6 !important;
+            }
+          }
+          textarea{
+            height: 130px;
+            width: 100% !important;
+          }
+          .btn-confirm{
+            border-color: transparent !important;
+            border-bottom: 1px solid #5d5d5e !important;
+            background-color: transparent !important;
+            @include border-radius(0px);
+            font-family: "Din";
+            font-size: 16px;
+            color: #c7bcbc;
+            text-transform: uppercase;
+            float: right;
+            @include transition(.1s);
+            &:hover{
+              color: #007f5d;
+              border-bottom-color: #007f5d !important;
+              @include transition(.1s);
+            }
+            &:focus{
+              outline: none !important;
+            }
+          }
+        }
       }
     }
   }
 
-  /*Slider nav arrows*/
-  .slider-nav--arrows{
-    width: 15px;
-    height: 15px !important;
-    position: absolute !important;
-    top: -6px;
-    cursor: pointer;
-    .mask{
-      cursor: pointer !important;
-    }
-  }
-  .slider-nav--arrows_left{
-    left: 20px;
-  }
-  .slider-nav--arrows_right{
-    right: 19px;
-  }
-  /*Portfolio home end*/
-
-  /*Contact form home*/
-
-  .contant-home{
-    background-color: #fff;
-    position: relative;
+  @media all and (min-width: $screen-sm) {
+    // Tablet
     .contant-home--inner{
-      position: relative;
-      padding-top: 80px;
-      padding-bottom: 70px;
-
       h1{
-        font-family: "Din";
-        @include light;
-        color: #232325;
-        font-size: 24px;
-        text-transform: uppercase;
-        margin-top: 0px;
-        margin-bottom: 40px;
-        span{
-          @include black;
-        }
+        font-size: 30px;
       }
       .contant-form--home{
         position: relative;
         .contant-form--home_image{
-          height: 365px;
-          background-image: url(../images/contact-home.jpg);
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
+          height: 375px;
         }
         .contant-form--home_form{
-          height: auto;
+          height: 375px;
           background-color: #252527;
           position: relative;
           .form-inner{
-            height: auto;
-            position: relative;
-            padding-top: 55px;
-            padding-bottom: 55px;
-            .form-control{
-              background-color: transparent !important;
-              border-color: transparent !important;
-              border-bottom: 1px solid #5d5d5e !important;
-              @include border-radius(0px);
-              padding-left: 0px !important;
-              padding-right: 0px !important;
-              font-family: "Din";
-              @include light;
-              color: #c7bcbc;
-              &:focus{
-                @include box-shadow(none);
-                border-bottom-color: #e0e0e6 !important;
-              }
-            }
-            textarea{
-              height: 130px;
-              width: 100% !important;
-            }
-            .btn-confirm{
-              border-color: transparent !important;
-              border-bottom: 1px solid #5d5d5e !important;
-              background-color: transparent !important;
-              @include border-radius(0px);
-              font-family: "Din";
-              font-size: 16px;
-              color: #c7bcbc;
-              text-transform: uppercase;
-              float: right;
-              @include transition(.1s);
-              &:hover{
-                color: #007f5d;
-                border-bottom-color: #007f5d !important;
-                @include transition(.1s);
-              }
-              &:focus{
-                outline: none !important;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    @media all and (min-width: $screen-sm) {
-      // Tablet
-      .contant-home--inner{
-        h1{
-          font-size: 30px;
-        }
-        .contant-form--home{
-          position: relative;
-          .contant-form--home_image{
-            height: 375px;
-          }
-          .contant-form--home_form{
-            height: 375px;
-            background-color: #252527;
-            position: relative;
-            .form-inner{
-              height: 290px;
-              position: absolute;
-              top: 0;
-              bottom: 0;
-              margin: auto;
-              width: 100%;
-              left: 0;
-              right: 0;
-              padding-top: 0px;
-              padding-bottom: 0px;
-            }
-          }
-        }
-      }
-    }
-    @media all and (min-width: $screen-md) {
-      // Tablet
-      .contant-home--inner{ 
-        h1{
-          font-size: 40px;
-        }
-        .contant-form--home{
-          .contant-form--home_image{
-            height: 420px;
-          }
-          .contant-form--home_form{
-            height: 420px;
-          }
-        }
-      }
-    }
-
-    @media all and (min-width: $screen-lg) {
-      // Desktop
-      height: 100%;
-      .contant-home--inner{
-        padding-top: 0;
-        padding-bottom: 0;
-        position: absolute;
-        height: 548px;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        left: 0;
-        right: 0;
-      }
-    }
-    @media all and (min-width: $screen-xlg) {
-      .contant-home--inner{
-        height: 620px;
-        .contant-form--home{
-          .contant-form--home_image{
-            height: 490px;
-          }
-          .contant-form--home_form{
-            height: 490px;
+            height: 290px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 100%;
+            left: 0;
+            right: 0;
+            padding-top: 0px;
+            padding-bottom: 0px;
           }
         }
       }
     }
   }
-
-
-  /*Footer button*/
-  .down-btn-footer{
-    bottom: 15px !important;
-    .v-line{
-      margin-top: -22px;
-      .fa{
-        bottom: 14px;
-        color: rgba(0, 0, 0, 0.67);
+  @media all and (min-width: $screen-md) {
+    // Tablet
+    .contant-home--inner{ 
+      h1{
+        font-size: 40px;
+      }
+      .contant-form--home{
+        .contant-form--home_image{
+          height: 420px;
+        }
+        .contant-form--home_form{
+          height: 420px;
+        }
       }
     }
   }
 
-
-  /*Service images*/
-  .services-images{
-    .text-box{
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+    height: 100%;
+    .contant-home--inner{
+      padding-top: 0;
+      padding-bottom: 0;
       position: absolute;
-      left: 0;
-      right: 0;
-      margin: auto;
+      height: 548px;
       top: 0;
       bottom: 0;
-    }
-    .branding-hover{
-      height: 50px;
-      width: 50px;
-    }
-    #img1{
-      display:none;
+      margin: auto;
+      left: 0;
+      right: 0;
     }
   }
-
-  .img1-hover{
-    /*transition: .2s;*/
-    display:block !important;
-
-  }
-  .typewriter{
-    h4 {
-      overflow: hidden;
-      /* Ensures the content is not revealed until the animation */
-      border-right: .15em solid orange;
-      /* The typwriter cursor */
-      white-space: nowrap;
-      /* Keeps the content on a single line */
-      margin: 0 auto;
-      /* Gives that scrolling effect as the typing happens */
-      /*letter-spacing: .15em;*/
-      /* Adjust as needed */
-      animation: typing .8s steps(40, end), blink-caret 0.5s step-end infinite;
+  @media all and (min-width: $screen-xlg) {
+    .contant-home--inner{
+      height: 620px;
+      .contant-form--home{
+        .contant-form--home_image{
+          height: 490px;
+        }
+        .contant-form--home_form{
+          height: 490px;
+        }
+      }
     }
   }
+}
 
-  /* The typing effect */
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-
-    to {
-      width: 100%;
+/*Footer button*/
+.down-btn-footer{
+  bottom: 15px !important;
+  .v-line{
+    margin-top: -22px;
+    .fa{
+      bottom: 14px;
+      color: rgba(0, 0, 0, 0.67);
     }
   }
-
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to {
-      border-color: transparent;
-    }
-
-    50% {
-      border-color: green;
-    }
-  }  
+}

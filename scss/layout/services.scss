@@ -35,17 +35,17 @@
     }
   }
   @media all and (min-width: $screen-xlg){
-    /*    .container{
-          .services-box{
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            height: 455px;
-          }
-        }*/
+    .container{
+      .services-box{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 450px;
+      }
+    }
   }
 }
 /*About content*/
@@ -53,7 +53,7 @@
   padding-top: 35px;
   padding-bottom: 100px;
   .services-box--inner_image{
-    height: 420px;
+    height: 240px;
     background-size: cover;
     background-repeat: no-repeat;
     h1{
@@ -61,7 +61,7 @@
       text-transform: uppercase;
       font-family: "Din";
       @include black;
-      font-size: 24px;
+      font-size: 16px;
       margin: 0;
       margin-bottom: 6px;
     }
@@ -73,7 +73,6 @@
         text-transform: uppercase;
         font-family: "Din";
         @include medium;
-        font-size: 19px;
         margin: 0;
       }
     }
@@ -91,25 +90,44 @@
     background-image: url(../images/services-4.png);
   }
   @media all and (min-width: $screen-sm){
-
+    .services-box--inner_image{
+      height: 350px;
+      h1{
+        font-size: 22px;
+      }
+      ul{
+        li{          
+          font-size: 17px;
+        }
+      }
+    }
   }
   @media all and (min-width: $screen-md){
     .services-box--inner_image{
+      height: 385px;
       h1{
-        font-size: 28px;
+        font-size: 24px;
+      }
+      ul{
+        li{          
+          font-size: 19px;
+        }
       }
     }
   }
   @media all and (min-width: $screen-lg){
     padding-bottom: 0px;
     .services-box--inner_image{
+      height: 420px;
       h1{
         font-size: 29px;
       }
     }
   }
   @media all and (min-width: $screen-xlg){
-
+    .services-box--inner_image{
+      height: 450px;
+    }
   }
 }
 
@@ -119,15 +137,15 @@
   @include transition(.2s);
   .services-box--inner_image-head{
     position: absolute;
-    top: 150px;
+    top: 55px;
     z-index: 2;
     @include transition(.2s);
   }
   .services-box--inner_image-content{
     /*display: none;*/
-    visibility: hidden;
+    visibility: visible;
     position: absolute;
-    top: 150px;
+    top: 107px;
     z-index: 2;
     @include transition(.2s);
   }
@@ -135,34 +153,72 @@
     @include transition(.2s);
   }
   &:hover{
-    background: #171717;
     @include transition(.2s);
-    .services-box--inner_image-head{
-      top: 115px;
-      @include transition(.2s);
-    }
-    .services-box--inner_image-content{
-      /*display: block;*/
-      visibility: visible;
-      top: 200px;
-      @include transition(.2s);
-    }
     .line{
       background-color: #009046;
       @include transition(.2s);
     }
   }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    .services-box--inner_image-head{
+      top: 130px;
+    }
+    .services-box--inner_image-content{
+      top: 150px;
+      visibility: hidden;
+    }
+    &:hover{
+      background: #171717;
+      @include transition(.2s);
+      .services-box--inner_image-head{
+        top: 115px;
+        @include transition(.2s);
+      }
+      .services-box--inner_image-content{
+        /*display: block;*/
+        visibility: visible;
+        top: 190px;
+        @include transition(.2s);
+      }
+      .line{
+        background-color: #009046;
+        @include transition(.2s);
+      }
+    }
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+    .services-box--inner_image-head{
+      top: 150px;
+    }
+    .services-box--inner_image-content{
+      top: 150px;
+    }
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+  }
 }
 
 /*Services background*/
 .services-box--bg{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: url(../images/service-bg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: 1;
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/service-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1; 
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+  }
 }
 
 /*Testimonials*/
@@ -186,7 +242,7 @@
   }
 }
 
-/*SLider*/
+/*Testimonial slider*/
 .testimonial-slider{
   .carousel-indicators {
     bottom: -42px !important;
@@ -261,5 +317,21 @@
       @include light;
       text-align: center;
     }
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    .testimonial-image{
+      .testimonial-image--inner{
+        padding-top: 25px;
+        height: 330px;
+        width: 200px;
+      }
+    }
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
   }
 }

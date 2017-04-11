@@ -144,3 +144,19 @@ a:hover, a:focus{
   0%, 100% {transform: scale(1,1); opacity:1}
   75% {transform: scale(1.2,1.2); opacity:1}
 }
+
+/*Row equal height*/
+.row-eq-height {
+  @media all and (min-width: $screen-sm){
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  @media all and (min-width: $screen-md){
+
+  }
+  @media all and (min-width: $screen-lg){
+
+  }
+}

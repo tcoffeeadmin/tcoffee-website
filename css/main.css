@@ -5549,6 +5549,14 @@ a:hover, a:focus {
     transform: scale(1.2, 1.2);
     opacity: 1; } }
 
+/*Row equal height*/
+@media all and (min-width: 768px) {
+  .row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
+
 /* -------------------------------- 
 
 Primary style

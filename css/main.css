@@ -5112,16 +5112,17 @@ button.close {
   font-size: 14px;
   text-align: center;
   margin: 15px 0 0;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 20px; }
   .slider-wrap .slider-nav .dots {
     width: 100%;
     border-bottom: 1px dashed #fff;
-    position: absolute;
-    top: 11px; }
+    position: relative;
+    height: 10px; }
     .slider-wrap .slider-nav .dots .fa {
       position: absolute;
       color: #009046;
-      top: -1px;
+      top: 8px;
       font-size: 18px; }
     .slider-wrap .slider-nav .dots .fa-angle-right {
       right: -1px; }
@@ -5133,12 +5134,7 @@ button.close {
     padding: 0;
     width: 90%; }
   .slider-wrap .slider-nav li {
-    list-style: none;
-    float: left;
-    width: 25%;
-    box-sizing: border-box;
-    height: 24px;
-    padding: 0 15px; }
+    display: none; }
     .slider-wrap .slider-nav li a {
       -webkit-transition: color 0.2s ease-in-out;
       -moz-transition: color 0.2s ease-in-out;
@@ -5169,7 +5165,25 @@ button.close {
     padding-left: 40px;
     padding-right: 40px; }
   .slider-wrap .slider {
-    height: 330px; } }
+    height: 330px; }
+  .slider-wrap .slider-nav {
+    position: relative;
+    height: initial; }
+    .slider-wrap .slider-nav .dots {
+      position: absolute;
+      top: 15px;
+      height: 0px; }
+      .slider-wrap .slider-nav .dots .fa {
+        top: -1px; }
+    .slider-wrap .slider-nav li {
+      position: relative;
+      list-style: none;
+      float: none;
+      width: 1%;
+      display: table-cell;
+      box-sizing: border-box;
+      height: 24px;
+      padding: 0 15px; } }
 
 @media all and (min-width: 1200px) {
   .slider-wrap section {
@@ -5184,7 +5198,7 @@ button.close {
   color: #fff;
   font-family: "Din";
   font-weight: 900;
-  font-size: 39px;
+  font-size: 30px;
   text-transform: uppercase;
   margin: 0;
   top: 40%;
@@ -5202,6 +5216,10 @@ button.close {
   -moz-transition: 0.2s;
   -ms-transition: 0.2s;
   transition: 0.2s; }
+
+@media all and (min-width: 768px) {
+  .slider-wrap section h2 {
+    font-size: 39px; } }
 
 /*Portfolio button*/
 .btn-portfolio {
@@ -5391,53 +5409,6 @@ button.close {
     .down-btn-footer .v-line .fa {
       bottom: 14px;
       color: rgba(0, 0, 0, 0.67); }
-
-/*Service images*/
-.services-images .text-box {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 0;
-  bottom: 0; }
-
-.services-images .branding-hover {
-  height: 50px;
-  width: 50px; }
-
-.services-images #img1 {
-  display: none; }
-
-.img1-hover {
-  /*transition: .2s;*/
-  display: block !important; }
-
-.typewriter h4 {
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange;
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  /*letter-spacing: .15em;*/
-  /* Adjust as needed */
-  animation: typing 0.8s steps(40, end), blink-caret 0.5s step-end infinite; }
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0; }
-  to {
-    width: 100%; } }
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent; }
-  50% {
-    border-color: green; } }
 
 body, html {
   margin: 0px;
@@ -6453,15 +6424,18 @@ header {
         padding: 118px 7%; } }
   @media all and (min-width: 1400px) {
     .vision-mission--inner {
-      height: 400px; }
-      .vision-mission--inner .vision-mission--inner_vision {
-        height: 400px;
-        padding: 145px 7%; }
-      .vision-mission--inner .vision-mission--inner_mission {
-        height: 400px;
-        padding: 145px 7%; }
-      .vision-mission--inner .vision-mission--line {
-        height: 455px; } }
+      /*    height: 400px;
+    .vision-mission--inner_vision{
+      height: 400px;
+      padding: 145px 7%;
+    }
+    .vision-mission--inner_mission{
+      height: 400px;
+      padding: 145px 7%;
+    }
+    .vision-mission--line {
+      height: 455px;
+    }*/ } }
 
 /*Clients*/
 .clients {

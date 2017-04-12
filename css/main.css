@@ -9431,16 +9431,12 @@ header {
     background-color: #171717;
     position: relative; }
     .contact-box--inner .contact-box--inner_content .contact-content {
-      position: absolute;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 2; }
+      padding: 50px 5%; }
       .contact-box--inner .contact-box--inner_content .contact-content h1 {
         color: #009046;
         font-family: "Din";
         font-weight: 900;
-        font-size: 45px;
+        font-size: 30px;
         margin-top: 0;
         margin-bottom: 15px;
         text-transform: uppercase;
@@ -9465,7 +9461,29 @@ header {
       background-image: url(../images/contact-bg.png);
       background-repeat: no-repeat;
       background-size: contain;
-      z-index: 1; } }
+      z-index: 1; }
+    .contact-box--inner .contact-box--inner_content {
+      height: 370px; }
+      .contact-box--inner .contact-box--inner_content .contact-content {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        padding: 40px 6%; }
+        .contact-box--inner .contact-box--inner_content .contact-content h1 {
+          font-size: 34px; }
+    .contact-box--inner .contact-box--inner_click {
+      height: 370px; } }
+  @media all and (min-width: 992px) {
+    .contact-box--inner .contact-box--inner_content {
+      height: 400px; }
+      .contact-box--inner .contact-box--inner_content .contact-content {
+        padding: 50px 6%; }
+        .contact-box--inner .contact-box--inner_content .contact-content h1 {
+          font-size: 38px; }
+    .contact-box--inner .contact-box--inner_click {
+      height: 400px; } }
   @media all and (min-width: 1200px) {
     .contact-box--inner {
       padding-bottom: 0; }
@@ -9489,9 +9507,9 @@ header {
 
 /*Form click*/
 .form-click {
-  position: absolute;
   width: 100%;
   height: 100%;
+  padding: 50px 0;
   z-index: 2; }
   .form-click h1 {
     color: #fff;
@@ -9537,6 +9555,17 @@ header {
         left: 0;
         right: 0;
         margin: auto; }
+  @media all and (min-width: 768px) {
+    .form-click {
+      position: absolute;
+      padding: 115px 0; }
+      .form-click h1 {
+        font-size: 50px; } }
+  @media all and (min-width: 992px) {
+    .form-click {
+      padding: 124px 0; }
+      .form-click h1 {
+        font-size: 50px; } }
   @media all and (min-width: 1200px) {
     .form-click {
       padding: 130px 0; }
@@ -9544,9 +9573,14 @@ header {
         font-size: 50px; } }
 
 /*Map address*/
+.map-adderss .map-address--map #map {
+  width: 100%;
+  height: 250px; }
+
 .map-adderss .map-address--address {
   background-color: #222222;
-  text-align: right; }
+  text-align: right;
+  padding: 50px 5%; }
   .map-adderss .map-address--address .map-address--address_mail {
     color: #fff;
     font-family: "Din";
@@ -9585,7 +9619,7 @@ header {
     color: #454546;
     font-family: "Din";
     font-weight: 500;
-    font-size: 19px;
+    font-size: 17px;
     margin-bottom: 0; }
 
 @media all and (min-width: 768px) {
@@ -9593,8 +9627,15 @@ header {
     width: 100%;
     height: 350px; }
   .map-adderss .map-address--address {
-    height: 350px; } }
+    height: 350px;
+    padding: 50px 5%; }
+    .map-adderss .map-address--address p {
+      font-size: 19px; } }
 
 @media all and (min-width: 992px) {
+  .map-adderss .map-address--address {
+    padding: 50px 5%; } }
+
+@media all and (min-width: 1200px) {
   .map-adderss .map-address--address {
     padding: 50px 8%; } }

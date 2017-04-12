@@ -58,16 +58,12 @@
     background-color: #171717;
     position: relative;
     .contact-content{
-      position: absolute;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 2;
+      padding: 50px 5%;
       h1{
         color: #009046;
         font-family: "Din";
         @include black;
-        font-size: 45px;
+        font-size: 30px;
         margin-top: 0;
         margin-bottom: 15px;
         text-transform: uppercase;
@@ -100,9 +96,38 @@
       background-size: contain;
       z-index: 1;
     }
+    .contact-box--inner_content{
+      height: 370px;
+      .contact-content{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        padding: 40px 6%;
+        h1{
+          font-size: 34px;
+        }
+      }
+    }
+    .contact-box--inner_click{
+      height: 370px;
+    }
   }  
   @media all and (min-width: $screen-md) {
     // Tablet
+    .contact-box--inner_content{
+      height: 400px;
+      .contact-content{
+        padding: 50px 6%;
+        h1{
+          font-size: 38px;
+        }
+      }
+    }
+    .contact-box--inner_click{
+      height: 400px;
+    }
   }
   @media all and (min-width: $screen-lg) {
     // Desktop
@@ -139,9 +164,9 @@
 
 /*Form click*/
 .form-click{
-  position: absolute;
   width: 100%;
   height: 100%;
+  padding: 50px 0;
   z-index: 2;
   h1{
     color: #fff;
@@ -184,9 +209,18 @@
   }
   @media all and (min-width: $screen-sm) {
     // Tablet
+    position: absolute;
+    padding: 115px 0;
+    h1{
+      font-size: 50px;
+    }
   }  
   @media all and (min-width: $screen-md) {
     // Tablet
+    padding: 124px 0;
+    h1{
+      font-size: 50px;
+    }
   }
   @media all and (min-width: $screen-lg) {
     // Desktop
@@ -200,11 +234,15 @@
 /*Map address*/
 .map-adderss{
   .map-address--map{
-
+    #map{
+      width: 100%;
+      height: 250px;
+    }
   }
   .map-address--address{
     background-color: #222222;
     text-align: right;
+    padding: 50px 5%;
     .map-address--address_mail{
       color: #fff;
       font-family: "Din";
@@ -235,7 +273,7 @@
       color: #454546;
       font-family: "Din";
       @include medium;
-      font-size: 19px;
+      font-size: 17px;
       margin-bottom: 0;
     }
   }
@@ -249,15 +287,22 @@
     }
     .map-address--address{
       height: 350px;
+      padding: 50px 5%;
+      p{
+        font-size: 19px;
+      }
     }
   }  
   @media all and (min-width: $screen-md) {
     // Tablet
     .map-address--address{
-      padding: 50px 8%;
+      padding: 50px 5%;
     }
   }
   @media all and (min-width: $screen-lg) {
-    // Desktop    
+    // Desktop  
+    .map-address--address{
+      padding: 50px 8%;
+    }  
   }
 }

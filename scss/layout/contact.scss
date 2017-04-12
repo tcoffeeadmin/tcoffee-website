@@ -53,43 +53,67 @@
 .contact-box--inner{
   padding-top: 35px;
   padding-bottom: 100px;
+  position: relative;
   .contact-box--inner_content{
     background-color: #171717;
-    h1{
-      color: #009046;
-      font-family: "Din";
-      @include black;
-      font-size: 45px;
-      margin-top: 0;
-      margin-bottom: 15px;
-      text-transform: uppercase;
-    }
-    p{
-      color: #fff;
-      font-family: "Din";
-      @include medium;
-      font-size: 13px;
-      margin-bottom: 0;
-      text-transform: uppercase;
-      text-align: justify;
+    position: relative;
+    .contact-content{
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      h1{
+        color: #009046;
+        font-family: "Din";
+        @include black;
+        font-size: 45px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        z-index: 2;
+      }
+      p{
+        color: #fff;
+        font-family: "Din";
+        @include medium;
+        font-size: 13px;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        text-align: justify;
+        z-index: 2;
+      }
     }
   }
   .contact-box--inner_click{
     background-color: #222222;
+    position: relative;
   }
   @media all and (min-width: $screen-sm) {
     // Tablet
+    .contact-bg{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url(../images/contact-bg.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: 1;
+    }
   }  
   @media all and (min-width: $screen-md) {
     // Tablet
   }
   @media all and (min-width: $screen-lg) {
     // Desktop
+    padding-bottom: 0;
     .contact-box--inner_content{
       height: 420px;
-      padding: 50px 3%;
-      h1{
-        font-size: 45px;
+      .contact-content{
+        padding: 50px 6%;
+        h1{
+          font-size: 45px;
+        }
       }
     }
     .contact-box--inner_click{
@@ -100,7 +124,12 @@
     // Desktop
     .contact-box--inner_content{
       height: 450px;
-
+      .contact-content{
+        padding: 55px 7%;
+        h1{
+          font-size: 45px;
+        }
+      }
     }
     .contact-box--inner_click{
       height: 450px;
@@ -108,7 +137,12 @@
   }
 }
 
+/*Form click*/
 .form-click{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
   h1{
     color: #fff;
     font-family: "Din";
@@ -156,7 +190,7 @@
   }
   @media all and (min-width: $screen-lg) {
     // Desktop
-    padding: 130px 5%;
+    padding: 130px 0;
     h1{
       font-size: 50px;
     }

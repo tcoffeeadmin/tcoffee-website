@@ -9425,76 +9425,94 @@ header {
 /*Service single inner*/
 .contact-box--inner {
   padding-top: 35px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  position: relative; }
   .contact-box--inner .contact-box--inner_content {
-    background-color: #171717; }
-    .contact-box--inner .contact-box--inner_content h1 {
-      color: #009046;
-      font-family: "Din";
-      font-weight: 900;
-      font-size: 45px;
-      margin-top: 0;
-      margin-bottom: 15px;
-      text-transform: uppercase; }
-    .contact-box--inner .contact-box--inner_content p {
-      color: #fff;
-      font-family: "Din";
-      font-weight: 500;
-      font-size: 13px;
-      margin-bottom: 0;
-      text-transform: uppercase;
-      text-align: justify; }
+    background-color: #171717;
+    position: relative; }
+    .contact-box--inner .contact-box--inner_content .contact-content {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2; }
+      .contact-box--inner .contact-box--inner_content .contact-content h1 {
+        color: #009046;
+        font-family: "Din";
+        font-weight: 900;
+        font-size: 45px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        z-index: 2; }
+      .contact-box--inner .contact-box--inner_content .contact-content p {
+        color: #fff;
+        font-family: "Din";
+        font-weight: 500;
+        font-size: 13px;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        text-align: justify;
+        z-index: 2; }
   .contact-box--inner .contact-box--inner_click {
-    background-color: #222222; }
+    background-color: #222222;
+    position: relative; }
+  @media all and (min-width: 768px) {
+    .contact-box--inner .contact-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url(../images/contact-bg.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: 1; } }
   @media all and (min-width: 1200px) {
-    .contact-box--inner .contact-box--inner_content {
-      height: 420px;
-      padding: 50px 3%; }
-      .contact-box--inner .contact-box--inner_content h1 {
-        font-size: 45px; }
-    .contact-box--inner .contact-box--inner_click {
-      height: 420px; } }
+    .contact-box--inner {
+      padding-bottom: 0; }
+      .contact-box--inner .contact-box--inner_content {
+        height: 420px; }
+        .contact-box--inner .contact-box--inner_content .contact-content {
+          padding: 50px 6%; }
+          .contact-box--inner .contact-box--inner_content .contact-content h1 {
+            font-size: 45px; }
+      .contact-box--inner .contact-box--inner_click {
+        height: 420px; } }
   @media all and (min-width: 1400px) {
     .contact-box--inner .contact-box--inner_content {
       height: 450px; }
+      .contact-box--inner .contact-box--inner_content .contact-content {
+        padding: 55px 7%; }
+        .contact-box--inner .contact-box--inner_content .contact-content h1 {
+          font-size: 45px; }
     .contact-box--inner .contact-box--inner_click {
       height: 450px; } }
 
-.form-click h1 {
-  color: #fff;
-  font-family: "Din";
-  font-weight: 900;
-  text-transform: uppercase;
-  text-align: center; }
-
-.form-click .round-one {
-  width: 75px;
-  height: 75px;
-  background-color: #363636;
-  margin: auto;
-  position: relative;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  border-radius: 50px; }
-  .form-click .round-one .round-two {
-    height: 50px;
-    width: 50px;
-    background-color: #4a4948;
+/*Form click*/
+.form-click {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2; }
+  .form-click h1 {
+    color: #fff;
+    font-family: "Din";
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center; }
+  .form-click .round-one {
+    width: 75px;
+    height: 75px;
+    background-color: #363636;
+    margin: auto;
+    position: relative;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
-    border-radius: 50px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto; }
-    .form-click .round-one .round-two .round-three {
-      width: 30px;
-      height: 30px;
-      background-color: #222222;
+    border-radius: 50px; }
+    .form-click .round-one .round-two {
+      height: 50px;
+      width: 50px;
+      background-color: #4a4948;
       -webkit-border-radius: 50px;
       -moz-border-radius: 50px;
       -ms-border-radius: 50px;
@@ -9505,12 +9523,25 @@ header {
       left: 0;
       right: 0;
       margin: auto; }
-
-@media all and (min-width: 1200px) {
-  .form-click {
-    padding: 130px 5%; }
-    .form-click h1 {
-      font-size: 50px; } }
+      .form-click .round-one .round-two .round-three {
+        width: 30px;
+        height: 30px;
+        background-color: #222222;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        border-radius: 50px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto; }
+  @media all and (min-width: 1200px) {
+    .form-click {
+      padding: 130px 0; }
+      .form-click h1 {
+        font-size: 50px; } }
 
 /*Map address*/
 .map-adderss .map-address--address {

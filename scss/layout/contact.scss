@@ -1,0 +1,229 @@
+/*Services single*/
+.contact{
+  background-color: #fff;
+  padding: 15px;
+  .down-click{
+    position: relative !important;
+    bottom: 0;
+  }
+  @media all and (min-width: $screen-sm){
+
+  }
+  @media all and (min-width: $screen-md){
+
+  }
+  @media all and (min-width: $screen-lg){
+    height: 100%;
+    .container{
+      position: absolute;
+      height: 100%;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    .down-click{
+      position: absolute !important;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 85%;
+      /* bottom: 70px; */
+      height: 74px !important;
+    }
+  }
+  @media all and (min-width: $screen-xlg){
+    .container{
+      .contact-box{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 450px;
+      }
+    }
+  }
+}
+
+
+/*Service single inner*/
+.contact-box--inner{
+  padding-top: 35px;
+  padding-bottom: 100px;
+  .contact-box--inner_content{
+    background-color: #171717;
+    h1{
+      color: #009046;
+      font-family: "Din";
+      @include black;
+      font-size: 45px;
+      margin-top: 0;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+    p{
+      color: #fff;
+      font-family: "Din";
+      @include medium;
+      font-size: 13px;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      text-align: justify;
+    }
+  }
+  .contact-box--inner_click{
+    background-color: #222222;
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+    .contact-box--inner_content{
+      height: 420px;
+      padding: 50px 3%;
+      h1{
+        font-size: 45px;
+      }
+    }
+    .contact-box--inner_click{
+      height: 420px;
+    }
+  }
+  @media all and (min-width: $screen-xlg) {
+    // Desktop
+    .contact-box--inner_content{
+      height: 450px;
+
+    }
+    .contact-box--inner_click{
+      height: 450px;
+    }
+  }
+}
+
+.form-click{
+  h1{
+    color: #fff;
+    font-family: "Din";
+    @include black;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .round-one{
+    width: 75px;
+    height: 75px;
+    background-color: #363636;
+    margin: auto;
+    position: relative;
+    @include border-radius(50px);
+    .round-two{
+      height: 50px;
+      width: 50px;
+      background-color: #4a4948;
+      @include border-radius(50px);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      .round-three{
+        width: 30px;
+        height: 30px;
+        background-color: #222222;
+        @include border-radius(50px);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    }
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+    padding: 130px 5%;
+    h1{
+      font-size: 50px;
+    }
+  }
+}
+
+/*Map address*/
+.map-adderss{
+  .map-address--map{
+
+  }
+  .map-address--address{
+    background-color: #222222;
+    text-align: right;
+    .map-address--address_mail{
+      color: #fff;
+      font-family: "Din";
+      @include medium;
+      font-size: 25px;
+      @include transition(.2s);
+      margin-bottom: 3px;
+      display: block;
+      &:hover{
+        color: #454546;
+        @include transition(.2s);
+      }
+    }
+    .map-address--address_tel{
+      color: #454546;
+      font-family: "Din";
+      @include medium;
+      font-size: 25px;
+      @include transition(.2s);
+      margin-bottom: 3px;
+      display: block;
+      &:hover{
+        color: #fff;
+        @include transition(.2s);
+      }
+    }
+    p{
+      color: #454546;
+      font-family: "Din";
+      @include medium;
+      font-size: 19px;
+      margin-bottom: 0;
+    }
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    .map-address--map{
+      #map{
+        width: 100%;
+        height: 350px;
+      }
+    }
+    .map-address--address{
+      height: 350px;
+    }
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+    .map-address--address{
+      padding: 50px 8%;
+    }
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop    
+  }
+}

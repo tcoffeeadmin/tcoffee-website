@@ -1,0 +1,1439 @@
+/*Contact form*/
+.contact-form{
+  background-color: #171717;
+  height: 100%;
+  background-image: url(../images/contact-form-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+  .container{
+    height: 100%;
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+  }
+}
+
+/*Contact back button*/
+.contact-back{
+  padding-top: 75px;
+  .contact-back--btn{
+    width: 40px;
+    height: 40px;
+    display: block;
+    float: right;
+  }
+}
+
+
+/*******************/
+/* Main form wrapper */
+
+.fs-form-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: #171717;
+  background-image: url(../images/contact-form-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.overview .fs-form-wrap {
+  height: auto;
+}
+
+/* Title */
+
+.fs-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 40px;
+  width: 100%;
+  h1 {
+    margin: 0;
+  }
+}
+
+/* Form */
+
+.fs-form {
+  position: relative;
+  text-align: left;
+  font-size: 2.5em;
+}
+
+.no-js .fs-form {
+  padding: 0 0 6em 0;
+}
+
+/* Views (fullscreen and overview)*/
+
+.fs-form-full {
+  top: 32%;
+  margin: 0 auto;
+  width: 60%;
+  max-width: 960px;
+}
+
+.fs-message-error {
+  max-width: 960px;
+}
+
+.fs-form-overview {
+  padding: 2.5em 20% 6em;
+  /*width: 100%;*/
+  height: 100%;
+  background: #171717;
+  color: #3b3f45;
+  font-size: 1.2em;
+  background-image: url(../images/review-bg.png);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  .fs-fields::before {
+    display: block;
+    margin-bottom: 35px;
+    content: 'Review & Submit';
+    font-size: 70px;
+    color: #fff;
+    font-family: "Din";
+    @include black;
+    text-transform: uppercase;
+  }
+}
+
+/* Switch view animation (we hide the current view, switch the view class and show it again) */
+
+.fs-form.fs-show {
+  -webkit-animation: animFadeIn 0.5s;
+  animation: animFadeIn 0.5s;
+  .fs-fields {
+    -webkit-animation: animMove 0.5s;
+    animation: animMove 0.5s;
+  }
+}
+
+@-webkit-keyframes animFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes animFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@-webkit-keyframes animMove {
+  from {
+    top: 100px;
+  }
+}
+
+
+@keyframes animMove {
+  from {
+    top: 100px;
+  }
+}
+
+
+/* we need to use top here because otherwise all our fixed elements will become absolute */
+
+/* Visibility control of elements */
+
+.fs-form-full .fs-fields > li, .fs-nav-dots, .fs-progress, .fs-numbers, button.fs-continue, .fs-message-error, .fs-message-final {
+  visibility: hidden;
+}
+
+.no-js .fs-form-full .fs-fields > li {
+  visibility: visible;
+}
+
+.fs-show {
+  visibility: visible !important;
+}
+
+/* Some general styles */
+
+.fs-form-wrap {
+  button {
+    border: none;
+    background: none;
+    &[disabled] {
+      opacity: 0.3;
+      pointer-events: none;
+    }
+  }
+  input:focus, button:focus {
+    outline: none;
+  }
+}
+
+/* Hide the submit button */
+
+.fs-form .fs-submit {
+  display: none;
+}
+
+/* Fields */
+
+.fs-fields {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  top: 0;
+  list-style: none;
+  > li {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    border: none;
+    &:hover {
+      z-index: 999;
+    }
+  }
+}
+
+.js .fs-form-full .fs-fields > li {
+  position: absolute;
+  width: 100%;
+}
+
+.fs-form-overview .fs-fields > li, .no-js .fs-form .fs-fields > li {
+  margin: 1em 0 2em;
+  padding: 0 0 2em 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Labels & info */
+
+.fs-fields > li label {
+  position: relative;
+  &.fs-field-label {
+    display: inline-block;
+    padding: 0 5px 1em 0;
+    font-size: 32px;
+    pointer-events: none;
+    text-transform: uppercase;
+    font-family: "Din";
+    @include black;
+  }
+}
+
+.fs-form-full .fs-fields > li {
+  label {
+    &[data-info] {
+      &::after {
+        position: relative;
+        display: inline-block;
+        margin-left: 10px;
+        width: 24px;
+        height: 24px;
+        border: 2px solid #009046;
+        color: #009046;
+        border-radius: 50%;
+        content: 'i';
+        font-family: "Din";
+        @include light;
+        vertical-align: top;
+        text-align: center;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: lowercase;
+        cursor: pointer;
+        pointer-events: auto;
+      }
+      &::before {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        padding: 0 0 10px;
+        min-width: 200px;
+        content: attr(data-info);
+        font-size: 0.4em;
+        color: #009046;
+        opacity: 0;
+        -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+        transition: opacity 0.3s, transform 0.3s;
+        -webkit-transform: translate3d(0, -5px, 0);
+        transform: translate3d(0, -5px, 0);
+        pointer-events: none;
+      }
+      &:hover::before {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    &:hover ~ .fs-info {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+  }
+  .fs-info:hover {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+}
+
+/* Inputs */
+
+.fs-fields input {
+  display: block;
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  background-color: #009046;
+  color: #fff;
+  text-overflow: ellipsis;
+  font-size: 55px;
+  @include border-radius(0px);
+  font-family: "Din";
+  @include medium;
+  text-transform: uppercase;
+  &:invalid {
+    box-shadow: none;
+    /* removes red shadow in FF*/
+  }
+}
+
+.fs-form-overview .fs-fields input {
+  border-bottom-color: transparent;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.fs-fields {
+  [required] {
+    background-image: url(../img/abacusstar.svg);
+    background-position: top right;
+    background-size: 18px;
+    background-repeat: no-repeat;
+  }
+  input:focus {
+    background-color: #009046;
+    /* Fixes chrome bug with placeholder */
+  }
+}
+
+.fs-form-overview .fs-fields input {
+  &:focus {
+    background-color: #fffed8;
+    /* Fixes chrome bug with placeholder */
+  }
+  font-size: 1.2em;
+}
+
+.fs-fields {
+  .fs-radio-custom input[type="radio"] {
+    position: absolute;
+    display: block;
+    margin: 30px auto 20px;
+    margin: 0 auto 20px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  > li .fs-radio-custom span {
+    float: left;
+    position: relative;
+    margin-right: 3%;
+    padding: 10px;
+    max-width: 200px;
+    width: 30%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 50%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    label {
+      color: rgba(0, 0, 0, 0.4);
+      -webkit-transition: color 0.3s;
+      transition: color 0.3s;
+    }
+  }
+}
+
+.fs-form-overview .fs-fields > li .fs-radio-custom span {
+  max-width: 140px;
+  font-size: 75%;
+}
+
+.fs-fields {
+  > li .fs-radio-custom label {
+    display: block;
+    padding-top: 100%;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  .fs-radio-custom label {
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      background-position: 50% 0%;
+      background-size: 85%;
+      background-repeat: no-repeat;
+      content: '';
+      opacity: 0.5;
+      -webkit-transition: opacity 0.2s;
+      transition: opacity 0.2s;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    &.radio-mobile::after {
+      background-image: url(../img/mobile.svg);
+    }
+    &.radio-social::after {
+      background-image: url(../img/social.svg);
+    }
+    &.radio-conversion::after {
+      background-image: url(../img/conversion.svg);
+    }
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+  input[type="radio"] {
+    &:focus + label::after, &:checked + label::after {
+      opacity: 1;
+    }
+  }
+  .fs-radio-custom input[type="radio"]:checked + label {
+    color: #fffed8;
+  }
+}
+
+.fs-form-overview .fs-fields .fs-radio-custom input[type="radio"]:checked + label {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.fs-fields textarea {
+  padding: 15px;
+  width: 100%;
+  height: 108px;
+  border: 2px solid #009046;
+  background-color: #009046;
+  color: #fffed8;
+  font-size: 55px;
+  resize: none;
+  font-family: "Din";
+  font-size: 55px;
+  @include medium;
+  color: #fff;
+}
+
+.fs-form-overview .fs-fields textarea {
+  height: 60px;
+  color: #fff;
+}
+
+#q2 {
+  text-transform: lowercase;
+}
+
+.fs-fields textarea:focus {
+  outline: none;
+}
+
+.fs-form-overview .fs-fields textarea {
+  padding: 0;
+  border-color: transparent;
+  &:focus {
+    background: #fffed8;
+  }
+}
+
+.fs-form div.cs-select.cs-skin-boxes {
+  display: block;
+}
+
+.fs-form-overview .cs-skin-boxes > span {
+  border-radius: 5px;
+  width: 90px;
+  height: 70px;
+  font-size: 0.8em;
+  &::before {
+    padding-top: 50px;
+    box-shadow: 0 20px 0 #292c30, inset 0 -5px #292c30;
+  }
+}
+
+.fs-fields {
+  input {
+    &.fs-mark {
+      padding-left: 1em;
+      background-image: url(../img/dollar.svg);
+      background-position: 0% 0.15em;
+      background-size: auto 75%;
+      background-repeat: no-repeat;
+      &[required] {
+        background-image: url(../img/dollar.svg), url(../img/abacusstar.svg);
+        background-position: 0% 0.15em, top right;
+        background-size: auto 75%, 18px;
+        background-repeat: no-repeat;
+      }
+    }
+    &::-webkit-input-placeholder {
+      color: rgba(0, 0, 0, 0.1);
+    }
+  }
+  textarea::-webkit-input-placeholder, input:-moz-placeholder, textarea:-moz-placeholder, input::-moz-placeholder, textarea::-moz-placeholder, input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.1);
+  }
+  input:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+}
+
+/* placeholder */
+
+/* Hide placeholder when focused in Webkit browsers */
+
+/* Dot navigation */
+
+.fs-nav-dots {
+  position: absolute;
+  top: 50%;
+  right: 150px;
+  left: auto;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  button {
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 16px 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: transparent;
+    -webkit-transition: -webkit-transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.5);
+      content: '';
+      text-indent: 0;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.5);
+      content: '';
+      text-indent: 0;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      background-color: rgba(0, 0, 0, 0.4);
+      -webkit-transform: perspective(1000px) rotate3d(0, 1, 0, 180deg);
+      transform: perspective(1000px) rotate3d(0, 1, 0, 180deg);
+    }
+    &.fs-dot-current {
+      -webkit-transform: perspective(1000px) rotate3d(0, 1, 0, 180deg);
+      transform: perspective(1000px) rotate3d(0, 1, 0, 180deg);
+    }
+    &:hover::before, &.fs-dot-current::before {
+      background: #009046;
+    }
+  }
+}
+
+/* Progress bar */
+
+.fs-progress {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  height: 0.5em;
+  background: #fffed8;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Number indicator */
+
+.fs-numbers {
+  position: absolute;
+  top: 25%;
+  right: 98px;
+  overflow: hidden;
+  color: #009046;
+  margin: 40px;
+  width: 2em;
+  font-size: 22px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  cursor: default;
+  &:after {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    content: '/';
+    font-weight: 300;
+    opacity: 0.4;
+    left: 0;
+  }
+  span {
+    float: right;
+    width: 40%;
+    text-align: center;
+  }
+  .fs-number-current {
+    float: left;
+  }
+  .fs-number-new {
+    position: absolute;
+    left: 0;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  &.fs-show-next {
+    .fs-number-new {
+      -webkit-animation: animMoveUpFromDown 0.4s both;
+      animation: animMoveUpFromDown 0.4s both;
+    }
+    .fs-number-current {
+      -webkit-animation: animMoveUp 0.4s both;
+      animation: animMoveUp 0.4s both;
+    }
+  }
+  &.fs-show-prev {
+    .fs-number-new {
+      -webkit-animation: animMoveDownFromUp 0.4s both;
+      animation: animMoveDownFromUp 0.4s both;
+    }
+    .fs-number-current {
+      -webkit-animation: animMoveDown 0.4s both;
+      animation: animMoveDown 0.4s both;
+    }
+  }
+}
+
+/* Animations for numbers */
+/* Show next number */
+
+@-webkit-keyframes animMoveUpFromDown {
+  from {
+    -webkit-transform: translateY(100%);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+  }
+}
+
+
+@keyframes animMoveUpFromDown {
+  from {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+
+@-webkit-keyframes animMoveUp {
+  to {
+    -webkit-transform: translateY(-100%);
+  }
+}
+
+
+@keyframes animMoveUp {
+  to {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+
+
+/* Show previous number */
+
+@-webkit-keyframes animMoveDownFromUp {
+  from {
+    -webkit-transform: translateY(-100%);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+  }
+}
+
+
+@keyframes animMoveDownFromUp {
+  from {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+
+@-webkit-keyframes animMoveDown {
+  to {
+    -webkit-transform: translateY(100%);
+  }
+}
+
+
+@keyframes animMoveDown {
+  to {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+}
+
+
+/* Continue button and submit button */
+
+button {
+  &.fs-submit, &.fs-continue {
+    padding: 15px 20px;
+    border: 3px solid #222222;
+    border-radius: 0px;
+    color: #171717;
+    background-color: #222222;
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+}
+
+.fs-form-overview .fs-submit, .no-js .fs-form .fs-submit {
+  display: block;
+  float: right;
+}
+
+.fs-form-overview .fs-submit {
+  border-color: #232529;
+  color: #232529;
+}
+
+button {
+  &.fs-continue {
+    position: absolute;
+    right: 232px;
+    bottom: 105px;
+    margin: 0 40px 60px 0;
+    font-size: 1.25em;
+    cursor: pointer;
+  }
+  &.fs-submit {
+    &:hover, &:focus {
+      background: #222222;
+      color: #fff;
+    }
+  }
+  &.fs-continue:hover {
+    background: #222222;
+    color: #fff;
+  }
+}
+
+.fs-continue::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  line-height: 3;
+  text-align: center;
+  background: transparent;
+  color: #009046;
+  content: 'or press ENTER';
+  font-size: 0.65em;
+  pointer-events: none;
+}
+
+/* Error message */
+
+.fs-message-error {
+  position: absolute;
+  bottom: 68%;
+  left: 54%;
+  z-index: 800;
+  max-width: 960px;
+  width: 68%;
+  color: #009046;
+  font-size: 18px;
+  text-transform: uppercase;
+  opacity: 0;
+  -webkit-transform: translate3d(-50%, -5px, 0);
+  transform: translate3d(-50%, -5px, 0);
+  &.fs-show {
+    opacity: 1;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/* Animation classes & animations */
+
+.fs-form {
+  li {
+    &.fs-current {
+      visibility: visible;
+    }
+    &.fs-hide, &.fs-show {
+      pointer-events: none;
+    }
+  }
+  .fs-display-next {
+    .fs-hide {
+      visibility: visible;
+      .fs-anim-lower, .fs-anim-upper {
+        -webkit-animation: animHideNext 0.5s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+        animation: animHideNext 0.5s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+      }
+      .fs-anim-lower {
+        -webkit-animation-delay: 0.1s;
+        animation-delay: 0.1s;
+      }
+    }
+    .fs-show {
+      .fs-anim-lower, .fs-anim-upper {
+        -webkit-animation: animShowNext 0.5s cubic-bezier(0.7, 0, 0.3, 1) both 0.15s;
+        animation: animShowNext 0.5s cubic-bezier(0.7, 0, 0.3, 1) both 0.15s;
+      }
+      .fs-anim-lower {
+        -webkit-animation-delay: 0.25s;
+        animation-delay: 0.25s;
+      }
+    }
+  }
+  .fs-display-prev {
+    .fs-hide {
+      visibility: visible;
+      .fs-anim-lower {
+        -webkit-animation: animHidePrev 0.5s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+        animation: animHidePrev 0.5s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+      }
+      .fs-anim-upper {
+        -webkit-animation: animHidePrev 0.5s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+        animation: animHidePrev 0.5s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+        -webkit-animation-delay: 0.1s;
+        animation-delay: 0.1s;
+      }
+    }
+    .fs-show {
+      .fs-anim-lower {
+        -webkit-animation: animShowPrev 0.5s cubic-bezier(0.7, 0, 0.3, 1) both 0.15s;
+        animation: animShowPrev 0.5s cubic-bezier(0.7, 0, 0.3, 1) both 0.15s;
+      }
+      .fs-anim-upper {
+        -webkit-animation: animShowPrev 0.5s cubic-bezier(0.7, 0, 0.3, 1) both 0.15s;
+        animation: animShowPrev 0.5s cubic-bezier(0.7, 0, 0.3, 1) both 0.15s;
+        -webkit-animation-delay: 0.25s;
+        animation-delay: 0.25s;
+      }
+    }
+  }
+}
+
+/* Hide current li when navigating to next question */
+
+@-webkit-keyframes animHideNext {
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -500px, 0);
+  }
+}
+
+
+@keyframes animHideNext {
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -500px, 0);
+    transform: translate3d(0, -500px, 0);
+  }
+}
+
+
+/* Show new li when navigating to next question */
+
+@-webkit-keyframes animShowNext {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 500px, 0);
+  }
+}
+
+
+@keyframes animShowNext {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 500px, 0);
+    transform: translate3d(0, 500px, 0);
+  }
+}
+
+
+/* Hide current li when navigating to previous question */
+
+@-webkit-keyframes animHidePrev {
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 500px, 0);
+  }
+}
+
+
+@keyframes animHidePrev {
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 500px, 0);
+    transform: translate3d(0, 500px, 0);
+  }
+}
+
+
+/* Show new li when navigating to previous question */
+
+@-webkit-keyframes animShowPrev {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -500px, 0);
+  }
+}
+
+
+@keyframes animShowPrev {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -500px, 0);
+    transform: translate3d(0, -500px, 0);
+  }
+}
+
+
+/* Remove IE clear cross */
+
+input[type=text]::-ms-clear {
+  display: none;
+}
+
+/* Adjust form for smaller screens */
+@media screen and (max-width: 52.5em) {
+  body {
+    min-height: 500px;
+  }
+  .fs-form-wrap {
+    font-size: 70%;
+  }
+  .fs-form {
+    top: 6em;
+    right: 2em;
+    left: 0;
+    padding: 0 3.75em 0 1em;
+    width: auto;
+    font-size: 2em;
+    &.fs-form-overview {
+      top: 0;
+      right: 0;
+      padding: 1.5em 1em 8em 1em;
+      font-size: 1.5em;
+    }
+  }
+  .fs-title {
+    padding: 20px;
+  }
+  .fs-numbers {
+    margin: 20px;
+  }
+  .fs-nav-dots {
+    right: 25px;
+  }
+  button.fs-continue {
+    right: 20px;
+    bottom: 20px;
+    margin: 0;
+    padding: 50px 0 0 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 2em;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: '\27A1';
+      text-align: center;
+      font-size: 1em;
+      line-height: 50px;
+    }
+  }
+  .fs-continue::after {
+    content: '';
+  }
+  button.fs-submit {
+    width: 100%;
+    font-size: 1.25em;
+  }
+  .fs-message-error {
+    bottom: 1.75em;
+    left: 0;
+    padding: 0 90px 0 2em;
+    width: 100%;
+    font-size: 1.5em;
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+    &.fs-show {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+/********************/
+/* Default custom select styles */
+
+div.cs-select {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  text-align: left;
+  background: #fff;
+  z-index: 100;
+  width: 100%;
+  max-width: 500px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  &:focus {
+    outline: none;
+    /* For better accessibility add a style for this in your skin */
+  }
+}
+
+.cs-select {
+  select {
+    display: none;
+  }
+  span {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  > span {
+    padding-right: 3em;
+    &::after {
+      speak: none;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+  .cs-selected span::after {
+    speak: none;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '\2713';
+    margin-left: 1em;
+  }
+  > span::after {
+    content: '\25BE';
+    right: 1em;
+  }
+  &.cs-active > span::after {
+    -webkit-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
+  }
+  .cs-options {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+    visibility: hidden;
+    z-index: 10000;
+  }
+  &.cs-active .cs-options {
+    visibility: visible;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    span {
+      padding: 1em;
+    }
+    li.cs-focus span {
+      background-color: #ddd;
+    }
+  }
+  li.cs-optgroup {
+    ul {
+      padding-left: 1em;
+    }
+    > span {
+      cursor: default;
+    }
+  }
+}
+
+/* Placeholder and selected option */
+
+/* Options */
+
+/* Optgroup and optgroup label */
+
+/***********************/
+
+/* Custom select skin: fullscreen color picker (adjusted for fullscreen form) */
+
+div.cs-skin-boxes {
+  background: transparent;
+  font-size: 0.65em;
+  font-weight: 700;
+  max-width: 300px;
+  z-index: 2000;
+  color: #fff;
+}
+
+@media screen and (max-width: 30em) {
+  div.cs-skin-boxes {
+    font-size: 1em;
+  }
+}
+
+.cs-skin-boxes > span {
+  border: 3px solid #292c30;
+  border-radius: 5px;
+  width: 150px;
+  height: 140px;
+  font-size: 0.5em;
+  padding: 0 0 0 10px;
+  background: #555b64;
+}
+
+div.cs-skin-boxes:focus > span {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+.cs-skin-boxes {
+  > span {
+    &::before {
+      content: '';
+      display: block;
+      padding-top: 110px;
+      margin-left: -10px;
+      box-shadow: 0 25px 0 #292c30, inset 0 -10px #292c30;
+    }
+    &::after {
+      top: auto;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  &.cs-active > span::after {
+    top: auto;
+    -webkit-transform: none;
+    transform: none;
+  }
+  .cs-options {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background: #3b3f45;
+    font-size: 12px;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, visibility 0s 0.3s;
+    transition: opacity 0.3s, visibility 0s 0.3s;
+  }
+  &.cs-active .cs-options {
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
+  .cs-options {
+    ul {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+    }
+    li {
+      width: 20%;
+      height: 25%;
+      float: left;
+      position: relative;
+      cursor: pointer;
+      border-radius: 14px;
+      overflow: hidden;
+      opacity: 0;
+      color: rgba(255, 255, 255, 0.6);
+      border: 10px solid transparent;
+      background-clip: padding-box;
+      -webkit-transform: scale3d(0.8, 0.8, 1);
+      transform: scale3d(0.8, 0.8, 1);
+      box-shadow: inset 0 -6em 0 -2em #282b30, inset 0 -1px 1px #000;
+      -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+  }
+  &.cs-active .cs-options li {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    &:nth-child(2) {
+      -webkit-transition-delay: 0.01s;
+      transition-delay: 0.01s;
+    }
+    &:nth-child(3) {
+      -webkit-transition-delay: 0.02s;
+      transition-delay: 0.02s;
+    }
+    &:nth-child(4) {
+      -webkit-transition-delay: 0.03s;
+      transition-delay: 0.03s;
+    }
+    &:nth-child(5) {
+      -webkit-transition-delay: 0.04s;
+      transition-delay: 0.04s;
+    }
+    &:nth-child(6) {
+      -webkit-transition-delay: 0.05s;
+      transition-delay: 0.05s;
+    }
+    &:nth-child(7) {
+      -webkit-transition-delay: 0.06s;
+      transition-delay: 0.06s;
+    }
+    &:nth-child(8) {
+      -webkit-transition-delay: 0.07s;
+      transition-delay: 0.07s;
+    }
+    &:nth-child(9) {
+      -webkit-transition-delay: 0.08s;
+      transition-delay: 0.08s;
+    }
+    &:nth-child(10) {
+      -webkit-transition-delay: 0.09s;
+      transition-delay: 0.09s;
+    }
+    &:nth-child(11) {
+      -webkit-transition-delay: 0.1s;
+      transition-delay: 0.1s;
+    }
+    &:nth-child(12) {
+      -webkit-transition-delay: 0.11s;
+      transition-delay: 0.11s;
+    }
+    &:nth-child(13) {
+      -webkit-transition-delay: 0.12s;
+      transition-delay: 0.12s;
+    }
+    &:nth-child(14) {
+      -webkit-transition-delay: 0.13s;
+      transition-delay: 0.13s;
+    }
+    &:nth-child(15) {
+      -webkit-transition-delay: 0.14s;
+      transition-delay: 0.14s;
+    }
+    &:nth-child(16) {
+      -webkit-transition-delay: 0.15s;
+      transition-delay: 0.15s;
+    }
+    &:nth-child(17) {
+      -webkit-transition-delay: 0.16s;
+      transition-delay: 0.16s;
+    }
+    &:nth-child(18) {
+      -webkit-transition-delay: 0.17s;
+      transition-delay: 0.17s;
+    }
+    &:nth-child(19) {
+      -webkit-transition-delay: 0.18s;
+      transition-delay: 0.18s;
+    }
+    &:nth-child(20) {
+      -webkit-transition-delay: 0.19s;
+      transition-delay: 0.19s;
+    }
+  }
+  .cs-options {
+    li {
+      &.cs-selected {
+        &::after {
+          content: '\2714';
+          color: rgba(0, 0, 0, 0.1);
+          position: absolute;
+          font-size: 2em;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate3d(-50%, -50%, 0) translate3d(0, -1em, 0);
+          transform: translate3d(-50%, -50%, 0) translate3d(0, -1em, 0);
+        }
+        span::after {
+          content: '';
+        }
+      }
+      &.color-588c75 {
+        background-color: #588c75;
+      }
+      &.color-b0c47f {
+        background-color: #b0c47f;
+      }
+      &.color-f3e395 {
+        background-color: #f3e395;
+      }
+      &.color-f3ae73 {
+        background-color: #f3ae73;
+      }
+      &.color-da645a {
+        background-color: #da645a;
+      }
+      &.color-79a38f {
+        background-color: #79a38f;
+      }
+      &.color-c1d099 {
+        background-color: #c1d099;
+      }
+      &.color-f5eaaa {
+        background-color: #f5eaaa;
+      }
+      &.color-f5be8f {
+        background-color: #f5be8f;
+      }
+      &.color-e1837b {
+        background-color: #e1837b;
+      }
+      &.color-9bbaab {
+        background-color: #9bbaab;
+      }
+      &.color-d1dcb2 {
+        background-color: #d1dcb2;
+      }
+      &.color-f9eec0 {
+        background-color: #f9eec0;
+      }
+      &.color-f7cda9 {
+        background-color: #f7cda9;
+      }
+      &.color-e8a19b {
+        background-color: #e8a19b;
+      }
+      &.color-bdd1c8 {
+        background-color: #bdd1c8;
+      }
+      &.color-e1e7cd {
+        background-color: #e1e7cd;
+      }
+      &.color-faf4d4 {
+        background-color: #faf4d4;
+      }
+      &.color-fbdfc9 {
+        background-color: #fbdfc9;
+      }
+      &.color-f1c1bd {
+        background-color: #f1c1bd;
+      }
+    }
+    span {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      line-height: 2em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    li span:hover {
+      color: #fff;
+    }
+  }
+  li {
+    &.cs-focus span, &.cs-selected span {
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 30em) {
+  .cs-skin-boxes .cs-options li {
+    box-shadow: none;
+    border-width: 3px;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 30em) {
+  .cs-skin-boxes .cs-options li.cs-selected::after {
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+  }
+}
+
+@media screen and (max-width: 30em) {
+  .cs-skin-boxes .cs-options span {
+    display: none;
+  }
+}

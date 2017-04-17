@@ -10039,6 +10039,21 @@ header {
   font-family: "Din";
   font-weight: 500;
   color: #fff; }
+  .fs-fields textarea::-webkit-scrollbar {
+    width: 10px; }
+  .fs-fields textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px; }
+  .fs-fields textarea::-webkit-scrollbar-thumb {
+    background-color: #009046;
+    outline: 1px solid slategrey;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px; }
   @media all and (min-width: 768px) {
     .fs-fields textarea {
       font-size: 55px;

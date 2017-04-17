@@ -1,13 +1,4 @@
 @charset "UTF-8";
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Mar 31, 2017, 11:48:47 AM
-    Author     : maneesh
-*/
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -5559,11 +5550,7 @@ a:hover, a:focus {
     display: -ms-flexbox;
     display: flex; } }
 
-/* -------------------------------- 
-
-Primary style
-
--------------------------------- */
+/*Primary*/
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -10048,7 +10035,7 @@ header {
     -ms-border-radius: 5px;
     border-radius: 5px; }
   .fs-fields textarea::-webkit-scrollbar-thumb {
-    background-color: #009046;
+    background-color: #016733;
     outline: 1px solid slategrey;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;

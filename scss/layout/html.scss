@@ -89,6 +89,8 @@ a:hover, a:focus{
     background-color: rgba(0, 0, 0, 0.67);
     height: 30px;
     margin: 0 auto;
+    left: 0;
+    right: 0;
     margin-top: 10px;
     @include transition(.3s);
     position: absolute;

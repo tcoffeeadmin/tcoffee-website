@@ -14,7 +14,6 @@
   }  
   @media all and (min-width: $screen-md) {
     // Tablet
-
   }
   @media all and (min-width: $screen-lg) {
     // Desktop
@@ -28,9 +27,19 @@
   display: block;
   float: right;
   position: absolute;
-  right: 50px;
   top: 50px;
+  right: 15px;
   z-index: 9;
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    right: 50px;
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+  }
 }
 
 /*******************/
@@ -38,6 +47,7 @@
 
 .fs-form-wrap {
   position: relative;
+  padding: 0 15px;
   width: 100%;
   height: 100%;
   color: #fff;
@@ -45,7 +55,19 @@
   background-image: url(../images/contact-form-bg.png);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: 15px bottom;
   overflow: hidden;
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    padding: 0;
+    background-position: bottom;
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+  }
 }
 
 .overview .fs-form-wrap {
@@ -83,8 +105,18 @@
 .fs-form-full {
   top: 32%;
   margin: 0 auto;
-  width: 60%;
+  width: 100%;
   max-width: 960px;
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    width: 60%;
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+  }
 }
 
 .fs-message-error {
@@ -92,7 +124,7 @@
 }
 
 .fs-form-overview {
-  padding: 90px 20% 130px;
+  padding: 90px 15px 130px;
   /*width: 100%;*/
   height: 100%;
   background: #171717;
@@ -106,12 +138,29 @@
     display: block;
     margin-bottom: 35px;
     content: 'Review & Submit';
-    font-size: 70px;
+    font-size: 38px;
     color: #fff;
     font-family: "Din";
     @include black;
     text-transform: uppercase;
-    line-height: 60px;
+    line-height: 40px;
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    padding: 90px 20% 130px;
+    .fs-fields::before {
+      font-size: 55px;
+      line-height: 60px;
+    }
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+    .fs-fields::before {
+      font-size: 70px;
+    }
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
   }
 }
 
@@ -238,11 +287,21 @@
   &.fs-field-label {
     display: inline-block;
     padding: 0 5px 1em 0;
-    font-size: 32px;
+    font-size: 20px;
     pointer-events: none;
     text-transform: uppercase;
     font-family: "Din";
     @include black;
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    font-size: 32px;
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
   }
 }
 
@@ -318,13 +377,13 @@
 .fs-fields input {
   display: block;
   margin: 0;
-  padding: 15px;
+  padding: 10px 15px;
   width: 100%;
   border: none;
   background-color: #009046;
   color: #fff;
   text-overflow: ellipsis;
-  font-size: 55px;
+  font-size: 24px;
   @include border-radius(0px);
   font-family: "Din";
   @include medium;
@@ -332,6 +391,17 @@
   &:invalid {
     box-shadow: none;
     /* removes red shadow in FF*/
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    font-size: 55px;
+    padding: 15px;
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
   }
 }
 
@@ -452,18 +522,29 @@
 }
 
 .fs-fields textarea {
-  padding: 15px;
+  padding: 10px 15px;
   width: 100%;
-  height: 108px;
+  height: 53px;
   border: 2px solid #009046;
   background-color: #009046;
   color: #fffed8;
-  font-size: 55px;
+  font-size: 24px;
   resize: none;
   font-family: "Din";
-  font-size: 55px;
   @include medium;
   color: #fff;
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    font-size: 55px;
+    padding: 15px;
+    height: 108px;
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+  }
 }
 
 /*.fs-form-overview .fs-fields textarea {
@@ -544,6 +625,7 @@
   position: absolute;
   top: 50%;
   right: 150px;
+  display: none;
   left: auto;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -595,6 +677,22 @@
       background: #009046;
     }
   }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    top: 50%;
+    right: 100px;
+    left: auto;
+    display: block;
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+    top: 50%;
+    right: 150px;
+    left: auto;
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+  }
 }
 
 /* Progress bar */
@@ -617,6 +715,7 @@
   top: 25%;
   right: 98px;
   overflow: hidden;
+  display: none;
   color: #009046;
   margin: 40px;
   width: 2em;
@@ -665,6 +764,18 @@
       -webkit-animation: animMoveDown 0.4s both;
       animation: animMoveDown 0.4s both;
     }
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    right: 47px;
+    display: block;
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+    right: 98px;
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
   }
 }
 
@@ -788,11 +899,12 @@ button {
 button {
   &.fs-continue {
     position: absolute;
-    right: 232px;
-    bottom: 105px;
-    margin: 0 40px 60px 0;
-    font-size: 1.25em;
+    right: 0;
+    top: 58%;
+    margin: 0;
+    font-size: 14px;
     cursor: pointer;
+    padding: 10px 15px;
   }
   &.fs-submit {
     &:hover, &:focus {
@@ -803,6 +915,34 @@ button {
   &.fs-continue:hover {
     background: #222222;
     color: #009046;
+  }
+  @media all and (min-width: $screen-sm) {
+    &.fs-continue {
+      right: 18%;
+      top: 68%;
+      margin: 0 18px 60px 0;
+      font-size: 1.25em;
+      padding: 15px 20px;
+    }
+  }  
+  @media all and (min-width: $screen-md) {
+    &.fs-continue {
+      right: 18%;
+      top: 68%;
+      margin: 0 18px 60px 0;
+    }
+  }
+  @media all and (min-width: $screen-lg) {
+    &.fs-continue {
+      margin: 0 28px 60px 0;
+    }
+  }
+  @media all and (min-width: $screen-xlg) {
+    &.fs-continue {
+      right: 24%;
+      top: 56%;
+      margin: 0 35px 60px 0;
+    }
   }
 }
 
@@ -990,7 +1130,7 @@ input[type=text]::-ms-clear {
 }
 
 /* Adjust form for smaller screens */
-@media screen and (max-width: 52.5em) {
+/*@media screen and (max-width: 52.5em) {
   body {
     min-height: 500px;
   }
@@ -1020,30 +1160,30 @@ input[type=text]::-ms-clear {
   .fs-nav-dots {
     right: 25px;
   }
-  button.fs-continue {
-    right: 20px;
-    bottom: 20px;
-    margin: 0;
-    padding: 50px 0 0 50px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    font-size: 2em;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      content: '\27A1';
-      text-align: center;
-      font-size: 1em;
-      line-height: 50px;
+    button.fs-continue {
+      right: 20px;
+      bottom: 20px;
+      margin: 0;
+      padding: 50px 0 0 50px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-size: 2em;
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: '\27A1';
+        text-align: center;
+        font-size: 1em;
+        line-height: 50px;
+      }
     }
-  }
-  .fs-continue::after {
-    content: '';
-  }
+    .fs-continue::after {
+      content: '';
+    }
   button.fs-submit {
     width: 100%;
     font-size: 1.25em;
@@ -1061,6 +1201,12 @@ input[type=text]::-ms-clear {
       transform: translate3d(0, 0, 0);
     }
   }
+}*/
+
+/***********Controls************/
+.fs-controls{
+  position: relative;
+  height: 100%;
 }
 /********************/
 /* Default custom select styles */

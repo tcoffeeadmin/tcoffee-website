@@ -9656,14 +9656,18 @@ header {
   display: block;
   float: right;
   position: absolute;
-  right: 50px;
   top: 50px;
+  right: 15px;
   z-index: 9; }
+  @media all and (min-width: 768px) {
+    .contact-back--btn {
+      right: 50px; } }
 
 /*******************/
 /* Main form wrapper */
 .fs-form-wrap {
   position: relative;
+  padding: 0 15px;
   width: 100%;
   height: 100%;
   color: #fff;
@@ -9671,7 +9675,12 @@ header {
   background-image: url(../images/contact-form-bg.png);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: 15px bottom;
   overflow: hidden; }
+  @media all and (min-width: 768px) {
+    .fs-form-wrap {
+      padding: 0;
+      background-position: bottom; } }
 
 .overview .fs-form-wrap {
   height: auto; }
@@ -9700,14 +9709,17 @@ header {
 .fs-form-full {
   top: 32%;
   margin: 0 auto;
-  width: 60%;
+  width: 100%;
   max-width: 960px; }
+  @media all and (min-width: 768px) {
+    .fs-form-full {
+      width: 60%; } }
 
 .fs-message-error {
   max-width: 960px; }
 
 .fs-form-overview {
-  padding: 90px 20% 130px;
+  padding: 90px 15px 130px;
   /*width: 100%;*/
   height: 100%;
   background: #171717;
@@ -9721,12 +9733,21 @@ header {
     display: block;
     margin-bottom: 35px;
     content: 'Review & Submit';
-    font-size: 70px;
+    font-size: 38px;
     color: #fff;
     font-family: "Din";
     font-weight: 900;
     text-transform: uppercase;
-    line-height: 60px; }
+    line-height: 40px; }
+  @media all and (min-width: 768px) {
+    .fs-form-overview {
+      padding: 90px 20% 130px; }
+      .fs-form-overview .fs-fields::before {
+        font-size: 55px;
+        line-height: 60px; } }
+  @media all and (min-width: 992px) {
+    .fs-form-overview .fs-fields::before {
+      font-size: 70px; } }
 
 /* Switch view animation (we hide the current view, switch the view class and show it again) */
 .fs-form.fs-show {
@@ -9813,11 +9834,14 @@ header {
   .fs-fields > li label.fs-field-label {
     display: inline-block;
     padding: 0 5px 1em 0;
-    font-size: 32px;
+    font-size: 20px;
     pointer-events: none;
     text-transform: uppercase;
     font-family: "Din";
     font-weight: 900; }
+  @media all and (min-width: 768px) {
+    .fs-fields > li label {
+      font-size: 32px; } }
 
 .fs-form-full .fs-fields > li label[data-info]::after {
   position: relative;
@@ -9882,13 +9906,13 @@ header {
 .fs-fields input {
   display: block;
   margin: 0;
-  padding: 15px;
+  padding: 10px 15px;
   width: 100%;
   border: none;
   background-color: #009046;
   color: #fff;
   text-overflow: ellipsis;
-  font-size: 55px;
+  font-size: 24px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
@@ -9899,6 +9923,10 @@ header {
   .fs-fields input:invalid {
     box-shadow: none;
     /* removes red shadow in FF*/ }
+  @media all and (min-width: 768px) {
+    .fs-fields input {
+      font-size: 55px;
+      padding: 15px; } }
 
 .fs-form-overview .fs-fields input {
   border-bottom-color: transparent;
@@ -9998,18 +10026,22 @@ header {
   color: rgba(0, 0, 0, 0.8); }
 
 .fs-fields textarea {
-  padding: 15px;
+  padding: 10px 15px;
   width: 100%;
-  height: 108px;
+  height: 53px;
   border: 2px solid #009046;
   background-color: #009046;
   color: #fffed8;
-  font-size: 55px;
+  font-size: 24px;
   resize: none;
   font-family: "Din";
-  font-size: 55px;
   font-weight: 500;
   color: #fff; }
+  @media all and (min-width: 768px) {
+    .fs-fields textarea {
+      font-size: 55px;
+      padding: 15px;
+      height: 108px; } }
 
 /*.fs-form-overview .fs-fields textarea {
   height: 60px;
@@ -10072,6 +10104,7 @@ header {
   position: absolute;
   top: 50%;
   right: 150px;
+  display: none;
   left: auto;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%); }
@@ -10118,6 +10151,17 @@ header {
       transform: perspective(1000px) rotate3d(0, 1, 0, 180deg); }
     .fs-nav-dots button:hover::before, .fs-nav-dots button.fs-dot-current::before {
       background: #009046; }
+  @media all and (min-width: 768px) {
+    .fs-nav-dots {
+      top: 50%;
+      right: 100px;
+      left: auto;
+      display: block; } }
+  @media all and (min-width: 992px) {
+    .fs-nav-dots {
+      top: 50%;
+      right: 150px;
+      left: auto; } }
 
 /* Progress bar */
 .fs-progress {
@@ -10136,6 +10180,7 @@ header {
   top: 25%;
   right: 98px;
   overflow: hidden;
+  display: none;
   color: #009046;
   margin: 40px;
   width: 2em;
@@ -10173,6 +10218,13 @@ header {
   .fs-numbers.fs-show-prev .fs-number-current {
     -webkit-animation: animMoveDown 0.4s both;
     animation: animMoveDown 0.4s both; }
+  @media all and (min-width: 768px) {
+    .fs-numbers {
+      right: 47px;
+      display: block; } }
+  @media all and (min-width: 992px) {
+    .fs-numbers {
+      right: 98px; } }
 
 /* Animations for numbers */
 /* Show next number */
@@ -10258,11 +10310,12 @@ button.fs-submit, button.fs-continue {
 
 button.fs-continue {
   position: absolute;
-  right: 232px;
-  bottom: 105px;
-  margin: 0 40px 60px 0;
-  font-size: 1.25em;
-  cursor: pointer; }
+  right: 0;
+  top: 58%;
+  margin: 0;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 10px 15px; }
 
 button.fs-submit:hover, button.fs-submit:focus {
   background: #222222;
@@ -10271,6 +10324,30 @@ button.fs-submit:hover, button.fs-submit:focus {
 button.fs-continue:hover {
   background: #222222;
   color: #009046; }
+
+@media all and (min-width: 768px) {
+  button.fs-continue {
+    right: 18%;
+    top: 68%;
+    margin: 0 18px 60px 0;
+    font-size: 1.25em;
+    padding: 15px 20px; } }
+
+@media all and (min-width: 992px) {
+  button.fs-continue {
+    right: 18%;
+    top: 68%;
+    margin: 0 18px 60px 0; } }
+
+@media all and (min-width: 1200px) {
+  button.fs-continue {
+    margin: 0 28px 60px 0; } }
+
+@media all and (min-width: 1400px) {
+  button.fs-continue {
+    right: 24%;
+    top: 56%;
+    margin: 0 35px 60px 0; } }
 
 .fs-continue::after {
   position: absolute;
@@ -10404,53 +10481,64 @@ input[type=text]::-ms-clear {
   display: none; }
 
 /* Adjust form for smaller screens */
-@media screen and (max-width: 52.5em) {
+/*@media screen and (max-width: 52.5em) {
   body {
-    min-height: 500px; }
+    min-height: 500px;
+  }
   .fs-form-wrap {
-    font-size: 70%; }
+    font-size: 70%;
+  }
   .fs-form {
     top: 6em;
     right: 2em;
     left: 0;
     padding: 0 3.75em 0 1em;
     width: auto;
-    font-size: 2em; }
-    .fs-form.fs-form-overview {
+    font-size: 2em;
+    &.fs-form-overview {
       top: 0;
       right: 0;
       padding: 1.5em 1em 8em 1em;
-      font-size: 1.5em; }
+      font-size: 1.5em;
+    }
+  }
   .fs-title {
-    padding: 20px; }
+    padding: 20px;
+  }
   .fs-numbers {
-    margin: 20px; }
+    margin: 20px;
+  }
   .fs-nav-dots {
-    right: 25px; }
-  button.fs-continue {
-    right: 20px;
-    bottom: 20px;
-    margin: 0;
-    padding: 50px 0 0 50px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    font-size: 2em; }
-    button.fs-continue::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      content: '\27A1';
-      text-align: center;
-      font-size: 1em;
-      line-height: 50px; }
-  .fs-continue::after {
-    content: ''; }
+    right: 25px;
+  }
+    button.fs-continue {
+      right: 20px;
+      bottom: 20px;
+      margin: 0;
+      padding: 50px 0 0 50px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-size: 2em;
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: '\27A1';
+        text-align: center;
+        font-size: 1em;
+        line-height: 50px;
+      }
+    }
+    .fs-continue::after {
+      content: '';
+    }
   button.fs-submit {
     width: 100%;
-    font-size: 1.25em; }
+    font-size: 1.25em;
+  }
   .fs-message-error {
     bottom: 1.75em;
     left: 0;
@@ -10458,10 +10546,17 @@ input[type=text]::-ms-clear {
     width: 100%;
     font-size: 1.5em;
     -webkit-transform: translate3d(0, -5px, 0);
-    transform: translate3d(0, -5px, 0); }
-    .fs-message-error.fs-show {
+    transform: translate3d(0, -5px, 0);
+    &.fs-show {
       -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0); } }
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}*/
+/***********Controls************/
+.fs-controls {
+  position: relative;
+  height: 100%; }
 
 /********************/
 /* Default custom select styles */

@@ -9650,13 +9650,15 @@ header {
     height: 100%; }
 
 /*Contact back button*/
-.contact-back {
-  padding-top: 75px; }
-  .contact-back .contact-back--btn {
-    width: 40px;
-    height: 40px;
-    display: block;
-    float: right; }
+.contact-back--btn {
+  width: 40px;
+  height: 40px;
+  display: block;
+  float: right;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  z-index: 9; }
 
 /*******************/
 /* Main form wrapper */
@@ -9668,7 +9670,8 @@ header {
   background-color: #171717;
   background-image: url(../images/contact-form-bg.png);
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  overflow: hidden; }
 
 .overview .fs-form-wrap {
   height: auto; }
@@ -9704,7 +9707,7 @@ header {
   max-width: 960px; }
 
 .fs-form-overview {
-  padding: 2.5em 20% 6em;
+  padding: 90px 20% 130px;
   /*width: 100%;*/
   height: 100%;
   background: #171717;
@@ -9722,7 +9725,8 @@ header {
     color: #fff;
     font-family: "Din";
     font-weight: 900;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    line-height: 60px; }
 
 /* Switch view animation (we hide the current view, switch the view class and show it again) */
 .fs-form.fs-show {
@@ -9799,9 +9803,9 @@ header {
   width: 100%; }
 
 .fs-form-overview .fs-fields > li, .no-js .fs-form .fs-fields > li {
-  margin: 1em 0 2em;
-  padding: 0 0 2em 0;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1); }
+  margin: 0 0 35px;
+  padding: 0 0 15px 0;
+  border-bottom: 1px solid #898989; }
 
 /* Labels & info */
 .fs-fields > li label {
@@ -9868,6 +9872,12 @@ header {
   transform: translateY(0);
   pointer-events: auto; }
 
+.fs-form-overview .fs-fields > li label.fs-field-label {
+  color: #959595;
+  font-size: 16px;
+  margin-bottom: 15px;
+  padding: 0; }
+
 /* Inputs */
 .fs-fields input {
   display: block;
@@ -9892,7 +9902,10 @@ header {
 
 .fs-form-overview .fs-fields input {
   border-bottom-color: transparent;
-  color: rgba(0, 0, 0, 0.5); }
+  color: #fff;
+  background-color: transparent;
+  padding: 0px;
+  font-size: 22px; }
 
 .fs-fields [required] {
   background-image: url(../img/abacusstar.svg);
@@ -9905,9 +9918,9 @@ header {
   /* Fixes chrome bug with placeholder */ }
 
 .fs-form-overview .fs-fields input {
-  font-size: 1.2em; }
+  /*font-size: 1.2em;*/ }
   .fs-form-overview .fs-fields input:focus {
-    background-color: #fffed8;
+    background-color: transparent;
     /* Fixes chrome bug with placeholder */ }
 
 .fs-fields .fs-radio-custom input[type="radio"] {
@@ -9998,10 +10011,11 @@ header {
   font-weight: 500;
   color: #fff; }
 
-.fs-form-overview .fs-fields textarea {
+/*.fs-form-overview .fs-fields textarea {
   height: 60px;
-  color: #fff; }
-
+  color: #fff;
+  background-color: transparent;
+}*/
 #q2 {
   text-transform: lowercase; }
 
@@ -10010,9 +10024,13 @@ header {
 
 .fs-form-overview .fs-fields textarea {
   padding: 0;
-  border-color: transparent; }
+  color: #fff;
+  font-size: 22px;
+  border-color: transparent;
+  background-color: transparent;
+  height: 150px; }
   .fs-form-overview .fs-fields textarea:focus {
-    background: #fffed8; }
+    background: transparent; }
 
 .fs-form div.cs-select.cs-skin-boxes {
   display: block; }
@@ -10210,7 +10228,7 @@ button.fs-submit, button.fs-continue {
   padding: 15px 20px;
   border: 3px solid #222222;
   border-radius: 0px;
-  color: #171717;
+  color: #fff;
   background-color: #222222;
   text-transform: uppercase;
   font-size: 25px; }
@@ -10220,8 +10238,23 @@ button.fs-submit, button.fs-continue {
   float: right; }
 
 .fs-form-overview .fs-submit {
-  border-color: #232529;
-  color: #232529; }
+  border-color: #009046;
+  color: #fff;
+  font-size: 15px;
+  background-color: #009046;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+  font-weight: 900; }
+  .fs-form-overview .fs-submit:hover, .fs-form-overview .fs-submit:focus {
+    background: #fff;
+    color: #009046;
+    border-color: #fff;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    transition: 0.2s; }
 
 button.fs-continue {
   position: absolute;
@@ -10233,11 +10266,11 @@ button.fs-continue {
 
 button.fs-submit:hover, button.fs-submit:focus {
   background: #222222;
-  color: #fff; }
+  color: #009046; }
 
 button.fs-continue:hover {
   background: #222222;
-  color: #fff; }
+  color: #009046; }
 
 .fs-continue::after {
   position: absolute;

@@ -22,16 +22,16 @@
 }
 
 /*Contact back button*/
-.contact-back{
-  padding-top: 75px;
-  .contact-back--btn{
-    width: 40px;
-    height: 40px;
-    display: block;
-    float: right;
-  }
+.contact-back--btn{
+  width: 40px;
+  height: 40px;
+  display: block;
+  float: right;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  z-index: 9;
 }
-
 
 /*******************/
 /* Main form wrapper */
@@ -45,6 +45,7 @@
   background-image: url(../images/contact-form-bg.png);
   background-size: contain;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .overview .fs-form-wrap {
@@ -91,7 +92,7 @@
 }
 
 .fs-form-overview {
-  padding: 2.5em 20% 6em;
+  padding: 90px 20% 130px;
   /*width: 100%;*/
   height: 100%;
   background: #171717;
@@ -110,6 +111,7 @@
     font-family: "Din";
     @include black;
     text-transform: uppercase;
+    line-height: 60px;
   }
 }
 
@@ -224,9 +226,9 @@
 }
 
 .fs-form-overview .fs-fields > li, .no-js .fs-form .fs-fields > li {
-  margin: 1em 0 2em;
-  padding: 0 0 2em 0;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  margin: 0 0 35px;
+  padding: 0 0 15px 0;
+  border-bottom: 1px solid #898989;
 }
 
 /* Labels & info */
@@ -304,6 +306,13 @@
   }
 }
 
+.fs-form-overview .fs-fields > li label.fs-field-label{
+  color: #959595;
+  font-size: 16px;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
 /* Inputs */
 
 .fs-fields input {
@@ -328,7 +337,10 @@
 
 .fs-form-overview .fs-fields input {
   border-bottom-color: transparent;
-  color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  background-color: transparent;
+  padding: 0px;
+  font-size: 22px;
 }
 
 .fs-fields {
@@ -346,10 +358,10 @@
 
 .fs-form-overview .fs-fields input {
   &:focus {
-    background-color: #fffed8;
+    background-color: transparent;
     /* Fixes chrome bug with placeholder */
   }
-  font-size: 1.2em;
+  /*font-size: 1.2em;*/
 }
 
 .fs-fields {
@@ -454,10 +466,11 @@
   color: #fff;
 }
 
-.fs-form-overview .fs-fields textarea {
+/*.fs-form-overview .fs-fields textarea {
   height: 60px;
   color: #fff;
-}
+  background-color: transparent;
+}*/
 
 #q2 {
   text-transform: lowercase;
@@ -469,9 +482,13 @@
 
 .fs-form-overview .fs-fields textarea {
   padding: 0;
+  color: #fff;
+  font-size: 22px;
   border-color: transparent;
+  background-color: transparent;
+  height: 150px;
   &:focus {
-    background: #fffed8;
+    background: transparent;
   }
 }
 
@@ -741,7 +758,7 @@ button {
     padding: 15px 20px;
     border: 3px solid #222222;
     border-radius: 0px;
-    color: #171717;
+    color: #fff;
     background-color: #222222;
     text-transform: uppercase;
     font-size: 25px;
@@ -754,8 +771,18 @@ button {
 }
 
 .fs-form-overview .fs-submit {
-  border-color: #232529;
-  color: #232529;
+  border-color: #009046;
+  color: #fff;
+  font-size: 15px;
+  background-color: #009046;
+  @include transition(.2s);
+  @include black;
+  &:hover, &:focus {
+    background: #fff;
+    color: #009046;
+    border-color: #fff;
+    @include transition(.2s);
+  }
 }
 
 button {
@@ -770,12 +797,12 @@ button {
   &.fs-submit {
     &:hover, &:focus {
       background: #222222;
-      color: #fff;
+      color: #009046;
     }
   }
   &.fs-continue:hover {
     background: #222222;
-    color: #fff;
+    color: #009046;
   }
 }
 

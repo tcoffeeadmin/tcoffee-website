@@ -242,6 +242,7 @@
     }
     &:hover{
       .layer{
+        bottom: 10px;
         background-color: #009046;
         /*@include transform(scale(1.02));*/
         @include transition(.2s);

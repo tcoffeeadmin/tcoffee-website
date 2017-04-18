@@ -11115,6 +11115,7 @@ div.cs-skin-boxes:focus > span {
         -ms-transition: 0.2s;
         transition: 0.2s; }
     .portfolio-images li:hover .layer {
+      bottom: 10px;
       background-color: #009046;
       /*@include transform(scale(1.02));*/
       -webkit-transition: 0.2s;

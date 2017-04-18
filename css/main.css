@@ -11073,29 +11073,29 @@ div.cs-skin-boxes:focus > span {
     display: inline-block;
     width: 210px;
     position: relative;
-    -webkit-transition: 0.2s;
-    -moz-transition: 0.2s;
-    -ms-transition: 0.2s;
-    transition: 0.2s; }
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s; }
     .portfolio-images li img {
       -webkit-filter: grayscale(100%);
       -moz-filter: grayscale(100%);
       -ms-filter: grayscale(100%);
       filter: grayscale(100%);
-      -webkit-transition: 0.2s;
-      -moz-transition: 0.2s;
-      -ms-transition: 0.2s;
-      transition: 0.2s;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      transition: 0.5s;
       z-index: 1; }
     .portfolio-images li .layer {
       position: absolute;
       width: 100%;
       bottom: 0;
       padding: 10px;
-      -webkit-transition: 0.2s;
-      -moz-transition: 0.2s;
-      -ms-transition: 0.2s;
-      transition: 0.2s; }
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      transition: 0.5s; }
       .portfolio-images li .layer h4 {
         text-transform: uppercase;
         color: #fff;
@@ -11110,24 +11110,24 @@ div.cs-skin-boxes:focus > span {
         vertical-align: super;
         float: right;
         visibility: hidden;
-        -webkit-transition: 0.2s;
-        -moz-transition: 0.2s;
-        -ms-transition: 0.2s;
-        transition: 0.2s; }
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        transition: 0.5s; }
     .portfolio-images li:hover .layer {
       bottom: 10px;
       background-color: #009046;
       /*@include transform(scale(1.02));*/
-      -webkit-transition: 0.2s;
-      -moz-transition: 0.2s;
-      -ms-transition: 0.2s;
-      transition: 0.2s; }
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      transition: 0.5s; }
       .portfolio-images li:hover .layer img {
         visibility: visible;
-        -webkit-transition: 0.2s;
-        -moz-transition: 0.2s;
-        -ms-transition: 0.2s;
-        transition: 0.2s; }
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        transition: 0.5s; }
     .portfolio-images li:hover img {
       z-index: 9;
       -webkit-filter: grayscale(0%);
@@ -11135,7 +11135,7 @@ div.cs-skin-boxes:focus > span {
       -ms-filter: grayscale(0%);
       filter: grayscale(0%);
       /*@include transform(scale(1.02));*/
-      -webkit-transition: 0.2s;
-      -moz-transition: 0.2s;
-      -ms-transition: 0.2s;
-      transition: 0.2s; }
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      transition: 0.5s; }

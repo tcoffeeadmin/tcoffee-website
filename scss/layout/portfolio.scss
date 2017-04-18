@@ -207,10 +207,10 @@
     display: inline-block;
     width: 210px;
     position: relative;
-    @include transition(.2s);
+    @include transition(.5s);
     img{
       @include filter(grayscale(100%));
-      @include transition(.2s);
+      @include transition(.5s);
       z-index: 1;
       &:hover{
       }
@@ -220,7 +220,7 @@
       width: 100%;
       bottom: 0;
       padding: 10px;
-      @include transition(.2s);
+      @include transition(.5s);
       h4{
         text-transform: uppercase;
         color: #fff;
@@ -237,7 +237,7 @@
         vertical-align: super;
         float: right;
         visibility: hidden;
-        @include transition(.2s);
+        @include transition(.5s);
       }
     }
     &:hover{
@@ -245,17 +245,17 @@
         bottom: 10px;
         background-color: #009046;
         /*@include transform(scale(1.02));*/
-        @include transition(.2s);
+        @include transition(.5s);
         img{
           visibility: visible;
-          @include transition(.2s);
+          @include transition(.5s);
         }
       }
       img{
         z-index: 9;
         @include filter(grayscale(0%));
         /*@include transform(scale(1.02));*/
-        @include transition(.2s);
+        @include transition(.5s);
       }
     }
   }

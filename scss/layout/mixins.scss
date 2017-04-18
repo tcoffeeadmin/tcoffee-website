@@ -68,6 +68,24 @@
           transition: $transition;
 }
 
+/*Grayscale*/
+@mixin filter($filter){
+  -webkit-filter: $filter;
+     -moz-filter: $filter;
+      -ms-filter: $filter;
+          filter: $filter;
+}
+
+
+/*Transform*/
+@mixin transform($transform){
+  -webkit-transform: $transform;
+     -moz-transform: $transform;
+      -ms-transform: $transform;
+          transform: $transform;
+}
+
+
 /*Font weight*/
 @mixin light {
   font-weight: $font-light;

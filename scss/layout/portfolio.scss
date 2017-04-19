@@ -270,8 +270,10 @@
   position: relative;
   width: 100%;
   height: 100%;
+  @include filter(grayscale(100%));
   @include transition(.5s);
   &:hover{
+    @include filter(grayscale(0%));
     .card__container--closed .card__caption{
       margin-top: -10px;
       background-color: #009046;
@@ -413,11 +415,11 @@
 }
 
 .card__btn-close {
-    position: absolute;
-    top: 50px;
-    right: 50px;
-    width: 45px;
-    cursor: pointer;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 45px;
+  cursor: pointer;
 }
 
 .card__container--closed .card__btn-close {

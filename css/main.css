@@ -11147,23 +11147,32 @@ div.cs-skin-boxes:focus > span {
   position: relative;
   width: 100%;
   height: 100%;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   transition: 0.5s; }
-  .card:hover .card__container--closed .card__caption {
-    margin-top: -10px;
-    background-color: #009046;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    transition: 0.5s; }
-  .card:hover .card__container--closed .zoom-icon {
-    visibility: visible;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    transition: 0.5s; }
+  .card:hover {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    filter: grayscale(0%); }
+    .card:hover .card__container--closed .card__caption {
+      margin-top: -10px;
+      background-color: #009046;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      transition: 0.5s; }
+    .card:hover .card__container--closed .zoom-icon {
+      visibility: visible;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      transition: 0.5s; }
 
 .zoom-icon {
   position: absolute;

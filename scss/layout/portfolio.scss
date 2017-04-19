@@ -270,10 +270,8 @@
   position: relative;
   width: 100%;
   height: 100%;
-  @include filter(grayscale(100%));
   @include transition(.5s);
   &:hover{
-    @include filter(grayscale(0%));
     .card__container--closed .card__caption{
       margin-top: -10px;
       background-color: #009046;
@@ -283,6 +281,12 @@
       visibility: visible;
       @include transition(.5s);
     }
+  }
+}
+.card__container--closed{
+  @include filter(grayscale(100%));
+  &:hover{
+    @include filter(grayscale(0%));
   }
 }
 .zoom-icon{

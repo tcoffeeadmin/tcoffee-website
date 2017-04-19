@@ -18,20 +18,16 @@ and open the template in the editor.
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+    <script>
+      if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+        var root = document.getElementsByTagName('html')[0];
+        root.setAttribute('class', 'ff');
+      }
+      ;
+    </script>
   </head>
   <body>
-    <!--Portfolio product pop up-->
-    <div id="cover" class="cover"><div class="back-layer"></div></div>
-    <div id="open-content" class="open-content">
-      <a href="#" id="close-content" class="close-content">
-        <img src="images/back.svg" class="img-responsive" alt="back" title="Back"/>
-      </a>
-      <img id="open-content-image" src="" />
-      <div class="text" id="open-content-text">
-      </div>
-    </div>
-    <!--Portfolio product pop up end-->
-
+    <div class="pattern pattern--hidden"></div>
     <!--Portfolio top section-->
     <div id="top" class="container-fluid portfolio">
       <div class="row">
@@ -122,7 +118,7 @@ and open the template in the editor.
         </div>
         <div class="container down-click">
           <!--Down button-->
-          <a href="#team">
+          <a href="#portfolio">
             <div class="down-btn down-btn--inner">
               <div class="down-btn--circle"></div>
               <div class="v-line">
@@ -138,7 +134,7 @@ and open the template in the editor.
     <!--Portfolio top section end-->
 
     <!--Portfolio section-->
-    <div class="container-fluid portfolio-section">
+    <div id="portfolio" class="container-fluid portfolio-section">
       <div class="row">
         <div class="col-sm-12 col-xs-12 portfolio-section_box">
           <ul class="nav nav-tabs portfolio-section--list">
@@ -150,6 +146,7 @@ and open the template in the editor.
             <li><a data-toggle="tab" href="#portfolio6">profile video</a></li>
           </ul>
 
+          <div class="pattern pattern--hidden"></div>
           <div class="tab-content portfolio-section--tabs">
             <div id="portfolio1" class="tab-pane fade in active">
               <div class="tab-pane--inner">
@@ -157,38 +154,98 @@ and open the template in the editor.
                   <ul class="portfolio-images">
                     <!--Product-->
                     <li>
-                      <div class="card card-color-0">
-                        <div class="border"></div>
-                        <img src="images/p1.jpg" class="img-responsive"/>
-                        <div class="layer">
-                          <h4>
-                            lemaritime<br>
-                            <span>website</span>
-                          </h4>
-                          <img src="images/zoom.png">
+                      <div class="card">
+                        <div class="card__container card__container--closed">
+                          <svg class="card__image" viewBox="0 0 1920 500">
+                          <defs>
+                          <clipPath id="clipPath1">
+                            <!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+                            <circle class="clip" cx="960" cy="250" r="992"></circle>
+                          </clipPath>
+                          </defs>
+                          <image clip-path="url(#clipPath1)" width="100%" height="100%" xlink:href="images/p1.jpg"></image>
+                          </svg>
+                          <div class="card__content">
+                            <span class="card__btn-close"><img src="images/left-arrow.svg" alt="back" title="Back"/></span>
+                            <div class="card__caption">
+                              <h2 class="card__title">lemaritime</h2>
+                              <p class="card__subtitle">website</p>
+                              <img src="images/zoom.png" class="zoom-icon"/>
+                            </div>
+                            <div class="card__copy">
+                              <p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
+                              <p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
+                              <p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
+                              <p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
+                              <p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
+                              <p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </li>
                     <!--Product-->
                     <li>
-                      <img src="images/p2.jpg" class="img-responsive"/>
-                      <div class="layer">
-                        <h4>
-                          lemaritime<br>
-                          <span>website</span>
-                        </h4>
-                        <img src="images/zoom.png">
+                      <div class="card">
+                        <div class="card__container card__container--closed">
+                          <svg class="card__image" viewBox="0 0 1920 500">
+                          <defs>
+                          <clipPath id="clipPath1">
+                            <!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+                            <circle class="clip" cx="960" cy="250" r="992"></circle>
+                          </clipPath>
+                          </defs>
+                          <image clip-path="url(#clipPath1)" width="100%" height="100%" xlink:href="images/p2.jpg"></image>
+                          </svg>
+                          <div class="card__content">
+                            <span class="card__btn-close"><img src="images/left-arrow.svg" alt="back" title="Back"/></span>
+                            <div class="card__caption">
+                              <h2 class="card__title">lemaritime</h2>
+                              <p class="card__subtitle">website</p>
+                              <img src="images/zoom.png" class="zoom-icon"/>
+                            </div>
+                            <div class="card__copy">
+                              <p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
+                              <p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
+                              <p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
+                              <p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
+                              <p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
+                              <p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </li>
                     <!--Product-->
                     <li>
-                      <img src="images/p3.jpg" class="img-responsive"/>
-                      <div class="layer">
-                        <h4>
-                          lemaritime<br>
-                          <span>website</span>
-                        </h4>
-                        <img src="images/zoom.png">
+                      <div class="card">
+                        <div class="card__container card__container--closed">
+                          <svg class="card__image" viewBox="0 0 1920 500">
+                          <defs>
+                          <clipPath id="clipPath1">
+                            <!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+                            <circle class="clip" cx="960" cy="250" r="992"></circle>
+                          </clipPath>
+                          </defs>
+                          <image clip-path="url(#clipPath1)" width="100%" height="100%" xlink:href="images/p3.jpg"></image>
+                          </svg>
+                          <div class="card__content">
+                            <span class="card__btn-close"><img src="images/left-arrow.svg" alt="back" title="Back"/></span>
+                            <div class="card__caption">
+                              <h2 class="card__title">lemaritime</h2>
+                              <p class="card__subtitle">website</p>
+                              <img src="images/zoom.png" class="zoom-icon"/>
+                            </div>
+                            <div class="card__copy">
+                              <p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
+                              <p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
+                              <p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
+                              <p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
+                              <p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
+                              <p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </li>
                     <!--Product-->
@@ -1518,196 +1575,10 @@ and open the template in the editor.
       };
     </script>
     <!--Profile view-->
-    <script>
-      // listing vars here so they're in the global scope
-      var cards, nCards, cover, openContent, openContentText, pageIsOpen = false,
-              openContentImage, closeContent, windowWidth, windowHeight, currentCard;
-
-// initiate the process
-      init();
-
-      function init() {
-        resize();
-        selectElements();
-        attachListeners();
-      }
-
-// select all the elements in the DOM that are going to be used
-      function selectElements() {
-        cards = document.getElementsByClassName('card'),
-                nCards = cards.length,
-                cover = document.getElementById('cover'),
-                openContent = document.getElementById('open-content'),
-                openContentText = document.getElementById('open-content-text'),
-                openContentImage = document.getElementById('open-content-image')
-        closeContent = document.getElementById('close-content');
-      }
-
-      /* Attaching three event listeners here:
-       - a click event listener for each card
-       - a click event listener to the close button
-       - a resize event listener on the window
-       */
-      function attachListeners() {
-        for (var i = 0; i < nCards; i++) {
-          attachListenerToCard(i);
-        }
-        closeContent.addEventListener('click', onCloseClick);
-        window.addEventListener('resize', resize);
-      }
-
-      function attachListenerToCard(i) {
-        cards[i].addEventListener('click', function (e) {
-          var card = getCardElement(e.target);
-          onCardClick(card, i);
-        })
-      }
-
-      /* When a card is clicked */
-      function onCardClick(card, i) {
-        // set the current card
-        currentCard = card;
-        // add the 'clicked' class to the card, so it animates out
-        currentCard.className += ' clicked';
-        // animate the card 'cover' after a 500ms delay
-        setTimeout(function () {
-          animateCoverUp(currentCard)
-        }, 500);
-        // animate out the other cards
-        animateOtherCards(currentCard, true);
-        // add the open class to the page content
-        openContent.className += ' open';
-      }
-
-      /*
-       * This effect is created by taking a separate 'cover' div, placing
-       * it in the same position as the clicked card, and animating it to
-       * become the background of the opened 'page'.
-       * It looks like the card itself is animating in to the background,
-       * but doing it this way is more performant (because the cover div is
-       * absolutely positioned and has no children), and there's just less
-       * having to deal with z-index and other elements in the card
-       */
-      function animateCoverUp(card) {
-        // get the position of the clicked card
-        var cardPosition = card.getBoundingClientRect();
-        // get the style of the clicked card
-        var cardStyle = getComputedStyle(card);
-        setCoverPosition(cardPosition);
-        setCoverColor(cardStyle);
-        scaleCoverToFillWindow(cardPosition);
-        // update the content of the opened page
-        openContentText.innerHTML = '<h1>' + card.children[2].textContent + '</h1>' + paragraphText;
-        openContentImage.src = card.children[1].src;
-        setTimeout(function () {
-          // update the scroll position to 0 (so it is at the top of the 'opened' page)
-          window.scroll(0, 0);
-          // set page to open
-          pageIsOpen = true;
-        }, 300);
-      }
-
-      function animateCoverBack(card) {
-        var cardPosition = card.getBoundingClientRect();
-        // the original card may be in a different position, because of scrolling, so the cover position needs to be reset before scaling back down
-        setCoverPosition(cardPosition);
-        scaleCoverToFillWindow(cardPosition);
-        // animate scale back to the card size and position
-        cover.style.transform = 'scaleX(' + 1 + ') scaleY(' + 1 + ') translate3d(' + (0) + 'px, ' + (0) + 'px, 0px)';
-        setTimeout(function () {
-          // set content back to empty
-          openContentText.innerHTML = '';
-          openContentImage.src = '';
-          // style the cover to 0x0 so it is hidden
-          cover.style.width = '0px';
-          cover.style.height = '0px';
-          pageIsOpen = false;
-          // remove the clicked class so the card animates back in
-          currentCard.className = currentCard.className.replace(' clicked', '');
-        }, 301);
-      }
-
-      function setCoverPosition(cardPosition) {
-        // style the cover so it is in exactly the same position as the card
-        cover.style.left = cardPosition.left + 'px';
-        cover.style.top = cardPosition.top + 'px';
-        cover.style.width = cardPosition.width + 'px';
-        cover.style.height = cardPosition.height + 'px';
-      }
-
-      function setCoverColor(cardStyle) {
-        // style the cover to be the same color as the card
-        cover.style.backgroundColor = cardStyle.backgroundColor;
-      }
-
-      function scaleCoverToFillWindow(cardPosition) {
-        // calculate the scale and position for the card to fill the page,
-        var scaleX = windowWidth / cardPosition.width;
-        var scaleY = windowHeight / cardPosition.height;
-        var offsetX = (windowWidth / 2 - cardPosition.width / 2 - cardPosition.left) / scaleX;
-        var offsetY = (windowHeight / 2 - cardPosition.height / 2 - cardPosition.top) / scaleY;
-        // set the transform on the cover - it will animate because of the transition set on it in the CSS
-        cover.style.transform = 'scaleX(' + scaleX + ') scaleY(' + scaleY + ') translate3d(' + (offsetX) + 'px, ' + (offsetY) + 'px, 0px)';
-      }
-
-      /* When the close is clicked */
-      function onCloseClick() {
-        // remove the open class so the page content animates out
-        openContent.className = openContent.className.replace(' open', '');
-        // animate the cover back to the original position card and size
-        animateCoverBack(currentCard);
-        // animate in other cards
-        animateOtherCards(currentCard, false);
-      }
-
-      function animateOtherCards(card, out) {
-        var delay = 100;
-        for (var i = 0; i < nCards; i++) {
-          // animate cards on a stagger, 1 each 100ms
-          if (cards[i] === card)
-            continue;
-          if (out)
-            animateOutCard(cards[i], delay);
-          else
-            animateInCard(cards[i], delay);
-          delay += 100;
-        }
-      }
-
-// animations on individual cards (by adding/removing card names)
-      function animateOutCard(card, delay) {
-        setTimeout(function () {
-          card.className += ' out';
-        }, delay);
-      }
-
-      function animateInCard(card, delay) {
-        setTimeout(function () {
-          card.className = card.className.replace(' out', '');
-        }, delay);
-      }
-
-// this function searches up the DOM tree until it reaches the card element that has been clicked
-      function getCardElement(el) {
-        if (el.className.indexOf('card ') > -1)
-          return el;
-        else
-          return getCardElement(el.parentElement);
-      }
-
-// resize function - records the window width and height
-      function resize() {
-        if (pageIsOpen) {
-          // update position of cover
-          var cardPosition = currentCard.getBoundingClientRect();
-          setCoverPosition(cardPosition);
-          scaleCoverToFillWindow(cardPosition);
-        }
-        windowWidth = window.innerWidth;
-        windowHeight = window.innerHeight;
-      }
-
-      var paragraphText = '<p>Somebody once told me the world is gonna roll me. I ain\'t the sharpest tool in the shed. She was looking kind of dumb with her finger and her thumb in the shape of an "L" on her forehead. Well the years start coming and they don\'t stop coming. Fed to the rules and I hit the ground running. Didn\'t make sense not to live for fun. Your brain gets smart but your head gets dumb. So much to do, so much to see. So what\'s wrong with taking the back streets? You\'ll never know if you don\'t go. You\'ll never shine if you don\'t glow.</p><p>Hey now, you\'re an all-star, get your game on, go play. Hey now, you\'re a rock star, get the show on, get paid. And all that glitters is gold. Only shooting stars break the mold.</p><p>It\'s a cool place and they say it gets colder. You\'re bundled up now, wait till you get older. But the meteor men beg to differ. Judging by the hole in the satellite picture. The ice we skate is getting pretty thin. The water\'s getting warm so you might as well swim. My world\'s on fire, how about yours? That\'s the way I like it and I never get bored.</p>';
-    </script>
+    <script src="js/trianglify.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/cash.min.js"></script>
+    <script src="js/Card-circle.js"></script>
+    <script src="js/demo.js"></script>
   </body>
 </html>

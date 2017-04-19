@@ -10986,16 +10986,16 @@ div.cs-skin-boxes:focus > span {
     .portfolio-inner {
       padding-bottom: 0px; }
       .portfolio-inner .portfolio-inner--content .portfolio-inner--content_inner {
-        width: 58%;
-        padding-top: 75px; } }
+        width: 75%;
+        padding-top: 65px; } }
   @media all and (min-width: 1400px) {
     .portfolio-inner {
       padding-bottom: 0px; }
       .portfolio-inner .portfolio-inner--content {
         height: 450px; }
         .portfolio-inner .portfolio-inner--content .portfolio-inner--content_inner {
-          width: 58%;
-          padding-top: 105px; }
+          width: 75%;
+          padding-top: 95px; }
       .portfolio-inner .portfolio-inner--img {
         height: 450px; } }
 

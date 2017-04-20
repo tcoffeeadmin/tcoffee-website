@@ -146,7 +146,7 @@
     float: none;
     a{
       text-transform: uppercase;
-      padding: 15px;
+      padding: 15px 8px;
       font-family: "Din";
       @include light;
       font-size: 14px;
@@ -170,6 +170,20 @@
       color: #009046 !important;
     }
   }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+    li{
+      a{
+        padding: 15px;
+      }
+    }
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+  }
 }
 /*Portfolio tabs*/
 .portfolio-section--tabs{
@@ -191,8 +205,34 @@
         background-color: #009046;
         @include border-radius(15px);
       }
+      .tab-pane--inner{      
+        .tab-pane--inner_portfolio{
+          width: 200%;
+        }
+      }
+    }
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    .tab-pane--inner{      
       .tab-pane--inner_portfolio{
-        width: 128%;
+        width: 190%;
+      }
+    }
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+    .tab-pane--inner{      
+      .tab-pane--inner_portfolio{
+        width: 136%;
+      }
+    }
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+    .tab-pane--inner{      
+      .tab-pane--inner_portfolio{
+        width: 130%;
       }
     }
   }
@@ -454,42 +494,6 @@
 
 .meta__date {
   margin: 0 0 0 auto;
-}
-
-@media only screen and (max-width: 980px) {
-  .card {
-    width: 46%;
-    padding-bottom: 32.2%;
-  }
-  .card__image {
-    max-height: 360px;
-  }
-  .card__content {
-    margin-bottom: 0;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
-
-@media only screen and (max-width: 580px) {
-  .card {
-    width: 96%;
-    padding-bottom: 67.2%;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .card__caption {
-    font-size: 1.25em;
-    padding: 35px 0px 0px;
-  }
-  .meta {
-    padding: 0 0 25px 0;
-  }
-  .card__copy {
-    font-size: 90%;
-    padding: 25px 0px 100px;
-  }
 }
 
 /*********/

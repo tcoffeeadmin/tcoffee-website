@@ -11021,7 +11021,7 @@ div.cs-skin-boxes:focus > span {
     float: none; }
     .portfolio-section--list li a {
       text-transform: uppercase;
-      padding: 15px;
+      padding: 15px 8px;
       font-family: "Din";
       font-weight: 300;
       font-size: 14px;
@@ -11038,6 +11038,9 @@ div.cs-skin-boxes:focus > span {
     background-color: transparent !important;
     border-color: transparent !important;
     color: #009046 !important; }
+  @media all and (min-width: 992px) {
+    .portfolio-section--list li a {
+      padding: 15px; } }
 
 /*Portfolio tabs*/
 .portfolio-section--tabs .tab-pane {
@@ -11061,8 +11064,20 @@ div.cs-skin-boxes:focus > span {
       -moz-border-radius: 15px;
       -ms-border-radius: 15px;
       border-radius: 15px; }
-    .portfolio-section--tabs .tab-pane .tab-pane--inner .tab-pane--inner_portfolio {
-      width: 128%; }
+    .portfolio-section--tabs .tab-pane .tab-pane--inner .tab-pane--inner .tab-pane--inner_portfolio {
+      width: 200%; }
+
+@media all and (min-width: 768px) {
+  .portfolio-section--tabs .tab-pane--inner .tab-pane--inner_portfolio {
+    width: 190%; } }
+
+@media all and (min-width: 992px) {
+  .portfolio-section--tabs .tab-pane--inner .tab-pane--inner_portfolio {
+    width: 136%; } }
+
+@media all and (min-width: 1200px) {
+  .portfolio-section--tabs .tab-pane--inner .tab-pane--inner_portfolio {
+    width: 130%; } }
 
 /*Portfolio images*/
 .portfolio-images {
@@ -11327,32 +11342,6 @@ div.cs-skin-boxes:focus > span {
 
 .meta__date {
   margin: 0 0 0 auto; }
-
-@media only screen and (max-width: 980px) {
-  .card {
-    width: 46%;
-    padding-bottom: 32.2%; }
-  .card__image {
-    max-height: 360px; }
-  .card__content {
-    margin-bottom: 0;
-    padding-right: 20px;
-    padding-left: 20px; } }
-
-@media only screen and (max-width: 580px) {
-  .card {
-    width: 96%;
-    padding-bottom: 67.2%; } }
-
-@media only screen and (max-width: 400px) {
-  .card__caption {
-    font-size: 1.25em;
-    padding: 35px 0px 0px; }
-  .meta {
-    padding: 0 0 25px 0; }
-  .card__copy {
-    font-size: 90%;
-    padding: 25px 0px 100px; } }
 
 /*********/
 /* PATTERN */

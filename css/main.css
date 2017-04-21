@@ -4813,11 +4813,9 @@ button.close {
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     transition: 0.3s;
-    padding: 10px 20px 0; }
+    padding: 20px; }
   .services-slider--item .services-slider--item_content {
-    position: relative;
-    padding: 5px 20px;
-    opacity: 1; }
+    display: none; }
     .services-slider--item .services-slider--item_content p {
       color: #fff;
       font-family: "Din";
@@ -4837,6 +4835,7 @@ button.close {
       top: 50px;
       padding: 0 15px; }
     .services-slider--item .services-slider--item_content {
+      display: block;
       position: absolute;
       padding: 0px 15px;
       opacity: 0;
@@ -4923,8 +4922,12 @@ button.close {
 
 .portfolio-slider {
   position: relative;
-  padding-top: 150px;
-  padding-bottom: 80px; }
+  padding-top: 15%;
+  padding-bottom: 11%; }
+  @media all and (min-width: 768px) {
+    .portfolio-slider {
+      padding-top: 10%;
+      padding-bottom: 80px; } }
   @media all and (min-width: 1200px) {
     .portfolio-slider {
       position: absolute;
@@ -6075,7 +6078,8 @@ header {
         font-family: "Din";
         font-weight: 300;
         color: #fff;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        line-height: 20px; }
   .about-inner .about-inner--img {
     background-image: url(../images/about.jpg);
     background-size: cover;
@@ -6087,20 +6091,20 @@ header {
       .about-inner .about-inner--content .about-inner--content_inner {
         width: 90%;
         margin: auto;
-        padding-top: 45px;
+        padding-top: 40px;
         padding-bottom: 0px; }
     .about-inner .about-inner--img {
       height: 420px; } }
   @media all and (min-width: 992px) {
     .about-inner .about-inner--content .about-inner--content_inner {
       width: 85%;
-      padding-top: 50px; } }
+      padding-top: 45px; } }
   @media all and (min-width: 1200px) {
     .about-inner {
       padding-bottom: 0px; }
       .about-inner .about-inner--content .about-inner--content_inner {
         width: 75%;
-        padding-top: 65px; } }
+        padding-top: 60px; } }
   @media all and (min-width: 1400px) {
     .about-inner {
       padding-bottom: 0px; }
@@ -6108,7 +6112,7 @@ header {
         height: 450px; }
         .about-inner .about-inner--content .about-inner--content_inner {
           width: 75%;
-          padding-top: 95px; }
+          padding-top: 90px; }
       .about-inner .about-inner--img {
         height: 450px; } }
 
@@ -6127,12 +6131,12 @@ header {
       /*height: 100%;*/ }
       .our-team .our-team--inner {
         /*      height: 445px;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-      padding-top: 0px;
-      padding-bottom: 0px;*/ } }
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            padding-top: 0px;
+            padding-bottom: 0px;*/ } }
   @media all and (min-width: 1400px) {
     .our-team .our-team--inner {
       /*height: 600px;*/ } }
@@ -6213,7 +6217,7 @@ header {
     .team-member .team-member--details h4 {
       margin: 0;
       text-transform: uppercase;
-      color: #232325;
+      color: #fff;
       font-family: "Din";
       font-weight: 900;
       -webkit-transition: 0.2s;
@@ -6233,7 +6237,7 @@ header {
       .team-member .team-member--details ul li {
         list-style: none; }
         .team-member .team-member--details ul li a {
-          color: #232325;
+          color: #fff;
           -webkit-transition: 0.2s;
           -moz-transition: 0.2s;
           -ms-transition: 0.2s;
@@ -6285,6 +6289,11 @@ header {
       -moz-transition: 0.2s;
       -ms-transition: 0.2s;
       transition: 0.2s; }
+  @media all and (min-width: 768px) {
+    .team-member .team-member--details h4 {
+      color: #232325; }
+    .team-member .team-member--details ul li a {
+      color: #232325; } }
   @media all and (min-width: 1400px) {
     .team-member .team-member--img {
       height: 450px; }
@@ -6390,18 +6399,15 @@ header {
         padding: 118px 7%; } }
   @media all and (min-width: 1400px) {
     .vision-mission--inner {
-      /*    height: 400px;
-    .vision-mission--inner_vision{
-      height: 400px;
-      padding: 145px 7%;
-    }
-    .vision-mission--inner_mission{
-      height: 400px;
-      padding: 145px 7%;
-    }
-    .vision-mission--line {
-      height: 455px;
-    }*/ } }
+      height: 400px; }
+      .vision-mission--inner .vision-mission--inner_vision {
+        height: 400px;
+        padding: 145px 7%; }
+      .vision-mission--inner .vision-mission--inner_mission {
+        height: 400px;
+        padding: 145px 7%; }
+      .vision-mission--inner .vision-mission--line {
+        height: 455px; } }
 
 /*Clients*/
 .clients {
@@ -10971,7 +10977,8 @@ div.cs-skin-boxes:focus > span {
         font-family: "Din";
         font-weight: 500;
         color: #fff;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        line-height: 20px; }
   .portfolio-inner .portfolio-inner--img {
     background-image: url(../images/about.jpg);
     background-size: cover;
@@ -10983,20 +10990,20 @@ div.cs-skin-boxes:focus > span {
       .portfolio-inner .portfolio-inner--content .portfolio-inner--content_inner {
         width: 90%;
         margin: auto;
-        padding-top: 45px;
+        padding-top: 40px;
         padding-bottom: 0px; }
     .portfolio-inner .portfolio-inner--img {
       height: 420px; } }
   @media all and (min-width: 992px) {
     .portfolio-inner .portfolio-inner--content .portfolio-inner--content_inner {
       width: 85%;
-      padding-top: 50px; } }
+      padding-top: 45px; } }
   @media all and (min-width: 1200px) {
     .portfolio-inner {
       padding-bottom: 0px; }
       .portfolio-inner .portfolio-inner--content .portfolio-inner--content_inner {
         width: 75%;
-        padding-top: 65px; } }
+        padding-top: 60px; } }
   @media all and (min-width: 1400px) {
     .portfolio-inner {
       padding-bottom: 0px; }
@@ -11004,7 +11011,7 @@ div.cs-skin-boxes:focus > span {
         height: 450px; }
         .portfolio-inner .portfolio-inner--content .portfolio-inner--content_inner {
           width: 75%;
-          padding-top: 95px; }
+          padding-top: 90px; }
       .portfolio-inner .portfolio-inner--img {
         height: 450px; } }
 
@@ -11452,7 +11459,8 @@ div.cs-skin-boxes:focus > span {
         font-weight: 500;
         color: #959595;
         font-size: 13px;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        line-height: 20px; }
   .career-inner .career-inner--img {
     background-image: url(../images/career.jpg);
     background-size: cover;

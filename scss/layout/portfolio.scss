@@ -68,6 +68,7 @@
         @include medium;
         color: #fff;
         text-transform: uppercase;
+        line-height: 20px;
       }
     }
   }
@@ -83,7 +84,7 @@
       .portfolio-inner--content_inner{
         width: 90%;
         margin: auto;
-        padding-top: 45px;
+        padding-top: 40px;
         padding-bottom: 0px;
       }
     }
@@ -95,7 +96,7 @@
     .portfolio-inner--content{
       .portfolio-inner--content_inner{
         width: 85%;
-        padding-top: 50px;
+        padding-top: 45px;
       }
     }
   }
@@ -104,7 +105,7 @@
     .portfolio-inner--content{
       .portfolio-inner--content_inner{
         width: 75%;
-        padding-top: 65px;
+        padding-top: 60px;
       }
     }
   }
@@ -114,7 +115,7 @@
       height: 450px;
       .portfolio-inner--content_inner{
         width: 75%;
-        padding-top: 95px;
+        padding-top: 90px;
       }
     }
     .portfolio-inner--img{
@@ -545,7 +546,6 @@
   transform-origin: center bottom;
   fill: transparent;
 }
-
 
 .polygon--hidden {
   opacity: 0;

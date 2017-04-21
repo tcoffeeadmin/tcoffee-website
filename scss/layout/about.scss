@@ -1,3 +1,4 @@
+
 /*About*/
 .about{
   background-color: #fff;
@@ -68,6 +69,7 @@
         @include light;
         color: #fff;
         text-transform: uppercase;
+        line-height: 20px;
       }
     }
   }
@@ -83,7 +85,7 @@
       .about-inner--content_inner{
         width: 90%;
         margin: auto;
-        padding-top: 45px;
+        padding-top: 40px;
         padding-bottom: 0px;
       }
     }
@@ -95,7 +97,7 @@
     .about-inner--content{
       .about-inner--content_inner{
         width: 85%;
-        padding-top: 50px;
+        padding-top: 45px;
       }
     }
   }
@@ -104,7 +106,7 @@
     .about-inner--content{
       .about-inner--content_inner{
         width: 75%;
-        padding-top: 65px;
+        padding-top: 60px;
       }
     }
   }
@@ -114,7 +116,7 @@
       height: 450px;
       .about-inner--content_inner{
         width: 75%;
-        padding-top: 95px;
+        padding-top: 90px;
       }
     }
     .about-inner--img{
@@ -143,13 +145,13 @@
   @media all and (min-width: $screen-lg){
     /*height: 100%;*/
     .our-team--inner{
-/*      height: 445px;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-      padding-top: 0px;
-      padding-bottom: 0px;*/
+      /*      height: 445px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            padding-top: 0px;
+            padding-bottom: 0px;*/
     }
   }
   @media all and (min-width: $screen-xlg){
@@ -243,7 +245,7 @@
     h4{
       margin: 0;
       text-transform: uppercase;
-      color: #232325;
+      color: #fff;
       font-family: "Din";
       @include black;
       @include transition(.2s);
@@ -262,7 +264,7 @@
       li{
         list-style: none;
         a{
-          color: #232325;
+          color: #fff;
           @include transition(.2s);
         }
       }
@@ -310,6 +312,18 @@
   }
   @media all and (min-width: $screen-sm) {
     // Tablet
+    .team-member--details{
+      h4{
+        color: #232325;
+      }
+      ul{
+        li{
+          a{
+            color: #232325;
+          }
+        }
+      }
+    }
   }  
   @media all and (min-width: $screen-md) {
     // Tablet
@@ -451,7 +465,7 @@
     }
   }
   @media all and (min-width: $screen-xlg) {
-/*    height: 400px;
+    height: 400px;
     .vision-mission--inner_vision{
       height: 400px;
       padding: 145px 7%;
@@ -462,7 +476,7 @@
     }
     .vision-mission--line {
       height: 455px;
-    }*/
+    }
   }
 }
 

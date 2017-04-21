@@ -191,12 +191,10 @@
   .services-slider--item_head{
     position: relative;
     @include transition(.3s);
-    padding: 10px 20px 0;
+    padding: 20px;
   }
   .services-slider--item_content{
-    position: relative;
-    padding: 5px 20px;
-    opacity: 1;
+    display: none;
     p{
       color: #fff;
       font-family: "Din";
@@ -217,6 +215,7 @@
       padding: 0 15px;
     }    
     .services-slider--item_content{
+      display: block;
       position: absolute;
       padding: 0px 15px;
       opacity: 0;
@@ -282,4 +281,3 @@
     height: 500px;
   }
 }
-

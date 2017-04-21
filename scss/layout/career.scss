@@ -176,6 +176,7 @@
     @include black;
     font-size: 120%;
     padding: 15px;
+    cursor: url(../images/custom.png), auto;
     @include transition(.3s);
     &:hover{
       background-color: #009046;
@@ -186,6 +187,7 @@
   .disabled{
     color: #707070;
     border: 2px solid #707070 !important;
+    cursor: not-allowed;
   }
   @media all and (min-width: $screen-sm) {
     // Tablet

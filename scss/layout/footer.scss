@@ -105,6 +105,11 @@
       font-size: 14px;
       color: #686868;
       display: block;
+      @include transition(.2s);
+      &:hover{
+        color: #009046;
+        @include transition(.2s);
+      }
     }
   }
   @media all and (min-width: $screen-sm) {
@@ -147,6 +152,11 @@
           font-size: 14px;
           color: #686868;
           display: block;
+          @include transition(.2s);
+          &:hover{
+            color: #009046;
+            @include transition(.2s);
+          }
         }
       }
     }

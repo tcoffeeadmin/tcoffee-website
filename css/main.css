@@ -6668,7 +6668,17 @@ header {
     font-weight: 300;
     font-size: 14px;
     color: #686868;
-    display: block; }
+    display: block;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    transition: 0.2s; }
+    .footer-contact .footer-contact--content a:hover {
+      color: #009046;
+      -webkit-transition: 0.2s;
+      -moz-transition: 0.2s;
+      -ms-transition: 0.2s;
+      transition: 0.2s; }
 
 /*Footer follow*/
 .footer-follow .footer-follow--head {
@@ -6696,7 +6706,17 @@ header {
         font-weight: 300;
         font-size: 14px;
         color: #686868;
-        display: block; }
+        display: block;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -ms-transition: 0.2s;
+        transition: 0.2s; }
+        .footer-follow .footer-follow--content ul li a:hover {
+          color: #009046;
+          -webkit-transition: 0.2s;
+          -moz-transition: 0.2s;
+          -ms-transition: 0.2s;
+          transition: 0.2s; }
 
 /*Footer copy right*/
 .copy-right {

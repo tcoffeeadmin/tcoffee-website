@@ -65,7 +65,7 @@
         font-family: "Din";
         @include black;
         margin: 0;
-        font-size: 30px;
+        font-size: 26px;
         margin-bottom: 5px;
       }
       .line{
@@ -90,7 +90,10 @@
   .career-bg--layer{
     position: absolute;
     overflow: hidden;
-    bottom: 0;
+    bottom: 100px;
+    img{
+      width: 90%;
+    }
   }
   @media all and (min-width: $screen-sm){
     .career-inner--content{
@@ -98,19 +101,27 @@
       .career-inner--content_inner{
         width: 90%;
         margin: auto;
-        padding-top: 45px;
+        padding-top: 125px;
         padding-bottom: 0px;
+        h1{
+          font-size: 30px;
+        }
       }
     }
     .career-inner--img{
       height: 420px;
     }
+    .career-bg--layer{
+      img{
+        width: 100%;
+      }
+    }
   }
   @media all and (min-width: $screen-md){
     .career-inner--content{
       .career-inner--content_inner{
-        width: 85%;
-        padding-top: 50px;
+        width: 80%;
+        padding-top: 125px;
       }
     }
   }
@@ -121,6 +132,9 @@
         width: 65%;
         padding-top: 110px;
       }
+    }
+    .career-bg--layer{
+      bottom: 0px;
     }
   }
   @media all and (min-width: $screen-xlg){
@@ -141,8 +155,8 @@
 /*Vacancies*/
 .vacancies{
   background-color: #171717;
-  padding-top: 195px;
-  padding-bottom: 160px;
+  padding-top: 14.5%;
+  padding-bottom: 8%;
   background-image: url(../images/positions.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -159,7 +173,7 @@
     color: #009046;
     font-family: "Din";
     @include black;
-    font-size: 38px;
+    font-size: 120%;
     padding: 15px;
     @include transition(.3s);
     &:hover{
@@ -171,6 +185,24 @@
   .disabled{
     color: #707070;
     border: 2px solid #707070 !important;
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    .btn-vacany{
+      font-size: 20px;
+    }
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+    .btn-vacany{
+      font-size: 28px;
+    }
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+    .btn-vacany{
+      font-size: 38px;
+    }
   }
 }
 
@@ -248,11 +280,23 @@
 
 .dialog__content {
   width: 100%;
-  max-width: 900px;
+  max-width: 90%;
   min-width: 300px;
   position: relative;
   z-index: 5;
   opacity: 0;
+  @include box-shadow(0px 0px 28px 0px rgba(0, 0, 0, 0.36));
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    max-width: 735px;
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+    max-width: 900px;
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+  }
 }
 
 .dialog--open .dialog__content {
@@ -316,7 +360,19 @@
     color: #fff;
     @include black;
     margin: 0;
-    font-size: 30px;
+    font-size: 20px;
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    h2 {
+      font-size: 30px;
+    }
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
   }
 }
 
@@ -381,7 +437,7 @@
 
 .action--close {
   position: absolute;
-  top: 30px;
+  top: 23px;
   right: 20px;
   width: 45px;
   padding: 8px;
@@ -393,6 +449,16 @@
     color: #fff;
     background-color: #009046;
     @include transition(.3s);
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    top: 30px;
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
   }
 }
 
@@ -414,7 +480,8 @@
 
 .vacc-pop--up{
   .req-skills{
-    width: 40%;
+    display: none;
+    width: 100%;
     padding: 50px 75px;
     float: left;
     background-color: #171717;
@@ -446,8 +513,8 @@
     }
   }
   .form-section{
-    width: 60%;
-    padding: 50px 30px;
+    width: 100%;
+    padding: 50px 40px;
     float: left;
     background-color: #323234;
     .form-control{
@@ -459,7 +526,7 @@
       font-family: "Din";
       @include light;
       @include box-shadow(none);
-      font-size: 28px;    
+      font-size: 18px;    
       &:active, &:focus{
         border-bottom: 1px solid #c3c3c3;
       }
@@ -481,6 +548,30 @@
         @include transition(.3s);
       }
     }
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    .req-skills{
+      width: 40%;
+      padding: 50px 60px;
+      display: block;
+    }
+    .form-section{
+      width: 60%;
+      padding: 50px 65px;
+      form-control{
+        font-size: 28px;  
+      }
+    }
+  }
+  @media all and (min-width: $screen-md) {
+    // Tablet
+    .req-skills{
+      padding: 50px 75px;
+    }
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
   }
 }
 
@@ -574,12 +665,13 @@
       vertical-align: top;
     }
     .input-fine--name{
-      font-size: 28px;
+      font-size: 18px;
       padding: 0;
       text-transform: uppercase;
       font-family: "Din";
       @include light;
       color: #575759;
+      width: 50%;
     }
     .file-type{
       font-size: 13px;
@@ -598,5 +690,19 @@
   }
   &:focus + label strong, &.has-focus + label strong, + label:hover strong {
     background-color: #722040;
+  }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    + label {
+      .input-fine--name{
+        font-size: 28px;
+      }
+    }
+  }
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
   }
 }

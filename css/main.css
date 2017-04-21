@@ -11435,7 +11435,7 @@ div.cs-skin-boxes:focus > span {
         font-family: "Din";
         font-weight: 900;
         margin: 0;
-        font-size: 30px;
+        font-size: 26px;
         margin-bottom: 5px; }
       .career-inner .career-inner--content .career-inner--content_inner .line {
         background-color: #009046;
@@ -11454,27 +11454,35 @@ div.cs-skin-boxes:focus > span {
   .career-inner .career-bg--layer {
     position: absolute;
     overflow: hidden;
-    bottom: 0; }
+    bottom: 100px; }
+    .career-inner .career-bg--layer img {
+      width: 90%; }
   @media all and (min-width: 768px) {
     .career-inner .career-inner--content {
       height: 420px; }
       .career-inner .career-inner--content .career-inner--content_inner {
         width: 90%;
         margin: auto;
-        padding-top: 45px;
+        padding-top: 125px;
         padding-bottom: 0px; }
+        .career-inner .career-inner--content .career-inner--content_inner h1 {
+          font-size: 30px; }
     .career-inner .career-inner--img {
-      height: 420px; } }
+      height: 420px; }
+    .career-inner .career-bg--layer img {
+      width: 100%; } }
   @media all and (min-width: 992px) {
     .career-inner .career-inner--content .career-inner--content_inner {
-      width: 85%;
-      padding-top: 50px; } }
+      width: 80%;
+      padding-top: 125px; } }
   @media all and (min-width: 1200px) {
     .career-inner {
       padding-bottom: 0px; }
       .career-inner .career-inner--content .career-inner--content_inner {
         width: 65%;
-        padding-top: 110px; } }
+        padding-top: 110px; }
+      .career-inner .career-bg--layer {
+        bottom: 0px; } }
   @media all and (min-width: 1400px) {
     .career-inner {
       padding-bottom: 0px; }
@@ -11489,8 +11497,8 @@ div.cs-skin-boxes:focus > span {
 /*Vacancies*/
 .vacancies {
   background-color: #171717;
-  padding-top: 195px;
-  padding-bottom: 160px;
+  padding-top: 14.5%;
+  padding-bottom: 8%;
   background-image: url(../images/positions.png);
   background-size: contain;
   background-repeat: no-repeat; }
@@ -11508,7 +11516,7 @@ div.cs-skin-boxes:focus > span {
   color: #009046;
   font-family: "Din";
   font-weight: 900;
-  font-size: 38px;
+  font-size: 120%;
   padding: 15px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -11525,6 +11533,18 @@ div.cs-skin-boxes:focus > span {
 .vacancies-inner .disabled {
   color: #707070;
   border: 2px solid #707070 !important; }
+
+@media all and (min-width: 768px) {
+  .vacancies-inner .btn-vacany {
+    font-size: 20px; } }
+
+@media all and (min-width: 992px) {
+  .vacancies-inner .btn-vacany {
+    font-size: 28px; } }
+
+@media all and (min-width: 1200px) {
+  .vacancies-inner .btn-vacany {
+    font-size: 38px; } }
 
 /*Meet us*/
 .meet-us {
@@ -11596,11 +11616,21 @@ div.cs-skin-boxes:focus > span {
 
 .dialog__content {
   width: 100%;
-  max-width: 900px;
+  max-width: 90%;
   min-width: 300px;
   position: relative;
   z-index: 5;
-  opacity: 0; }
+  opacity: 0;
+  -webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.36);
+  -ms-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.36); }
+  @media all and (min-width: 768px) {
+    .dialog__content {
+      max-width: 735px; } }
+  @media all and (min-width: 992px) {
+    .dialog__content {
+      max-width: 900px; } }
 
 .dialog--open .dialog__content {
   opacity: 1;
@@ -11656,7 +11686,10 @@ div.cs-skin-boxes:focus > span {
     color: #fff;
     font-weight: 900;
     margin: 0;
-    font-size: 30px; }
+    font-size: 20px; }
+  @media all and (min-width: 768px) {
+    .dialog__header h2 {
+      font-size: 30px; } }
 
 .actions {
   background: #fff;
@@ -11708,7 +11741,7 @@ div.cs-skin-boxes:focus > span {
 
 .action--close {
   position: absolute;
-  top: 30px;
+  top: 23px;
   right: 20px;
   width: 45px;
   padding: 8px;
@@ -11729,6 +11762,9 @@ div.cs-skin-boxes:focus > span {
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     transition: 0.3s; }
+  @media all and (min-width: 768px) {
+    .action--close {
+      top: 30px; } }
 
 .text-hidden {
   position: absolute;
@@ -11743,7 +11779,8 @@ div.cs-skin-boxes:focus > span {
   color: #989E9E; }
 
 .vacc-pop--up .req-skills {
-  width: 40%;
+  display: none;
+  width: 100%;
   padding: 50px 75px;
   float: left;
   background-color: #171717;
@@ -11771,8 +11808,8 @@ div.cs-skin-boxes:focus > span {
       list-style-type: circle; }
 
 .vacc-pop--up .form-section {
-  width: 60%;
-  padding: 50px 30px;
+  width: 100%;
+  padding: 50px 40px;
   float: left;
   background-color: #323234; }
   .vacc-pop--up .form-section .form-control {
@@ -11790,7 +11827,7 @@ div.cs-skin-boxes:focus > span {
     -moz-box-shadow: none;
     -ms-box-shadow: none;
     box-shadow: none;
-    font-size: 28px; }
+    font-size: 18px; }
     .vacc-pop--up .form-section .form-control:active, .vacc-pop--up .form-section .form-control:focus {
       border-bottom: 1px solid #c3c3c3; }
   .vacc-pop--up .form-section .btn-career {
@@ -11817,6 +11854,21 @@ div.cs-skin-boxes:focus > span {
       -moz-transition: 0.3s;
       -ms-transition: 0.3s;
       transition: 0.3s; }
+
+@media all and (min-width: 768px) {
+  .vacc-pop--up .req-skills {
+    width: 40%;
+    padding: 50px 60px;
+    display: block; }
+  .vacc-pop--up .form-section {
+    width: 60%;
+    padding: 50px 65px; }
+    .vacc-pop--up .form-section form-control {
+      font-size: 28px; } }
+
+@media all and (min-width: 992px) {
+  .vacc-pop--up .req-skills {
+    padding: 50px 75px; } }
 
 /*Input style*/
 .js .inputfile {
@@ -11899,12 +11951,13 @@ div.cs-skin-boxes:focus > span {
   vertical-align: top; }
 
 .inputfile-6 + label .input-fine--name {
-  font-size: 28px;
+  font-size: 18px;
   padding: 0;
   text-transform: uppercase;
   font-family: "Din";
   font-weight: 300;
-  color: #575759; }
+  color: #575759;
+  width: 50%; }
 
 .inputfile-6 + label .file-type {
   font-size: 13px;
@@ -11922,3 +11975,7 @@ div.cs-skin-boxes:focus > span {
 
 .inputfile-6:focus + label strong, .inputfile-6.has-focus + label strong, .inputfile-6 + label:hover strong {
   background-color: #722040; }
+
+@media all and (min-width: 768px) {
+  .inputfile-6 + label .input-fine--name {
+    font-size: 28px; } }

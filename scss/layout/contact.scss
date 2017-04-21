@@ -55,7 +55,11 @@
   padding-bottom: 100px;
   position: relative;
   .contact-box--inner_content{
-    background-color: #171717;
+    background-color: #171717;    
+    background-image: url(../images/contact-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: relative;
     .contact-content{
       padding: 50px 5%;
@@ -90,13 +94,16 @@
     .contact-bg{
       position: absolute;
       width: 100%;
-      height: 100%;
+      height: 405px;
       background-image: url(../images/contact-bg.png);
       background-repeat: no-repeat;
       background-size: contain;
+      background-position: center;
       z-index: 1;
+      top: 0;
     }
     .contact-box--inner_content{
+      background-image: none;
       height: 370px;
       .contact-content{
         position: absolute;
@@ -116,6 +123,9 @@
   }  
   @media all and (min-width: $screen-md) {
     // Tablet
+    .contact-bg{
+      height: 435px;
+    }
     .contact-box--inner_content{
       height: 400px;
       .contact-content{
@@ -132,6 +142,9 @@
   @media all and (min-width: $screen-lg) {
     // Desktop
     padding-bottom: 0;
+    .contact-bg{
+      height: 100%;
+    }
     .contact-box--inner_content{
       height: 420px;
       .contact-content{

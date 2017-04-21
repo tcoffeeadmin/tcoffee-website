@@ -48,7 +48,8 @@
     }
   }
 }
-/*About content*/
+
+/*Services inner*/
 .services-box--inner{
   padding-top: 35px;
   padding-bottom: 100px;
@@ -203,21 +204,28 @@
 
 /*Services background*/
 .services-box--bg{
+  position: absolute;
+  height: 515px;
+  width: 100%;
+  background-image: url(../images/service-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1; 
+  top: 18px;
   @media all and (min-width: $screen-sm) {
     // Tablet
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-image: url(../images/service-bg.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 1; 
+    height: 385px;
+    top: 18px;
   }  
   @media all and (min-width: $screen-md) {
     // Tablet
+    height: 420px;
   }
   @media all and (min-width: $screen-lg) {
     // Desktop
+    height: 100%;
+
   }
 }
 

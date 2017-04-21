@@ -183,7 +183,7 @@
     font-family: "Din";
     @include medium;
     text-transform: capitalize;
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 0px;
     margin-bottom: 5px;
     line-height: 28px;
@@ -191,7 +191,7 @@
   .services-slider--item_head{
     position: relative;
     @include transition(.3s);
-    padding: 20px;
+    padding: 20px 15px;
   }
   .services-slider--item_content{
     display: none;

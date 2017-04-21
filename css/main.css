@@ -4803,7 +4803,7 @@ button.close {
     font-family: "Din";
     font-weight: 500;
     text-transform: capitalize;
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 0px;
     margin-bottom: 5px;
     line-height: 28px; }
@@ -4813,7 +4813,7 @@ button.close {
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     transition: 0.3s;
-    padding: 20px; }
+    padding: 20px 15px; }
   .services-slider--item .services-slider--item_content {
     display: none; }
     .services-slider--item .services-slider--item_content p {

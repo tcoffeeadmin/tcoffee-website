@@ -231,13 +231,19 @@
   padding: 35px;
   .team-member--img{
     height: 305px;
+    width: 265px;
+    margin: auto;
+    float: none;
     img{
-      height: 100%;
-      width: 100%;
+      height: 305px;
+      width: 265px;
     }
   }
   .team-member--details{
     position: relative;
+    margin: auto;
+    float: none;
+    width: 265px;
     background-color: #000;
     padding: 15px;
     border-top: 1px solid #023e1f;
@@ -333,9 +339,6 @@
   }
   @media all and (min-width: $screen-xlg) {
     // Desktop
-    .team-member--img{
-      height: 450px;
-    }
     .member-line{
       height: 600px;
     }

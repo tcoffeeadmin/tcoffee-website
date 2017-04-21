@@ -1,3 +1,4 @@
+
 @include font-face(Din, "../fonts/DIN");
 
 /*Hero design*/
@@ -11,6 +12,7 @@
     padding-bottom: 100px;
     .container{
       width: 100%;
+      position: relative;
     }
   }
   @media all and (min-width: $screen-sm) {
@@ -93,8 +95,9 @@
       position: absolute;
       top: 0;
       bottom: 0;
+      right: 15px;
       margin: auto;
-      height: 202px;
+      height: 100px;
       li{
         margin: 9px 0;
         display: block;
@@ -134,38 +137,6 @@
 
 /*Hero services slider*/
 .services-slider{
-  .carousel-control{
-    width: 34px;
-    height: 34px;
-    top: 0;
-    bottom: 0;
-    margin: auto;    
-    opacity: 1 !important;
-    text-align: center;
-    background-image: none !important;
-    background-color: rgba(57, 57, 58, 0.64);
-    padding: 2px 0;
-    color: #007f5d !important;
-    text-shadow: none !important;
-    @include border-radius(100%);
-    @include transition(.2s);
-  }
-  .left.carousel-control{
-    left: 5px;
-    &:hover{
-      color: #fff !important;
-      background-color:  #007f5d !important;
-      @include transition(.2s);
-    }
-  }
-  .right.carousel-control{
-    right: 5px;
-    &:hover{
-      color: #fff !important;
-      background-color:  #007f5d !important;
-      @include transition(.2s);
-    }
-  }  
   .services-slider--item_one{
     background-color: #2d2e30;
   }
@@ -220,13 +191,12 @@
   .services-slider--item_head{
     position: relative;
     @include transition(.3s);
-    padding: 20px;
+    padding: 10px 20px 0;
   }
   .services-slider--item_content{
-    position: absolute;
-    opacity: 0;
-    top: 0px;
-    @include transition(.3s);
+    position: relative;
+    padding: 5px 20px;
+    opacity: 1;
     p{
       color: #fff;
       font-family: "Din";
@@ -245,6 +215,13 @@
       position: absolute;
       top: 50px;
       padding: 0 15px;
+    }    
+    .services-slider--item_content{
+      position: absolute;
+      padding: 0px 15px;
+      opacity: 0;
+      top: 0px;
+      @include transition(.3s);
     }
     &:hover{
       .services-slider--item_head{

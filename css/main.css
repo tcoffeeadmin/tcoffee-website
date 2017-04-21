@@ -5552,7 +5552,7 @@ a:hover, a:focus {
     display: -ms-flexbox;
     display: flex; } }
 
-/*Primary*/
+/*Primary style*/
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -5937,9 +5937,9 @@ header {
     .menu-overlay .menu-overlay--items ul {
       margin-top: 40px; }
       .menu-overlay .menu-overlay--items ul li {
-        margin-bottom: 22px; }
+        margin-bottom: 12px; }
         .menu-overlay .menu-overlay--items ul li a {
-          font-size: 38px;
+          font-size: 34px;
           -webkit-transition: 0.3s;
           -moz-transition: 0.3s;
           -ms-transition: 0.3s;
@@ -5985,8 +5985,10 @@ header {
       font-size: 19px; } }
 
 @media all and (min-width: 992px) {
-  .menu-overlay .menu-overlay--items ul li a {
-    font-size: 45px; }
+  .menu-overlay .menu-overlay--items ul li {
+    margin-bottom: 20px; }
+    .menu-overlay .menu-overlay--items ul li a {
+      font-size: 45px; }
   .menu-overlay .menu-overlay--contact .menu-overlay--contact_mail {
     margin-bottom: 18px; }
   .menu-overlay .menu-overlay--contact .menu-overlay--contact_phone {
@@ -5994,9 +5996,9 @@ header {
 
 @media all and (min-width: 1200px) {
   .menu-overlay .menu-overlay--items ul {
-    margin-top: 70px; }
+    margin-top: 40px; }
   .menu-overlay .menu-overlay--contact {
-    margin-top: 68px; }
+    margin-top: 36px; }
     .menu-overlay .menu-overlay--contact .menu-overlay--contact_mail {
       margin-bottom: 25px; }
     .menu-overlay .menu-overlay--contact .menu-overlay--contact_phone {

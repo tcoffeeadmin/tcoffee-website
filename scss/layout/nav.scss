@@ -1,4 +1,4 @@
-/*Primary*/ 
+/*Primary style*/
 
 * {
   -webkit-box-sizing: border-box;
@@ -13,6 +13,7 @@
     content: '';
   }
 }
+
 header {
   z-index: 3;
 }
@@ -459,9 +460,9 @@ header {
       ul{
         margin-top: 40px;
         li{
-          margin-bottom: 22px;
+          margin-bottom: 12px;
           a{
-            font-size: 38px;
+            font-size: 34px;
             @include transition(.3s);
             &:hover{
               color: #fff;
@@ -503,6 +504,7 @@ header {
     .menu-overlay--items{
       ul{
         li{
+          margin-bottom: 20px;
           a{            
             font-size: 45px;
           }
@@ -521,17 +523,16 @@ header {
   @media all and (min-width: $screen-lg){
     .menu-overlay--items{
       ul{
-        margin-top: 70px;
+        margin-top: 40px;
       }
     }
     .menu-overlay--contact{
-      margin-top: 68px;
+      margin-top: 36px;
       .menu-overlay--contact_mail{
         margin-bottom: 25px;
       }
       .menu-overlay--contact_phone{
         margin-bottom: 25px;
-
       }
     }
   }

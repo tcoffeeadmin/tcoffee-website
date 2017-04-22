@@ -545,6 +545,9 @@
     outline: 1px solid slategrey;
     @include border-radius(5px);
   }
+  &::placeholder{
+    color: rgba(0, 0, 0, 0.15);
+  }
   @media all and (min-width: $screen-sm) {
     // Tablet
     font-size: 55px;
@@ -1140,80 +1143,6 @@ button {
 input[type=text]::-ms-clear {
   display: none;
 }
-
-/* Adjust form for smaller screens */
-/*@media screen and (max-width: 52.5em) {
-  body {
-    min-height: 500px;
-  }
-  .fs-form-wrap {
-    font-size: 70%;
-  }
-  .fs-form {
-    top: 6em;
-    right: 2em;
-    left: 0;
-    padding: 0 3.75em 0 1em;
-    width: auto;
-    font-size: 2em;
-    &.fs-form-overview {
-      top: 0;
-      right: 0;
-      padding: 1.5em 1em 8em 1em;
-      font-size: 1.5em;
-    }
-  }
-  .fs-title {
-    padding: 20px;
-  }
-  .fs-numbers {
-    margin: 20px;
-  }
-  .fs-nav-dots {
-    right: 25px;
-  }
-    button.fs-continue {
-      right: 20px;
-      bottom: 20px;
-      margin: 0;
-      padding: 50px 0 0 50px;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      font-size: 2em;
-      &::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        content: '\27A1';
-        text-align: center;
-        font-size: 1em;
-        line-height: 50px;
-      }
-    }
-    .fs-continue::after {
-      content: '';
-    }
-  button.fs-submit {
-    width: 100%;
-    font-size: 1.25em;
-  }
-  .fs-message-error {
-    bottom: 1.75em;
-    left: 0;
-    padding: 0 90px 0 2em;
-    width: 100%;
-    font-size: 1.5em;
-    -webkit-transform: translate3d(0, -5px, 0);
-    transform: translate3d(0, -5px, 0);
-    &.fs-show {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-  }
-}*/
 
 /***********Controls************/
 .fs-controls{

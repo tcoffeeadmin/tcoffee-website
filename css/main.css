@@ -5962,12 +5962,15 @@ header {
     color: #fff;
     font-size: 18px;
     display: inline-block;
-    margin-left: 45px;
+    margin-left: 0px;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
     border-radius: 100%;
     position: relative; }
+  @media all and (min-width: 768px) {
+    header .header-right--menu {
+      margin-left: 45px; } }
 
 /*About*/
 .about {
@@ -11885,7 +11888,7 @@ div.cs-skin-boxes:focus > span {
   font-family: "Din";
   font-weight: 300;
   color: #9e9e9e;
-  width: 50%; }
+  width: 56%; }
 
 .inputfile-6 + label .file-type {
   font-size: 13px;

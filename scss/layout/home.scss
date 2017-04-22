@@ -1,5 +1,5 @@
 /*Portfolio*/ 
-.portfolio-home{
+.portfolios-home{
   background-color: #171717;
   position: relative;
   overflow: hidden;
@@ -33,296 +33,313 @@
   }
 }
 
-
-.portfolio-slider{
-  position: relative;
-  padding-top: 15%;
-  padding-bottom: 11%;
-  @media all and (min-width: $screen-sm){
-  padding-top: 10%;
-  padding-bottom: 80px;
+.portfolios-home--inner{
+  padding-top: 7%;
+  padding-bottom: 12%;
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
   }
-  @media all and (min-width: $screen-md){
-
-  }
-  @media all and (min-width: $screen-lg){
+  @media all and (min-width: $screen-lg) {
+    // Desktop
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto;
-    height: 400px;
+    width: 100%;
+    height: 500px;
     padding-top: 0;
     padding-bottom: 0;
   }
 }
 
-//grid
-$max-width: 650px;
-$col-gutter: 30px;
-$break-large: 400px;
 
-.clearfix { display:table; 
-            line-height:0; 
-            content:""; 
-            clear:both;
-}
-.row-slider{
-  max-width:$max-width + $col-gutter;
-  margin:0 auto;
-  .row-slider{
-    margin-left:-$col-gutter; 
-    margin-right:-$col-gutter;
-  }
-  .col { 
-    padding-left:$col-gutter; 
-    padding-right:$col-gutter;
-  }
+.glide, .glide--slideshow .glide__wrapper, .glide__track {
+  height: 100%;
 }
 
-//large grid classes
-@media (min-width:$break-large) {
-  .hide-lrg { display:none; }
-  @for $i from 1 through 12 {
-    .lrg-#{$i} { width:$i/12*100%; float:left; }
+.glide {
+  width: 100%;
+  position: relative;
+}
+
+.glide__wrapper {
+  overflow: hidden;
+}
+
+.glide__track {
+  width: 100%;
+  list-style: none;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  touch-action: pan-Y;
+  left: 0%;
+  right: -1%;
+  &.dragging {
+    cursor: grabbing;
+    user-select: none;
   }
 }
 
-//bbc slider
-.slider-wrap {
-  .slider { 
-    height:215px; 
-    position:relative;
-  }
-  .outer {
-    position:relative; 
-  }
-  .outer, .tray, section {
-    height:100%; 
-  }
-  .tray, section { 
-    position:absolute; 
-    width:100%; 
-    height:100%;
-  }
-  section { 
-    overflow:hidden;
-    padding-left: 20px;
-    padding-right: 20px;
-    img {
-      width:100%; 
-      max-width:100%; 
-      margin: 0 auto;
-      display: block;
-      margin-top: 0px !important;
-      height: 100%;
-    }
-  }
-  .arrow {
-    position:absolute; 
-    top:50%;
-    margin-top:-30px;
-    height:60px;
-    width:60px;
-    z-index:1; 
-    cursor:pointer; 
-    z-index:15; 
-    background-color:black; 
-    &.left {
-      right:-30px; 
-      background-image:url(http://www.garethweaver.com/codepen/images/bbc-left.png);
-      span {
-        left:60px;
-        padding:0 20px 0 0; 
-      }
-    }
-    &.right {
-      left:-30px; 
-      background-image:url(http://www.garethweaver.com/codepen/images/bbc-right.png);
-      span {
-        right:60px; 
-        padding:0 0 0 20px;  
-      }
-    }
-    span { 
-      height:60px;
-      line-height:60px;
-      position:absolute;
-      display:none; 
-      color:#fff;
-    }
-    &:hover {
-      /*background-color:$blue;*/
-      span {
-        display:block; 
-      }
-    }
-  }
-  .mask {
-    display:block;
-    position:absolute;
-    top:0; 
-    height:100%;
-    width:200%; 
-    /*background:rgba(#fff,0.7);*/
-    z-index: 2; 
-    cursor: ew-resize;
-    &.left { 
-      right:100%; 
-    }
-    &.right { 
-      left:100%;
-    }
-  }
-  .slider-nav { 
-    position:relative;
-    font-size:14px;
-    text-align:center;
-    margin:15px 0 0; 
-    overflow:hidden;
-    height: 20px;
-    .dots{
-      width: 100%;
-      border-bottom: 1px dashed #fff;
-      position: relative;
-      height: 10px;
-      .fa{
-        position: absolute;
-        color: #009046;
-        top: 8px;
-        font-size: 18px;
-      }
-      .fa-angle-right{
-        right: -1px;
-      }
-      .fa-angle-left{
-        left: -12px;
-      }
-    }
-    ul { 
-      position:relative;
-      margin:0 auto; 
-      padding:0; 
-      width: 90%;
-    }
+.glide__slide {
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
 
-    li {
-      display: none;
-      a {
-        @include transition(color 0.2s ease-in-out);
-        height: 20px;        
-        display:block; 
-        font-weight:bold; 
-        margin:0 4px;
-        text-align: left;
-        span{
-          color: #fff;
-          display: none;
-          padding: 0 15px;
-        }
-      }
-    }
-    .current{
-      a{
-        background-color: #009046;
-        border-right: 10px solid #363636;
-        span{
-          display: block;
+.glide__arrows {
+  position: absolute;
+}
 
-        }
-      }
-    }
-  }
-  @media all and (min-width: 490px){
-    .slider { 
-      height:255px; 
-    }
-  }
-  @media all and (min-width: $screen-sm){
-    section { 
-      overflow:hidden;
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-    .slider { 
-      height:330px; 
-    }
-    .slider-nav { 
-      position:relative;
-      height: initial;
-      .dots{
-        position: absolute;
-        top: 15px;
-        height: 0px;
-        .fa{
-          top: -1px;
-        }
-      }
+.glide__bullets {
+  position: absolute;
+  list-style: none;
+}
 
-      li {
-        position: relative;
-        list-style: none;
-        float: none;
-        width:1%;
-        display: table-cell;
-        box-sizing:border-box;
-        height: 24px;
-        padding: 0 15px;
+.glide--carousel .glide__slide, .glide--slider .glide__slide {
+  float: left;
+  clear: none;
+}
+
+.glide--slideshow .glide__slide {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: translate3d(0, 0, 0);
+  &.active {
+    z-index: 1;
+  }
+}
+
+.glide--horizontal .glide__arrows {
+  bottom: 3%;
+  width: 51%;
+  left: 0;
+  right: 0;
+  color: red;
+  margin: auto;
+}
+
+.glide--vertical .glide__arrows {
+  left: 50%;
+  height: 88%;
+  margin-top: 6%;
+}
+
+.glide__arrow {
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 4px;
+  transition: border 0.3s ease-in-out;
+  &:hover {
+    border-color: #fff;
+  }
+  .fa{
+    font-size: 16px;
+    color: #009046;
+  }
+}
+
+.glide--horizontal .glide__arrow {
+  transform: translateY(-50%);
+  color: red;
+  &.prev {
+    left: -5px;
+  }
+  &.next {
+    right: -5px;
+  }
+}
+
+.glide--vertical .glide__arrow {
+  transform: translateX(-50%);
+  &.prev {
+    top: 0;
+  }
+  &.next {
+    bottom: 0;
+  }
+}
+
+.glide--horizontal .glide__bullets {
+  bottom: 3%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 51%;
+  height: 1px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  border-bottom-style: dashed;
+}
+
+.glide--vertical .glide__bullets {
+  top: 50%;
+  right: 8%;
+  width: 12px;
+  height: auto;
+  transform: translateY(-50%);
+  .glide__bullet{
+    width: 1%;
+  }
+}
+
+.glide__bullets > * {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  width: 15%;
+  height: 20px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.glide--horizontal .glide__bullets > * {
+  margin: 0 10px;
+  position: relative;
+  top: -15px;
+}
+
+.glide__bullets {
+  .active {
+    background-color: #009046;
+    border-right: 12px solid #363636;
+  }
+  &:hover {
+    background-color: transparent;
+  }
+  &:focus{
+    outline: none;
+    outline-offset: 0;
+  }
+}
+
+/*Button numbers*/
+.glide__bullets{
+  .active{
+    color: #fff;
+    &:nth-child(1){
+      &::before{
+        content: "1";
       }
     }
-  }
-  @media all and (min-width: $screen-md){
-
-  }
-  @media all and (min-width: $screen-lg){
-    section { 
-      overflow:hidden;
-      padding-left: 60px;
-      padding-right: 60px;
+    &:nth-child(2){
+      &::before{
+        content: "2";
+      }
+    }
+    &:nth-child(3){
+      &::before{
+        content: "3";
+      }
+    }
+    &:nth-child(4){
+      &::before{
+        content: "4";
+      }
+    }
+    &:nth-child(5){
+      &::before{
+        content: "5";
+      }
+    }
+    &:nth-child(6){
+      &::before{
+        content: "6";
+      }
+    }
+    &:nth-child(7){
+      &::before{
+        content: "7";
+      }
+    }
+    &:nth-child(8){
+      &::before{
+        content: "8";
+      }
+    }
+    &:nth-child(9){
+      &::before{
+        content: "9";
+      }
+    }
+    &:nth-child(10){
+      &::before{
+        content: "10";
+      }
     }
   }
 }
 
-/*Portfoilio content*/
-.slider-wrap{  
-  section{
-    h2{
-      position: absolute;
-      z-index: 1;
-      color: #fff;
-      font-family: "Din";
-      @include black;
-      font-size: 30px;
-      text-transform: uppercase;
-      margin: 0;
-      top: 40%;
-      left: 0px;
-      /*text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.53);*/
-      display: none;
-      @include transition(.2s);
-    }
+.box {
+  cursor: ew-resize;
+  position: relative;
+  padding: 40px 0px;
+  margin-left: 8px;
+  margin-right: 8px;
+  height: 275px;
+  img{
+    width: 100%;
+    height: 100%;
   }
-  .current{
-    h2{
-      display: block;
-      @include transition(.2s);
+  .layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  h2{
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Din";
+    @include black;
+    font-size: 24px;
+    position: absolute;
+    top: 40%;
+    left: -10px;
+  }
+  @media all and (min-width: 620px){
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 40px 15px;
+    height: 305px;
+    h2{      
+      font-size: 28px;
+      left: -9px;
     }
   }
   @media all and (min-width: $screen-sm) {
     // Tablet
-    section{
-      h2{
-        font-size: 39px;
-      }
-    }  
-    @media all and (min-width: $screen-md) {
-      // Laptop
-
+    padding: 40px 20px;
+    height: 375px;
+    h2{      
+      font-size: 39px;
+      left: 0px;
     }
-    @media all and (min-width: $screen-lg) {
-      // Desktop
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+    padding: 40px 30px;
+    height: 420px;
+    h2{      
+      font-size: 39px;
     }
   }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+    padding: 40px 60px;
+    height: 475px;
+  }
 }
+
 
 /*Portfolio button*/
 .btn-portfolio{
@@ -336,43 +353,36 @@ $break-large: 400px;
   padding: 10px 15px;
   display: table;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 20px;
   &:hover{
     border-color: #007f5d;
     background-color: #007f5d;
     color: #fff;
   }
-}
-
-/*Down button portfolio*/
-.down-btn-portfolio{
-  .down-btn--circle{
-    background-color: #4b4b4e;
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
   }
-  .v-line{
-    background-color: #8c8c92;
-    .fa{
-      color: #8c8c92;
-    }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+    margin-top: 12px;
   }
 }
 
-/*Slider nav arrows*/
-.slider-nav--arrows{
-  width: 15px;
-  height: 15px !important;
-  position: absolute !important;
-  top: -6px;
-  cursor: pointer;
-  .mask{
-    cursor: pointer !important;
+.glide__bullet{
+  display: none;
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    display: inline-block;
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
   }
-}
-.slider-nav--arrows_left{
-  left: 20px;
-}
-.slider-nav--arrows_right{
-  right: 19px;
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+  }
 }
 /*Portfolio home end*/
 

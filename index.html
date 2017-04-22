@@ -195,69 +195,63 @@ and open the template in the editor.
     <!--Hero section end-->
 
     <!--Portfolio-->
-    <div id="portfolio" class="container-fluid portfolio-home">
+    <div id="portfolio" class="container-fluid portfolios-home">
       <div class="row">
-        <!--Background text-->
-        <!--<h1>portfolio</h1>-->
-        <!--Background text end-->
 
-        <div class="col-sm-12 col-xs-12 portfolio-slider rem-pad">
-          <div class="row-slider">
-            <div class="col lrg-12">
-
-              <div class="slider-wrap">
-                <!--Slider-->
-                <div class="slider">
-                  <div class="outer">
-                    <div class="tray">
-                      <section id="all-articles" style="left:-100%;"><h2>Website</h2><img src="images/1.jpeg"></section>
-                      <section id="featured-articles" style="left:0%;" class="current"><h2>branding</h2><img src="images/2.jpg"></section>
-                      <section id="popular-articles" style="left:100%;"><h2>seo</h2><img src="images/3.jpg"></section>
-                      <section id="new-articles" style="left:200%;"><h2>branding</h2><img src="images/4.jpg"></section>
-                    </div>
-                  </div>
-                  <div class="mask left">
-                  </div>
-                  <div class="mask right">
+        <div class="col-sm-12 col-xs-12 portfolios-home--inner rem-pad">
+          <div id="demo-paddings" class="glide">
+            <!--Arrows-->
+            <div class="glide__arrows">
+              <span class="glide__arrow prev" data-glide-dir="<">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+              </span>
+              <span class="glide__arrow next" data-glide-dir=">">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </span>
+            </div>
+            <!--Arrow end-->
+            <div class="glide__wrapper">
+              <div class="glide__track">
+                <!--Slide-->
+                <div class="glide__slide">
+                  <div class="box">
+                    <img src="images/1.jpeg" class="img-responsive">
+                    <h2>branding</h2>
+                    <div class="layer"></div>
                   </div>
                 </div>
-                <!--Slider end-->
-                <!--Slider nav-->
-                <nav class="slider-nav">
-                  <div class="dots">
-                    <div class="slider slider-nav--arrows slider-nav--arrows_left">
-                      <span class="fa fa-chevron-left mask left" aria-hidden="true"></span>
-                    </div>
-                    <div class="slider slider-nav--arrows slider-nav--arrows_right">
-                      <span class="fa fa-chevron-right mask right" aria-hidden="true"></span>
-                    </div>
+                <!--Slide-->
+                <div class="glide__slide">
+                  <div class="box">
+                    <img src="images/2.jpg" class="img-responsive">
+                    <h2>website</h2>
+                    <div class="layer"></div>
                   </div>
-                  <ul>
-                    <li class="current"><a href="#featured-articles"><span>1</span></a></li>
-                    <li><a href="#popular-articles"><span>2</span></a></li>
-                    <li><a href="#new-articles"><span>3</span></a></li>
-                    <li><a href="#all-articles"><span>4</span></a></li>
-                  </ul>
-                </nav>
-                <!--Slider nav end-->
+                </div>
+                <!--Slide-->
+                <div class="glide__slide">
+                  <div class="box">
+                    <img src="images/3.jpg" class="img-responsive">
+                    <h2>seo</h2>
+                    <div class="layer"></div>
+                  </div>
+                </div>
+                <!--Slide-->
+                <div class="glide__slide">
+                  <div class="box">
+                    <img src="images/4.jpg" class="img-responsive">
+                    <h2>branding</h2>
+                    <div class="layer"></div>
+                  </div>
+                </div>
               </div>
-
             </div>
-          </div>
-          <div class="col-sm-12 col-xs-12">
+            <div class="glide__bullets"></div>
+          </div>            
+          <div class="col-sm-12 col-xs-12 rem-pad">
             <a href="#" class="btn btn-portfolio">view more</a>
-
-            <!--Down button-->
-            <!--          <a href="#contact-home">
-                        <div class="down-btn down-btn-portfolio">
-                          <div class="down-btn--circle"></div>
-                          <div class="v-line">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                          </div>
-                        </div>
-                      </a>-->
-            <!--Down button end-->
           </div>
+
         </div>
       </div>
 
@@ -327,236 +321,13 @@ and open the template in the editor.
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
     <!--Portfolio slider-->
-    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/drag-slider.js" type="text/javascript"></script>
     <script>
-      //BBC hompage slider
-      var homeSlider = {
-        vars: {
-          //tray position
-          pos: 0,
-          //lock the slider to prevent multiple clicks when animating
-          locked: 0,
-          //animation duration
-          duration: 1000
-        },
-        helpers: {
-          //return percent from .att('style')
-          getPercent: function (str) {
-            var foo = str.substring(str.indexOf('left:') + 5);
-            return parseInt(foo.substring(0, foo.indexOf('%')));
-          },
-          //unlock the slider post animation
-          unlock: function () {
-            homeSlider.vars.locked = 0;
-          }
-
-        },
-        //bind all the things
-        init: function () {
-
-          //click binds
-          $('.slider .mask').on('mouseenter mouseleave', homeSlider.peek.over);
-          $('.slider .mask').on('click', homeSlider.nav.arrow);
-          $('.slider-nav a').on('click', homeSlider.nav.menu);
-
-
-          //mobile support
-          /*
-           $('.slider .outer').swipe({
-           swipe: function(event, direction, distance, duration, fingerCount){
-           if ( direction === 'left' ){
-           $('.mask.right').click();
-           } else if ( direction === 'right' ){
-           $('.mask.left').click();
-           }
-           },
-           threshold: 40
-           });
-           */
-        },
-        peek: {
-          //hover on masks triggers peek direction
-          over: function (e) {
-            if (e.type == 'mouseenter' && $(this).hasClass('left')) {
-              homeSlider.peek.move(15);
-            } else if (e.type == 'mouseenter' && $(this).hasClass('right')) {
-              homeSlider.peek.move(-15);
-            } else {
-              homeSlider.peek.move(0);
-            }
-          },
-          //peek move
-          move: function (dist) {
-            $('.slider-wrap .outer').stop().animate({'left': dist}, 300);
-          }
-
-        },
-        nav: {
-          //handles arror nav click
-          arrow: function (e) {
-            e.preventDefault();
-            if (homeSlider.vars.locked === 0) {
-              homeSlider.vars.locked = 1;
-              if ($(this).hasClass('left')) {
-                homeSlider.move.direction(0);
-              } else {
-                homeSlider.move.direction(1);
-              }
-            }
-          },
-          //bottom arror nav click
-          arrow: function (e) {
-            e.preventDefault();
-            if (homeSlider.vars.locked === 0) {
-              homeSlider.vars.locked = 1;
-              if ($(this).hasClass('left')) {
-                homeSlider.move.direction(0);
-              } else {
-                homeSlider.move.direction(1);
-              }
-            }
-          },
-                  //handles a menu nav click
-                  menu: function (e) {
-                    e.preventDefault();
-                    if (homeSlider.vars.locked === 0) {
-                      homeSlider.vars.locked = 1;
-                      homeSlider.move.toSlide($(e.target.hash));
-                    }
-                  },
-          //updates the menu nav visual class and arrow text
-          update: function () {
-            //nav menu
-            homeSlider.move.currentClass($('.slider-nav').find('a[href="#' + $('.slider .current').attr('id') + '"]').parent());
-            var offset = $('.slider-nav li.current').position().left / $('.slider-nav').width() * 100;
-            $('.slider-nav .highlight').stop().animate({'left': offset + '%'}, homeSlider.vars.duration, 'easeInOutQuart');
-            //update arrow text
-            $('.arrow.right span').text($('.slider-nav').find('a[href="#' + $('.slider .current').next().attr('id') + '"]').text());
-            $('.arrow.left span').text($('.slider-nav').find('a[href="#' + $('.slider .current').prev().attr('id') + '"]').text());
-          }
-
-        },
-        move: {
-          direction: function (dir) {
-
-            var $curr = $('.slider .current');
-
-            //go right
-            if (dir === 1) {
-              homeSlider.vars.pos -= 100;
-              if ($curr.next().is(':last-child')) {
-                //append first to last
-                homeSlider.move.firstToLast();
-                homeSlider.move.animate(homeSlider.vars.pos, true);
-              } else {
-                //no appendingzings
-                homeSlider.move.animate(homeSlider.vars.pos, false);
-              }
-              homeSlider.move.currentClass($curr.next());
-
-              //go left
-            } else {
-              homeSlider.vars.pos += 100;
-              if ($curr.prev().is(':first-child')) {
-                //prepend last to first
-                homeSlider.move.lastToFirst();
-                homeSlider.move.animate(homeSlider.vars.pos, true);
-              } else {
-                //no appendingzings
-                homeSlider.move.animate(homeSlider.vars.pos, false);
-              }
-              homeSlider.move.currentClass($curr.prev());
-
-            }
-
-            //if the slider is currently peeking, remove peek
-            homeSlider.peek.move(0);
-            //update the bottom nav
-            homeSlider.nav.update();
-
-          },
-          toSlide: function ($elm) {
-
-            var pos = homeSlider.helpers.getPercent($elm.attr('style')) * -1;
-
-            //if moving to the beginning of the stack
-            if ($elm.is(':first-child')) {
-              homeSlider.move.lastToFirst();
-              homeSlider.move.currentClass($elm);
-              homeSlider.move.animate(pos, true);
-
-              //if moving to the end of the stack
-            } else if ($elm.is(':last-child')) {
-              homeSlider.move.firstToLast();
-              homeSlider.move.currentClass($elm);
-              homeSlider.move.animate(pos, true);
-
-              //if moving to the middle of the stack
-            } else {
-              homeSlider.move.currentClass($elm);
-              homeSlider.move.animate(pos, false);
-            }
-
-            //update the bottom nav
-            homeSlider.nav.update();
-            //update the tray positon
-            homeSlider.vars.pos = pos;
-
-          },
-          //updates current class to requested slide
-          currentClass: function ($elm) {
-            $elm.addClass('current').siblings().removeClass('current');
-          },
-          //animation of the slider tray
-          animate: function (pos, flush) {
-            $('.slider .tray').animate({'left': pos + '%'}, homeSlider.vars.duration, 'easeInOutQuart', function () {
-              if (flush) {
-                homeSlider.move.flush();
-              } else {
-                homeSlider.helpers.unlock();
-              }
-            });
-          },
-          //dupe first slide to end of stack + mark first slide for removal
-          firstToLast: function () {
-            var $elm = $('.slider section:first-child');
-            pos = homeSlider.helpers.getPercent($('.slider section:last-child').attr('style')) + 100;
-            $clone = $elm.clone();
-            $elm.addClass('remove');
-            $clone.removeAttr('style').css({'left': pos + '%'}).appendTo($('.slider .tray'));
-          },
-          //dupe last slide to beginning of stack + mark last slide for removal
-          lastToFirst: function () {
-            var $elm = $('.slider section:last-child');
-            pos = homeSlider.helpers.getPercent($('.slider section:first-child').attr('style')) - 100;
-            $clone = $elm.clone();
-            $elm.addClass('remove');
-            $clone.removeAttr('style').css({'left': pos + '%'}).prependTo($('.slider .tray'));
-          },
-          //remove old slide from stack
-          flush: function () {
-            $('.slider .tray section.remove').remove();
-            homeSlider.helpers.unlock();
-          }
-
-        }
-
-      };
-
-      var helper = {
-        init: function () {
-          helper.center();
-          $(window).resize(helper.center);
-        },
-        center: function () {
-          $.each($('.slider section img'), function (i, elm) {
-            $(elm).css({marginTop: -$(elm).height() / 2, position: 'relative'});
-          })
-        }
-      }
-
-      homeSlider.init();
-      helper.init();
+      $(document).ready(function () {
+        $('pre code').each(function (i, block) {
+          hljs.highlightBlock(block);
+        });
+      });
     </script>
     <!--Menu action-->
     <script src="js/velocity.min.js" type="text/javascript"></script>

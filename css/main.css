@@ -6262,7 +6262,7 @@ header {
         .team-member:hover .team-member--details ul li a:hover {
           color: #009046; }
     .team-member:hover .team-member--details_content {
-      top: 408px;
+      top: 392px;
       z-index: -1;
       -webkit-transition: 0.3s;
       -moz-transition: 0.3s;

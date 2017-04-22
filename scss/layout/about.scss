@@ -279,14 +279,13 @@
   }
   .team-member--details_content{
     width: 265px;
-    position: absolute;
+    margin: auto;
+    float: none;
+    position: relative;
     background-color: #000;
     color: #fff;
+    top: 0;
     padding: 15px;
-    top: 287px;
-    margin: auto;
-    left: 0;
-    right: 0;
     z-index: -1;
     @include transition(.3s);
     p{
@@ -333,8 +332,6 @@
       }
     }    
     .team-member--details_content{
-      top: 392px;
-      z-index: -1;
       @include transition(.3s);
     }
     .member-line{
@@ -354,6 +351,20 @@
             color: #232325;
           }
         }
+      }
+    }
+    .team-member--details_content{
+      position: absolute;
+      top: 287px;
+      margin: auto;
+      left: 0;
+      right: 0;
+    }
+    &:hover{
+      .team-member--details_content{
+        top: 392px;
+        z-index: -1;
+        @include transition(.3s);
       }
     }
   }  

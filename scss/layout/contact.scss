@@ -266,12 +266,12 @@
       margin-bottom: 3px;
       display: block;
       &:hover{
-        color: #454546;
+        color: #009046;
         @include transition(.2s);
       }
     }
     .map-address--address_tel{
-      color: #454546;
+      color: #fff;
       font-family: "Din";
       @include medium;
       font-size: 25px;
@@ -279,12 +279,12 @@
       margin-bottom: 3px;
       display: block;
       &:hover{
-        color: #fff;
+        color: #009046;
         @include transition(.2s);
       }
     }
     p{
-      color: #454546;
+      color: #c5c3c3;
       font-family: "Din";
       @include medium;
       font-size: 17px;

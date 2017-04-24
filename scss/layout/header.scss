@@ -68,5 +68,15 @@ header{
 
 /*Fixed nav inner*/
 .nav-fixed-inner{
-  top: 55px !important;
+  top: 70px !important;
+  @media all and (min-width: $screen-sm) {
+
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+    top: 55px !important;
+  }
 }

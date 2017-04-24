@@ -5977,6 +5977,9 @@ header {
 /*Fixed nav inner*/
 .nav-fixed-inner {
   top: 70px !important; }
+  @media all and (min-width: 768px) {
+    .nav-fixed-inner .nav-container .header-right--menu {
+      right: 0px; } }
   @media all and (min-width: 1200px) {
     .nav-fixed-inner {
       top: 55px !important; } }

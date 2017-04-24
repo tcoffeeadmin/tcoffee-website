@@ -11779,7 +11779,7 @@ div.cs-skin-boxes:focus > span {
     -moz-box-shadow: none;
     -ms-box-shadow: none;
     box-shadow: none;
-    font-size: 18px; }
+    font-size: 17px; }
     .vacc-pop--up .form-section .form-control:active, .vacc-pop--up .form-section .form-control:focus {
       border-bottom: 1px solid #c3c3c3; }
   .vacc-pop--up .form-section .btn-career {
@@ -11903,20 +11903,21 @@ div.cs-skin-boxes:focus > span {
   vertical-align: top; }
 
 .inputfile-6 + label .input-fine--name {
-  font-size: 18px;
+  font-size: 17px;
   padding: 0;
   text-transform: uppercase;
   font-family: "Din";
   font-weight: 300;
   color: #9e9e9e;
-  width: 56%; }
+  width: 65%; }
 
 .inputfile-6 + label .file-type {
   font-size: 13px;
   font-family: "Din";
   font-weight: 300;
   color: #575759;
-  width: 110px;
+  width: 75px;
+  padding-left: 0;
   float: right; }
 
 .inputfile-6 + label strong {

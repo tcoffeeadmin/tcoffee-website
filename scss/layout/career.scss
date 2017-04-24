@@ -530,7 +530,7 @@
       color: #9e9e9e;
       @include light;
       @include box-shadow(none);
-      font-size: 18px;    
+      font-size: 17px;    
       &:active, &:focus{
         border-bottom: 1px solid #c3c3c3;
       }
@@ -669,20 +669,21 @@
       vertical-align: top;
     }
     .input-fine--name{
-      font-size: 18px;
+      font-size: 17px;
       padding: 0;
       text-transform: uppercase;
       font-family: "Din";
       @include light;
       color: #9e9e9e;
-      width: 56%;
+      width: 65%;
     }
     .file-type{
       font-size: 13px;
       font-family: "Din";
       @include light;
       color: #575759;
-      width: 110px;
+      width: 75px;
+      padding-left: 0;
       float: right;
     }
     strong {

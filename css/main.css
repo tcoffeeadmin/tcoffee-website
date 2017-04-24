@@ -4898,7 +4898,7 @@ button.close {
   background-color: #171717;
   position: relative;
   overflow: hidden;
-  background-image: url(../images/portfolio-home--bg.png);
+  background-image: url(../images/portfolio.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top; }
@@ -4922,7 +4922,7 @@ button.close {
 
 .portfolios-home--inner {
   padding-top: 7%;
-  padding-bottom: 12%; }
+  padding-bottom: 6%; }
   @media all and (min-width: 1200px) {
     .portfolios-home--inner {
       position: absolute;
@@ -6024,7 +6024,7 @@ header {
   .about-inner .about-inner--content {
     position: relative;
     background-color: #171717;
-    background-image: url(../images/about-us.png);
+    background-image: url(../images/about-us.svg);
     background-size: contain;
     background-repeat: no-repeat; }
     .about-inner .about-inner--content .about-inner--content_inner {
@@ -6078,9 +6078,10 @@ header {
 /*Our team*/
 .our-team {
   background-color: #171717;
-  background-image: url(../images/our-team-bg.png);
-  background-size: contain;
+  background-image: url(../images/our-team-bg.svg);
+  background-size: 70%;
   background-repeat: no-repeat;
+  background-position: 16px;
   position: relative; }
   .our-team .our-team--inner {
     padding-top: 100px;
@@ -6340,13 +6341,13 @@ header {
     margin: 0; }
   .vision-mission--inner .vision-mission--inner_vision {
     background-color: #171717;
-    background-image: url(../images/vision-bg.png);
+    background-image: url(../images/vision-bg.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 82%;
     padding: 80px 5%; }
   .vision-mission--inner .vision-mission--inner_mission {
     background-color: #222222;
-    background-image: url(../images/mission-bg.png);
+    background-image: url(../images/mission-bg.svg);
     background-repeat: no-repeat;
     background-size: contain;
     padding: 80px 5%; }
@@ -6415,7 +6416,7 @@ header {
 /*Clients*/
 .clients {
   background-color: #171717;
-  background-image: url(../images/clients-bg.png);
+  background-image: url(../images/clients-bg.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -9081,7 +9082,7 @@ header {
   position: absolute;
   height: 515px;
   width: 100%;
-  background-image: url(../images/service-bg.png);
+  background-image: url(../images/service-bg.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -9101,7 +9102,7 @@ header {
 /*Testimonials*/
 .testimonials {
   background-color: #171717;
-  background-image: url(../images/testimonial-bg.png);
+  background-image: url(../images/testimonial-bg.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -9428,7 +9429,7 @@ header {
   position: relative; }
   .contact-box--inner .contact-box--inner_content {
     background-color: #171717;
-    background-image: url(../images/contact-bg.png);
+    background-image: url(../images/contact-bg.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -9461,7 +9462,7 @@ header {
       position: absolute;
       width: 100%;
       height: 405px;
-      background-image: url(../images/contact-bg.png);
+      background-image: url(../images/contact-bg.svg);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -9652,7 +9653,7 @@ header {
 .contact-form {
   background-color: #171717;
   height: 100%;
-  background-image: url(../images/contact-form-bg.png);
+  background-image: url(../images/contact-form-bg.svg);
   background-repeat: no-repeat;
   background-size: contain;
   overflow: hidden; }
@@ -9682,15 +9683,16 @@ header {
   height: 100%;
   color: #fff;
   background-color: #171717;
-  background-image: url(../images/contact-form-bg.png);
-  background-size: contain;
+  background-image: url(../images/contact-form-bg.svg);
+  background-size: 85%;
   background-repeat: no-repeat;
-  background-position: 15px bottom;
+  background-position: 0px bottom;
   overflow: hidden; }
   @media all and (min-width: 768px) {
     .fs-form-wrap {
       padding: 0;
-      background-position: bottom; } }
+      background-position: 0px bottom;
+      background-size: 70%; } }
 
 .overview .fs-form-wrap {
   height: auto; }
@@ -9735,9 +9737,9 @@ header {
   background: #171717;
   color: #3b3f45;
   font-size: 1.2em;
-  background-image: url(../images/review-bg.png);
-  background-position: bottom;
-  background-size: contain;
+  background-image: url(../images/review-bg.svg);
+  background-position: 0 bottom;
+  background-size: 80%;
   background-repeat: no-repeat; }
   .fs-form-overview .fs-fields::before {
     display: block;
@@ -10897,7 +10899,7 @@ div.cs-skin-boxes:focus > span {
   .portfolio-inner .portfolio-inner--content {
     position: relative;
     background-color: #171717;
-    background-image: url(../images/portfolio-content--bg.png);
+    background-image: url(../images/portfolio-content--bg.svg);
     background-size: contain;
     background-repeat: no-repeat; }
     .portfolio-inner .portfolio-inner--content .portfolio-inner--content_inner {
@@ -10951,7 +10953,7 @@ div.cs-skin-boxes:focus > span {
 /*Porfolio section*/
 .portfolio-section {
   background-color: #171717;
-  background-image: url(../images/portfolio-home--bg.png);
+  background-image: url(../images/portfolio.svg);
   background-size: contain;
   background-repeat: no-repeat;
   padding-top: 50px;
@@ -11448,7 +11450,7 @@ div.cs-skin-boxes:focus > span {
   background-color: #171717;
   padding-top: 14.5%;
   padding-bottom: 8%;
-  background-image: url(../images/positions.png);
+  background-image: url(../images/positions.svg);
   background-size: contain;
   background-repeat: no-repeat; }
 

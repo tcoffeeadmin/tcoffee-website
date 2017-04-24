@@ -3,7 +3,7 @@
   background-color: #171717;
   position: relative;
   overflow: hidden;
-  background-image: url(../images/portfolio-home--bg.png);
+  background-image: url(../images/portfolio.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
@@ -35,7 +35,7 @@
 
 .portfolios-home--inner{
   padding-top: 7%;
-  padding-bottom: 12%;
+  padding-bottom: 6%;
   @media all and (min-width: $screen-sm) {
     // Tablet
   }  

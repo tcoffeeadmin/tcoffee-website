@@ -2,7 +2,7 @@
 .contact-form{
   background-color: #171717;
   height: 100%;
-  background-image: url(../images/contact-form-bg.png);
+  background-image: url(../images/contact-form-bg.svg);
   background-repeat: no-repeat;
   background-size: contain;
   overflow: hidden;
@@ -52,15 +52,16 @@
   height: 100%;
   color: #fff;
   background-color: #171717;
-  background-image: url(../images/contact-form-bg.png);
-  background-size: contain;
+  background-image: url(../images/contact-form-bg.svg);
+  background-size: 85%;
   background-repeat: no-repeat;
-  background-position: 15px bottom;
+  background-position: 0px bottom;
   overflow: hidden;
   @media all and (min-width: $screen-sm) {
     // Tablet
     padding: 0;
-    background-position: bottom;
+    background-position: 0px bottom;
+    background-size: 70%;
   }  
   @media all and (min-width: $screen-md) {
     // Tablet
@@ -130,9 +131,9 @@
   background: #171717;
   color: #3b3f45;
   font-size: 1.2em;
-  background-image: url(../images/review-bg.png);
-  background-position: bottom;
-  background-size: contain;
+  background-image: url(../images/review-bg.svg);
+  background-position: 0 bottom;
+  background-size: 80%;
   background-repeat: no-repeat;
   .fs-fields::before {
     display: block;

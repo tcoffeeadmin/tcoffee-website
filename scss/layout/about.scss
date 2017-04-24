@@ -55,7 +55,7 @@
   .about-inner--content{
     position: relative;
     background-color: #171717;
-    background-image: url(../images/about-us.png);
+    background-image: url(../images/about-us.svg);
     background-size: contain;
     background-repeat: no-repeat;
     .about-inner--content_inner{
@@ -128,9 +128,10 @@
 /*Our team*/
 .our-team{
   background-color: #171717;
-  background-image: url(../images/our-team-bg.png);
-  background-size: contain;
+  background-image: url(../images/our-team-bg.svg);
+  background-size: 70%;
   background-repeat: no-repeat;
+  background-position: 16px;
   position: relative;
   .our-team--inner{
     padding-top: 100px;
@@ -428,14 +429,14 @@
   }
   .vision-mission--inner_vision{
     background-color: #171717;
-    background-image: url(../images/vision-bg.png);
+    background-image: url(../images/vision-bg.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 82%;
     padding: 80px 5%;
   }
   .vision-mission--inner_mission{
     background-color: #222222;
-    background-image: url(../images/mission-bg.png);
+    background-image: url(../images/mission-bg.svg);
     background-repeat: no-repeat;
     background-size: contain;
     padding: 80px 5%;
@@ -524,7 +525,7 @@
 /*Clients*/
 .clients{
   background-color: #171717;
-  background-image: url(../images/clients-bg.png);
+  background-image: url(../images/clients-bg.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

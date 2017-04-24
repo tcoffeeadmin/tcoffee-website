@@ -5666,10 +5666,10 @@ header {
     transition: color 0.2s; }
   @media all and (min-width: 768px) {
     .cd-primary-nav {
-      padding: 80px 9%; } }
+      padding: 60px 9%; } }
   @media all and (min-width: 1200px) {
     .cd-primary-nav {
-      padding: 80px 15%; } }
+      padding: 60px 15%; } }
   @media all and (min-width: 1400px) {
     .cd-primary-nav {
       padding: 150px 25%; } }

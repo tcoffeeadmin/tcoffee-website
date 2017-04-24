@@ -10993,7 +10993,7 @@ div.cs-skin-boxes:focus > span {
     overflow-x: scroll;
     padding-bottom: 20px; }
     .portfolio-section--tabs .tab-pane .tab-pane--inner .tab-pane--inner_portfolio::-webkit-scrollbar {
-      height: 15px;
+      height: 10px;
       border: 2px solid #222222;
       -webkit-border-radius: 15px;
       -moz-border-radius: 15px;
@@ -11092,17 +11092,17 @@ div.cs-skin-boxes:focus > span {
   position: relative;
   width: 100%;
   height: 100%;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  transition: 0.5s; }
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s; }
   .card:hover .card__container--closed .card__caption {
     margin-top: -10px;
     background-color: #009046;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    transition: 0.5s; }
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    transition: 0.2s; }
   .card:hover .card__container--closed .zoom-icon {
     visibility: visible;
     -webkit-transition: 0.5s;
@@ -11127,10 +11127,10 @@ div.cs-skin-boxes:focus > span {
   right: 10px;
   width: 27px;
   visibility: hidden;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  transition: 0.5s; }
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s; }
 
 .card__container {
   position: fixed;
@@ -11195,10 +11195,10 @@ div.cs-skin-boxes:focus > span {
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
   margin-bottom: 0;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  transition: 0.5s; }
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s; }
 
 .card__title {
   font-size: 32px;
@@ -11303,15 +11303,16 @@ div.cs-skin-boxes:focus > span {
   width: 100%;
   height: 100%; }
 
+/*
 .polygon {
-  transition: -webkit-transform 300ms ease-in-out, opacity 300ms ease-in-out;
-  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+  transition: -webkit-transform 100ms ease-in-out, opacity 100ms ease-in-out;
+  transition: transform 100ms ease-in-out, opacity 100ms ease-in-out;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transform-origin: center bottom;
   transform-origin: center bottom;
-  fill: transparent; }
-
+  fill: transparent;
+}*/
 .polygon--hidden {
   opacity: 0;
   -webkit-transform: scale(0);

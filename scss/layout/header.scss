@@ -15,6 +15,7 @@ header{
     text-align: right;
   }
   .header-right--cantact{
+    margin-top: 15px;
     padding-left: 0px;
     display: inline-block;
     li{
@@ -38,21 +39,9 @@ header{
       }
     }
   }
-  .header-right--menu{
-    width: 40px;
-    height: 40px;
-    padding: 8px 12px;
-    color: #fff;
-    font-size: 18px;
-    display: inline-block;
-    margin-left: 0px;
-    @include border-radius(100%);
-    position: relative;
-  }
   @media all and (min-width: $screen-sm) {
-    // Tablet
-    .header-right--menu{
-      margin-left: 45px;
+    .header-right--cantact{
+      margin-right: 85px;
     }
   }  
   @media all and (min-width: $screen-md) {
@@ -61,4 +50,23 @@ header{
   @media all and (min-width: $screen-lg) {
     // Desktop
   }
+}
+
+/*Fixed menu*/
+.nav-fixed{
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  top: 70px;
+  .nav-container{
+    position: relative;
+    .header-right--menu{
+      right: 5px;
+    }
+  }
+}
+
+/*Fixed nav inner*/
+.nav-fixed-inner{
+  top: 55px !important;
 }

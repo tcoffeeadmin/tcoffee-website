@@ -253,6 +253,7 @@
 /*Testimonial slider*/
 .testimonial-slider{
   .carousel-indicators {
+    z-index: 1;
     bottom: -42px !important;
     li{
       background-color: #232325 !important;

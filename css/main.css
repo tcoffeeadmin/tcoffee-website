@@ -5969,7 +5969,10 @@ header {
   .nav-fixed .nav-container {
     position: relative; }
     .nav-fixed .nav-container .header-right--menu {
-      right: 5px; }
+      right: -15px; }
+  @media all and (min-width: 768px) {
+    .nav-fixed .nav-container .header-right--menu {
+      right: 0px; } }
 
 /*Fixed nav inner*/
 .nav-fixed-inner {

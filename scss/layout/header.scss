@@ -61,8 +61,21 @@ header{
   .nav-container{
     position: relative;
     .header-right--menu{
-      right: 5px;
+      right: -15px;
     }
+  }
+  @media all and (min-width: $screen-sm) {
+  .nav-container{
+    .header-right--menu{
+      right: 0px;
+    }
+  }
+  }  
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
   }
 }
 

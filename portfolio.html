@@ -6686,10 +6686,10 @@ and open the template in the editor.
     <div class="container-fluid get-in-touch">
       <div class="row">
         <div class="container">
-          <div class="col-md-6 col-sm-6 col-xs-12 wow slideInLeft" data-wow-delay=".1s">
+          <div class="col-md-6 col-sm-6 col-xs-12">
             <h3>start a new project</h3>
           </div>
-          <div class="col-md-6 col-sm-6 col-xs-12 wow slideInRight" data-wow-delay=".1s">
+          <div class="col-md-6 col-sm-6 col-xs-12">
             <a href="#" class="btn btn-project">get in touch</a>
           </div>
         </div>
@@ -6784,25 +6784,6 @@ and open the template in the editor.
     
           });
         </script>-->
-    <!--Wow animation-->
-    <script src="js/wow.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      wow = new WOW(
-              {
-                animateClass: 'animated',
-                offset: 100,
-                callback: function (box) {
-                  console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-                }
-              }
-      );
-      wow.init();
-      document.getElementById('moar').onclick = function () {
-        var section = document.createElement('section');
-        section.className = 'section--purple wow fadeInDown';
-        this.parentNode.insertBefore(section, this);
-      };
-    </script>
     <!--Profile view-->
     <script src="js/trianglify.min.js"></script>
     <script src="js/TweenMax.min.js"></script>

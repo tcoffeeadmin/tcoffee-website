@@ -12204,11 +12204,9 @@ div.cs-skin-boxes:focus > span {
   .blog-single--content .blog-single--box .blog-single--box_pic img {
     width: 100%;
     height: 100%; }
-  .blog-single--content .blog-single--box .blog-single--box_pic .line {
-    width: 106%; }
   .blog-single--content .blog-single--box .blog-single--box_content {
     background-color: #fff;
-    padding: 80px 50px; }
+    padding: 50px 25px; }
     .blog-single--content .blog-single--box .blog-single--box_content p {
       color: #000;
       font-family: "Din";
@@ -12219,13 +12217,14 @@ div.cs-skin-boxes:focus > span {
     .blog-single--content .blog-single--box .blog-single--box_pic {
       height: 275px; }
       .blog-single--content .blog-single--box .blog-single--box_pic .line {
-        width: 108%;
+        width: 104%;
         height: 1px;
         background-color: #009046;
         position: absolute;
-        left: -4%;
-        top: 50%;
-        z-index: -1; } }
+        left: -2%;
+        top: 50%; }
+    .blog-single--content .blog-single--box .blog-single--box_content {
+      padding: 80px 50px; } }
   @media all and (min-width: 992px) {
     .blog-single--content .blog-single--box .blog-single--box_pic {
       height: 350px; } }
@@ -12235,9 +12234,10 @@ div.cs-skin-boxes:focus > span {
   position: relative; }
   .share-buttons ul {
     padding-left: 0;
-    padding-top: 80px; }
+    padding-top: 50px; }
     .share-buttons ul li {
       padding: 11px 15px;
+      margin-bottom: 8px;
       display: inline-block; }
       .share-buttons ul li a {
         color: #fff;
@@ -12253,8 +12253,12 @@ div.cs-skin-boxes:focus > span {
       background-color: #df4a32; }
     .share-buttons ul .linked {
       background-color: #007ab8; }
+  @media all and (min-width: 768px) {
+    .share-buttons ul {
+      padding-top: 80px; }
+      .share-buttons ul li {
+        margin-bottom: 0px; } }
 
-/*Back button*/
 .blog-back {
   position: absolute;
   right: 0;

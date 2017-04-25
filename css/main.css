@@ -5831,14 +5831,14 @@ header {
     font-size: 20px;
     display: block; }
   .menu-overlay .menu-overlay--contact .menu-overlay--contact_phone {
-    color: #454546;
+    color: #fff;
     font-family: "Din";
     font-weight: 500;
     font-size: 20px;
     display: block; }
   .menu-overlay .menu-overlay--contact p {
     font-family: "Din";
-    color: #454546;
+    color: #c5c3c3;
     font-size: 17px;
     font-weight: 500;
     line-height: 25px; }
@@ -5878,7 +5878,7 @@ header {
       -ms-transition: 0.3s;
       transition: 0.3s; }
       .menu-overlay .menu-overlay--contact .menu-overlay--contact_mail:hover {
-        color: #454546;
+        color: #009046;
         -webkit-transition: 0.3s;
         -moz-transition: 0.3s;
         -ms-transition: 0.3s;
@@ -5891,7 +5891,7 @@ header {
       -ms-transition: 0.3s;
       transition: 0.3s; }
       .menu-overlay .menu-overlay--contact .menu-overlay--contact_phone:hover {
-        color: #fff;
+        color: #009046;
         -webkit-transition: 0.3s;
         -moz-transition: 0.3s;
         -ms-transition: 0.3s;

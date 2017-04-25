@@ -434,7 +434,7 @@ header {
       display: block;
     }
     .menu-overlay--contact_phone{
-      color: #454546;
+      color: #fff;
       font-family: "Din";
       @include medium;
       font-size: 20px;
@@ -442,7 +442,7 @@ header {
     }
     p{
       font-family: "Din";
-      color: #454546;
+      color: #c5c3c3;
       font-size: 17px;
       @include medium;
       line-height: 25px;
@@ -482,7 +482,7 @@ header {
         font-size: 25px;
         @include transition(.3s);
         &:hover{
-          color: #454546;
+          color: #009046;
           @include transition(.3s);
         }
       }
@@ -491,7 +491,7 @@ header {
         margin-bottom: 18px;
         @include transition(.3s);
         &:hover{
-          color: #fff;
+          color: #009046;
           @include transition(.3s);
         }
       }

@@ -62,7 +62,7 @@ and open the template in the editor.
             <span></span>
           </div> <!-- cd-overlay-content -->
 
-          <a href="#0" class="cd-nav-trigger"><span class="cd-icon"></span></a>
+          <a href="#0" class="cd-nav-trigger on-menu"><span class="cd-icon"></span></a>
         </div>
       </div>
     </div>
@@ -262,7 +262,7 @@ and open the template in the editor.
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
-    
+
     <!--Menu action-->
     <script src="js/velocity.min.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
@@ -278,6 +278,21 @@ and open the template in the editor.
           }, 1000);
         }
 
+      });
+    </script>
+    <!--Menu icon color change-->
+    <script>
+      jQuery(document).ready(function ($) {
+        $(window).scroll(function () {
+          var scrollPos = $(window).scrollTop(),
+                  navbar = $('.on-menu');
+
+          if (scrollPos > 20) {
+            navbar.addClass('menu-visible');
+          } else {
+            navbar.removeClass('menu-visible');
+          }
+        });
       });
     </script>
   </body>

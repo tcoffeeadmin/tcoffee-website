@@ -62,12 +62,12 @@ and open the template in the editor.
             <span></span>
           </div> <!-- cd-overlay-content -->
 
-          <a href="#0" class="cd-nav-trigger"><span class="cd-icon"></span></a>
+          <a href="#0" class="cd-nav-trigger on-menu"><span class="cd-icon"></span></a>
         </div>
       </div>
     </div>
     <!--Fixed menu end-->
-    
+
     <!--Services single section-->
     <div id="top" class="container-fluid service-single">
       <div class="row">
@@ -148,7 +148,7 @@ and open the template in the editor.
             are up for any web \ project be it static or dynamic.</p>
         </div>
       </div>
-      
+
       <div class="row row-eq-height">
         <div id="mob-app" class="col-sm-6 single-service--two">
           <h2>mobile app</h2>
@@ -165,7 +165,7 @@ and open the template in the editor.
             are up for any web \ project be it static or dynamic.</p>
         </div>
       </div>
-      
+
       <div class="row row-eq-height">
         <div id="assistance" class="col-sm-6 single-service--one">
           <h2>assistance</h2>
@@ -182,7 +182,7 @@ and open the template in the editor.
           </ul>
         </div>
       </div>
-      
+
     </div>
     <!--Single services end-->
 
@@ -286,6 +286,21 @@ and open the template in the editor.
           }, 1000);
         }
 
+      });
+    </script>
+    <!--Menu icon color change-->
+    <script>
+      jQuery(document).ready(function ($) {
+        $(window).scroll(function () {
+          var scrollPos = $(window).scrollTop(),
+                  navbar = $('.on-menu');
+
+          if (scrollPos > 20) {
+            navbar.addClass('menu-visible');
+          } else {
+            navbar.removeClass('menu-visible');
+          }
+        });
       });
     </script>
   </body>

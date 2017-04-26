@@ -69,7 +69,7 @@ and open the template in the editor.
             <span></span>
           </div> <!-- cd-overlay-content -->
 
-          <a href="#0" class="cd-nav-trigger"><span class="cd-icon"></span></a>
+          <a href="#0" class="cd-nav-trigger on-menu"><span class="cd-icon"></span></a>
         </div>
       </div>
     </div>
@@ -6790,5 +6790,20 @@ and open the template in the editor.
     <script src="js/cash.min.js"></script>
     <script src="js/Card-circle.js"></script>
     <script src="js/demo.js"></script>
+    <!--Menu icon color change-->
+    <script>
+      jQuery(document).ready(function ($) {
+        $(window).scroll(function () {
+          var scrollPos = $(window).scrollTop(),
+                  navbar = $('.on-menu');
+
+          if (scrollPos > 20) {
+            navbar.addClass('menu-visible');
+          } else {
+            navbar.removeClass('menu-visible');
+          }
+        });
+      });
+    </script>
   </body>
 </html>

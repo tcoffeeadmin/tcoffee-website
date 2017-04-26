@@ -115,7 +115,7 @@ header {
     transition-property: transform;
   }
   &::before {
-    background-color: #000;
+    /*background-color: #000;*/
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
@@ -536,4 +536,16 @@ header {
       }
     }
   }
+}
+
+/*Menu icon scroll color change*/
+.on-menu::before{
+  background-color: #000;
+  @include border-radius(50px);
+  @include transition(.5s);
+}
+.on-menu.menu-visible::before{
+  background-color: #007f5d;
+  @include border-radius(50px);
+  @include transition(.5s);
 }

@@ -6429,7 +6429,7 @@ header {
         padding: 118px 7%; } }
   @media all and (min-width: 1400px) {
     .vision-mission--inner {
-      height: 400px; }
+      height: auto; }
       .vision-mission--inner .vision-mission--inner_vision {
         height: 400px;
         padding: 145px 7%; }

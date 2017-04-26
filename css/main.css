@@ -12182,10 +12182,11 @@ div.cs-skin-boxes:focus > span {
       .blog-single--head .blogger .pic img {
         width: 100%;
         height: 100%;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        border-radius: 5px; }
+        border: 2px solid #009046;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        border-radius: 15px; }
     .blog-single--head .blogger .name {
       font-family: "Din";
       font-size: 18px;

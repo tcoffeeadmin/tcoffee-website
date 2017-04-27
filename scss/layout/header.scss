@@ -29,11 +29,11 @@ header{
         @include transition(.3s);
         &:hover{
           text-decoration: none;
-          color: #007f5d;
+          color: #009046;
           @include transition(.3s);
         }
         .fa{
-          color: #007f5d;
+          color: #009046;
           padding-right: 10px;
         }
       }

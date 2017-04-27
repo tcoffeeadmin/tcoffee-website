@@ -80,8 +80,8 @@
         @include transition(.3s);
         &:hover{
           color: #fff;
-          border-color: #007f5d;
-          background-color: #007f5d;
+          border-color: #009046;
+          background-color: #009046;
           @include transition(.3s);
         }
       }
@@ -247,7 +247,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;*/
-  background-color: #000;
+  background-color: #171717;
   overflow: hidden;
   .btn-project{
     background-color: transparent;
@@ -265,8 +265,8 @@
     width: 135px;
     margin: auto;
     &:hover{
-      border-color: #007f5d;
-      background-color: #007f5d;
+      border-color: #009046;
+      background-color: #009046;
       color: #fff;
     }
   }

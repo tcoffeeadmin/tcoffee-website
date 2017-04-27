@@ -4731,8 +4731,8 @@ button.close {
       transition: 0.3s; }
       .hero-inner--social ul li a:hover {
         color: #fff;
-        border-color: #007f5d;
-        background-color: #007f5d;
+        border-color: #009046;
+        background-color: #009046;
         -webkit-transition: 0.3s;
         -moz-transition: 0.3s;
         -ms-transition: 0.3s;
@@ -4864,7 +4864,7 @@ button.close {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;*/
-  background-color: #000;
+  background-color: #171717;
   overflow: hidden; }
   .services-images .btn-project {
     background-color: transparent;
@@ -4885,8 +4885,8 @@ button.close {
     width: 135px;
     margin: auto; }
     .services-images .btn-project:hover {
-      border-color: #007f5d;
-      background-color: #007f5d;
+      border-color: #009046;
+      background-color: #009046;
       color: #fff; }
   @media all and (min-width: 768px) {
     .services-images {
@@ -5256,8 +5256,8 @@ button.close {
   margin: auto;
   margin-top: 20px; }
   .btn-portfolio:hover {
-    border-color: #007f5d;
-    background-color: #007f5d;
+    border-color: #009046;
+    background-color: #009046;
     color: #fff; }
   @media all and (min-width: 1200px) {
     .btn-portfolio {
@@ -5678,7 +5678,7 @@ header {
     -moz-transition-delay: 0.4s;
     transition-delay: 0.4s; }
   .cd-nav-trigger::after {
-    background-color: #007f5d;
+    background-color: #009046;
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
     -ms-transform: scale(0);
@@ -5845,7 +5845,7 @@ header {
   /* main rounded colored bg 2 */
   z-index: 4; }
   .cd-overlay-content span {
-    background-color: #007f5d; }
+    background-color: #009046; }
 
 .cd-content {
   /* just some dummy content */
@@ -6026,7 +6026,7 @@ header {
   transition: 0.5s; }
 
 .on-menu.menu-visible::before {
-  background-color: #007f5d;
+  background-color: #009046;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
@@ -6065,13 +6065,13 @@ header {
         transition: 0.3s; }
         header .header-right--cantact li a:hover {
           text-decoration: none;
-          color: #007f5d;
+          color: #009046;
           -webkit-transition: 0.3s;
           -moz-transition: 0.3s;
           -ms-transition: 0.3s;
           transition: 0.3s; }
         header .header-right--cantact li a .fa {
-          color: #007f5d;
+          color: #009046;
           padding-right: 10px; }
   @media all and (min-width: 768px) {
     header .header-right--cantact {

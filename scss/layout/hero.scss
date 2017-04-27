@@ -243,10 +243,12 @@
 }
 /*Hero services image*/
 .services-images{
-  background-image: url(../images/bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  /*  background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
+  background-color: #000;
+  overflow: hidden;
   .btn-project{
     background-color: transparent;
     @include border-radius(0px);
@@ -280,4 +282,80 @@
   @media all and (min-width: $screen-xlg){
     height: 500px;
   }
+}
+
+/*Parallax effect*/
+#parallxWrapper {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.parallxBackground {
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/ash-group.png");
+  background-repeat: repeat;
+  background-size: contain;
+  border-radius: 10px;
+  padding: 10px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.parallxLayerLogo {
+  height: 100%;
+  width: 100%;
+  /*  margin-top:50px;
+    margin-left:50px;*/
+  background-image: url("../images/black-dot.png");
+  background-repeat: repeat;
+  background-size: contain;
+  position: absolute;
+  -webkit-transform: translateZ(90px);
+  -webkit-transition: all 0.2s;
+  transform: translateZ(90px);
+  transition: all 0.2s;
+}
+
+.parallxLayer:hover {
+  -webkit-transform: scale(1.05);
+  -webkit-transform: translateZ(30px);
+  transform: scale(1.05);
+  transform: translateZ(30px);
+  cursor: pointer;
+}
+
+.parallxLayerRStar {
+  height: 100%;
+  width: 100%;
+  /*  margin-left:880px;
+    margin-top:450px;*/
+  float: right;
+  background-image: url("../images/green-dot-ash.png");
+  background-repeat: repeat;
+  background-size: contain;
+  position: absolute;
+  -webkit-transform: translateZ(20px);
+  transform: translateZ(20px);
+}
+
+.parallxLayerShooter {
+  height: 100%;
+  width: 100%;
+  /*float:right;*/
+  background-image: url("http://i.imgur.com/YWCpfik.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  -webkit-transform: translateZ(50px);
+  transform: translateZ(50px);
+}
+
+.parallxLayerRStar:hover {
+  -webkit-transform: scale(1.05);
+  -webkit-transform: translateZ(30px);
+  transform: scale(1.05);
+  transform: translateZ(30px);
+  cursor: pointer;
 }

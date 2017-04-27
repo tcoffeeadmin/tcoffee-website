@@ -164,8 +164,15 @@ and open the template in the editor.
               </div>
               <!--Service slider end-->
 
+              <!--Parallax effect hover-->
               <div class="col-md-7 col-sm-6 hidden-xs services-images rem-pad">
-
+                <div id="parallxWrapper">
+                  <div class="parallxBackground" data-bind="attr: { style:'-webkit-transform:perspective(1000px) rotateY(' + relativeMouse.x() + 'deg) rotateX(' + relativeMouse.y() + 'deg);transform:perspective(1000px) rotateY(' + relativeMouse.x() + 'deg) rotateX(' + relativeMouse.y() + 'deg)' }">
+                    <div class="parallxLayerLogo"></div>
+                    <div class="parallxLayerRStar"></div>
+                    <div class="parallxLayerShooter"></div>
+                  </div>
+                </div>
                 <!--Button-->
                 <a href="#" class="btn btn-project">Start a new project</a>
               </div>
@@ -366,6 +373,66 @@ and open the template in the editor.
             navbar.removeClass('menu-visible');
           }
         });
+      });
+    </script>
+    <!--Parallax effect-->
+    <script src="js/knockout-min.js" type="text/javascript"></script>
+    <script>
+      var parallx = null;
+      var demoCount = 0;
+      function Parallx() {
+        var self = this;
+        $("body").mousemove(function (e) {
+
+          parallax.mouseX(e.pageX);
+          parallax.mouseY(e.pageY);
+
+        });
+
+
+        self.sensitivityMultiplier = ko.observable(0.03);
+        self.wrapperOffset = $('#parallxWrapper').offset();
+        self.wrapperCenter = {
+          x: ko.computed(function () {
+            return self.wrapperOffset.left + ($('#parallxWrapper').width() / 2)
+          }, this),
+          y: ko.computed(function () {
+            return self.wrapperOffset.top + ($('#parallxWrapper').height() / 2)
+          }, this)
+        };
+        self.mouseX = ko.observable(0);
+        self.mouseY = ko.observable(0);
+        self.relativeMouse = {
+          x: ko.computed(function () {
+            return (self.mouseX() - self.wrapperCenter.x()) * self.sensitivityMultiplier()
+          }, this),
+          y: ko.computed(function () {
+            return ((self.mouseY() - self.wrapperCenter.y()) * -1) * self.sensitivityMultiplier()
+          }, this)
+        };
+        self.origin = {
+          x: ko.computed(function () {
+            return ((self.mouseX()) / $(window).width()) * 100
+          }, this),
+          y: ko.computed(function () {
+            return ((self.mouseY()) / $(window).height()) * 100
+          }, this)
+        };
+      }
+      ;
+
+      $(document).ready(function () {
+        parallax = new Parallx();
+        ko.applyBindings(parallax);
+
+        setInterval(function () {
+          if (demoCount < 130) {
+            parallax.mouseX(parallax.mouseX() + 10);
+            demoCount += 1;
+          }
+        }, 40);
+
+
       });
     </script>
   </body>

@@ -11002,7 +11002,7 @@ div.cs-skin-boxes:focus > span {
   .portfolio-inner .portfolio-inner--content {
     position: relative;
     background-color: #171717;
-    background-image: url(../images/portfolio-content--bg.svg);
+    background-image: url(../images/portfolio.svg);
     background-size: contain;
     background-repeat: no-repeat; }
     .portfolio-inner .portfolio-inner--content .portfolio-inner--content_inner {
@@ -11056,8 +11056,8 @@ div.cs-skin-boxes:focus > span {
 /*Porfolio section*/
 .portfolio-section {
   background-color: #171717;
-  background-image: url(../images/portfolio.svg);
-  background-size: contain;
+  background-image: url(../images/portfolio-content--bg.svg);
+  background-size: cover;
   background-repeat: no-repeat;
   padding-top: 50px;
   padding-bottom: 35px; }

@@ -167,12 +167,55 @@ and open the template in the editor.
 
               <!--Parallax effect hover-->
               <div class="col-md-7 col-sm-6 hidden-xs services-images rem-pad">
-                <div id="parallxWrapper">
-                  <div class="parallxLayerDots1" data-bind="attr: { style:'-webkit-transform:perspective(1000px) rotateY(' + relativeMouse.x() + 'deg) rotateX(' + relativeMouse.y() + 'deg);transform:perspective(1000px) rotateY(' + relativeMouse.x() + 'deg) rotateX(' + relativeMouse.y() + 'deg)' }">
-                    <div class="parallxLayerTcoffee"></div>
-                    <div class="parallxLayerTcoffeeBack"></div>
-                    <div class="parallxLayerDots2"></div>
-                    <div class="parallxLayerDots3"></div>
+                <div class="items">
+                  <div class="items__inner" id="js-scene">
+                    <div class="items__layer layer" data-depth="0.1">
+                      <div class="items__item">
+                        <img src="images/icons_bg-02.svg" class="img-responsive">
+                      </div>
+                    </div>
+                    <div class="items__layer layer" data-depth="0.4">
+                      <div class="items__item">
+                        <h1>
+                          we are<br>
+                          tcoffee
+                        </h1>
+                      </div>                  
+                    </div>
+                    <div class="items__layer layer" data-depth="0.4">
+                      <div class="items__item">
+                        <h1>
+                          we are<br>
+                          tcoffee
+                        </h1>
+                        <h2>360 &deg; <span>marketing<br>consultancy</span></h2>
+                      </div>                  
+                    </div>
+                    <div class="items__layer layer" data-depth="0.70">
+                      <div class="items__item">
+                        <img src="images/logo_big-03.svg" class="img-responsive">
+                      </div>                  
+                    </div>
+                    <div class="items__layer layer" data-depth="0.55">
+                      <div class="items__item">
+                        <img src="images/logo_medium-02.svg" class="img-responsive">
+                      </div>                  
+                    </div>
+                    <div class="items__layer layer" data-depth="0.30">
+                      <div class="items__item">
+                        <img src="images/logo_small-04.svg" class="img-responsive">
+                      </div>                  
+                    </div>
+                    <div class="items__layer layer" data-depth="0.3">
+                      <div class="items__item">
+                        <img src="images/pencils_down-05.svg" class="img-responsive">
+                      </div>                  
+                    </div>
+                    <div class="items__layer layer" data-depth="0.5">
+                      <div class="items__item">
+                        <img src="images/pencils_top-06.svg" class="img-responsive">
+                      </div>                  
+                    </div>
                   </div>
                 </div>
                 <!--Button-->
@@ -378,64 +421,10 @@ and open the template in the editor.
       });
     </script>
     <!--Parallax effect-->
-    <script src="js/knockout-min.js" type="text/javascript"></script>
+    <script src="js/parallax.min.js"></script>
     <script>
-      var parallx = null;
-      var demoCount = 0;
-      function Parallx() {
-        var self = this;
-        $("body").mousemove(function (e) {
-
-          parallax.mouseX(e.pageX);
-          parallax.mouseY(e.pageY);
-
-        });
-
-
-        self.sensitivityMultiplier = ko.observable(0.03);
-        self.wrapperOffset = $('#parallxWrapper').offset();
-        self.wrapperCenter = {
-          x: ko.computed(function () {
-            return self.wrapperOffset.left + ($('#parallxWrapper').width() / 2)
-          }, this),
-          y: ko.computed(function () {
-            return self.wrapperOffset.top + ($('#parallxWrapper').height() / 2)
-          }, this)
-        };
-        self.mouseX = ko.observable(0);
-        self.mouseY = ko.observable(0);
-        self.relativeMouse = {
-          x: ko.computed(function () {
-            return (self.mouseX() - self.wrapperCenter.x()) * self.sensitivityMultiplier()
-          }, this),
-          y: ko.computed(function () {
-            return ((self.mouseY() - self.wrapperCenter.y()) * -1) * self.sensitivityMultiplier()
-          }, this)
-        };
-        self.origin = {
-          x: ko.computed(function () {
-            return ((self.mouseX()) / $(window).width()) * 100
-          }, this),
-          y: ko.computed(function () {
-            return ((self.mouseY()) / $(window).height()) * 100
-          }, this)
-        };
-      }
-      ;
-
-      $(document).ready(function () {
-        parallax = new Parallx();
-        ko.applyBindings(parallax);
-
-        setInterval(function () {
-          if (demoCount < 130) {
-            parallax.mouseX(parallax.mouseX() + 10);
-            demoCount += 1;
-          }
-        }, 40);
-
-
-      });
+      var scene = document.getElementById('js-scene');
+      var parallax = new Parallax(scene);
     </script>
   </body>
 </html>

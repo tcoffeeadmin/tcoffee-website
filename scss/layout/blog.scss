@@ -111,6 +111,20 @@
         font-size: 13px;
       }
     }
+    .blog-read--more{
+      text-transform: capitalize;
+      margin-top: 10px;
+      font-size: 14px;
+      font-family: "Din";
+      color: #009046;
+      @include light;
+      @include transition(.3s);
+      display: block;
+      &:hover{
+        color: #fff;
+        @include transition(.3s);
+      }
+    }
   }
   @media all and (min-width: $screen-sm){
     margin-bottom: 60px;
@@ -131,7 +145,7 @@
       position: relative;
       background-color: #000000;
       height: 270px;
-      padding: 50px 5%;
+      padding: 36px 5%;
       .blog-line--h{
         position: absolute;
         width: 1px;
@@ -152,7 +166,7 @@
     }
     .blog-content--container_details{
       height: 300px;
-      padding: 70px 5%;
+      padding: 50px 5%;
     }
   }
   @media all and (min-width: $screen-lg){
@@ -161,7 +175,7 @@
     }
     .blog-content--container_details{
       height: 350px;
-      padding: 95px 5%;
+      padding: 85px 5%;
     }
   }
 }

@@ -4943,7 +4943,7 @@ button.close {
       margin: 0;
       position: absolute;
       top: 80px;
-      left: -40px;
+      left: -50px;
       font-family: "Din";
       font-weight: 900; }
   .items__layer:nth-child(3) .items__item {
@@ -4960,7 +4960,7 @@ button.close {
       margin: 0;
       position: absolute;
       top: 80px;
-      left: -40px;
+      left: -50px;
       font-family: "Din";
       font-weight: 900; }
     .items__layer:nth-child(3) .items__item h2 {

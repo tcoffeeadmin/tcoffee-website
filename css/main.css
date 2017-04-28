@@ -5448,7 +5448,8 @@ a:hover, a:focus {
 
 /*Down button inner pages*/
 .down-btn--inner {
-  bottom: 10px; }
+  bottom: 10px;
+  right: 15px !important; }
 
 /*Back to top home*/
 .bak-to--top_home {
@@ -5457,13 +5458,18 @@ a:hover, a:focus {
   left: 0;
   right: 0;
   margin: auto; }
+  .bak-to--top_home .back-to--top {
+    right: 15px; }
+  @media all and (min-width: 768px) {
+    .bak-to--top_home .back-to--top {
+      right: 20px; } }
 
 /*Down button style*/
 .down-btn {
   width: 40px;
   text-align: center;
   position: absolute;
-  right: 15px;
+  right: 0px;
   /*bottom: 10px;*/
   /*  &:hover{
       .v-line{
@@ -5512,6 +5518,9 @@ a:hover, a:focus {
       -moz-animation: ring 1s alternate 0s infinite;
       -o-animation: ring 1s linear 0s infinite;
       animation: ring 1s linear 0s infinite; }
+  @media all and (min-width: 768px) {
+    .down-btn {
+      right: 15px; } }
 
 @-webkit-keyframes bounce {
   0%, 100% {
@@ -5549,7 +5558,6 @@ a:hover, a:focus {
     transform: scale(1.2, 1.2);
     opacity: 1; } }
 
-/*Row equal height*/
 @media all and (min-width: 768px) {
   .row-eq-height {
     display: -webkit-box;
@@ -5911,6 +5919,7 @@ header {
       color: #fff; }
 
 .menu-overlay .menu-overlay--contact {
+  display: none;
   width: 100%;
   float: left;
   text-align: left; }
@@ -5956,6 +5965,7 @@ header {
             -ms-transition: 0.3s;
             transition: 0.3s; }
   .menu-overlay .menu-overlay--contact {
+    display: block;
     width: 50%;
     float: left;
     margin-top: 35px;
@@ -6828,7 +6838,8 @@ header {
 
 /*Back to top button*/
 .back-to--top {
-  bottom: -20px; }
+  bottom: -20px;
+  right: 15px; }
   .back-to--top .v-line {
     margin-top: -22px; }
     .back-to--top .v-line .fa {

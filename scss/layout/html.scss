@@ -54,6 +54,7 @@ a:hover, a:focus{
 /*Down button inner pages*/
 .down-btn--inner{
   bottom: 10px;
+  right: 15px !important;
 }
 
 /*Back to top home*/
@@ -63,6 +64,23 @@ a:hover, a:focus{
   left: 0;
   right: 0;
   margin: auto;
+  .back-to--top{
+    right: 15px;
+  }
+  @media all and (min-width: $screen-sm){
+    .back-to--top{
+      right: 20px;
+    }
+  }
+  @media all and (min-width: $screen-md){
+
+  }
+  @media all and (min-width: $screen-lg){
+
+  }
+  @media all and (min-width: $screen-xlg){
+
+  }
 }
 
 /*Down button style*/
@@ -70,7 +88,7 @@ a:hover, a:focus{
   width: 40px;
   text-align: center;
   position: absolute;
-  right: 15px;
+  right: 0px;
   /*bottom: 10px;*/
   .down-btn--circle{
     width: 40px;
@@ -118,7 +136,7 @@ a:hover, a:focus{
     }
   }
   @media all and (min-width: $screen-sm){
-
+    right: 15px;
   }
   @media all and (min-width: $screen-md){
 
@@ -147,7 +165,6 @@ a:hover, a:focus{
   75% {transform: scale(1.2,1.2); opacity:1}
 }
 
-/*Row equal height*/
 .row-eq-height {
   @media all and (min-width: $screen-sm){
     display: -webkit-box;
@@ -159,6 +176,9 @@ a:hover, a:focus{
 
   }
   @media all and (min-width: $screen-lg){
+
+  }
+  @media all and (min-width: $screen-xlg){
 
   }
 }

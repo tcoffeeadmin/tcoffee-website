@@ -12353,7 +12353,7 @@ div.cs-skin-boxes:focus > span {
   position: relative; }
   .share-buttons ul {
     padding-left: 0;
-    padding-top: 50px; }
+    padding-top: 30px; }
     .share-buttons ul li {
       padding: 11px 15px;
       margin-bottom: 8px;
@@ -12373,15 +12373,13 @@ div.cs-skin-boxes:focus > span {
     .share-buttons ul .linked {
       background-color: #007ab8; }
   @media all and (min-width: 768px) {
-    .share-buttons ul {
-      padding-top: 80px; }
-      .share-buttons ul li {
-        margin-bottom: 0px; } }
+    .share-buttons ul li {
+      margin-bottom: 0px; } }
 
 .blog-back {
   position: absolute;
   right: 0;
-  top: 80px;
+  bottom: 5px;
   width: 40px;
   height: 40px;
   display: block;
@@ -12404,3 +12402,8 @@ div.cs-skin-boxes:focus > span {
   .blog-back img {
     width: 100%;
     height: 100%; }
+  @media all and (min-width: 768px) {
+    .blog-back {
+      top: 0px;
+      bottom: 0px;
+      margin: auto; } }

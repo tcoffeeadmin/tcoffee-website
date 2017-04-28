@@ -163,7 +163,7 @@
   position: relative;
   ul{
     padding-left: 0;
-    padding-top: 50px;
+    padding-top: 30px;
     li{
       padding: 11px 15px;
       margin-bottom: 8px;
@@ -191,7 +191,6 @@
   }
   @media all and (min-width: $screen-sm){
     ul{
-      padding-top: 80px;
       li{
         margin-bottom: 0px;
       }
@@ -208,7 +207,7 @@
 .blog-back{
   position: absolute;
   right: 0;
-  top: 80px;
+  bottom: 5px;
   width: 40px;
   height: 40px;
   display: block;
@@ -223,5 +222,16 @@
   img{
     width: 100%;
     height: 100%;
+  }
+  @media all and (min-width: $screen-sm){
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+  }
+  @media all and (min-width: $screen-md){
+
+  }
+  @media all and (min-width: $screen-lg){
+
   }
 }

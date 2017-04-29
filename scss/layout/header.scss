@@ -1,6 +1,6 @@
 header{
   // Mobile
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 15px;
   .navbar-brand{
     padding: 0px !important;
@@ -40,6 +40,7 @@ header{
     }
   }
   @media all and (min-width: $screen-sm) {
+    padding-top: 60px;
     .header-right--cantact{
       margin-right: 85px;
     }
@@ -57,7 +58,7 @@ header{
   position: fixed;
   width: 100%;
   z-index: 9;
-  top: 70px;
+  top: 50px;
   .nav-container{
     position: relative;
     .header-right--menu{
@@ -65,6 +66,7 @@ header{
     }
   }
   @media all and (min-width: $screen-sm) {
+    top: 70px;
     .nav-container{
       .header-right--menu{
         right: 5px;
@@ -81,7 +83,7 @@ header{
 
 /*Fixed nav inner*/
 .nav-fixed-inner{
-  top: 70px !important;
+  top: 50px !important;
   @media all and (min-width: $screen-sm) {
     .nav-container{
       .header-right--menu{

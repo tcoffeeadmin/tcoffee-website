@@ -5091,12 +5091,15 @@ button.close {
     z-index: 1; }
 
 .glide--horizontal .glide__arrows {
-  bottom: 3%;
+  bottom: 2%;
   width: 51%;
   left: 0;
   right: 0;
   color: red;
   margin: auto; }
+  @media all and (min-width: 768px) {
+    .glide--horizontal .glide__arrows {
+      bottom: 3%; } }
 
 .glide--vertical .glide__arrows {
   left: 50%;
@@ -6061,7 +6064,7 @@ header {
   transition: 0.5s; }
 
 header {
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 15px; }
   header .navbar-brand {
     padding: 0px !important; }
@@ -6098,26 +6101,30 @@ header {
           color: #009046;
           padding-right: 10px; }
   @media all and (min-width: 768px) {
-    header .header-right--cantact {
-      margin-right: 85px; } }
+    header {
+      padding-top: 60px; }
+      header .header-right--cantact {
+        margin-right: 85px; } }
 
 /*Fixed menu*/
 .nav-fixed {
   position: fixed;
   width: 100%;
   z-index: 9;
-  top: 70px; }
+  top: 50px; }
   .nav-fixed .nav-container {
     position: relative; }
     .nav-fixed .nav-container .header-right--menu {
       right: -15px; }
   @media all and (min-width: 768px) {
-    .nav-fixed .nav-container .header-right--menu {
-      right: 5px; } }
+    .nav-fixed {
+      top: 70px; }
+      .nav-fixed .nav-container .header-right--menu {
+        right: 5px; } }
 
 /*Fixed nav inner*/
 .nav-fixed-inner {
-  top: 70px !important; }
+  top: 50px !important; }
   @media all and (min-width: 768px) {
     .nav-fixed-inner .nav-container .header-right--menu {
       right: 0px; } }

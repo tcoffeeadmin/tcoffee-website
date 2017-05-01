@@ -228,6 +228,9 @@ header {
   }
   @media all and (min-width: $screen-md) {
     // Tablet
+    &::-webkit-scrollbar{
+      display: none;
+    }
   }
   @media all and (min-width: $screen-lg) {
     // Desktop

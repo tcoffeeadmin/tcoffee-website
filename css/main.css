@@ -9720,7 +9720,7 @@ header {
     height: 250px; }
   .map-adderss .map-address--address {
     background-color: #222222;
-    text-align: right;
+    text-align: center;
     padding: 50px 5%; }
     .map-adderss .map-address--address .map-address--address_mail {
       color: #fff;
@@ -9763,9 +9763,11 @@ header {
       font-size: 17px;
       margin-bottom: 0; }
   @media all and (min-width: 768px) {
-    .map-adderss .map-address--map #map {
-      width: 100%;
-      height: 350px; }
+    .map-adderss .map-address--map {
+      text-align: right; }
+      .map-adderss .map-address--map #map {
+        width: 100%;
+        height: 350px; }
     .map-adderss .map-address--address {
       height: 350px;
       padding: 50px 5%; }

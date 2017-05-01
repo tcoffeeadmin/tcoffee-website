@@ -5168,6 +5168,8 @@ button.close {
   margin: 0 10px;
   position: relative;
   top: -15px; }
+  .glide--horizontal .glide__bullets > *:focus {
+    outline: none; }
 
 .glide__bullets .active {
   background-color: #009046;
@@ -5553,6 +5555,12 @@ a:hover, a:focus {
       animation: ring 1s linear 0s infinite; }
   @media all and (min-width: 768px) {
     .down-btn {
+      right: 15px; } }
+
+.down-btn--home {
+  right: 15px; }
+  @media all and (min-width: 768px) {
+    .down-btn--home {
       right: 15px; } }
 
 @-webkit-keyframes bounce {
@@ -6128,7 +6136,7 @@ header {
   .nav-fixed .nav-container {
     position: relative; }
     .nav-fixed .nav-container .header-right--menu {
-      right: -15px; }
+      right: 0px; }
   @media all and (min-width: 768px) {
     .nav-fixed {
       top: 70px; }
@@ -6138,6 +6146,8 @@ header {
 /*Fixed nav inner*/
 .nav-fixed-inner {
   top: 50px !important; }
+  .nav-fixed-inner .nav-container .header-right--menu {
+    right: -15px !important; }
   @media all and (min-width: 768px) {
     .nav-fixed-inner .nav-container .header-right--menu {
       right: 0px; } }

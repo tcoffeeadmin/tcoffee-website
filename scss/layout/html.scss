@@ -169,6 +169,13 @@ a:hover, a:focus{
   }
 }
 
+.down-btn--home{
+  right: 15px;
+  @media all and (min-width: $screen-sm){
+    right: 15px;
+  }
+}
+
 @-webkit-keyframes bounce {
   0%, 100% {top: 9px; opacity: 1}
   25% {top: 12px; opacity: 1}

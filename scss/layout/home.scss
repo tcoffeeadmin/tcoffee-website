@@ -123,7 +123,7 @@
   color: red;
   margin: auto;
   @media all and (min-width: $screen-sm){
-  bottom: 3%;
+    bottom: 3%;
   }
   @media all and (min-width: $screen-md){
 
@@ -214,6 +214,9 @@
   margin: 0 10px;
   position: relative;
   top: -15px;
+  &:focus{
+    outline: none;
+  }
 }
 
 .glide__bullets {

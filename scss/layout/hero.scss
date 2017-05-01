@@ -243,11 +243,7 @@
 }
 /*Hero services image*/
 .services-images{
-  /*  background-image: url(../images/bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;*/
-  background-color: #171717;
+  background-color: #009046;
   overflow: hidden;
   .btn-project{
     background-color: transparent;
@@ -295,11 +291,9 @@
     position: relative;
     width: 100%;
     height: 400px;
-    /*background: #fff;*/
   }
   &__layer &__item {
     position: absolute;
-    /*box-shadow: 0 32px 40px -20px rgba(0,0,0,.25);*/
     &:after {
       content: attr(data-title);
       position: absolute;
@@ -323,7 +317,6 @@
     left: -10px;
     width: 100%;
     height: 450px;
-    /*background-image: url('../images/icons_bg-02.svg');*/
     img{
       opacity: .2;
     }
@@ -341,7 +334,7 @@
       position: absolute;
       top: 80px;
       left: -50px;
-      font-family: "Din";
+      font-family: "DIN";
       @include black;
     }
   }
@@ -360,7 +353,7 @@
       position: absolute;
       top: 80px;
       left: -50px;
-      font-family: "Din";
+      font-family: "DIN";
       @include black;
     }
     h2{

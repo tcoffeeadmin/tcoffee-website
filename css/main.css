@@ -5433,6 +5433,18 @@ body, html {
   margin: 0px;
   padding: 0px;
   height: 100%; }
+  body::-webkit-scrollbar, html::-webkit-scrollbar {
+    width: 8px; }
+  body::-webkit-scrollbar-track, html::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+    /*@include border-radius(10px);*/ }
+  body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
+    background-color: #009046;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; }
 
 .rem-pad {
   padding-left: 0px !important;
@@ -11260,6 +11272,18 @@ div.cs-skin-boxes:focus > span {
   top: 0;
   left: 0;
   overflow-y: scroll; }
+  .column div .show::-webkit-scrollbar, #nav div .show::-webkit-scrollbar {
+    width: 8px; }
+  .column div .show::-webkit-scrollbar-track, #nav div .show::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+    /*@include border-radius(10px);*/ }
+  .column div .show::-webkit-scrollbar-thumb, #nav div .show::-webkit-scrollbar-thumb {
+    background-color: #009046;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; }
 
 .show .inner-content .inner-content--top {
   padding-top: 50px;

@@ -327,6 +327,18 @@
   top: 0;
   left: 0;
   overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: transparent;
+    /*@include border-radius(10px);*/
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #009046;
+    @include border-radius(10px);
+  }
 }
 
 .show{

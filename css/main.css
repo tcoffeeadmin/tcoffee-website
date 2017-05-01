@@ -5612,6 +5612,7 @@ header {
     display: block; }
 
 .cd-nav-trigger {
+  cursor: pointer;
   top: 10px;
   right: 0;
   height: 40px;

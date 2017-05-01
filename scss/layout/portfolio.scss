@@ -355,6 +355,7 @@
         margin: auto;
         img{
           width: 100%;
+          @include filter(grayscale(0));
         }
       }
     }

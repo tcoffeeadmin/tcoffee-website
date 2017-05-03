@@ -506,7 +506,7 @@
           color:  #fff;
           text-transform: uppercase;
           margin: 0;
-          font-size: 17px;
+          font-size: 15px;
         }
         h5{
           font-family: "Din";
@@ -530,6 +530,51 @@
       }
     }
   }
+  /*  @media all and (min-width: $screen-sm){
+      .click{
+        .wrapper{
+          height: 109px;
+          .card-tittle{
+            h4{
+              font-size: 15px;
+            }
+            h5{
+              font-size: 16px;
+            }
+            img{
+              width: 21px;
+              height: 21px;
+            }
+          }
+        }
+      }
+    }
+    @media all and (min-width: $screen-md){
+      .click{
+        .wrapper{
+          height: 150px;
+          .card-tittle{
+            h4{
+              font-size: 17px;
+            }
+            h5{
+              font-size: 13px;
+            }
+            img{
+              width: 28px;
+              height: 28px;
+            }
+          }
+        }
+      }
+    }
+    @media all and (min-width: $screen-lg){
+      .click{
+        .wrapper{
+          height: 200px;
+        }
+      }
+    }*/
 }
 
 .close {
@@ -600,109 +645,77 @@
 
 /************//*************/
 
-.archive-container {
-  position: relative;
-  height: auto;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: transparent;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-}
-.archive-container:before {
-  content: '';
-  display: block;
-  height: 0;
-  padding-top: 609px;
-}
-.archive-nav {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 50px;
-  background-color: transparent;
-  background-color: rgba(255,255,255,0);
-  background-position: center center;
-  background-repeat: no-repeat;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
-  z-index: 10;
-  cursor: default;
-  display: none;
-}
-.archive-nav:hover {
-  background-color: #e8e8e8;
-  background-color: rgba(255,255,255,0.3);
-}
-.archive-nav.prev {
-  left: 0;
-  background-image: url(../images/ico_arrow_left.png);
-  display: none;
-}
-.archive-nav.next {
-  right: 0;
-  background-image: url(../images/ico_arrow_right.png);
-}
-.projects-placeholder {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-}
-.projects {
-  position: absolute;
-  height: auto;
-  width: 100%;
-  top: 0;
-}
-.projects:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-.project-col {
-  width: 20%;
-  float: none;
-  position: absolute;
-  top: 0;
-}
-.project {
-  float: left;
-  width: 100%;
-  height: 200px;
-  max-height: auto;
-  padding: 4px 2px;
-  position: relative;
-  overflow: hidden;
-  /*text-align: center;*/
-  img{
-    @include filter(grayscale(100%));
-    @include transition(.2s);
-  }
-  &:hover{
-    img{
-      @include filter(grayscale(0%));
+
+.tab-pane--inner{
+  .left{
+    position: absolute;
+    z-index: 8;
+    left: 0;
+    top: 13%;
+    width: 50px;
+    height: 81%;
+    button{
+      position: absolute;
+      width: 45px;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background-color: rgba(0, 144, 70, 0.44);
+      border: none;
+      text-align: center;
+      @include border-radius(0px);
       @include transition(.2s);
-    }    
+      .fa{
+        color: rgba(255, 255, 255, 0.53);
+        font-size: 32px;
+      }
+      &:focus{
+        border: none;
+        outline: none;
+      }
+      &:hover{
+        background-color: #009046;
+        @include transition(.2s);
+        .fa{
+          color: #fff;
+        }
+      }
+    }
   }
-}
-.project.placeholder {
-  background: #fafafa;
-  box-shadow: 0 0 50px rgba(0,0,0,0.1) inset;
-  border: 1px solid rgba(0,0,0,0.1);
-}
-.project-content-wrapper {
-  position: absolute;
-  top: 45px;
-  left: 100px;
-  width: 350px;
-  z-index: 5;
-  -webkit-transition: opacity 0.35s, top 0.35s;
-  transition: opacity 0.35s, top 0.35s;
-  overflow: hidden;
-  opacity: 1;
-  box-shadow: 1px 2px 15px rgba(0,0,0,0.5);
-  max-height: 80%;
-  overflow-y: auto;
+
+  .right{
+    position: absolute;
+    z-index: 8;
+    right: 0;
+    top: 13%;
+    width: 50px;
+    height: 81%;
+    button{
+      position: absolute;
+      width: 45px;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 144, 70, 0.44);
+      border: none;
+      text-align: center;
+      @include border-radius(0px);
+      @include transition(.2s);
+      .fa{
+        color: rgba(255, 255, 255, 0.53);
+        font-size: 32px;
+      }
+      &:focus{
+        border: none;
+        outline: none;
+      }
+      &:hover{
+        background-color: #009046;
+        @include transition(.2s);
+        .fa{
+          color: #fff;
+        }
+      }
+    }
+  }
 }

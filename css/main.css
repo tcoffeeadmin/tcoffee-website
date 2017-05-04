@@ -11455,6 +11455,12 @@ div.cs-skin-boxes:focus > span {
     .show .inner-content .inner-content--content .inner-content--content_box {
       width: 50%; } }
 
+@media all and (min-width: 1400px) {
+  .show .inner-content .inner-content--top {
+    height: 675px; }
+  .show .inner-content--content {
+    padding-top: 150px; } }
+
 .column img.thumb, #nav img.thumb {
   float: left;
   padding-right: 10px;

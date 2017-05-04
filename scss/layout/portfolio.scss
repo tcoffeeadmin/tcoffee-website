@@ -463,6 +463,16 @@
       }
     }
   }
+  @media all and (min-width: $screen-xlg){
+    .inner-content{
+      .inner-content--top{
+        height: 675px;
+      }
+    }
+    .inner-content--content{
+      padding-top: 150px;
+    }
+  }
 }
 
 

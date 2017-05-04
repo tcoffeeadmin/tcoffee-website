@@ -194,7 +194,7 @@
       overflow: hidden;
       .tab-pane--inner_portfolio{
         width: 100%;
-        overflow-x: scroll;
+        overflow-x: hidden;
         padding-bottom: 20px;
         &::-webkit-scrollbar {
           height: 10px;
@@ -663,7 +663,7 @@
     left: 0;
     width: 50px;
     height: 480px;
-    bottom: 34px;
+    bottom: 24px;
     button{
       position: absolute;
       width: 45px;
@@ -699,7 +699,7 @@
     right: 0;
     width: 50px;
     height: 480px;
-    bottom: 34px;
+    bottom: 24px;
     button{
       position: absolute;
       width: 45px;

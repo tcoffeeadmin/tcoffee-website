@@ -11212,7 +11212,7 @@ div.cs-skin-boxes:focus > span {
     overflow: hidden; }
     .portfolio-section--tabs .tab-pane .tab-pane--inner .tab-pane--inner_portfolio {
       width: 100%;
-      overflow-x: scroll;
+      overflow-x: hidden;
       padding-bottom: 20px; }
       .portfolio-section--tabs .tab-pane .tab-pane--inner .tab-pane--inner_portfolio::-webkit-scrollbar {
         height: 10px;
@@ -11630,7 +11630,7 @@ div.cs-skin-boxes:focus > span {
   left: 0;
   width: 50px;
   height: 480px;
-  bottom: 34px; }
+  bottom: 24px; }
   .tab-pane--inner .left button {
     position: absolute;
     width: 45px;
@@ -11669,7 +11669,7 @@ div.cs-skin-boxes:focus > span {
   right: 0;
   width: 50px;
   height: 480px;
-  bottom: 34px; }
+  bottom: 24px; }
   .tab-pane--inner .right button {
     position: absolute;
     width: 45px;

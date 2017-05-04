@@ -1,5 +1,6 @@
 
 @include font-face(Din, "../fonts/DIN");
+@include font-face(Din, "../fonts/DINBlackAlternate");
 
 /*Hero design*/
 .hero{
@@ -243,6 +244,10 @@
 }
 /*Hero services image*/
 .services-images{
+  /*  background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
   background-color: #009046;
   overflow: hidden;
   .btn-project{
@@ -291,9 +296,11 @@
     position: relative;
     width: 100%;
     height: 400px;
+    /*background: #fff;*/
   }
   &__layer &__item {
     position: absolute;
+    /*box-shadow: 0 32px 40px -20px rgba(0,0,0,.25);*/
     &:after {
       content: attr(data-title);
       position: absolute;
@@ -317,6 +324,7 @@
     left: -10px;
     width: 100%;
     height: 450px;
+    /*background-image: url('../images/icons_bg-02.svg');*/
     img{
       opacity: .2;
     }
@@ -400,5 +408,35 @@
     left: 280px;
     width: 95px;
     height: 70px;
+  }
+  @media all and (min-width: $screen-sm){
+    height: 400px;
+  }
+  @media all and (min-width: $screen-md){
+
+  }
+  @media all and (min-width: $screen-lg){
+
+  }
+  @media all and (min-width: $screen-xlg){
+    height: 550px;
+    &__inner {
+      height: 550px;
+    }
+    &__layer:nth-child(1) &__item {
+      top: 22px;
+      left: 22px;
+      height: 550px;
+    }
+    &__layer:nth-child(2) &__item {
+      top: 45px;
+    }
+    &__layer:nth-child(3) &__item {
+      top: 45px;
+    }
+    &__layer:nth-child(4) &__item {
+      left: 410px;
+      top: 190px;
+    }
   }
 }

@@ -69,15 +69,33 @@ header{
     top: 70px;
     .nav-container{
       .header-right--menu{
-        right: 5px;
+        right: 21px;
       }
     }
   }  
   @media all and (min-width: $screen-md) {
     // Tablet
+    .nav-container{
+      .header-right--menu{
+        right: 14px;
+      }
+    }
   }
   @media all and (min-width: $screen-lg) {
     // Desktop
+    .nav-container{
+      .header-right--menu{
+        right: 5px;
+      }
+    }
+  }
+  @media all and (min-width: $screen-xlg) {
+    // Desktop
+    .nav-container{
+      .header-right--menu{
+        right: 0px;
+      }
+    }
   }
 }
 
@@ -90,14 +108,20 @@ header{
     }
   }
   @media all and (min-width: $screen-sm) {
+    top: 70px !important;
     .nav-container{
       .header-right--menu{
-        right: 0px;
+        right: 5px !important;
       }
     }
   }
   @media all and (min-width: $screen-md) {
     // Tablet
+    .nav-container{
+      .header-right--menu{
+        right: 0px !important;
+      }
+    }
   }
   @media all and (min-width: $screen-lg) {
     // Desktop

@@ -53,6 +53,10 @@
     padding-top: 0;
     padding-bottom: 0;
   }
+  @media all and (min-width: $screen-xlg) {
+    // Tablet
+    height: 650px;
+  }
 }
 
 
@@ -116,14 +120,14 @@
 }
 
 .glide--horizontal .glide__arrows {
-  bottom: 2%;
+  bottom: 8px;
   width: 51%;
   left: 0;
   right: 0;
   color: red;
   margin: auto;
   @media all and (min-width: $screen-sm){
-    bottom: 3%;
+    /*bottom: 3%;*/
   }
   @media all and (min-width: $screen-md){
 
@@ -178,7 +182,7 @@
 }
 
 .glide--horizontal .glide__bullets {
-  bottom: 3%;
+  bottom: 8px;
   left: 0;
   right: 0;
   margin: auto;
@@ -349,6 +353,10 @@
     // Desktop
     padding: 40px 60px;
     height: 475px;
+  }
+  @media all and (min-width: $screen-xlg) {
+    // Desktop
+    height: 625px;
   }
 }
 

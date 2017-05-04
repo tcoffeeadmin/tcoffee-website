@@ -6299,13 +6299,21 @@ header {
 .our-team {
   background-color: #171717;
   background-image: url(../images/our-team-bg.svg);
-  background-size: 70%;
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: 16px;
+  background-position: center;
   position: relative; }
   .our-team .our-team--inner {
     padding-top: 100px;
     /*padding-bottom: 150px;*/ }
+  @media all and (min-width: 768px) {
+    .our-team {
+      background-size: 100%;
+      background-position: center; } }
+  @media all and (min-width: 992px) {
+    .our-team {
+      background-size: 80%;
+      background-position: 16px; } }
   @media all and (min-width: 1200px) {
     .our-team {
       /*height: 100%;*/ }
@@ -6379,8 +6387,8 @@ header {
 /*Team member*/
 .team-member {
   /*background-color: #000;*/
-  padding: 35px;
-  padding-bottom: 160px; }
+  padding: 35px 0;
+  padding-bottom: 100px; }
   .team-member .team-member--img {
     height: 305px;
     width: 265px;
@@ -6436,7 +6444,7 @@ header {
     position: relative;
     background-color: #000;
     color: #fff;
-    top: 0;
+    top: -15px;
     padding: 15px;
     z-index: -1;
     -webkit-transition: 0.3s;
@@ -6458,7 +6466,7 @@ header {
     right: 0;
     margin: auto;
     z-index: -2;
-    top: 0;
+    top: -30px;
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
     -ms-transition: 0.2s;
@@ -6502,26 +6510,32 @@ header {
       -ms-transition: 0.2s;
       transition: 0.2s; }
   @media all and (min-width: 768px) {
-    .team-member .team-member--details h4 {
-      color: #232325; }
-    .team-member .team-member--details ul li a {
-      color: #232325; }
-    .team-member .team-member--details_content {
-      position: absolute;
-      top: 287px;
-      margin: auto;
-      left: 0;
-      right: 0; }
-    .team-member:hover .team-member--details_content {
-      top: 392px;
-      z-index: -1;
-      -webkit-transition: 0.3s;
-      -moz-transition: 0.3s;
-      -ms-transition: 0.3s;
-      transition: 0.3s; } }
+    .team-member {
+      padding: 35px;
+      padding-bottom: 160px; }
+      .team-member .team-member--details h4 {
+        color: #232325; }
+      .team-member .team-member--details ul li a {
+        color: #232325; }
+      .team-member .team-member--details_content {
+        position: absolute;
+        top: 254px;
+        margin: auto;
+        left: 0px;
+        right: 0; }
+      .team-member:hover .team-member--details_content {
+        top: 360px;
+        z-index: -1;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        transition: 0.3s; } }
   @media all and (min-width: 1400px) {
     .team-member .member-line {
       height: 600px; } }
+
+.team-member--box {
+  position: relative; }
 
 /*Button next prev*/
 .team-button {

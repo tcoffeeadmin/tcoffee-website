@@ -126,7 +126,7 @@ and open the template in the editor.
         </div>
         <div class="container down-click">
           <!--Down button-->
-          <a href="#vacancy">
+          <a class="smoothScroll" href="#vacancy">
             <div class="down-btn down-btn--inner" alt="scroll" title="Scroll">
               <div class="down-btn--circle"></div>
               <div class="v-line">
@@ -226,7 +226,7 @@ and open the template in the editor.
             </div>
           </div>
           <!--Back to top-->
-          <a href="#top">
+          <a class="smoothScroll" href="#top">
             <div class="down-btn back-to--top" alt="Back to top" title="Back to top">
               <div class="down-btn--circle"></div>
               <div class="v-line">
@@ -302,18 +302,26 @@ and open the template in the editor.
     <script src="js/velocity.min.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
     <!--Smooth scroll-->
-    <script type="text/javascript">
-      $('a[href^="#"]').on('click', function (event) {
-
-        var target = $($(this).attr('href'));
-        if (target.length) {
-          event.preventDefault();
-          $('html, body').animate({
-            scrollTop: target.offset().top
-          }, 1000);
-        }
-
+    <script>
+      $(function () {
+        // This will select everything with the class smoothScroll
+        // This should prevent problems with carousel, scrollspy, etc...
+        $('.smoothScroll').click(function () {
+          if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000); // The number here represents the speed of the scroll in milliseconds
+              return false;
+            }
+          }
+        });
       });
+      // Change the speed to whatever you want
+      // Personally i think 1000 is too much
+      // Try 800 or below, it seems not too much but it will make a difference
     </script>
     <!--Pop up-->
     <script src="js/draggabilly.pkgd.min.js"></script> 

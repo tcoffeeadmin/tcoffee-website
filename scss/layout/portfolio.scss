@@ -666,14 +666,14 @@
     bottom: 24px;
     button{
       position: absolute;
-      width: 45px;
-      height: 100%;
-      top: 0;
+      width: 50px;
+      height: 50px;
+      top: 45%;
       right: 0;
       background-color: rgba(0, 144, 70, 0.44);
       border: none;
       text-align: center;
-      @include border-radius(0px);
+      @include border-radius(50px);
       @include transition(.2s);
       .fa{
         color: rgba(255, 255, 255, 0.53);
@@ -702,14 +702,14 @@
     bottom: 24px;
     button{
       position: absolute;
-      width: 45px;
-      height: 100%;
-      top: 0;
+      width: 50px;
+      height: 50px;
+      top: 45%;
       left: 0;
       background-color: rgba(0, 144, 70, 0.44);
       border: none;
       text-align: center;
-      @include border-radius(0px);
+      @include border-radius(50px);
       @include transition(.2s);
       .fa{
         color: rgba(255, 255, 255, 0.53);
@@ -727,5 +727,29 @@
         }
       }
     }
+  }
+  @media all and (min-width: $screen-sm) {
+    .left{
+      button{
+        width: 50px;
+        height: 100%;
+        top: 0;
+        @include border-radius(0px);
+      }
+    }
+    .right{
+      button{
+        width: 50px;
+        height: 100%;
+        top: 0;
+        @include border-radius(0px);
+      }
+    }
+  }  
+  @media all and (min-width: $screen-md) {
+
+  }
+  @media all and (min-width: $screen-lg) {
+
   }
 }

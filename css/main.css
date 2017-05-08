@@ -5635,6 +5635,87 @@ a:hover, a:focus {
     display: -ms-flexbox;
     display: flex; } }
 
+/*Get in touch button style*/
+.submit-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 255px;
+  /*margin: 0 auto;*/
+  border: 2px solid #009046;
+  cursor: pointer;
+  transition: all 0.6s ease 0.15s; }
+  .submit-wrapper:after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 4px;
+    top: 0;
+    bottom: 2px;
+    margin: auto;
+    background: #009046;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s; }
+  .submit-wrapper:before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 4px;
+    top: 0;
+    bottom: 2px;
+    margin: auto;
+    background: #009046;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+    right: -12px; }
+  .submit-wrapper:after {
+    left: -12px; }
+  .submit-wrapper .btn-get--touch {
+    position: relative;
+    display: block;
+    line-height: 55px;
+    background: none;
+    font-family: "Din";
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #232325;
+    font-weight: 600;
+    padding-left: 0.5em;
+    letter-spacing: 7px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 3;
+    border: none !important;
+    margin: auto; }
+  .submit-wrapper:before, .submit-wrapper:after {
+    transition: all 0.6s ease 0.15s, transform 0.6s ease 0s;
+    -ms-transition: all 0.6s ease 0.15s, -ms-transform 0.6s ease 0s; }
+  .submit-wrapper:hover {
+    background: #009046;
+    transition: all 0.6s; }
+    .submit-wrapper:hover:before, .submit-wrapper:hover:after {
+      transition: all 0.6s ease 0s, transform 0.6s ease 0.15s;
+      -ms-transition: all 0.6s ease 0s, -ms-transform 0.6s ease 0.15s; }
+  .submit-wrapper .btn-get--touch {
+    transition: all 0.6s ease 0.15s; }
+  .submit-wrapper:hover .btn-get--touch {
+    color: #009046;
+    transition: all 0.6s; }
+  .submit-wrapper:hover:before {
+    right: -2px;
+    -ms-transform: scaleY(5);
+    transform: scaleY(5);
+    width: 200px;
+    background: #fafafa; }
+  .submit-wrapper:hover:after {
+    left: -2px;
+    -ms-transform: scaleY(5);
+    transform: scaleY(5);
+    width: 200px;
+    background: #fafafa; }
+
 /*Primary style*/
 * {
   -webkit-box-sizing: border-box;
@@ -6776,36 +6857,9 @@ header {
     margin-bottom: 18px;
     margin-top: 18px;
     text-align: center; }
-  .get-in-touch .btn-project {
-    border: 2px solid #009046;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -ms-border-radius: 0px;
-    border-radius: 0px;
-    font-size: 18px;
-    font-family: "Din";
-    color: #009046;
-    font-weight: 900;
-    padding: 15px;
-    text-transform: uppercase;
-    margin: auto;
-    display: table;
-    -webkit-transition: 0.2s;
-    -moz-transition: 0.2s;
-    -ms-transition: 0.2s;
-    transition: 0.2s; }
-    .get-in-touch .btn-project:hover {
-      color: #fff;
-      background-color: #009046;
-      -webkit-transition: 0.2s;
-      -moz-transition: 0.2s;
-      -ms-transition: 0.2s;
-      transition: 0.2s; }
   @media all and (min-width: 768px) {
     .get-in-touch h3 {
-      text-align: right; }
-    .get-in-touch .btn-project {
-      display: inline-block; } }
+      text-align: right; } }
 
 /*Footer*/
 .footer {

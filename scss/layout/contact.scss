@@ -49,17 +49,17 @@
 }
 
 
-/*Service single inner*/
+/*COntact inner*/
 .contact-box--inner{
-  padding-top: 35px;
-  padding-bottom: 100px;
+  padding-top: 25px;
+  padding-bottom: 30px;
   position: relative;
   .contact-box--inner_content{
     background-color: #171717;    
     background-image: url(../images/contact-bg.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: bottom;
+    background-position: top;
     position: relative;
     .contact-content{
       padding: 50px 5%;
@@ -91,6 +91,8 @@
   }
   @media all and (min-width: $screen-sm) {
     // Tablet
+    padding-top: 35px;
+    padding-bottom: 100px;
     .contact-bg{
       position: absolute;
       width: 100%;
@@ -256,7 +258,7 @@
   .map-address--address{
     background-color: #222222;
     text-align: center;
-    padding: 50px 5%;
+    padding: 30px 5%;
     .map-address--address_mail{
       color: #fff;
       font-family: "Din";

@@ -66,14 +66,15 @@ a:hover, a:focus{
 .down-btn--inner{
   bottom: 10px;
   right: 15px !important;
+  display: none;;
   @media all and (min-width: $screen-sm){
-    
+    display: block;
   }
   @media all and (min-width: $screen-md){
-    
+
   }
   @media all and (min-width: $screen-lg){
-    
+
   }
   @media all and (min-width: $screen-xlg){
 

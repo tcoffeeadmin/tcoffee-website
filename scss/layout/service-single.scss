@@ -50,8 +50,8 @@
 
 /*Service single inner*/
 .service-single--box_inner{
-  padding-top: 35px;
-  padding-bottom: 100px;
+  padding-top: 25px;
+  padding-bottom: 30px;
   .service-single--box_head{
     padding: 45px 8%;
     background-color: #171717;
@@ -89,6 +89,8 @@
   }
   @media all and (min-width: $screen-sm) {
     // Tablet
+    padding-top: 35px;
+    padding-bottom: 100px;
     .service-single--box_head{
       height: 320px;
       padding: 45px 6%;
@@ -142,8 +144,8 @@
 /*Singel services*/
 .single-service{
   background-color: #171717;
-  padding-top: 65px;
-  padding-bottom: 125px;
+  padding-top: 15px;
+  padding-bottom: 60px;
   .single-service--item{
     position: relative;
     cursor: pointer;
@@ -197,6 +199,8 @@
   }
   @media all and (min-width: $screen-sm) {
     // Tablet
+    padding-top: 65px;
+    padding-bottom: 125px;
     .single-service--item{
       h2{
         font-size: 45px;

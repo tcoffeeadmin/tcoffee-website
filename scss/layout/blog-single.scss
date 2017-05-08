@@ -15,8 +15,8 @@
 
 /*Blog single head*/
 .blog-single--head{
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 25px;
+  padding-bottom: 30px;
   h1{
     color: #232325;
     text-transform: uppercase;
@@ -70,6 +70,8 @@
     }
   }
   @media all and (min-width: $screen-sm){
+    padding-top: 80px;
+    padding-bottom: 80px;
     h1{
       font-size: 55px;
       margin-bottom: 24px;
@@ -118,7 +120,7 @@
     }
     .blog-single--box_content{
       background-color: #fff;
-      padding: 50px 25px;
+      padding: 25px;
       p{
         color: #000;
         font-family: "Din";
@@ -163,7 +165,8 @@
   position: relative;
   ul{
     padding-left: 0;
-    padding-top: 30px;
+    padding-top: 20px;
+    margin-bottom: 0;
     li{
       padding: 11px 15px;
       margin-bottom: 8px;
@@ -191,6 +194,8 @@
   }
   @media all and (min-width: $screen-sm){
     ul{
+      padding-top: 30px;
+      margin-bottom: 10px;
       li{
         margin-bottom: 0px;
       }

@@ -49,8 +49,8 @@
 }
 /*About content*/
 .portfolio-inner{
-  padding-top: 35px;
-  padding-bottom: 100px;
+  padding-top: 25px;
+  padding-bottom: 30px;
   .portfolio-inner--content{
     position: relative;
     background-color: #171717;
@@ -79,6 +79,8 @@
     background-position: center;
   }
   @media all and (min-width: $screen-sm){
+    padding-top: 35px;
+    padding-bottom: 100px;
     .portfolio-inner--content{
       height: 420px;
       .portfolio-inner--content_inner{
@@ -130,8 +132,12 @@
   background-image: url(../images/portfolio-content--bg.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 50px;
+  padding-top: 35px;
   padding-bottom: 35px;
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    padding-top: 50px;
+  }
 }
 
 .portfolio-section_box{

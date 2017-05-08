@@ -1,4 +1,3 @@
-
 /*Services*/
 .services{
   background-color: #fff;
@@ -51,8 +50,8 @@
 
 /*Services inner*/
 .services-box--inner{
-  padding-top: 35px;
-  padding-bottom: 100px;
+  padding-top: 25px;
+  padding-bottom: 35px;
   .services-box--inner_image{
     height: 240px;
     background-size: cover;
@@ -91,6 +90,8 @@
     background-image: url(../images/services-4.png);
   }
   @media all and (min-width: $screen-sm){
+    padding-top: 35px;
+    padding-bottom: 100px;
     .services-box--inner_image{
       height: 350px;
       h1{
@@ -236,11 +237,13 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  padding-top: 70px;
-  padding-bottom: 80px;
+  padding-top: 35px;
+  padding-bottom: 55px;
 
   @media all and (min-width: $screen-sm) {
     // Tablet
+    padding-top: 70px;
+    padding-bottom: 80px;
   }  
   @media all and (min-width: $screen-md) {
     // Tablet

@@ -1,14 +1,15 @@
-
 /*Footer*/
 .footer{
   background-color: #171717;
-  padding-top: 70px;
-  padding-bottom: 50px; 
+  padding-top: 30px;
+  padding-bottom: 25px; 
   .container{
     position: relative;
   }
   @media all and (min-width: $screen-sm) {
     // Tablet
+    padding-top: 70px;
+    padding-bottom: 50px; 
   }  
   @media all and (min-width: $screen-md) {
     // Tablet

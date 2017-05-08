@@ -5640,15 +5640,15 @@ a:hover, a:focus {
   position: relative;
   display: block;
   width: 100%;
-  max-width: 255px;
-  /*margin: 0 auto;*/
+  max-width: 220px;
+  margin: 0 auto;
   border: 2px solid #009046;
   cursor: pointer;
   transition: all 0.6s ease 0.15s; }
   .submit-wrapper:after {
     content: "";
     position: absolute;
-    width: 25px;
+    width: 17px;
     height: 4px;
     top: 0;
     bottom: 2px;
@@ -5660,7 +5660,7 @@ a:hover, a:focus {
   .submit-wrapper:before {
     content: "";
     position: absolute;
-    width: 25px;
+    width: 17px;
     height: 4px;
     top: 0;
     bottom: 2px;
@@ -5669,9 +5669,9 @@ a:hover, a:focus {
     -webkit-transition: all 0.6s;
     -o-transition: all 0.6s;
     transition: all 0.6s;
-    right: -12px; }
+    right: -10px; }
   .submit-wrapper:after {
-    left: -12px; }
+    left: -10px; }
   .submit-wrapper .btn-get--touch {
     position: relative;
     display: block;
@@ -5715,6 +5715,9 @@ a:hover, a:focus {
     transform: scaleY(5);
     width: 200px;
     background: #fafafa; }
+  @media all and (min-width: 768px) {
+    .submit-wrapper {
+      float: left; } }
 
 /*Primary style*/
 * {

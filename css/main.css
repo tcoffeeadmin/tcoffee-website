@@ -11897,32 +11897,47 @@ div.cs-skin-boxes:focus > span {
     margin: auto; }
     .meet-us .meet-us--center h1 {
       font-family: "Din";
-      font-weight: 300;
+      text-transform: uppercase;
+      font-weight: 900;
       color: #171717;
-      font-size: 30px;
+      font-size: 26px;
       margin-top: 0;
       margin-bottom: 10px; }
-    .meet-us .meet-us--center a {
-      color: #171717;
-      font-family: "Din";
-      font-size: 15px;
-      font-weight: 500;
-      -webkit-transition: 0.3s;
-      -moz-transition: 0.3s;
-      -ms-transition: 0.3s;
-      transition: 0.3s; }
-      .meet-us .meet-us--center a img {
-        width: 15px;
-        display: inline-block;
-        vertical-align: middle; }
-      .meet-us .meet-us--center a:hover {
-        color: #009046;
-        -webkit-transition: 0.3s;
-        -moz-transition: 0.3s;
-        -ms-transition: 0.3s;
-        transition: 0.3s; }
-    .meet-us .meet-us--center .meet-us--fb {
-      float: right; }
+    .meet-us .meet-us--center ul {
+      padding-left: 0px; }
+      .meet-us .meet-us--center ul li {
+        display: inline-block; }
+        .meet-us .meet-us--center ul li a {
+          color: #fff;
+          font-family: "Din";
+          font-size: 15px;
+          background-color: #009046;
+          border: 2px solid #009046;
+          padding: 5px 8px;
+          margin-top: 5px;
+          font-weight: 500;
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -ms-transition: 0.3s;
+          transition: 0.3s; }
+          .meet-us .meet-us--center ul li a img {
+            width: 15px;
+            display: inline-block;
+            vertical-align: middle; }
+          .meet-us .meet-us--center ul li a:hover {
+            color: #009046;
+            background-color: #fff;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            transition: 0.3s; }
+      .meet-us .meet-us--center ul .meet-us--fb {
+        float: right; }
+  @media all and (min-width: 768px) {
+    .meet-us .meet-us--center {
+      width: 322px; }
+      .meet-us .meet-us--center h1 {
+        font-size: 30px; } }
 
 /*Pop up*/
 .dialog {

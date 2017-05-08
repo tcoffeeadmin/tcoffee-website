@@ -11351,8 +11351,8 @@ div.cs-skin-boxes:focus > span {
   display: inline-flex; }
   .portfolio-images li {
     display: inline-block;
-    width: 210px;
-    height: 156px;
+    width: 160px;
+    height: 118px;
     margin: 0 2px;
     position: relative;
     -webkit-transition: 0.5s;
@@ -11419,6 +11419,10 @@ div.cs-skin-boxes:focus > span {
       -moz-transition: 0.5s;
       -ms-transition: 0.5s;
       transition: 0.5s; }
+  @media all and (min-width: 768px) {
+    .portfolio-images li {
+      width: 210px;
+      height: 156px; } }
 
 /*************************/
 .click {
@@ -11745,9 +11749,9 @@ div.cs-skin-boxes:focus > span {
   bottom: 24px; }
   .tab-pane--inner .left button {
     position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 45%;
+    width: 40px;
+    height: 40px;
+    top: 50%;
     right: 0;
     background-color: rgba(0, 144, 70, 0.44);
     border: none;
@@ -11784,9 +11788,9 @@ div.cs-skin-boxes:focus > span {
   bottom: 24px; }
   .tab-pane--inner .right button {
     position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 45%;
+    width: 40px;
+    height: 40px;
+    top: 50%;
     left: 0;
     background-color: rgba(0, 144, 70, 0.44);
     border: none;

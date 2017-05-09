@@ -12235,9 +12235,9 @@ div.cs-skin-boxes:focus > span {
 
 .action--close {
   position: absolute;
-  top: 7px;
+  top: 12px;
   right: 20px;
-  width: 45px;
+  width: 35px;
   padding: 8px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -12258,7 +12258,8 @@ div.cs-skin-boxes:focus > span {
     transition: 0.3s; }
   @media all and (min-width: 768px) {
     .action--close {
-      top: 30px; } }
+      top: 30px;
+      width: 45px; } }
 
 .text-hidden {
   position: absolute;

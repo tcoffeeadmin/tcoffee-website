@@ -152,7 +152,7 @@
           @include light;
           font-size: 14px;
           color: #686868;
-          display: block;
+          display: inline-block;
           @include transition(.2s);
           &:hover{
             color: #009046;

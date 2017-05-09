@@ -567,7 +567,8 @@
       @include light;
       text-align: center;
       font-size: 15px;
-      margin: 0;
+      margin-top: 0;
+      margin-bottom: 5px;
     }
   }
   @media all and (min-width: $screen-sm) {

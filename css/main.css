@@ -12697,7 +12697,7 @@ div.cs-skin-boxes:focus > span {
 /*Blog single head*/
 .blog-single--head {
   padding-top: 25px;
-  padding-bottom: 30px; }
+  padding-bottom: 15px; }
   .blog-single--head h1 {
     color: #232325;
     text-transform: uppercase;

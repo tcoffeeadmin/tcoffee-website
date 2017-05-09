@@ -6859,6 +6859,8 @@ header {
 
 .slick-initialized .slick-slide {
   display: block; }
+  .slick-initialized .slick-slide:focus {
+    outline: none; }
 
 .slick-loading .slick-slide {
   visibility: hidden; }

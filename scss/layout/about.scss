@@ -680,6 +680,9 @@
 
 .slick-initialized .slick-slide {
   display: block;
+  &:focus{
+    outline: none;
+  }
 }
 
 .slick-loading .slick-slide {

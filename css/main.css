@@ -4664,12 +4664,24 @@ button.close {
 /*Font size*/
 /*Extra large screen*/
 @font-face {
-  font-family: "Din";
-  src: url("../fonts/DIN.eot?") format("eot"), url("../fonts/DIN.woff2") format("woff2"), url("../fonts/DIN.woff") format("woff"), url("../fonts/DIN.ttf") format("truetype"), url("../fonts/DIN.svg#Din") format("svg"); }
+  font-family: "DINRegular";
+  src: url("../fonts/DINRegular.eot?") format("eot"), url("../fonts/DINRegular.woff2") format("woff2"), url("../fonts/DINRegular.woff") format("woff"), url("../fonts/DINRegular.ttf") format("truetype"), url("../fonts/DINRegular.svg#DINRegular") format("svg"); }
 
 @font-face {
-  font-family: "Din";
-  src: url("../fonts/DINBlackAlternate.eot?") format("eot"), url("../fonts/DINBlackAlternate.woff2") format("woff2"), url("../fonts/DINBlackAlternate.woff") format("woff"), url("../fonts/DINBlackAlternate.ttf") format("truetype"), url("../fonts/DINBlackAlternate.svg#Din") format("svg"); }
+  font-family: "DINLight";
+  src: url("../fonts/DINLight.eot?") format("eot"), url("../fonts/DINLight.woff2") format("woff2"), url("../fonts/DINLight.woff") format("woff"), url("../fonts/DINLight.ttf") format("truetype"), url("../fonts/DINLight.svg#DINLight") format("svg"); }
+
+@font-face {
+  font-family: "DINBlack";
+  src: url("../fonts/DINBlackAlternate.eot?") format("eot"), url("../fonts/DINBlackAlternate.woff2") format("woff2"), url("../fonts/DINBlackAlternate.woff") format("woff"), url("../fonts/DINBlackAlternate.ttf") format("truetype"), url("../fonts/DINBlackAlternate.svg#DINBlack") format("svg"); }
+
+@font-face {
+  font-family: "DINBold";
+  src: url("../fonts/DINBold.eot?") format("eot"), url("../fonts/DINBold.woff2") format("woff2"), url("../fonts/DINBold.woff") format("woff"), url("../fonts/DINBold.ttf") format("truetype"), url("../fonts/DINBold.svg#DINBold") format("svg"); }
+
+@font-face {
+  font-family: "DINMedium";
+  src: url("../fonts/DINMedium.eot?") format("eot"), url("../fonts/DINMedium.woff2") format("woff2"), url("../fonts/DINMedium.woff") format("woff"), url("../fonts/DINMedium.ttf") format("truetype"), url("../fonts/DINMedium.svg#DINMedium") format("svg"); }
 
 /*Hero design*/
 .hero {
@@ -4804,8 +4816,8 @@ button.close {
   overflow: hidden; }
   .services-slider--item h1 {
     color: #fff;
-    font-family: "Din";
-    font-weight: 500;
+    font-family: "DINMedium";
+    /*@include medium;*/
     text-transform: capitalize;
     font-size: 18px;
     margin-top: 0px;
@@ -4822,8 +4834,8 @@ button.close {
     display: none; }
     .services-slider--item .services-slider--item_content p {
       color: #fff;
-      font-family: "Din";
-      font-weight: 300;
+      font-family: "DINLight";
+      /*@include extra-light;*/
       -webkit-transition: 0.3s;
       -moz-transition: 0.3s;
       -ms-transition: 0.3s;
@@ -4864,11 +4876,8 @@ button.close {
 
 /*Hero services image*/
 .services-images {
-  /*  background-image: url(../images/bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;*/
-  background-color: #009046;
+  text-align: center;
+  background-color: #2d2e30;
   overflow: hidden; }
   .services-images .btn-project {
     background-color: transparent;
@@ -4878,8 +4887,8 @@ button.close {
     border-radius: 0px;
     border: 2px solid #fff;
     color: #fff;
-    font-family: "Din";
-    font-weight: 300;
+    font-family: "DINLight";
+    /*@include light;*/
     font-size: 13px;
     padding: 10px;
     position: absolute;
@@ -4899,130 +4908,33 @@ button.close {
     .services-images {
       height: 500px; } }
 
-/*Parallax effect*/
-.items {
-  display: flex;
-  background-color: #009048;
-  width: 100%;
-  height: 400px;
-  overflow: hidden; }
-  .items__inner {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    /*background: #fff;*/ }
-  .items__layer .items__item {
-    position: absolute;
-    /*box-shadow: 0 32px 40px -20px rgba(0,0,0,.25);*/ }
-    .items__layer .items__item:after {
-      content: attr(data-title);
-      position: absolute;
-      line-height: 20px;
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      transition: all .5s ease;
-      visibility: hidden;
-      opacity: 0; }
-    .items__layer .items__item:hover:after {
-      visibility: visible;
-      opacity: 1; }
-  .items__layer:nth-child(1) .items__item {
-    top: -10px;
-    left: -10px;
-    width: 100%;
-    height: 450px;
-    /*background-image: url('../images/icons_bg-02.svg');*/ }
-    .items__layer:nth-child(1) .items__item img {
-      opacity: .2; }
-  .items__layer:nth-child(2) .items__item {
-    top: 25px;
-    left: 100px;
-    width: 210px;
-    height: 350px; }
-    .items__layer:nth-child(2) .items__item h1 {
-      font-size: 75px;
-      color: #fff;
-      text-transform: uppercase;
-      margin: 0;
-      position: absolute;
-      top: 80px;
-      left: -50px;
-      font-family: "DIN";
-      font-weight: 900; }
-  .items__layer:nth-child(3) .items__item {
-    top: 25px;
-    left: 100px;
-    width: 190px;
-    height: 350px;
-    background-color: #fff;
-    overflow: hidden; }
-    .items__layer:nth-child(3) .items__item h1 {
-      font-size: 75px;
-      color: #009048;
-      text-transform: uppercase;
-      margin: 0;
-      position: absolute;
-      top: 80px;
-      left: -50px;
-      font-family: "DIN";
-      font-weight: 900; }
-    .items__layer:nth-child(3) .items__item h2 {
-      position: absolute;
-      text-transform: uppercase;
-      color: #009048;
-      font-size: 20px;
-      bottom: 60px;
-      font-family: "Din";
-      font-weight: 500;
-      margin: 0;
-      left: 15px; }
-      .items__layer:nth-child(3) .items__item h2 span {
-        font-weight: 900; }
-  .items__layer:nth-child(4) .items__item {
-    top: 155px;
-    left: 400px;
-    width: 152px;
-    height: 200px; }
-  .items__layer:nth-child(5) .items__item {
-    top: 5px;
-    left: 50px;
-    width: 63px;
-    height: 82px; }
-  .items__layer:nth-child(6) .items__item {
-    top: 100px;
-    left: 320px;
-    width: 30px;
-    height: 39px; }
-  .items__layer:nth-child(7) .items__item {
-    top: 320px;
-    left: 50px;
-    width: 85px;
-    height: 65px; }
-  .items__layer:nth-child(8) .items__item {
-    top: 10px;
-    left: 280px;
-    width: 95px;
-    height: 70px; }
-  @media all and (min-width: 768px) {
-    .items {
-      height: 400px; } }
-  @media all and (min-width: 1400px) {
-    .items {
-      height: 550px; }
-      .items__inner {
-        height: 550px; }
-      .items__layer:nth-child(1) .items__item {
-        top: 22px;
-        left: 22px;
-        height: 550px; }
-      .items__layer:nth-child(2) .items__item {
-        top: 45px; }
-      .items__layer:nth-child(3) .items__item {
-        top: 45px; }
-      .items__layer:nth-child(4) .items__item {
-        left: 410px;
-        top: 190px; } }
+/*Right side*/
+.words {
+  color: #2d2e30;
+  font-size: 0;
+  line-height: 1; }
+  .words span {
+    font-family: "DINBlack";
+    font-size: 70px;
+    display: inline-block;
+    animation: move 2s ease-in-out infinite; }
+    .words span:nth-child(2) {
+      animation-delay: 0.5s; }
+    .words span:nth-child(3) {
+      animation-delay: 1.0s; }
+    .words span:nth-child(4) {
+      animation-delay: 1.5s; }
+
+.word-top {
+  padding-top: 60px; }
+
+@keyframes move {
+  0% {
+    transform: translate(-33%, 0); }
+  50% {
+    text-shadow: 0 15px 40px rgba(0, 0, 0, 0.6); }
+  100% {
+    transform: translate(33%, 0); } }
 
 /*Portfolio*/
 .portfolios-home {
@@ -5045,8 +4957,8 @@ button.close {
     right: 0;
     text-align: center;
     color: #1d1d1e;
-    font-family: "Din";
-    font-weight: 900; }
+    font-family: "DINBlack";
+    /*@include black;*/ }
   @media all and (min-width: 1200px) {
     .portfolios-home {
       height: 100%; } }
@@ -5251,8 +5163,8 @@ button.close {
   .box h2 {
     text-transform: uppercase;
     color: #fff;
-    font-family: "Din";
-    font-weight: 900;
+    font-family: "DINBlack";
+    /*@include black;*/
     font-size: 24px;
     position: absolute;
     top: 40%;
@@ -5296,8 +5208,8 @@ button.close {
   border-radius: 0px;
   text-transform: capitalize;
   color: #fff;
-  font-family: "Din";
-  font-weight: 300;
+  font-family: "DINLight";
+  /*@include light;*/
   font-size: 13px;
   padding: 10px 15px;
   display: table;
@@ -5327,15 +5239,16 @@ button.close {
     padding-top: 35px;
     padding-bottom: 35px; }
     .contant-home .contant-home--inner h1 {
-      font-family: "Din";
-      font-weight: 300;
+      font-family: "DINLight";
+      /*@include light;*/
       color: #232325;
       font-size: 24px;
       text-transform: uppercase;
       margin-top: 0px;
       margin-bottom: 12px; }
       .contant-home .contant-home--inner h1 span {
-        font-weight: 900; }
+        font-family: "DINBlack";
+        /*@include black;*/ }
     .contant-home .contant-home--inner .contant-form--home {
       position: relative; }
       .contant-home .contant-home--inner .contant-form--home .contant-form--home_image {
@@ -5363,8 +5276,8 @@ button.close {
             border-radius: 0px;
             padding-left: 0px !important;
             padding-right: 0px !important;
-            font-family: "Din";
-            font-weight: 300;
+            font-family: "DINLight";
+            /*@include light;*/
             color: #c7bcbc; }
             .contant-home .contant-home--inner .contant-form--home .contant-form--home_form .form-inner .form-control:focus {
               -webkit-box-shadow: none;
@@ -5383,7 +5296,7 @@ button.close {
             -moz-border-radius: 0px;
             -ms-border-radius: 0px;
             border-radius: 0px;
-            font-family: "Din";
+            font-family: "DINBold";
             font-size: 16px;
             color: #c7bcbc;
             text-transform: uppercase;
@@ -5685,7 +5598,7 @@ a:hover, a:focus {
     display: block;
     line-height: 55px;
     background: none;
-    font-family: "Din";
+    font-family: "DINRegular";
     text-transform: uppercase;
     font-size: 18px;
     color: #232325;
@@ -6058,8 +5971,8 @@ header {
     text-transform: uppercase;
     font-size: 20px;
     color: #454546;
-    font-family: "Din";
-    font-weight: 500;
+    font-family: "DINMedium";
+    /*@include medium;*/
     text-align: left;
     margin-top: 12px;
     position: absolute;
@@ -6078,8 +5991,8 @@ header {
       margin-top: 0px;
       text-align: left; }
       .menu-overlay .menu-overlay--items ul li a {
-        font-family: "Din";
-        font-weight: 900;
+        font-family: "DINBlack";
+        /*@include black;*/
         font-size: 24px;
         color: #444445;
         text-transform: uppercase;
@@ -6094,21 +6007,21 @@ header {
   text-align: left; }
   .menu-overlay .menu-overlay--contact .menu-overlay--contact_mail {
     color: #fff;
-    font-family: "Din";
-    font-weight: 500;
+    font-family: "DINMedium";
+    /*@include medium;*/
     font-size: 20px;
     display: block; }
   .menu-overlay .menu-overlay--contact .menu-overlay--contact_phone {
     color: #fff;
-    font-family: "Din";
-    font-weight: 500;
+    font-family: "DINMedium";
+    /*@include medium;*/
     font-size: 20px;
     display: block; }
   .menu-overlay .menu-overlay--contact p {
-    font-family: "Din";
+    font-family: "DINRegular";
     color: #fff;
     font-size: 17px;
-    font-weight: 500;
+    /*@include medium;*/
     line-height: 25px; }
 
 @media all and (min-width: 768px) {
@@ -6231,8 +6144,8 @@ header {
       padding-left: 22px; }
       header .header-right--cantact li a {
         color: #000;
-        font-family: "Din";
-        font-weight: 300;
+        font-family: "DINRegular";
+        /*@include extra-light;*/
         font-size: 16px;
         -webkit-transition: 0.3s;
         -moz-transition: 0.3s;
@@ -6349,8 +6262,8 @@ header {
       padding-bottom: 35px; }
       .about-inner .about-inner--content .about-inner--content_inner p {
         text-align: justify;
-        font-family: "Din";
-        font-weight: 300;
+        font-family: "DINMedium";
+        /*@include light;*/
         color: #fff;
         text-transform: uppercase;
         line-height: 20px; }
@@ -6513,14 +6426,15 @@ header {
       margin: 0;
       text-transform: uppercase;
       color: #fff;
-      font-family: "Din";
-      font-weight: 900;
+      font-family: "DINBold";
+      /*@include black;*/
       -webkit-transition: 0.2s;
       -moz-transition: 0.2s;
       -ms-transition: 0.2s;
       transition: 0.2s; }
       .team-member .team-member--details h4 span {
-        font-weight: 500; }
+        font-family: "DINMedium";
+        /*@include medium;*/ }
     .team-member .team-member--details ul {
       padding-left: 0px;
       position: absolute;
@@ -6552,8 +6466,8 @@ header {
     -ms-transition: 0.3s;
     transition: 0.3s; }
     .team-member .team-member--details_content p {
-      font-family: "Din";
-      font-weight: 300;
+      font-family: "DINLight";
+      /*@include light;*/
       font-size: 13px;
       margin-bottom: 0;
       text-align: justify; }
@@ -6672,8 +6586,8 @@ header {
   .vision-mission--inner h3 {
     color: #fff;
     text-transform: uppercase;
-    font-family: "Din";
-    font-weight: 900;
+    font-family: "DINBlack";
+    /*@include black;*/
     font-size: 30px;
     margin: 0; }
   .vision-mission--inner .vision-mission--inner_vision {
@@ -6765,8 +6679,8 @@ header {
   .clients .client-details h4 {
     color: #fff;
     text-transform: uppercase;
-    font-family: "Din";
-    font-weight: 900;
+    font-family: "DINBlack";
+    /*@include black;*/
     text-align: center;
     font-size: 30px;
     margin-top: 0;
@@ -6774,8 +6688,8 @@ header {
   .clients .client-details h5 {
     color: #fff;
     text-transform: lowercase;
-    font-family: "Din";
-    font-weight: 300;
+    font-family: "DINLight";
+    /*@include light;*/
     text-align: center;
     font-size: 15px;
     margin-top: 0;
@@ -6881,9 +6795,9 @@ header {
   padding-top: 25px;
   overflow: hidden; }
   .get-in-touch h3 {
-    font-family: "Din";
+    font-family: "DINBlack";
     color: #232325;
-    font-weight: 900;
+    /*@include black;*/
     font-size: 21px;
     text-transform: uppercase;
     margin-bottom: 18px;
@@ -6932,8 +6846,8 @@ header {
   .footer-address .footer-address--head h3 {
     margin-top: 0;
     margin-bottom: 5px;
-    font-family: "Din";
-    font-weight: 300;
+    font-family: "DINLight";
+    /*@include light;*/
     text-transform: capitalize;
     color: #959595;
     font-size: 18px; }
@@ -6943,8 +6857,8 @@ header {
   padding-top: 15px;
   padding-bottom: 15px; }
   .footer-address .footer-address--content p {
-    font-family: "Din";
-    font-weight: 300;
+    font-family: "DINLight";
+    /*@include light;*/
     font-size: 14px;
     color: #686868;
     margin: 0; }
@@ -6955,8 +6869,8 @@ header {
   .footer-contact .footer-contact--head h3 {
     margin-top: 0;
     margin-bottom: 5px;
-    font-family: "Din";
-    font-weight: 300;
+    font-family: "DINLight";
+    /*@include light;*/
     text-transform: capitalize;
     color: #959595;
     font-size: 18px; }
@@ -6966,8 +6880,8 @@ header {
   padding-top: 15px;
   padding-bottom: 15px; }
   .footer-contact .footer-contact--content a {
-    font-family: "Din";
-    font-weight: 300;
+    font-family: "DINLight";
+    /*@include light;*/
     font-size: 14px;
     color: #686868;
     display: block;
@@ -6988,8 +6902,8 @@ header {
   .footer-follow .footer-follow--head h3 {
     margin-top: 0;
     margin-bottom: 5px;
-    font-family: "Din";
-    font-weight: 300;
+    font-family: "DINLight";
+    /*@include light;*/
     text-transform: capitalize;
     color: #959595;
     font-size: 18px; }
@@ -7004,8 +6918,8 @@ header {
     .footer-follow .footer-follow--content ul li {
       list-style: none; }
       .footer-follow .footer-follow--content ul li a {
-        font-family: "Din";
-        font-weight: 300;
+        font-family: "DINLight";
+        /*@include light;*/
         font-size: 14px;
         color: #686868;
         display: inline-block;
@@ -7028,8 +6942,8 @@ header {
   .copy-right p {
     text-align: center;
     margin: 0;
-    font-family: "Din";
-    font-weight: 500;
+    font-family: "DINMedium";
+    /*@include medium;*/
     color: #757474;
     font-size: 15px; }
 
@@ -9279,8 +9193,8 @@ header {
     .services-box--inner .services-box--inner_image h1 {
       color: #fff;
       text-transform: uppercase;
-      font-family: "Din";
-      font-weight: 900;
+      font-family: "DINBlack";
+      /*@include black;*/
       font-size: 16px;
       margin: 0;
       margin-bottom: 6px; }
@@ -9290,8 +9204,8 @@ header {
         list-style: none;
         color: #fff;
         text-transform: uppercase;
-        font-family: "Din";
-        font-weight: 500;
+        font-family: "DINMedium";
+        /*@include medium;*/
         margin: 0; }
   .services-box--inner .service-one {
     background-image: url(../images/services-1.png); }
@@ -9487,16 +9401,16 @@ header {
       margin-top: 0;
       margin-bottom: 4px;
       color: #fff;
-      font-family: "Din";
+      font-family: "DINBlack";
       font-size: 15px;
-      font-weight: 900;
+      /*@include black;*/
       text-transform: uppercase; }
     .testimonial-slider .testimonial-image .testimonial-image--inner .testimonial-image--inner_name p {
       margin: 0;
       color: #fff;
-      font-family: "Din";
+      font-family: "DINLight";
       font-size: 12px;
-      font-weight: 300;
+      /*@include light;*/
       text-transform: uppercase; }
 
 .testimonial-slider .testimonial-content {
@@ -9505,9 +9419,9 @@ header {
   .testimonial-slider .testimonial-content p {
     margin: 0;
     color: #fff;
-    font-family: "Din";
+    font-family: "DINLight";
     font-size: 16px;
-    font-weight: 300;
+    /*@include light;*/
     text-align: center; }
 
 @media all and (min-width: 768px) {
@@ -9561,9 +9475,9 @@ header {
     background-color: #171717; }
     .service-single--box_inner .service-single--box_head h1 {
       color: #fff;
-      font-family: "Din";
+      font-family: "DINBlack";
       font-size: 26px;
-      font-weight: 900;
+      /*@include black;*/
       margin-top: 0;
       margin-bottom: 6px;
       text-transform: uppercase; }
@@ -9577,9 +9491,9 @@ header {
         .service-single--box_inner .service-single--box_head ul li a {
           text-transform: uppercase;
           color: #fff;
-          font-family: "Din";
+          font-family: "DINMedium";
           font-size: 19px;
-          font-weight: 500;
+          /*@include medium;*/
           -webkit-transition: 0.2s;
           -moz-transition: 0.2s;
           -ms-transition: 0.2s;
@@ -9641,19 +9555,19 @@ header {
     -ms-transition: 0.3s;
     transition: 0.3s; }
     .single-service .single-service--item h2 {
-      font-family: "Din";
+      font-family: "DINBlack";
       color: #fff;
       margin-top: 0;
       margin-bottom: 25px;
-      font-weight: 900;
+      /*@include black;*/
       font-size: 30px;
       line-height: 22px;
       text-transform: uppercase; }
     .single-service .single-service--item p {
       color: #959595;
-      font-family: "Din";
+      font-family: "DINLight";
       font-size: 16px;
-      font-weight: 300;
+      /*@include light;*/
       margin-bottom: 0;
       text-transform: uppercase; }
     .single-service .single-service--item .left-shape {
@@ -9755,8 +9669,8 @@ header {
       padding: 50px 5%; }
       .contact-box--inner .contact-box--inner_content .contact-content h1 {
         color: #009046;
-        font-family: "Din";
-        font-weight: 900;
+        font-family: "DINBlack";
+        /*@include black;*/
         font-size: 30px;
         margin-top: 0;
         margin-bottom: 15px;
@@ -9764,8 +9678,8 @@ header {
         z-index: 2; }
       .contact-box--inner .contact-box--inner_content .contact-content p {
         color: #fff;
-        font-family: "Din";
-        font-weight: 500;
+        font-family: "DINMedium";
+        /*@include medium;*/
         font-size: 13px;
         margin-bottom: 0;
         text-transform: uppercase;
@@ -9844,8 +9758,8 @@ header {
   z-index: 2; }
   .form-click h1 {
     color: #fff;
-    font-family: "Din";
-    font-weight: 900;
+    font-family: "DINBlack";
+    /*@include black;*/
     text-transform: uppercase;
     text-align: center; }
   .form-click .round-one {
@@ -9915,8 +9829,8 @@ header {
     padding: 30px 5%; }
     .map-adderss .map-address--address .map-address--address_mail {
       color: #fff;
-      font-family: "Din";
-      font-weight: 500;
+      font-family: "DINMedium";
+      /*@include medium;*/
       font-size: 25px;
       -webkit-transition: 0.2s;
       -moz-transition: 0.2s;
@@ -9932,8 +9846,8 @@ header {
         transition: 0.2s; }
     .map-adderss .map-address--address .map-address--address_tel {
       color: #fff;
-      font-family: "Din";
-      font-weight: 500;
+      font-family: "DINMedium";
+      /*@include medium;*/
       font-size: 25px;
       -webkit-transition: 0.2s;
       -moz-transition: 0.2s;
@@ -9949,8 +9863,8 @@ header {
         transition: 0.2s; }
     .map-adderss .map-address--address p {
       color: #c5c3c3;
-      font-family: "Din";
-      font-weight: 500;
+      font-family: "DINMedium";
+      /*@include medium;*/
       font-size: 17px;
       margin-bottom: 0; }
   @media all and (min-width: 768px) {
@@ -10068,8 +9982,8 @@ header {
     content: 'Review & Submit';
     font-size: 38px;
     color: #fff;
-    font-family: "Din";
-    font-weight: 900;
+    font-family: "DINBlack";
+    /*@include black;*/
     text-transform: uppercase;
     line-height: 40px; }
   @media all and (min-width: 768px) {
@@ -10170,8 +10084,8 @@ header {
     font-size: 20px;
     pointer-events: none;
     text-transform: uppercase;
-    font-family: "Din";
-    font-weight: 900; }
+    font-family: "DINMedium";
+    /*@include black;*/ }
   @media all and (min-width: 768px) {
     .fs-fields > li label {
       font-size: 32px; } }
@@ -10186,8 +10100,8 @@ header {
   color: #009046;
   border-radius: 50%;
   content: 'i';
-  font-family: "Din";
-  font-weight: 300;
+  font-family: "DINLight";
+  /*@include light;*/
   vertical-align: top;
   text-align: center;
   font-size: 14px;
@@ -10250,8 +10164,8 @@ header {
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
   border-radius: 0px;
-  font-family: "Din";
-  font-weight: 500;
+  font-family: "DINMedium";
+  /*@include medium;*/
   text-transform: uppercase; }
   .fs-fields input:invalid {
     box-shadow: none;
@@ -10367,8 +10281,8 @@ header {
   color: #fffed8;
   font-size: 24px;
   resize: none;
-  font-family: "Din";
-  font-weight: 500;
+  font-family: "DINMedium";
+  /*@include medium;*/
   color: #fff; }
   .fs-fields textarea::-webkit-scrollbar {
     width: 10px; }
@@ -11230,8 +11144,8 @@ div.cs-skin-boxes:focus > span {
       padding-bottom: 75px; }
       .portfolio-inner .portfolio-inner--content .portfolio-inner--content_inner p {
         text-align: justify;
-        font-family: "Din";
-        font-weight: 500;
+        font-family: "DINMedium";
+        /*@include medium;*/
         color: #fff;
         text-transform: uppercase;
         line-height: 20px; }
@@ -11300,8 +11214,8 @@ div.cs-skin-boxes:focus > span {
     .portfolio-section--list li a {
       text-transform: uppercase;
       padding: 15px 8px;
-      font-family: "Din";
-      font-weight: 300;
+      font-family: "DINLight";
+      /*@include light;*/
       font-size: 14px;
       color: #959595; }
       .portfolio-section--list li a:hover {
@@ -11384,13 +11298,14 @@ div.cs-skin-boxes:focus > span {
       .portfolio-images li .layer h4 {
         text-transform: uppercase;
         color: #fff;
-        font-family: "Din";
-        font-weight: 900;
+        font-family: "DINBlack";
+        /*@include black;*/
         font-size: 15px;
         margin: 0;
         display: inline-block; }
         .portfolio-images li .layer h4 span {
-          font-weight: 300; }
+          font-family: "DINLight";
+          /*@include light;*/ }
       .portfolio-images li .layer img {
         vertical-align: super;
         float: right;
@@ -11499,32 +11414,32 @@ div.cs-skin-boxes:focus > span {
     width: 75%;
     margin: auto; }
     .show .inner-content .inner-content--content .inner-content--content_box h2 {
-      font-family: "Din";
+      font-family: "DINBlack";
       text-transform: uppercase;
-      font-weight: 900;
+      /*@include black;*/
       color: #171717;
       margin-top: 0;
       margin-bottom: 5px;
       font-size: 34px; }
     .show .inner-content .inner-content--content .inner-content--content_box h3 {
-      font-family: "Din";
+      font-family: "DINMedium";
       text-transform: uppercase;
-      font-weight: 300;
+      /*@include light;*/
       color: #171717;
       margin-top: 0;
       margin-bottom: 25px;
       font-size: 24px; }
     .show .inner-content .inner-content--content .inner-content--content_box p {
-      font-family: "Din";
+      font-family: "DINMedium";
       text-transform: uppercase;
-      font-weight: 500;
+      /*@include medium;*/
       font-size: 15px;
       text-align: justify; }
     .show .inner-content .inner-content--content .inner-content--content_box .visit-click {
       margin-top: 15px;
       color: #009046;
-      font-family: "Din";
-      font-weight: 700;
+      font-family: "DINMedium";
+      /*@include bold;*/
       text-transform: uppercase;
       font-size: 16px;
       -webkit-transition: 0.2s;
@@ -11662,15 +11577,15 @@ div.cs-skin-boxes:focus > span {
         -ms-transition: 0.3s;
         transition: 0.3s; }
       .column .click .wrapper .card-tittle h4 {
-        font-family: "Din";
-        font-weight: 900;
+        font-family: "DINMedium";
+        /*@include black;*/
         color: #fff;
         text-transform: uppercase;
         margin: 0;
         font-size: 15px; }
       .column .click .wrapper .card-tittle h5 {
-        font-family: "Din";
-        font-weight: 500;
+        font-family: "DINLight";
+        /*@include medium;*/
         color: #fff;
         text-transform: uppercase;
         margin: 0;
@@ -11890,8 +11805,8 @@ div.cs-skin-boxes:focus > span {
       .career-inner .career-inner--content .career-inner--content_inner h1 {
         color: #fff;
         text-transform: uppercase;
-        font-family: "Din";
-        font-weight: 900;
+        font-family: "DINBlack";
+        /*@include black;*/
         margin: 0;
         font-size: 26px;
         margin-bottom: 5px; }
@@ -11899,15 +11814,15 @@ div.cs-skin-boxes:focus > span {
         background-color: #009046;
         margin-bottom: 20px; }
       .career-inner .career-inner--content .career-inner--content_inner p {
-        font-family: "Din";
-        font-weight: 500;
+        font-family: "DINMedium";
+        /*@include medium;*/
         color: #959595;
         font-size: 13px;
         text-transform: uppercase;
         line-height: 20px; }
       .career-inner .career-inner--content .career-inner--content_inner a {
-        font-family: "Din";
-        font-weight: 500;
+        font-family: "DINMedium";
+        /*@include medium;*/
         color: #009046;
         text-transform: uppercase;
         font-size: 15px; }
@@ -11987,8 +11902,8 @@ div.cs-skin-boxes:focus > span {
   margin-bottom: 25px;
   text-transform: uppercase;
   color: #009046;
-  font-family: "Din";
-  font-weight: 900;
+  font-family: "DINBlack";
+  /*@include black;*/
   font-size: 120%;
   padding: 15px;
   cursor: url(../images/custom.png), auto;
@@ -12029,9 +11944,9 @@ div.cs-skin-boxes:focus > span {
     width: 280px;
     margin: auto; }
     .meet-us .meet-us--center h1 {
-      font-family: "Din";
+      font-family: "DINBlack";
       text-transform: uppercase;
-      font-weight: 900;
+      /*@include black;*/
       color: #171717;
       font-size: 26px;
       margin-top: 0;
@@ -12042,13 +11957,13 @@ div.cs-skin-boxes:focus > span {
         display: inline-block; }
         .meet-us .meet-us--center ul li a {
           color: #fff;
-          font-family: "Din";
+          font-family: "DINMedium";
           font-size: 15px;
           background-color: #009046;
           border: 2px solid #009046;
           padding: 5px 8px;
           margin-top: 5px;
-          font-weight: 500;
+          /*@include medium;*/
           -webkit-transition: 0.3s;
           -moz-transition: 0.3s;
           -ms-transition: 0.3s;
@@ -12071,7 +11986,7 @@ div.cs-skin-boxes:focus > span {
       padding-top: 60px;
       padding-bottom: 60px; }
       .meet-us .meet-us--center {
-        width: 322px; }
+        width: 325px; }
         .meet-us .meet-us--center h1 {
           font-size: 30px; } }
 
@@ -12175,9 +12090,9 @@ div.cs-skin-boxes:focus > span {
   .dialog__header h2 {
     text-align: center;
     text-transform: uppercase;
-    font-family: "Din";
+    font-family: "DINBlack";
     color: #fff;
-    font-weight: 900;
+    /*@include black;*/
     margin: 0;
     font-size: 18px; }
   @media all and (min-width: 768px) {
@@ -12282,9 +12197,9 @@ div.cs-skin-boxes:focus > span {
   text-align: left; }
   .vacc-pop--up .req-skills h4 {
     color: #fff;
-    font-family: "Din";
+    font-family: "DINMedium";
     text-transform: uppercase;
-    font-weight: 500;
+    /*@include medium;*/
     font-size: 19px;
     margin-top: 0;
     margin-bottom: 8px; }
@@ -12295,8 +12210,8 @@ div.cs-skin-boxes:focus > span {
     padding-left: 0; }
     .vacc-pop--up .req-skills ul li {
       color: #fff;
-      font-family: "Din";
-      font-weight: 300;
+      font-family: "DINLight";
+      /*@include light;*/
       font-size: 17px;
       text-transform: capitalize;
       margin-bottom: 6px;
@@ -12316,10 +12231,10 @@ div.cs-skin-boxes:focus > span {
     border-bottom: 1px solid #5d5d5e;
     background-color: transparent;
     padding: 3px 0;
-    font-family: "Din";
+    font-family: "DINLight";
     color: #9e9e9e;
     height: 28px;
-    font-weight: 300;
+    /*@include light;*/
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     -ms-box-shadow: none;
@@ -12335,8 +12250,8 @@ div.cs-skin-boxes:focus > span {
     border-radius: 0;
     color: #fff;
     text-transform: uppercase;
-    font-family: "Din";
-    font-weight: 900;
+    font-family: "DINBlack";
+    /*@include black;*/
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
@@ -12385,7 +12300,7 @@ div.cs-skin-boxes:focus > span {
   max-width: 100%;
   font-size: 1.25rem;
   /* 20px */
-  font-weight: 700;
+  font-weight: lighter;
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
@@ -12456,15 +12371,15 @@ div.cs-skin-boxes:focus > span {
   font-size: 17px;
   padding: 0;
   text-transform: uppercase;
-  font-family: "Din";
-  font-weight: 300;
+  font-family: "DINLight";
+  /*@include light;*/
   color: #9e9e9e;
   width: 65%; }
 
 .inputfile-6 + label .file-type {
   font-size: 13px;
-  font-family: "Din";
-  font-weight: 300;
+  font-family: "DINLight";
+  /*@include light;*/
   color: #575759;
   width: 75px;
   padding-left: 0;
@@ -12490,8 +12405,8 @@ div.cs-skin-boxes:focus > span {
     padding-top: 25px;
     padding-bottom: 15px; }
     .blog .blog-head h1 {
-      font-family: "Din";
-      font-weight: 900;
+      font-family: "DINBlack";
+      /*@include black;*/
       text-transform: uppercase;
       margin: 0;
       font-size: 50px;
@@ -12543,8 +12458,8 @@ div.cs-skin-boxes:focus > span {
       margin-bottom: 25px;
       text-transform: uppercase;
       color: #fff;
-      font-family: "Din";
-      font-weight: 900;
+      font-family: "DINBlack";
+      /*@include black;*/
       -webkit-transition: 0.2s;
       -moz-transition: 0.2s;
       -ms-transition: 0.2s;
@@ -12557,8 +12472,8 @@ div.cs-skin-boxes:focus > span {
         -ms-transition: 0.2s;
         transition: 0.2s; }
     .blog-content--container .blog-content--container_details p {
-      font-family: "Din";
-      font-weight: 500;
+      font-family: "DINMedium";
+      /*@include medium;*/
       font-size: 14px;
       color: #fff;
       text-transform: uppercase; }
@@ -12568,8 +12483,8 @@ div.cs-skin-boxes:focus > span {
       margin-bottom: 0px; }
       .blog-content--container .blog-content--container_details ul li {
         display: inline-block;
-        font-family: "Din";
-        font-weight: 300;
+        font-family: "DINLight";
+        /*@include light;*/
         text-transform: capitalize;
         color: #fff;
         font-size: 14px; }
@@ -12581,9 +12496,9 @@ div.cs-skin-boxes:focus > span {
       text-transform: capitalize;
       margin-top: 10px;
       font-size: 14px;
-      font-family: "Din";
+      font-family: "DINLight";
       color: #009046;
-      font-weight: 300;
+      /*@include light;*/
       -webkit-transition: 0.3s;
       -moz-transition: 0.3s;
       -ms-transition: 0.3s;
@@ -12652,8 +12567,8 @@ div.cs-skin-boxes:focus > span {
         text-transform: uppercase;
         padding: 8px 15px;
         color: #fff;
-        font-family: "Din";
-        font-weight: 900;
+        font-family: "DINBlack";
+        /*@include black;*/
         font-size: 15px;
         -webkit-transition: 0.2s;
         -moz-transition: 0.2s;
@@ -12701,16 +12616,16 @@ div.cs-skin-boxes:focus > span {
   .blog-single--head h1 {
     color: #232325;
     text-transform: uppercase;
-    font-family: "Din";
-    font-weight: 900;
+    font-family: "DINBlack";
+    /*@include black;*/
     font-size: 36px;
     margin-top: 0;
     margin-bottom: 18px; }
   .blog-single--head h2 {
     color: #232325;
     text-transform: uppercase;
-    font-family: "Din";
-    font-weight: 300;
+    font-family: "DINLight";
+    /*@include light;*/
     font-size: 20px;
     margin-top: 0;
     margin-bottom: 18px; }
@@ -12733,17 +12648,17 @@ div.cs-skin-boxes:focus > span {
         -ms-border-radius: 15px;
         border-radius: 15px; }
     .blog-single--head .blogger .name {
-      font-family: "Din";
+      font-family: "DINMedium";
       font-size: 18px;
       color: #000000;
-      font-weight: 500;
+      /*@include medium;*/
       text-transform: capitalize;
       padding-left: 0px; }
     .blog-single--head .blogger .date {
-      font-family: "Din";
+      font-family: "DINLight";
       font-size: 18px;
       color: #009046;
-      font-weight: 300;
+      /*@include light;*/
       text-transform: capitalize; }
   @media all and (min-width: 768px) {
     .blog-single--head {
@@ -12781,8 +12696,8 @@ div.cs-skin-boxes:focus > span {
     padding: 25px; }
     .blog-single--content .blog-single--box .blog-single--box_content p {
       color: #000;
-      font-family: "Din";
-      font-weight: 500;
+      font-family: "DINMedium";
+      /*@include medium;*/
       text-align: justify;
       font-size: 18px; }
   @media all and (min-width: 768px) {
@@ -12815,8 +12730,8 @@ div.cs-skin-boxes:focus > span {
       .share-buttons ul li a {
         color: #fff;
         text-transform: uppercase;
-        font-family: "Din";
-        font-weight: 900;
+        font-family: "DINBlack";
+        /*@include black;*/
         font-size: 13px; }
     .share-buttons ul .tweet {
       background-color: #00abf0; }

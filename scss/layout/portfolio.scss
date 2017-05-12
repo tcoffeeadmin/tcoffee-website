@@ -64,8 +64,8 @@
       padding-bottom: 75px;
       p{
         text-align: justify;
-        font-family: "Din";
-        @include medium;
+        font-family: "DINMedium";
+        /*@include medium;*/
         color: #fff;
         text-transform: uppercase;
         line-height: 20px;
@@ -154,8 +154,8 @@
     a{
       text-transform: uppercase;
       padding: 15px 8px;
-      font-family: "Din";
-      @include light;
+      font-family: "DINLight";
+      /*@include light;*/
       font-size: 14px;
       color: #959595;
       &:hover{
@@ -258,13 +258,14 @@
       h4{
         text-transform: uppercase;
         color: #fff;
-        font-family: "Din";
-        @include black;
+        font-family: "DINBlack";
+        /*@include black;*/
         font-size: 15px;
         margin: 0;
         display: inline-block;
         span{
-          @include light;
+          font-family: "DINLight";
+          /*@include light;*/
         }
       }
       img{
@@ -379,35 +380,35 @@
         width: 75%;
         margin: auto;
         h2{
-          font-family: "Din";
+          font-family: "DINBlack";
           text-transform: uppercase;
-          @include black;
+          /*@include black;*/
           color: #171717;
           margin-top: 0;
           margin-bottom: 5px;
           font-size: 34px;
         }
         h3{
-          font-family: "Din";
+          font-family: "DINMedium";
           text-transform: uppercase;
-          @include light;
+          /*@include light;*/
           color: #171717;
           margin-top: 0;
           margin-bottom: 25px;
           font-size: 24px;
         }
         p{
-          font-family: "Din";
+          font-family: "DINMedium";
           text-transform: uppercase;
-          @include medium;
+          /*@include medium;*/
           font-size: 15px;
           text-align: justify;
         }
         .visit-click{
           margin-top: 15px;
           color: #009046;
-          font-family: "Din";
-          @include bold;
+          font-family: "DINMedium";
+          /*@include bold;*/
           text-transform: uppercase;
           font-size: 16px;
           @include transition(.2s);
@@ -524,16 +525,16 @@
           @include transition(.3s);
         }
         h4{
-          font-family: "Din";
-          @include black;
+          font-family: "DINMedium";
+          /*@include black;*/
           color:  #fff;
           text-transform: uppercase;
           margin: 0;
           font-size: 15px;
         }
         h5{
-          font-family: "Din";
-          @include medium;
+          font-family: "DINLight";
+          /*@include medium;*/
           color:  #fff;
           text-transform: uppercase;
           margin: 0;

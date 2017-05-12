@@ -59,8 +59,8 @@
     h1{
       color: #fff;
       text-transform: uppercase;
-      font-family: "Din";
-      @include black;
+      font-family: "DINBlack";
+      /*@include black;*/
       font-size: 16px;
       margin: 0;
       margin-bottom: 6px;
@@ -71,8 +71,8 @@
         list-style: none;
         color: #fff;
         text-transform: uppercase;
-        font-family: "Din";
-        @include medium;
+        font-family: "DINMedium";
+        /*@include medium;*/
         margin: 0;
       }
     }
@@ -302,17 +302,17 @@
           margin-top: 0;
           margin-bottom: 4px;
           color: #fff;
-          font-family: "Din";
+          font-family: "DINBlack";
           font-size: 15px;
-          @include black;
+          /*@include black;*/
           text-transform: uppercase;
         }
         p{
           margin: 0;
           color: #fff;
-          font-family: "Din";
+          font-family: "DINLight";
           font-size: 12px;
-          @include light;
+          /*@include light;*/
           text-transform: uppercase;
         }
       }
@@ -324,9 +324,9 @@
     p{
       margin: 0;
       color: #fff;
-      font-family: "Din";
+      font-family: "DINLight";
       font-size: 16px;
-      @include light;
+      /*@include light;*/
       text-align: center;
     }
   }

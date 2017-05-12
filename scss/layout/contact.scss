@@ -65,8 +65,8 @@
       padding: 50px 5%;
       h1{
         color: #009046;
-        font-family: "Din";
-        @include black;
+        font-family: "DINBlack";
+        /*@include black;*/
         font-size: 30px;
         margin-top: 0;
         margin-bottom: 15px;
@@ -75,8 +75,8 @@
       }
       p{
         color: #fff;
-        font-family: "Din";
-        @include medium;
+        font-family: "DINMedium";
+        /*@include medium;*/
         font-size: 13px;
         margin-bottom: 0;
         text-transform: uppercase;
@@ -185,8 +185,8 @@
   z-index: 2;
   h1{
     color: #fff;
-    font-family: "Din";
-    @include black;
+    font-family: "DINBlack";
+    /*@include black;*/
     text-transform: uppercase;
     text-align: center;
   }
@@ -261,8 +261,8 @@
     padding: 30px 5%;
     .map-address--address_mail{
       color: #fff;
-      font-family: "Din";
-      @include medium;
+      font-family: "DINMedium";
+      /*@include medium;*/
       font-size: 25px;
       @include transition(.2s);
       margin-bottom: 3px;
@@ -274,8 +274,8 @@
     }
     .map-address--address_tel{
       color: #fff;
-      font-family: "Din";
-      @include medium;
+      font-family: "DINMedium";
+      /*@include medium;*/
       font-size: 25px;
       @include transition(.2s);
       margin-bottom: 3px;
@@ -287,8 +287,8 @@
     }
     p{
       color: #c5c3c3;
-      font-family: "Din";
-      @include medium;
+      font-family: "DINMedium";
+      /*@include medium;*/
       font-size: 17px;
       margin-bottom: 0;
     }

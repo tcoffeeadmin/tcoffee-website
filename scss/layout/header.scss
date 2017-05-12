@@ -23,8 +23,8 @@ header{
       padding-left: 22px;
       a{
         color: #000;
-        font-family: "Din";
-        @include light;
+        font-family: "DINRegular";
+        /*@include extra-light;*/
         @include commen-size;
         @include transition(.3s);
         &:hover{

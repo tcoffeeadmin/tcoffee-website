@@ -141,8 +141,8 @@
     content: 'Review & Submit';
     font-size: 38px;
     color: #fff;
-    font-family: "Din";
-    @include black;
+    font-family: "DINBlack";
+    /*@include black;*/
     text-transform: uppercase;
     line-height: 40px;
   }
@@ -291,8 +291,8 @@
     font-size: 20px;
     pointer-events: none;
     text-transform: uppercase;
-    font-family: "Din";
-    @include black;
+    font-family: "DINMedium";
+    /*@include black;*/
   }
   @media all and (min-width: $screen-sm) {
     // Tablet
@@ -319,8 +319,8 @@
         color: #009046;
         border-radius: 50%;
         content: 'i';
-        font-family: "Din";
-        @include light;
+        font-family: "DINLight";
+        /*@include light;*/
         vertical-align: top;
         text-align: center;
         font-size: 14px;
@@ -386,8 +386,8 @@
   text-overflow: ellipsis;
   font-size: 24px;
   @include border-radius(0px);
-  font-family: "Din";
-  @include medium;
+  font-family: "DINMedium";
+  /*@include medium;*/
   text-transform: uppercase;
   &:invalid {
     box-shadow: none;
@@ -531,8 +531,8 @@
   color: #fffed8;
   font-size: 24px;
   resize: none;
-  font-family: "Din";
-  @include medium;
+  font-family: "DINMedium";
+  /*@include medium;*/
   color: #fff;
   &::-webkit-scrollbar {
     width: 10px;

@@ -393,8 +393,8 @@ header {
       text-transform: uppercase;
       font-size: 20px;
       color: #454546;
-      font-family: "Din";
-      @include medium;
+      font-family: "DINMedium";
+      /*@include medium;*/
       text-align: left;
       margin-top: 12px;
       position: absolute;
@@ -414,8 +414,8 @@ header {
         margin-top: 0px;
         text-align: left;
         a{
-          font-family: "Din";
-          @include black;
+          font-family: "DINBlack";
+          /*@include black;*/
           font-size: 24px;
           color: #444445;
           text-transform: uppercase;
@@ -436,23 +436,23 @@ header {
     text-align: left;
     .menu-overlay--contact_mail{
       color: #fff;
-      font-family: "Din";
-      @include medium;
+      font-family: "DINMedium";
+      /*@include medium;*/
       font-size: 20px;
       display: block;
     }
     .menu-overlay--contact_phone{
       color: #fff;
-      font-family: "Din";
-      @include medium;
+      font-family: "DINMedium";
+      /*@include medium;*/
       font-size: 20px;
       display: block;
     }
     p{
-      font-family: "Din";
+      font-family: "DINRegular";
       color: #fff;
       font-size: 17px;
-      @include medium;
+      /*@include medium;*/
       line-height: 25px;
     }
   }

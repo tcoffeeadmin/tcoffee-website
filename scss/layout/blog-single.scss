@@ -20,8 +20,8 @@
   h1{
     color: #232325;
     text-transform: uppercase;
-    font-family: "Din";
-    @include black;
+    font-family: "DINBlack";
+    /*@include black;*/
     font-size: 36px;
     margin-top: 0;
     margin-bottom: 18px;
@@ -29,8 +29,8 @@
   h2{
     color: #232325;
     text-transform: uppercase;
-    font-family: "Din";
-    @include light;
+    font-family: "DINLight";
+    /*@include light;*/
     font-size: 20px;
     margin-top: 0;
     margin-bottom: 18px; 
@@ -54,18 +54,18 @@
       }
     }
     .name{
-      font-family: "Din";
+      font-family: "DINMedium";
       font-size: 18px;
       color: #000000;
-      @include medium;
+      /*@include medium;*/
       text-transform: capitalize;
       padding-left: 0px;
     }
     .date{
-      font-family: "Din";
+      font-family: "DINLight";
       font-size: 18px;
       color: #009046;
-      @include light;
+      /*@include light;*/
       text-transform: capitalize;
     }
   }
@@ -123,8 +123,8 @@
       padding: 25px;
       p{
         color: #000;
-        font-family: "Din";
-        @include medium;
+        font-family: "DINMedium";
+        /*@include medium;*/
         text-align: justify;
         font-size: 18px;
       }
@@ -174,8 +174,8 @@
       a{
         color: #fff;
         text-transform: uppercase;
-        font-family: "Din";
-        @include black;
+        font-family: "DINBlack";
+        /*@include black;*/
         font-size: 13px;
       }
     }

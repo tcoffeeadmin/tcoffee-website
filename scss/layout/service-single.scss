@@ -57,9 +57,9 @@
     background-color: #171717;
     h1{
       color: #fff;
-      font-family: "Din";
+      font-family: "DINBlack";
       font-size: 26px;
-      @include black;
+      /*@include black;*/
       margin-top: 0;
       margin-bottom: 6px;
       text-transform: uppercase;
@@ -75,9 +75,9 @@
         a{
           text-transform: uppercase;
           color: #fff;
-          font-family: "Din";
+          font-family: "DINMedium";
           font-size: 19px;
-          @include medium;
+          /*@include medium;*/
           @include transition(.2s);
           &:hover{
             color: #363636;
@@ -153,20 +153,20 @@
     margin-top: 55px;
     @include transition(.3s);
     h2{
-      font-family: "Din";
+      font-family: "DINBlack";
       color: #fff;
       margin-top: 0;
       margin-bottom: 25px;
-      @include black;
+      /*@include black;*/
       font-size: 30px;
       line-height: 22px;
       text-transform: uppercase;
     }
     p{
       color: #959595;
-      font-family: "Din";
+      font-family: "DINLight";
       font-size: 16px;
-      @include light;
+      /*@include light;*/
       margin-bottom: 0;
       text-transform: uppercase;
     }

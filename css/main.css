@@ -4877,7 +4877,7 @@ button.close {
 /*Hero services image*/
 .services-images {
   text-align: center;
-  background-color: #2d2e30;
+  background-color: #009046;
   overflow: hidden; }
   .services-images .btn-project {
     background-color: transparent;
@@ -4910,7 +4910,7 @@ button.close {
 
 /*Right side*/
 .words {
-  color: #2d2e30;
+  color: #009046;
   font-size: 0;
   line-height: 1; }
   .words span {
@@ -11954,55 +11954,22 @@ div.cs-skin-boxes:focus > span {
 .meet-us {
   padding-top: 30px;
   padding-bottom: 30px; }
-  .meet-us .meet-us--center {
-    width: 280px;
-    margin: auto; }
-    .meet-us .meet-us--center h1 {
-      font-family: "DINBlack";
-      text-transform: uppercase;
-      /*@include black;*/
-      color: #171717;
-      font-size: 26px;
-      margin-top: 0;
-      margin-bottom: 10px; }
-    .meet-us .meet-us--center ul {
-      padding-left: 0px; }
-      .meet-us .meet-us--center ul li {
-        display: inline-block; }
-        .meet-us .meet-us--center ul li a {
-          color: #fff;
-          font-family: "DINMedium";
-          font-size: 15px;
-          background-color: #009046;
-          border: 2px solid #009046;
-          padding: 5px 8px;
-          margin-top: 5px;
-          /*@include medium;*/
-          -webkit-transition: 0.3s;
-          -moz-transition: 0.3s;
-          -ms-transition: 0.3s;
-          transition: 0.3s; }
-          .meet-us .meet-us--center ul li a img {
-            width: 15px;
-            display: inline-block;
-            vertical-align: middle; }
-          .meet-us .meet-us--center ul li a:hover {
-            color: #009046;
-            background-color: #fff;
-            -webkit-transition: 0.3s;
-            -moz-transition: 0.3s;
-            -ms-transition: 0.3s;
-            transition: 0.3s; }
-      .meet-us .meet-us--center ul .meet-us--fb {
-        float: right; }
+  .meet-us h3 {
+    font-family: "DINBlack";
+    font-size: 21px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 7px; }
+  .meet-us .btn-get--touch {
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    margin-top: -3px; }
   @media all and (min-width: 768px) {
     .meet-us {
-      padding-top: 60px;
-      padding-bottom: 60px; }
-      .meet-us .meet-us--center {
-        width: 325px; }
-        .meet-us .meet-us--center h1 {
-          font-size: 30px; } }
+      padding-top: 50px;
+      padding-bottom: 50px; }
+      .meet-us h3 {
+        text-align: right; } }
 
 /*Pop up*/
 .dialog {

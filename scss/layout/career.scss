@@ -226,57 +226,23 @@
 .meet-us{
   padding-top: 30px;
   padding-bottom: 30px;
-  .meet-us--center{
-    width: 280px;
-    margin: auto;
-    h1{
-      font-family: "DINBlack";
-      text-transform: uppercase;
-      /*@include black;*/
-      color: #171717;
-      font-size: 26px;
-      margin-top: 0;
-      margin-bottom: 10px;
-    }
-    ul{
-      padding-left: 0px;
-      li{
-        display: inline-block;
-        a{
-          color: #fff;
-          font-family: "DINMedium";
-          font-size: 15px;
-          background-color: #009046;
-          border: 2px solid #009046;
-          padding: 5px 8px;
-          margin-top: 5px;
-          /*@include medium;*/
-          @include transition(.3s);
-          img{
-            width: 15px;
-            display: inline-block;
-            vertical-align: middle;
-          }
-          &:hover{
-            color: #009046;
-            background-color: #fff;
-            @include transition(.3s);
-          }
-        }     
-      }
-      .meet-us--fb{
-        float: right;
-      }
-    }
+  h3{
+    font-family: "DINBlack";    
+    font-size: 21px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 7px;
+  }
+  .btn-get--touch{
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    margin-top: -3px;
   }
   @media all and (min-width: $screen-sm) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    .meet-us--center{
-      width: 325px;
-      h1{
-        font-size: 30px;
-      }
+    padding-top: 50px;
+    padding-bottom: 50px;
+    h3{
+      text-align: right;
     }
   }
 }

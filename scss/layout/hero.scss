@@ -295,7 +295,6 @@
   line-height: 1;
   span {
     font-family: "DINBlack";
-    font-size: 70px;
     display: inline-block;
     animation: move 2s ease-in-out infinite;
     &:nth-child(2) { animation-delay: 0.5s; }
@@ -309,9 +308,33 @@
     &:nth-child(10) { animation-delay: 4.5s; }
     &:nth-child(11) { animation-delay: 5.0s; }
   }
+  @media all and (min-width: $screen-sm){
+    span{      
+      font-size: 50px;
+    }
+  }
+  @media all and (min-width: $screen-md){
+    span{      
+      font-size: 60px;
+    }
+  }
+  @media all and (min-width: $screen-lg){
+    span{      
+      font-size: 70px;
+    }
+  }
 }
+
 .word-top{
-  padding-top: 60px;
+  @media all and (min-width: $screen-sm){
+    padding-top: 80px;
+  }
+  @media all and (min-width: $screen-md){
+    padding-top: 60px;
+  }
+  @media all and (min-width: $screen-lg){
+    padding-top: 60px;
+  }
 }
 
 @keyframes move {

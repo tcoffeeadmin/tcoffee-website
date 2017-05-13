@@ -5304,10 +5304,11 @@ button.close {
       position: relative; }
       .contant-home .contant-home--inner .contant-form--home .contant-form--home_image {
         height: 365px;
-        background-image: url(../images/contact-home.jpg);
+        background-image: url(../images/Contact_image.svg);
         background-size: cover;
         background-position: center;
-        background-repeat: no-repeat; }
+        background-repeat: no-repeat;
+        background-color: #009046; }
       .contant-home .contant-home--inner .contant-form--home .contant-form--home_form {
         height: auto;
         background-color: #252527;
@@ -6319,7 +6320,7 @@ header {
         text-transform: uppercase;
         line-height: 20px; }
   .about-inner .about-inner--img {
-    background-image: url(../images/about.jpg);
+    background-image: url(../images/Team_member_image.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }
@@ -11201,7 +11202,7 @@ div.cs-skin-boxes:focus > span {
         text-transform: uppercase;
         line-height: 20px; }
   .portfolio-inner .portfolio-inner--img {
-    background-image: url(../images/about.jpg);
+    background-image: url(../images/Portfolio_image.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }

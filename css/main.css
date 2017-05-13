@@ -4896,11 +4896,23 @@ button.close {
     right: 0;
     left: 0;
     width: 135px;
-    margin: auto; }
+    margin: auto;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    transition: 0.2s; }
     .services-images .btn-project:hover {
       border-color: #009046;
       background-color: #009046;
-      color: #fff; }
+      color: #fff;
+      -webkit-transition: 0.2s;
+      -moz-transition: 0.2s;
+      -ms-transition: 0.2s;
+      transition: 0.2s;
+      -webkit-box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.47);
+      -moz-box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.47);
+      -ms-box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.47);
+      box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.47); }
   @media all and (min-width: 768px) {
     .services-images {
       height: 400px; } }
@@ -5228,11 +5240,19 @@ button.close {
   padding: 10px 15px;
   display: table;
   margin: auto;
-  margin-top: 20px; }
+  margin-top: 20px;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s; }
   .btn-portfolio:hover {
     border-color: #009046;
     background-color: #009046;
-    color: #fff; }
+    color: #fff;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    transition: 0.2s; }
   @media all and (min-width: 1200px) {
     .btn-portfolio {
       margin-top: 12px; } }
@@ -5315,17 +5335,17 @@ button.close {
             color: #c7bcbc;
             text-transform: uppercase;
             float: right;
-            -webkit-transition: 0.1s;
-            -moz-transition: 0.1s;
-            -ms-transition: 0.1s;
-            transition: 0.1s; }
+            -webkit-transition: 0.2s;
+            -moz-transition: 0.2s;
+            -ms-transition: 0.2s;
+            transition: 0.2s; }
             .contant-home .contant-home--inner .contant-form--home .contant-form--home_form .form-inner .btn-confirm:hover {
               color: #007f5d;
               border-bottom-color: #007f5d !important;
-              -webkit-transition: 0.1s;
-              -moz-transition: 0.1s;
-              -ms-transition: 0.1s;
-              transition: 0.1s; }
+              -webkit-transition: 0.2s;
+              -moz-transition: 0.2s;
+              -ms-transition: 0.2s;
+              transition: 0.2s; }
             .contant-home .contant-home--inner .contant-form--home .contant-form--home_form .form-inner .btn-confirm:focus {
               outline: none !important; }
   @media all and (min-width: 768px) {

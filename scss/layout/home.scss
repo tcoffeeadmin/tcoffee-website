@@ -374,10 +374,12 @@
   display: table;
   margin: auto;
   margin-top: 20px;
+  @include transition(.2s);
   &:hover{
     border-color: #009046;
     background-color: #009046;
     color: #fff;
+    @include transition(.2s);
   }
   @media all and (min-width: $screen-sm) {
     // Tablet
@@ -475,11 +477,11 @@
             color: #c7bcbc;
             text-transform: uppercase;
             float: right;
-            @include transition(.1s);
+            @include transition(.2s);
             &:hover{
               color: #007f5d;
               border-bottom-color: #007f5d !important;
-              @include transition(.1s);
+              @include transition(.2s);
             }
             &:focus{
               outline: none !important;

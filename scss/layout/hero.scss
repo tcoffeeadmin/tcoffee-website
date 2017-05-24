@@ -236,16 +236,43 @@
 .btn-project{
     @include border-radius(0px);
     @include transition(.3s);
-    border: 2px solid #009046;
-    color: #009046;
-    font-family: "DINLight";
+    border: 2px solid #000;
+    color: #000;
+    font-family: "DINMedium";
     background-color: transparent;
-    font-size: 13px;
-    padding: 10px 12px;
-    &:hover{
-        color: #fff;
-        background-color: #009046;
+    font-size: 18px;
+    padding: 15px 25px;
+    position: relative;
+    .btn-line{
+        width: 45px;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        top: 28px;
+        left: -30px;
         @include transition(.3s);
+    }
+    .fa{
+        position: absolute;
+        top: 14px;
+        font-size: 28px;
+        color: #000;
+        left: 8px;
+        @include transition(.3s);
+    }
+    &:hover{
+        color: #009046;
+        border-color: #009046;
+        .btn-line{
+            @include transition(.3s);
+            background-color: #009046;
+            left: -20px;
+        }
+        .fa{
+            @include transition(.3s);
+            left:18px;
+            color: #009046;
+        }
     }
 }
 

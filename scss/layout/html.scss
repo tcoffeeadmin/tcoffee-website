@@ -47,10 +47,10 @@ a:hover, a:focus{
   margin: auto;
   left: 0;
   right: 0;
-  bottom: 70px;
+  bottom: 60%;
   height: initial !important;
   @media all and (min-width: $screen-sm){
-
+  bottom: 70px;
   }
   @media all and (min-width: $screen-md){
 

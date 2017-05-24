@@ -5394,8 +5394,11 @@ a:hover, a:focus {
   margin: auto;
   left: 0;
   right: 0;
-  bottom: 70px;
+  bottom: 60%;
   height: initial !important; }
+  @media all and (min-width: 768px) {
+    .down-click {
+      bottom: 70px; } }
 
 /*Down button inner pages*/
 .down-btn--inner {

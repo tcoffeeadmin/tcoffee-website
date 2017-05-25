@@ -4867,7 +4867,8 @@ button.close {
   background-color: transparent;
   font-size: 16px;
   padding: 7px 20px;
-  position: relative; }
+  position: relative;
+  width: 146.59px; }
   .btn-project .btn-line {
     width: 35px;
     height: 2px;
@@ -5170,7 +5171,8 @@ button.close {
     font-size: 24px;
     position: absolute;
     top: 40%;
-    left: -10px; }
+    left: -10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55); }
   @media all and (min-width: 620px) {
     .box {
       margin-left: 15px;

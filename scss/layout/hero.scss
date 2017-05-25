@@ -169,7 +169,9 @@
 
   }
   @media all and (min-width: $screen-xlg){
-
+    .services-slider--item{
+      height: 250px;
+    }
   }
 }
 
@@ -229,6 +231,11 @@
         left: 17%;
         font-size: 30px;
       }
+    }
+  }
+  @media all and (min-width: $screen-xlg){
+    .services-slider--item_head{
+      top: 38%;
     }
   }
 }

@@ -4866,14 +4866,14 @@ button.close {
   font-family: "DINMedium";
   background-color: transparent;
   font-size: 16px;
-  padding: 10px 20px;
+  padding: 7px 20px;
   position: relative; }
   .btn-project .btn-line {
     width: 35px;
     height: 2px;
     background-color: #000;
     position: absolute;
-    top: 20px;
+    top: 18.1px;
     left: -20px;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
@@ -4881,7 +4881,7 @@ button.close {
     transition: 0.3s; }
   .btn-project .fa {
     position: absolute;
-    top: 8px;
+    top: 6px;
     font-size: 24px;
     color: #000;
     left: 8px;
@@ -4914,7 +4914,7 @@ button.close {
   margin: auto; }
   .hero-tittle h1 {
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
     color: #000000;
     text-transform: uppercase;
     font-size: 30px;
@@ -4929,7 +4929,7 @@ button.close {
   @media all and (min-width: 992px) {
     .hero-tittle {
       padding-top: 35px;
-      padding-bottom: 20px; } }
+      padding-bottom: 15px; } }
   @media all and (min-width: 1200px) {
     .hero-tittle {
       /*padding-bottom: 20px;*/ } }
@@ -5027,7 +5027,7 @@ button.close {
     z-index: 1; }
 
 .glide--horizontal .glide__arrows {
-  bottom: 8px;
+  bottom: 14px;
   width: 51%;
   left: 0;
   right: 0;
@@ -5072,7 +5072,7 @@ button.close {
     bottom: 0; }
 
 .glide--horizontal .glide__bullets {
-  bottom: 8px;
+  bottom: 15px;
   left: 0;
   right: 0;
   margin: auto;
@@ -5199,7 +5199,6 @@ button.close {
 .btn-portfolio {
   border-color: #fff;
   color: #fff;
-  text-transform: capitalize;
   display: table;
   margin: auto;
   margin-top: 20px; }
@@ -5209,7 +5208,7 @@ button.close {
     color: #fff; }
   @media all and (min-width: 1200px) {
     .btn-portfolio {
-      margin-top: 12px; } }
+      margin-top: 15px; } }
 
 .glide__bullet {
   display: none; }

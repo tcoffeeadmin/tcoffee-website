@@ -120,7 +120,7 @@
 }
 
 .glide--horizontal .glide__arrows {
-    bottom: 8px;
+    bottom: 14px;
     width: 51%;
     left: 0;
     right: 0;
@@ -182,7 +182,7 @@
 }
 
 .glide--horizontal .glide__bullets {
-    bottom: 8px;
+    bottom: 15px;
     left: 0;
     right: 0;
     margin: auto;
@@ -365,7 +365,6 @@
 .btn-portfolio{
     border-color: #fff;
     color: #fff;
-    text-transform: capitalize;
     display: table;
     margin: auto;
     margin-top: 20px;
@@ -383,7 +382,7 @@
     }
     @media all and (min-width: $screen-lg) {
         // Desktop
-        margin-top: 12px;
+        margin-top: 15px;
     }
 }
 

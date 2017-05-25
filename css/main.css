@@ -5036,6 +5036,9 @@ button.close {
   @media all and (min-width: 768px) {
     .glide--horizontal .glide__arrows {
       /*bottom: 3%;*/ } }
+  @media all and (min-width: 1200px) {
+    .glide--horizontal .glide__arrows {
+      bottom: 74px; } }
 
 .glide--vertical .glide__arrows {
   left: 50%;
@@ -5081,6 +5084,9 @@ button.close {
   text-align: center;
   border-bottom: 1px solid #fff;
   border-bottom-style: dashed; }
+  @media all and (min-width: 1400px) {
+    .glide--horizontal .glide__bullets {
+      bottom: 75px; } }
 
 .glide--vertical .glide__bullets {
   top: 50%;
@@ -5193,7 +5199,7 @@ button.close {
       height: 475px; } }
   @media all and (min-width: 1400px) {
     .box {
-      height: 625px; } }
+      height: 505px; } }
 
 /*Portfolio button*/
 .btn-portfolio {
@@ -5209,6 +5215,9 @@ button.close {
   @media all and (min-width: 1200px) {
     .btn-portfolio {
       margin-top: 15px; } }
+  @media all and (min-width: 1400px) {
+    .btn-portfolio {
+      margin-top: 0px; } }
 
 .glide__bullet {
   display: none; }

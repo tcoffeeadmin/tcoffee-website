@@ -133,7 +133,7 @@
 
     }
     @media all and (min-width: $screen-lg){
-
+        bottom: 74px;
     }
 }
 
@@ -191,6 +191,18 @@
     text-align: center;
     border-bottom: 1px solid #fff;
     border-bottom-style: dashed;
+    @media all and (min-width: $screen-sm){
+
+    }
+    @media all and (min-width: $screen-md){
+
+    }
+    @media all and (min-width: $screen-lg){
+
+    }
+    @media all and (min-width: $screen-xlg){
+        bottom: 75px;
+    }
 }
 
 .glide--vertical .glide__bullets {
@@ -356,7 +368,7 @@
     }
     @media all and (min-width: $screen-xlg) {
         // Desktop
-        height: 625px;
+        height: 505px;
     }
 }
 
@@ -383,6 +395,10 @@
     @media all and (min-width: $screen-lg) {
         // Desktop
         margin-top: 15px;
+    }
+    @media all and (min-width: $screen-xlg) {
+        // Desktop
+        margin-top: 0px;
     }
 }
 

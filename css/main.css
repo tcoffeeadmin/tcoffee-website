@@ -4698,8 +4698,10 @@ button.close {
       position: relative;
       height: 100%; }
   @media all and (min-width: 768px) {
-    .hero .hero-inner .container {
-      width: 720px; } }
+    .hero {
+      background-color: #ffffff; }
+      .hero .hero-inner .container {
+        width: 720px; } }
   @media all and (min-width: 992px) {
     .hero .hero-inner {
       padding-bottom: 0px; }
@@ -5463,17 +5465,17 @@ body, html {
   padding: 0px;
   height: 100%; }
   body::-webkit-scrollbar, html::-webkit-scrollbar {
-    width: 8px; }
+    width: 5px; }
   body::-webkit-scrollbar-track, html::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: transparent;
     /*@include border-radius(10px);*/ }
   body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
-    background-color: #009046;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    border-radius: 10px; }
+    background-color: #ccc8c8;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px; }
 
 .rem-pad {
   padding-left: 0px !important;

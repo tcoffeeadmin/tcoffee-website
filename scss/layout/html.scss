@@ -4,7 +4,7 @@ body, html{
   padding: 0px;
   height: 100%;
   &::-webkit-scrollbar {
-    width: 8px;
+    width: 5px;
   }
   &::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -12,8 +12,8 @@ body, html{
     /*@include border-radius(10px);*/
   }
   &::-webkit-scrollbar-thumb {
-    background-color: #009046;
-    @include border-radius(10px);
+    background-color: #ccc8c8;
+    @include border-radius(20px);
   }
 }
 .rem-pad{

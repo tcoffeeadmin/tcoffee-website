@@ -5005,14 +5005,6 @@ button.close {
   @media all and (min-width: 768px) {
     .video-container {
       background: #000000; } }
-  @media all and (min-width: 992px) {
-    .video-container video.fillWidth {
-      /*width: 100% !Important;*/
-      /*height: 100% !important;*/ } }
-  @media all and (min-width: 1200px) {
-    .video-container video.fillWidth {
-      width: auto !important;
-      height: auto !important; } }
 
 /*Portfolio*/
 .portfolios-home {

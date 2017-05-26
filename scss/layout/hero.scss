@@ -396,5 +396,8 @@
   }
   @media all and (min-width: $screen-lg) {
     // Desktop
+    video {
+      top: auto;
+    }
   } 
 }

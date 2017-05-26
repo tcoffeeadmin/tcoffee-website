@@ -5224,15 +5224,22 @@ button.close {
 
 /*Portfolio button*/
 .btn-portfolio {
-  border-color: #fff;
-  color: #fff;
+  border-color: #fff !important;
+  color: #fff !important;
   display: table;
   margin: auto;
   margin-top: 20px; }
   .btn-portfolio .btn-line {
-    background-color: #fff; }
+    background-color: #fff !important; }
   .btn-portfolio .fa {
-    color: #fff; }
+    color: #fff !important; }
+  .btn-portfolio:hover {
+    color: #009046 !important;
+    border-color: #009046 !important; }
+    .btn-portfolio:hover .btn-line {
+      background-color: #009046 !important; }
+    .btn-portfolio:hover .fa {
+      color: #009046 !important; }
   @media all and (min-width: 1200px) {
     .btn-portfolio {
       margin-top: 15px; } }
@@ -12842,11 +12849,11 @@ div.cs-skin-boxes:focus > span {
       width: 40px;
       height: 40px;
       display: block;
-      border: 1px solid #ffffff;
+      border: 1px solid #000000;
       font-size: 20px;
       padding: 5px 0;
       text-align: center;
-      color: #ffffff;
+      color: #000000;
       -webkit-border-radius: 100%;
       -moz-border-radius: 100%;
       -ms-border-radius: 100%;
@@ -12863,6 +12870,11 @@ div.cs-skin-boxes:focus > span {
         -moz-transition: 0.3s;
         -ms-transition: 0.3s;
         transition: 0.3s; }
+
+@media all and (min-width: 768px) {
+  .hero-inner--social ul li a {
+    border: 1px solid #ffffff;
+    color: #ffffff; } }
 
 @media all and (min-width: 992px) {
   .hero-inner--social ul {
@@ -12985,8 +12997,8 @@ div.cs-skin-boxes:focus > span {
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   transition: 0.3s;
-  border: 2px solid #ffffff;
-  color: #ffffff;
+  border: 2px solid #000000;
+  color: #000000;
   font-family: "DINMedium";
   background-color: transparent;
   font-size: 16px;
@@ -12996,7 +13008,7 @@ div.cs-skin-boxes:focus > span {
   .btn-project .btn-line {
     width: 35px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: #000000;
     position: absolute;
     top: 18.1px;
     left: -20px;
@@ -13008,7 +13020,7 @@ div.cs-skin-boxes:focus > span {
     position: absolute;
     top: 6px;
     font-size: 24px;
-    color: #ffffff;
+    color: #000000;
     left: 8px;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
@@ -13031,6 +13043,14 @@ div.cs-skin-boxes:focus > span {
       transition: 0.3s;
       left: 14px;
       color: #009046; }
+  @media all and (min-width: 768px) {
+    .btn-project {
+      border: 2px solid #ffffff;
+      color: #ffffff; }
+      .btn-project .btn-line {
+        background-color: #ffffff; }
+      .btn-project .fa {
+        color: #ffffff; } }
 
 .hero-tittle {
   padding-bottom: 0px;
@@ -13040,7 +13060,7 @@ div.cs-skin-boxes:focus > span {
   .hero-tittle h1 {
     margin-top: 0px;
     margin-bottom: 18px;
-    color: #ffffff;
+    color: #000000;
     text-transform: uppercase;
     font-size: 30px;
     font-family: "DINBlack"; }
@@ -13050,7 +13070,8 @@ div.cs-skin-boxes:focus > span {
     .hero-tittle {
       width: 375px; }
       .hero-tittle h1 {
-        font-size: 55px; } }
+        font-size: 55px;
+        color: #ffffff; } }
   @media all and (min-width: 992px) {
     .hero-tittle {
       padding-top: 35px;
@@ -13098,3 +13119,9 @@ div.cs-skin-boxes:focus > span {
   @media all and (min-width: 768px) {
     .video-container {
       background: #000000; } }
+  @media all and (min-width: 992px) {
+    .video-container video.fillWidth {
+      height: 100% !important; } }
+  @media all and (min-width: 1200px) {
+    .video-container video.fillWidth {
+      height: auto !important; } }

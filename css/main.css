@@ -4691,7 +4691,8 @@ button.close {
   .hero .hero-inner {
     background-color: #a7f5e9;
     position: relative;
-    padding-bottom: 25px; }
+    padding-bottom: 25px;
+    overflow: hidden; }
     .hero .hero-inner .container {
       width: 100%;
       position: relative;
@@ -4990,7 +4991,7 @@ button.close {
   left: 0%;
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
   background: #a7f5e9; }
   .video-container .poster img {
     width: 100%;

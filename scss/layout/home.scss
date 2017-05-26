@@ -376,16 +376,16 @@
 
 /*Portfolio button*/
 .btn-portfolio{
-    border-color: #fff !important;
-    color: #fff !important;
+    border-color: #fff;
+    color: #fff;
     display: table;
     margin: auto;
     margin-top: 20px;
     .btn-line{
-        background-color: #fff !important;
+        background-color: #fff;
     }
     .fa{
-        color: #fff !important;
+        color: #fff;
     }
     @media all and (min-width: $screen-sm) {
         // Tablet

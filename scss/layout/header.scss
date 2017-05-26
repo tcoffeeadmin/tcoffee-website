@@ -53,6 +53,16 @@ header{
   }
 }
 
+header{
+  .header-right--cantact_home{
+    li{
+      a{
+        color: #fff;
+      }
+    }
+  }
+}
+
 /*Fixed menu*/
 .nav-fixed{
   position: fixed;

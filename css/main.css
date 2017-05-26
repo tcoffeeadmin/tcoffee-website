@@ -5224,15 +5224,15 @@ button.close {
 
 /*Portfolio button*/
 .btn-portfolio {
-  border-color: #fff;
-  color: #fff;
+  border-color: #fff !important;
+  color: #fff !important;
   display: table;
   margin: auto;
   margin-top: 20px; }
   .btn-portfolio .btn-line {
-    background-color: #fff; }
+    background-color: #fff !important; }
   .btn-portfolio .fa {
-    color: #fff; }
+    color: #fff !important; }
   @media all and (min-width: 1200px) {
     .btn-portfolio {
       margin-top: 15px; } }
@@ -13075,19 +13075,15 @@ div.cs-skin-boxes:focus > span {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background: #000; }
+  background: #a7f5e9; }
   .video-container .poster img {
     width: 100%;
     bottom: 0;
     position: absolute; }
-  .video-container .filter {
-    z-index: 100;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.4);
-    width: 100%; }
   .video-container video {
     position: absolute;
     z-index: 0;
     bottom: 0; }
     .video-container video.fillWidth {
-      width: 100%; }
+      width: 100%;
+      height: 100% !important; }

@@ -6347,7 +6347,7 @@ header .header-right--cantact_home li a {
         font-family: "DINMedium";
         /*@include light;*/
         color: #fff;
-        text-transform: uppercase;
+        /*text-transform: uppercase;*/
         line-height: 20px; }
   .about-inner .about-inner--img {
     background-image: url(../images/Team_member_image.svg);
@@ -9653,7 +9653,7 @@ header .header-right--cantact_home li a {
       font-size: 16px;
       /*@include light;*/
       margin-bottom: 0;
-      text-transform: uppercase; }
+      /*text-transform: uppercase;*/ }
     .single-service .single-service--item .left-shape {
       position: absolute;
       height: 100%;
@@ -9766,7 +9766,7 @@ header .header-right--cantact_home li a {
         /*@include medium;*/
         font-size: 13px;
         margin-bottom: 0;
-        text-transform: uppercase;
+        /*text-transform: uppercase;*/
         text-align: justify;
         z-index: 2; }
   .contact-box--inner .contact-box--inner_click {
@@ -11231,7 +11231,7 @@ div.cs-skin-boxes:focus > span {
         font-family: "DINMedium";
         /*@include medium;*/
         color: #fff;
-        text-transform: uppercase;
+        /*text-transform: uppercase;*/
         line-height: 20px; }
   .portfolio-inner .portfolio-inner--img {
     background-image: url(../images/Portfolio_image.svg);
@@ -11515,7 +11515,7 @@ div.cs-skin-boxes:focus > span {
       font-size: 24px; }
     .show .inner-content .inner-content--content .inner-content--content_box p {
       font-family: "DINMedium";
-      text-transform: uppercase;
+      /*text-transform: uppercase;*/
       /*@include medium;*/
       font-size: 15px;
       text-align: justify; }
@@ -11902,7 +11902,7 @@ div.cs-skin-boxes:focus > span {
         /*@include medium;*/
         color: #959595;
         font-size: 13px;
-        text-transform: uppercase;
+        /*text-transform: uppercase;*/
         line-height: 20px; }
       .career-inner .career-inner--content .career-inner--content_inner a {
         font-family: "DINMedium";

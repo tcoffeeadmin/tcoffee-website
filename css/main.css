@@ -6849,6 +6849,8 @@ header .header-right--cantact_home li a {
   margin-bottom: 15px; }
   .footer-logo a {
     display: inline-block; }
+    .footer-logo a img {
+      width: 185px; }
   @media all and (min-width: 768px) {
     .footer-logo {
       text-align: center;
@@ -13093,3 +13095,6 @@ div.cs-skin-boxes:focus > span {
     bottom: 0; }
     .video-container video.fillWidth {
       width: 100%; }
+  @media all and (min-width: 768px) {
+    .video-container {
+      background: #000000; } }

@@ -364,4 +364,14 @@
       width: 100%;
     }
   }
+  @media all and (min-width: $screen-sm) {
+    // Tablet
+    background: #000000;
+  }
+  @media all and (min-width: $screen-md) {
+    // Tablet
+  }
+  @media all and (min-width: $screen-lg) {
+    // Desktop
+  } 
 }

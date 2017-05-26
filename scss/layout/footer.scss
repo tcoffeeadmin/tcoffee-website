@@ -25,6 +25,9 @@
   margin-bottom: 15px;
   a{
     display: inline-block;
+    img{
+      width: 185px;
+    }
   }
   @media all and (min-width: $screen-sm) {    
     // Tablet

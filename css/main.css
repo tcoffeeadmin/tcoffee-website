@@ -4807,6 +4807,7 @@ button.close {
   background-color: #0a0a0a; }
 
 .services-slider .services-slider--item {
+  height: 101px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
@@ -9343,7 +9344,7 @@ header .header-right--cantact_home li a {
   transition: 0.2s; }
   .services-box--inner_image .services-box--inner_image-head {
     position: absolute;
-    top: 55px;
+    top: 50px;
     z-index: 2;
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
@@ -9353,7 +9354,7 @@ header .header-right--cantact_home li a {
     /*display: none;*/
     visibility: visible;
     position: absolute;
-    top: 107px;
+    top: 98px;
     z-index: 2;
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;

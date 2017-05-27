@@ -139,7 +139,7 @@
   @include transition(.2s);
   .services-box--inner_image-head{
     position: absolute;
-    top: 55px;
+    top: 50px;
     z-index: 2;
     @include transition(.2s);
   }
@@ -147,7 +147,7 @@
     /*display: none;*/
     visibility: visible;
     position: absolute;
-    top: 107px;
+    top: 98px;
     z-index: 2;
     @include transition(.2s);
   }

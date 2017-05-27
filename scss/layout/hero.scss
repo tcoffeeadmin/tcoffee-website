@@ -159,6 +159,7 @@
     background-color: #0a0a0a;
   }
   .services-slider--item{
+    height: 101px;
     @include transition(.3s);
     cursor: pointer;
     &:hover{

@@ -50,7 +50,7 @@ a:hover, a:focus{
   bottom: 60%;
   height: initial !important;
   @media all and (min-width: $screen-sm){
-  bottom: 70px;
+    bottom: 70px;
   }
   @media all and (min-width: $screen-md){
 
@@ -171,6 +171,9 @@ a:hover, a:focus{
 }
 
 .down-btn--home{
+  .down-btn--circle{
+    background-color: #f9eaea;
+  }
   right: 15px;
   @media all and (min-width: $screen-sm){
     right: 15px;

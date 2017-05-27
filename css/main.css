@@ -4772,7 +4772,7 @@ button.close {
     bottom: 0;
     right: 15px;
     margin: auto;
-    height: 100px; }
+    height: 205px; }
     .hero-inner--social ul li {
       margin: 9px 0;
       display: block; }
@@ -5596,6 +5596,8 @@ a:hover, a:focus {
 
 .down-btn--home {
   right: 15px; }
+  .down-btn--home .down-btn--circle {
+    background-color: #f9eaea; }
   @media all and (min-width: 768px) {
     .down-btn--home {
       right: 15px; } }

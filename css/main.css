@@ -9709,6 +9709,15 @@ header .header-right--cantact_home li a {
       font-size: 62px;
       line-height: 45px; } }
 
+/*Service scroll active*/
+.highlight .single-service--item h2 {
+  color: #009046; }
+
+.highlight .single-service--item .left-shape {
+  background-color: #009046; }
+  .highlight .single-service--item .left-shape .left-shape--inner {
+    background-color: #009046; }
+
 /*Services single*/
 .contact {
   background-color: #fff;

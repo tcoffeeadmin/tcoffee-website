@@ -98,7 +98,7 @@ and open the template in the editor.
               <div class="col-md-5 col-sm-5 col-xs-12 service-single--box_head">
                 <h1>web<br>development</h1>
                 <div class="line"></div>
-                <ul>
+                <ul id="services-item">
                   <li><a class="smoothScroll" href="#one">website</a></li>
                   <li><a class="smoothScroll" href="#two">e-commerce</a></li>
                   <li><a class="smoothScroll" href="#three">web app</a></li>
@@ -325,6 +325,15 @@ and open the template in the editor.
             navbar.removeClass('menu-visible');
           }
         });
+      });
+    </script>
+    <!--Service scroll active-->
+    <script>
+      $("#services-item li a").click(function (e) {
+        $('div').removeClass('highlight');
+        var hashId = this.hash.substr(1);
+        $('#' + hashId).addClass('highlight');
+        e.preventDefault();
       });
     </script>
   </body>

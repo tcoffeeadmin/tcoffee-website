@@ -225,3 +225,18 @@
     // Desktop
   }
 }
+
+/*Service scroll active*/
+.highlight{
+  .single-service--item{
+    h2{
+      color: #009046;
+    }
+    .left-shape{
+      background-color: #009046;
+      .left-shape--inner{
+        background-color: #009046;
+      }
+    }
+  }
+}

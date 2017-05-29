@@ -11560,12 +11560,13 @@ div.cs-skin-boxes:focus > span {
     padding-bottom: 0px;
     height: 425px; }
     .show .inner-content .inner-content--top .image_video {
-      width: 65%; }
-      .show .inner-content .inner-content--top .image_video img {
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0; }
+      width: 65%;
+      /*          img{            
+                      width: 100%;
+                                  position: absolute;
+                                  top: 50px;
+                                  left: 0;
+                    }*/ }
   .show .inner-content .inner-content--content {
     padding-top: 110px;
     padding-bottom: 50px; }
@@ -11863,6 +11864,9 @@ div.cs-skin-boxes:focus > span {
   padding: 40px 0;
   position: relative;
   height: 100%; }
+  .image_video .image_video--single {
+    height: 100%;
+    width: 100%; }
   .image_video .carousel {
     position: relative !important;
     width: 100%;
@@ -11896,6 +11900,9 @@ div.cs-skin-boxes:focus > span {
   @media all and (min-width: 768px) {
     .image_video {
       padding: 0; }
+      .image_video .image_video--single {
+        position: absolute;
+        top: 50px; }
       .image_video .carousel {
         position: absolute !important;
         top: 50px; } }

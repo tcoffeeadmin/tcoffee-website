@@ -426,12 +426,12 @@
         height: 425px;
         .image_video{
           width: 65%;
-          img{            
-            width: 100%;
-            position: absolute;
-            top: 50px;
-            left: 0;
-          }
+          /*          img{            
+                      width: 100%;
+                                  position: absolute;
+                                  top: 50px;
+                                  left: 0;
+                    }*/
         }
       }
       .inner-content--content{
@@ -774,6 +774,10 @@
   padding: 40px 0;
   position: relative;
   height: 100%;
+  .image_video--single{
+    height: 100%;
+    width: 100%;
+  }
   .carousel {
     position: relative !important;
     width: 100%;
@@ -814,6 +818,10 @@
   }
   @media all and (min-width: $screen-sm) {
     padding: 0;
+    .image_video--single{
+      position: absolute;
+      top: 50px;
+    }
     .carousel {
       position: absolute !important;
       top: 50px;

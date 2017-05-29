@@ -11495,9 +11495,7 @@ div.cs-skin-boxes:focus > span {
     border-radius: 10px; }
 
 .show .inner-content .inner-content--top {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  height: auto;
+  height: 315px;
   background-color: #171717; }
   .show .inner-content .inner-content--top .image_video {
     position: relative;
@@ -11558,7 +11556,7 @@ div.cs-skin-boxes:focus > span {
 
 @media all and (min-width: 768px) {
   .show .inner-content .inner-content--top {
-    padding-top: 50px;
+    /*padding-top: 50px;*/
     padding-bottom: 0px;
     height: 425px; }
     .show .inner-content .inner-content--top .image_video {
@@ -11710,8 +11708,8 @@ div.cs-skin-boxes:focus > span {
 .close {
   margin-top: 50px;
   margin-right: 0px;
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   display: block;
   border: 2px solid #fff;
   -webkit-border-radius: 50px;
@@ -11729,6 +11727,8 @@ div.cs-skin-boxes:focus > span {
     border-radius: 50px; }
   @media all and (min-width: 768px) {
     .close {
+      width: 40px;
+      height: 40px;
       margin-top: 50px;
       margin-right: 50px; } }
 
@@ -11856,6 +11856,49 @@ div.cs-skin-boxes:focus > span {
     -moz-border-radius: 0px;
     -ms-border-radius: 0px;
     border-radius: 0px; } }
+
+/*Pop up slider*/
+/********************************************************/
+.image_video {
+  padding: 40px 0;
+  position: relative;
+  height: 100%; }
+  .image_video .carousel {
+    position: relative !important;
+    width: 100%;
+    height: 100%;
+    top: 0px; }
+    .image_video .carousel .carousel-inner {
+      height: 100%; }
+      .image_video .carousel .carousel-inner .item {
+        height: 100%;
+        width: 100%; }
+        .image_video .carousel .carousel-inner .item img {
+          height: 100%;
+          width: 100%; }
+      .image_video .carousel .carousel-inner .item.active {
+        height: 100%;
+        width: 100%; }
+        .image_video .carousel .carousel-inner .item.active img {
+          height: 100%;
+          width: 100%; }
+    .image_video .carousel .carousel-control {
+      padding: 5px;
+      text-shadow: none !important;
+      color: #009046;
+      text-transform: capitalize;
+      background-image: none !important;
+      opacity: 1 !important;
+      height: 32px;
+      top: 48%; }
+      .image_video .carousel .carousel-control:hover {
+        opacity: 1 !important; }
+  @media all and (min-width: 768px) {
+    .image_video {
+      padding: 0; }
+      .image_video .carousel {
+        position: absolute !important;
+        top: 50px; } }
 
 /*Career*/
 .career {

@@ -11894,18 +11894,27 @@ div.cs-skin-boxes:focus > span {
       background-image: none !important;
       opacity: 1 !important;
       height: 32px;
+      width: 65px;
       top: 48%; }
       .image_video .carousel .carousel-control:hover {
         opacity: 1 !important; }
+    .image_video .carousel .left {
+      left: -30px !important; }
+    .image_video .carousel .right {
+      right: -30px !important; }
   @media all and (min-width: 768px) {
     .image_video {
       padding: 0; }
-      .image_video .image_video--single {
+      .image_video img {
         position: absolute;
         top: 50px; }
       .image_video .carousel {
         position: absolute !important;
-        top: 50px; } }
+        top: 50px; }
+        .image_video .carousel .left {
+          left: -78px !important; }
+        .image_video .carousel .right {
+          right: -78px !important; } }
 
 /*Career*/
 .career {

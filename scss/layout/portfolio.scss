@@ -810,21 +810,34 @@
       background-image: none !important;
       opacity: 1 !important;
       height: 32px;
+      width: 65px;
       top: 48%;
       &:hover{
         opacity: 1 !important;
       }
     }
+    .left{
+      left: -30px !important;
+    }
+    .right{
+      right: -30px !important;
+    }
   }
   @media all and (min-width: $screen-sm) {
     padding: 0;
-    .image_video--single{
+    img{
       position: absolute;
       top: 50px;
     }
     .carousel {
       position: absolute !important;
       top: 50px;
+      .left{
+        left: -78px !important;
+      }
+      .right{
+        right: -78px !important;
+      }
     }
   }
   @media all and (min-width: $screen-md) {

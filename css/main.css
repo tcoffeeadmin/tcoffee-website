@@ -11891,9 +11891,9 @@ div.cs-skin-boxes:focus > span {
       top: 48%; }
       .image_video .carousel .carousel-control:hover {
         opacity: 1 !important; }
-    .image_video .carousel .left {
+    .image_video .carousel .carousel-control.left {
       left: -30px !important; }
-    .image_video .carousel .right {
+    .image_video .carousel .carousel-control.right {
       right: -30px !important; }
   @media all and (min-width: 768px) {
     .image_video {

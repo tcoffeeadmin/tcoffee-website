@@ -11870,13 +11870,15 @@ div.cs-skin-boxes:focus > span {
         width: 100%; }
         .image_video .carousel .carousel-inner .item img {
           height: 100%;
-          width: 100%; }
+          width: 100%;
+          top: 0; }
       .image_video .carousel .carousel-inner .item.active {
         height: 100%;
         width: 100%; }
         .image_video .carousel .carousel-inner .item.active img {
           height: 100%;
-          width: 100%; }
+          width: 100%;
+          top: 0; }
     .image_video .carousel .carousel-control {
       padding: 5px;
       text-shadow: none !important;

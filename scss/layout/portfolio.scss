@@ -772,7 +772,8 @@
         width: 100%;
         img{
           height: 100%;
-          width: 100%;          
+          width: 100%;    
+          top: 0;
         }
       }
       .item.active{
@@ -780,7 +781,8 @@
         width: 100%;
         img{
           height: 100%;
-          width: 100%;          
+          width: 100%;   
+          top: 0;
         }
       }
     }

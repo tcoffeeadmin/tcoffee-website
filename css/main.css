@@ -11904,9 +11904,9 @@ div.cs-skin-boxes:focus > span {
       .image_video .carousel {
         position: absolute !important;
         top: 50px; }
-        .image_video .carousel .left {
+        .image_video .carousel .carousel-control.left {
           left: -78px !important; }
-        .image_video .carousel .right {
+        .image_video .carousel .carousel-control.right {
           right: -78px !important; } }
 
 /*Career*/

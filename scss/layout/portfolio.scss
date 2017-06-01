@@ -816,10 +816,10 @@
     .carousel {
       position: absolute !important;
       top: 50px;
-      .left{
+      .carousel-control.left{
         left: -78px !important;
       }
-      .right{
+      .carousel-control.right{
         right: -78px !important;
       }
     }

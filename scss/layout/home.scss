@@ -477,6 +477,7 @@
             padding-left: 0px !important;
             padding-right: 0px !important;
             font-family: "DINLight";
+            @include box-shadow(none);
             /*@include light;*/
             color: #c7bcbc;
             &:focus{

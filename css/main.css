@@ -11305,7 +11305,7 @@ div.cs-skin-boxes:focus > span {
   padding-bottom: 35px; }
   @media all and (min-width: 768px) {
     .portfolio-section {
-      padding-top: 50px; } }
+      padding-top: 70px; } }
 
 .portfolio-section_box {
   padding: 0 5px !important; }
@@ -11350,21 +11350,6 @@ div.cs-skin-boxes:focus > span {
       width: 100%;
       overflow-x: hidden;
       /*padding-bottom: 20px;*/ }
-      .portfolio-section--tabs .tab-pane .tab-pane--inner .tab-pane--inner_portfolio::-webkit-scrollbar {
-        height: 10px;
-        border: 2px solid #222222;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        -ms-border-radius: 15px;
-        border-radius: 15px; }
-      .portfolio-section--tabs .tab-pane .tab-pane--inner .tab-pane--inner_portfolio::-webkit-scrollbar-track {
-        /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/ }
-      .portfolio-section--tabs .tab-pane .tab-pane--inner .tab-pane--inner_portfolio::-webkit-scrollbar-thumb {
-        background-color: #009046;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        -ms-border-radius: 15px;
-        border-radius: 15px; }
 
 /*Portfolio images*/
 .portfolio-images {
@@ -11486,17 +11471,17 @@ div.cs-skin-boxes:focus > span {
   left: 0;
   overflow-y: scroll; }
   .column div .show::-webkit-scrollbar, #nav div .show::-webkit-scrollbar {
-    width: 8px; }
+    width: 5px; }
   .column div .show::-webkit-scrollbar-track, #nav div .show::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: transparent;
     /*@include border-radius(10px);*/ }
   .column div .show::-webkit-scrollbar-thumb, #nav div .show::-webkit-scrollbar-thumb {
-    background-color: #009046;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    border-radius: 10px; }
+    background-color: #ccc8c8;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px; }
 
 .show .inner-content .inner-content--top {
   height: 315px;

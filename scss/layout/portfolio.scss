@@ -136,7 +136,7 @@
   padding-bottom: 35px;
   @media all and (min-width: $screen-sm) {
     // Tablet
-    padding-top: 50px;
+    padding-top: 70px;
   }
 }
 
@@ -201,30 +201,9 @@
       .tab-pane--inner_portfolio{
         width: 100%;
         overflow-x: hidden;
-        /*padding-bottom: 20px;*/
-        &::-webkit-scrollbar {
-          height: 10px;
-          border: 2px solid #222222;
-          @include border-radius(15px);
-        }
-        &::-webkit-scrollbar-track {
-          /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
-        }
-        &::-webkit-scrollbar-thumb {
-          background-color: #009046;
-          @include border-radius(15px);
-        }   
+        /*padding-bottom: 20px;*/   
       }
     }
-  }
-  @media all and (min-width: $screen-sm) {
-    // Tablet
-  }  
-  @media all and (min-width: $screen-md) {
-    // Tablet
-  }
-  @media all and (min-width: $screen-lg) {
-    // Desktop
   }
 }
 
@@ -343,7 +322,7 @@
   left: 0;
   overflow-y: scroll;
   &::-webkit-scrollbar {
-    width: 8px;
+    width: 5px;
   }
   &::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -351,8 +330,8 @@
     /*@include border-radius(10px);*/
   }
   &::-webkit-scrollbar-thumb {
-    background-color: #009046;
-    @include border-radius(10px);
+    background-color: #ccc8c8;
+    @include border-radius(20px);
   }
 }
 

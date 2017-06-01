@@ -53,9 +53,19 @@
   padding-top: 25px;
   padding-bottom: 35px;
   .services-box--inner_image{
+    position: relative;
     height: 240px;
     background-size: cover;
     background-repeat: no-repeat;
+    a{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 9;
+      padding: 15px;
+    }
     h1{
       color: #fff;
       text-transform: uppercase;

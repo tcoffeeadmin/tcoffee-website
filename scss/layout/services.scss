@@ -184,13 +184,13 @@
       background: #171717;
       @include transition(.2s);
       .services-box--inner_image-head{
-        top: 115px;
+        top: 95px;
         @include transition(.2s);
       }
       .services-box--inner_image-content{
         /*display: block;*/
         visibility: visible;
-        top: 190px;
+        top: 155px;
         @include transition(.2s);
       }
       .line{
@@ -205,7 +205,15 @@
       top: 150px;
     }
     .services-box--inner_image-content{
-      top: 150px;
+      top: 120px;
+    }
+    &:hover{
+      .services-box--inner_image-head{
+        top: 80px;
+      }
+      .services-box--inner_image-content{
+        top: 155px;
+      }
     }
   }
   @media all and (min-width: $screen-lg) {

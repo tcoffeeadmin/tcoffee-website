@@ -9404,7 +9404,7 @@ header .header-right--cantact_home li a {
       -ms-transition: 0.2s;
       transition: 0.2s; }
       .services-box--inner_image:hover .services-box--inner_image-head {
-        top: 115px;
+        top: 95px;
         -webkit-transition: 0.2s;
         -moz-transition: 0.2s;
         -ms-transition: 0.2s;
@@ -9412,7 +9412,7 @@ header .header-right--cantact_home li a {
       .services-box--inner_image:hover .services-box--inner_image-content {
         /*display: block;*/
         visibility: visible;
-        top: 190px;
+        top: 155px;
         -webkit-transition: 0.2s;
         -moz-transition: 0.2s;
         -ms-transition: 0.2s;
@@ -9427,7 +9427,11 @@ header .header-right--cantact_home li a {
     .services-box--inner_image .services-box--inner_image-head {
       top: 150px; }
     .services-box--inner_image .services-box--inner_image-content {
-      top: 150px; } }
+      top: 120px; }
+    .services-box--inner_image:hover .services-box--inner_image-head {
+      top: 80px; }
+    .services-box--inner_image:hover .services-box--inner_image-content {
+      top: 155px; } }
 
 /*Services background*/
 .services-box--bg {

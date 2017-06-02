@@ -338,7 +338,7 @@
 .show{
   .inner-content{
     .inner-content--top{
-      height: 315px;
+      /*height: 315px;*/
       background-color: #171717;
       .image_video{
         position: relative;
@@ -411,6 +411,10 @@
                                   top: 50px;
                                   left: 0;
                     }*/
+          iframe{
+            position: absolute;
+            top: 50px;
+          }
         }
       }
       .inner-content--content{

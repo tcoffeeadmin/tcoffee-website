@@ -11497,7 +11497,7 @@ div.cs-skin-boxes:focus > span {
     border-radius: 20px; }
 
 .show .inner-content .inner-content--top {
-  height: 315px;
+  /*height: 315px;*/
   background-color: #171717; }
   .show .inner-content .inner-content--top .image_video {
     position: relative;
@@ -11569,6 +11569,9 @@ div.cs-skin-boxes:focus > span {
                                   top: 50px;
                                   left: 0;
                     }*/ }
+      .show .inner-content .inner-content--top .image_video iframe {
+        position: absolute;
+        top: 50px; }
   .show .inner-content .inner-content--content {
     padding-top: 110px;
     padding-bottom: 50px; }

@@ -334,11 +334,11 @@
     @include border-radius(20px);
   }
 }
-
+/*Inner*/
 .show{
   .inner-content{
     .inner-content--top{
-      /*height: 315px;*/
+      height: 315px;
       background-color: #171717;
       .image_video{
         position: relative;
@@ -746,12 +746,6 @@
       }
     }
   }  
-  @media all and (min-width: $screen-md) {
-
-  }
-  @media all and (min-width: $screen-lg) {
-
-  }
 }
 
 /*Pop up slider*/
@@ -764,78 +758,8 @@
     height: 100%;
     width: 100%;
   }
-  .carousel {
-    position: relative !important;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    .carousel-inner{
-      height: 100%;
-      .item{
-        height: 100%;
-        width: 100%;
-        img{
-          height: 100%;
-          width: 100%;    
-          top: 0;
-        }
-      }
-      .item.active{
-        height: 100%;
-        width: 100%;
-        img{
-          height: 100%;
-          width: 100%;   
-          top: 0;
-        }
-      }
-    }
-    .carousel-control{
-      padding: 5px;
-      text-shadow: none !important;
-      color: #009046;
-      text-transform: capitalize;
-      background-image: none !important;
-      opacity: 1 !important;
-      height: 32px;
-      width: 65px;
-      top: 48%;
-      &:hover{
-        opacity: 1 !important;
-      }
-    }
-    .carousel-control.left{
-      left: -30px !important;
-    }
-    .carousel-control.right{
-      right: -30px !important;
-    }
-  }
-  @media all and (min-width: $screen-sm) {
-    padding: 0;
-    img{
-      position: absolute;
-      top: 50px;
-    }
-    .carousel {
-      position: absolute !important;
-      top: 50px;
-      .carousel-control.left{
-        left: -78px !important;
-      }
-      .carousel-control.right{
-        right: -78px !important;
-      }
-    }
-  }
-  @media all and (min-width: $screen-md) {
-
-  }
-  @media all and (min-width: $screen-lg) {
-
-  }
 }
-/*******************************************************************************/
+/****************************************New slider***************************************/
 pgwSlideshow {
   height: 100%;
   width: 100%;
@@ -1060,7 +984,3 @@ pgwSlideshow {
     }
   }
 }
-
-/*
- * The media-queries are not used because IE8 doesn't support them.
- */

@@ -11939,7 +11939,7 @@ pgwSlideshow {
   text-align: center;
   position: relative;
   min-height: 150px;
-  height: 350px !important;
+  height: 100% !important;
   overflow: hidden; }
 
 .ps-current ul {
@@ -11949,7 +11949,16 @@ pgwSlideshow {
     height: 100%; }
     .ps-current ul li img {
       height: 100% !important;
-      width: 100% !important; }
+      width: 100% !important;
+      top: 0; }
+
+.pgwSlideshow {
+  height: 100% !important;
+  width: 100%; }
+  @media all and (min-width: 768px) {
+    .pgwSlideshow {
+      position: absolute;
+      top: 50px; } }
 
 .pgwSlideshow .ps-current > ul > li {
   text-align: center;

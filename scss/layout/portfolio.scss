@@ -213,12 +213,12 @@
   padding-right: 5px;
   margin-bottom: 0;
   width: auto;
-  display: inline-flex;
+  /*display: inline-flex;*/
   li{
     display: inline-block;
-    width: 160px;
-    height: 118px;
-    margin: 0 2px;
+    width: 48%;
+    height: auto;
+    margin: 3px 1px;
     position: relative;
     @include transition(.5s);
     img{
@@ -273,11 +273,17 @@
   }
   @media all and (min-width: $screen-sm) {
     li{
-      width: 210px;
-      height: 156px;
+      width: 24%;
     }
 
-  }  
+  }
+  @media all and (min-width: $screen-md) {
+    li{
+      width: 16%;
+    }
+
+  }
+
 }
 
 /*************************/
@@ -508,18 +514,20 @@
         h4{
           font-family: "DINMedium";
           /*@include black;*/
-          color:  #fff;
+          color:  #009046;
           text-transform: uppercase;
           margin: 0;
           font-size: 15px;
+          @include transition(.3s);
         }
         h5{
           font-family: "DINLight";
           /*@include medium;*/
-          color:  #fff;
+          color:  #009046;
           text-transform: uppercase;
           margin: 0;
           font-size: 16px;
+          @include transition(.3s);
         }
       }
       &:hover{
@@ -527,6 +535,14 @@
           background-color: #009046;
           bottom: 12px;
           @include transition(.3s);
+          h4{
+            color: #fff;
+            @include transition(.3s);
+          }
+          h5{
+            color: #fff;
+            @include transition(.3s);
+          }
           img{
             @include transition(.3s);
             opacity: 1;

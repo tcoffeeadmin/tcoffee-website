@@ -11370,12 +11370,12 @@ div.cs-skin-boxes:focus > span {
   padding-right: 5px;
   margin-bottom: 0;
   width: auto;
-  display: inline-flex; }
+  /*display: inline-flex;*/ }
   .portfolio-images li {
     display: inline-block;
-    width: 160px;
-    height: 118px;
-    margin: 0 2px;
+    width: 48%;
+    height: auto;
+    margin: 3px 1px;
     position: relative;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -11444,8 +11444,10 @@ div.cs-skin-boxes:focus > span {
       transition: 0.5s; }
   @media all and (min-width: 768px) {
     .portfolio-images li {
-      width: 210px;
-      height: 156px; } }
+      width: 24%; } }
+  @media all and (min-width: 992px) {
+    .portfolio-images li {
+      width: 16%; } }
 
 /*************************/
 .click {
@@ -11687,17 +11689,25 @@ div.cs-skin-boxes:focus > span {
       .column .click .wrapper .card-tittle h4 {
         font-family: "DINMedium";
         /*@include black;*/
-        color: #fff;
+        color: #009046;
         text-transform: uppercase;
         margin: 0;
-        font-size: 15px; }
+        font-size: 15px;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        transition: 0.3s; }
       .column .click .wrapper .card-tittle h5 {
         font-family: "DINLight";
         /*@include medium;*/
-        color: #fff;
+        color: #009046;
         text-transform: uppercase;
         margin: 0;
-        font-size: 16px; }
+        font-size: 16px;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        transition: 0.3s; }
     .column .click .wrapper:hover .card-tittle {
       background-color: #009046;
       bottom: 12px;
@@ -11705,6 +11715,18 @@ div.cs-skin-boxes:focus > span {
       -moz-transition: 0.3s;
       -ms-transition: 0.3s;
       transition: 0.3s; }
+      .column .click .wrapper:hover .card-tittle h4 {
+        color: #fff;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        transition: 0.3s; }
+      .column .click .wrapper:hover .card-tittle h5 {
+        color: #fff;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        transition: 0.3s; }
       .column .click .wrapper:hover .card-tittle img {
         -webkit-transition: 0.3s;
         -moz-transition: 0.3s;

@@ -445,10 +445,11 @@
   top: 12px;
   right: 20px;
   width: 35px;
+  height: 35px;
   padding: 8px;
   @include border-radius(50px);
   @include transition(.3s);
-  background-color: #323234;
+  background-color: #323234 !important;
   z-index: 1000;
   &:hover {
     color: #fff;
@@ -459,6 +460,7 @@
     // Tablet
     top: 30px;
     width: 45px;
+    height: 45px;
   }  
   @media all and (min-width: $screen-md) {
     // Tablet
@@ -722,4 +724,23 @@
   @media all and (min-width: $screen-lg) {
     // Desktop
   }
+}
+
+/***************/
+.vacc-pop--up{
+  padding: 0 !important;
+  margin: 0;
+  top: -1px;
+  right: 0px;
+  width: 100.1%
+}
+.career-pop{
+  .modal-content{
+    background-color: transparent !important;
+  }
+}
+.action--close img{
+  width: 70% !important;
+  display: block;
+  margin:  auto;
 }

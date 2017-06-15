@@ -148,7 +148,7 @@ and open the template in the editor.
           <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 rem-pad">
             <div class="col-sm-6 col-xs-12">
               <a class="btn btn-vacany disabled">php developer</a>
-              <a id="trigger-dialog" class="btn btn-vacany">php developer</a>
+              <a class="btn btn-vacany" data-toggle="modal" data-target="#myModal">php developer</a>
               <a class="btn btn-vacany">php developer</a>
             </div>
             <div class="col-sm-6 col-xs-12">
@@ -251,21 +251,17 @@ and open the template in the editor.
     </div>
     <!--Footer copy right end-->
 
-    <!--Career vacancy pop up-->
-    <div class="dialog" id="dialog-1">
-      <div class="mover-wrap dialog__content">
-        <div class="handle"></div>
-        <div class="dialog__content-inner">
-          <div class="dialog__header">
-            <h2>php developer</h2>
-            <button class="action action--close">
-              <img src="images/left-arrow-white.svg" class="img-responsive" alt="back" title="Back"/>
-              <span class="text-hidden">Close dialog</span>
+    <!-- Modal -->
+    <div class="modal fade career-pop" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header dialog__header">
+            <button type="button" class="close action--close" data-dismiss="modal" aria-label="Close">
+              <img src="images/left-arrow-white.svg" class="img-responsive" alt="Close" title="Close"/>
             </button>
+            <h2 class="modal-title" id="myModalLabel">php developer</h2>
           </div>
-        </div>
-        <div class="dialog__body">
-          <div class="actions vacc-pop--up row-eq-height">
+          <div class="modal-body vacc-pop--up row-eq-height">
             <div class="req-skills">
               <h4>required skills</h4>
               <div class="line"></div>
@@ -299,7 +295,7 @@ and open the template in the editor.
         </div>
       </div>
     </div>
-    <!--Career vacancy pop up end-->
+    <!-- Modal end -->
 
     <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
@@ -328,31 +324,7 @@ and open the template in the editor.
       // Personally i think 1000 is too much
       // Try 800 or below, it seems not too much but it will make a difference
     </script>
-    <!--Pop up-->
-    <script src="js/draggabilly.pkgd.min.js"></script> 
-    <script src="js/dynamics.min.js"></script>
-    <script src="js/main-pop.js"></script> 
-    <script>
-      (function () {
-        var dialog = new DialogEl(document.getElementById('dialog-1'), {
-          mainElement: {
-            minscale: 0.6,
-            minopacity: 0.5,
-            //rX : 30,
-            rY: 40
-          },
-          innerElements: {tx: 100, ty: 100},
-          // the element is considered out of bounds if its center (x,y) is either 
-          // x < outofbounds.x or x > win.width-outofbounds.x or
-          // y < outofbounds.y or y > win.height - outofbounds.y
-          outofbounds: {x: 0, y: 0}
-        });
-
-        document.getElementById('trigger-dialog').addEventListener('click', function (ev) {
-          dialog.open();
-        });
-      })();
-    </script>
+    
     <!--Custom input file-->
     <script src="js/custom-file-input.js" type="text/javascript"></script>
     <!--Menu icon color change-->
